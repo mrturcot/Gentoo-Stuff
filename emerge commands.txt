@@ -1,0 +1,20 @@
+
+# Sync
+emaint sync -a
+
+# Full Update
+
+# emerge --ask --verbose --update --deep --with-bdeps=y --changed-use @worldd
+
+revdep-rebuild
+emerge @preserved-rebuild
+emerge --ask --verbose --update --deep --with-bdeps=y --newuse @world
+
+
+# Changed USE flag on a package
+
+emerge --ask --changed-use --deep --verbose [package]
+
+# Changed USE in make.conf
+
+emerge --ask --changed-use --deep @world

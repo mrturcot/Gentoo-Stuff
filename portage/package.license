@@ -1,0 +1,9 @@
+games-util/steam-launcher ValveSteamLicense
+games-emulation/genesis_plus_gx-libretro GPGX
+games-emulation/snes9x-libretro snes9x
+sys-kernel/linux-firmware linux-fw-redistributable no-source-code
+media-fonts/font-bh-ttf bh-luxi
+media-fonts/font-bh-type1 bh-luxi
+games-action/minecraft-launcher Mojang
+games-fps/gzdoom Activision ChexQuest3 DOOM-COLLECTORS-EDITION freedist WidePix
+www-plugins/chrome-binary-plugins google-chrome

@@ -1,0 +1,2 @@
+games-emulation/retroarch -sdl
+games-emulation/retroarch-assets ozone xmb materialui
