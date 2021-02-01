@@ -2,14 +2,15 @@
 # Sync
 emaint sync -a
 
-# Full Update
-
+# Full Update -Dont update local flags
 # emerge --ask --verbose --update --deep --with-bdeps=y --changed-use @worldd
 
-revdep-rebuild
-emerge @preserved-rebuild
+# Full update - Update with upstream flags
 emerge --ask --verbose --update --deep --with-bdeps=y --newuse @world
 
+# May be necessary
+revdep-rebuild
+emerge @preserved-rebuild
 
 # Changed USE flag on a package
 
@@ -18,3 +19,4 @@ emerge --ask --changed-use --deep --verbose [package]
 # Changed USE in make.conf
 
 emerge --ask --changed-use --deep @world
+
