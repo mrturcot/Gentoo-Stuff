@@ -1,0 +1,23 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[time]
+disabled = false
+format = '[\[ $time \]]($style) '
+use_12hr = true
+#style = "orange"
+#time_format = "%T"
+#utc_time_offset = "-5"
+#time_range = "10:00:00-14:00:00"
+
+[username]
+style_user = "green bold"
+style_root = "black bold"
+format = "user: [$user]($style) "
+disabled = false
+show_always = true
+
