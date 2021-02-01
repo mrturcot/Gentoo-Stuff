@@ -9,10 +9,6 @@ success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being
 disabled = false
 format = '[\[ $time \]]($style) '
 use_12hr = true
-#style = "orange"
-#time_format = "%T"
-#utc_time_offset = "-5"
-#time_range = "10:00:00-14:00:00"
 
 [username]
 style_user = "green bold"
