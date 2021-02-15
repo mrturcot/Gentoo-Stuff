@@ -621,6 +621,7 @@ bnx2x-e1-5.2.7.0.fw
 bnx2x-e1h-4.8.53.0.fw
 bnx2x-e1h-5.2.13.0.fw
 bnx2x-e1h-5.2.7.0.fw
+brcm/brcmfmac43455-sdio.Raspberry Pi Foundation-Raspberry Pi 4 Model B.txt
 brcm/BCM-0a5c-6410.hcd
 brcm/brcmfmac4350c2-pcie.bin
 brcm/brcmfmac4356-pcie.bin
@@ -631,25 +632,33 @@ brcm/brcmfmac4358-pcie.bin
 brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt
 brcm/brcmfmac4329-sdio.bin
 brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt
+brcm/brcmfmac4356-sdio.vamrs,rock960.txt
 brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
 brcm/brcmfmac4354-sdio.bin
+brcm/brcmfmac4354-sdio.clm_blob
 brcm/brcmfmac43570-pcie.bin
 brcm/brcmfmac43241b0-sdio.bin
+brcm/brcmfmac43012-sdio.bin
 brcm/brcmfmac43455-sdio.bin
 brcm/brcmfmac4373.bin
 brcm/brcmfmac43143.bin
+brcm/brcmfmac4356-pcie.clm_blob
+brcm/brcmfmac4356-sdio.clm_blob
 brcm/brcmfmac43602-pcie.bin
 brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 brcm/brcmfmac4334-sdio.bin
 brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
 brcm/brcmfmac4330-sdio.Prowise-PT301.txt
+brcm/brcmfmac43430-sdio.clm_blob
 brcm/brcmfmac4356-pcie.gpd-win-pocket.txt
 brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt
 brcm/brcmfmac43340-sdio.bin
 brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt
 brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
+brcm/brcmfmac43455-sdio.clm_blob
 brcm/brcmfmac4350-pcie.bin
 brcm/brcmfmac4339-sdio.bin
+brcm/brcmfmac54591-pcie.bin
 brcm/bcm4329-fullmac-4.bin
 brcm/brcmfmac4330-sdio.bin
 brcm/bcm43xx-0.fw
@@ -659,8 +668,10 @@ brcm/brcmfmac43242a.bin
 brcm/brcmfmac43569.bin
 brcm/brcmfmac43241b5-sdio.bin
 brcm/brcmfmac4366b-pcie.bin
+brcm/brcmfmac4373-sdio.clm_blob
 brcm/brcmfmac4335-sdio.bin
 brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
+brcm/brcmfmac54591-pcie.clm_blob
 brcm/brcmfmac43430a0-sdio.bin
 brcm/brcmfmac43430-sdio.bin
 brcm/brcmfmac4366c-pcie.bin
@@ -671,8 +682,10 @@ brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt
 brcm/brcmfmac43430-sdio.MUR1DX.txt
 brcm/brcmfmac4371-pcie.bin
 brcm/brcmfmac43362-sdio.bin
+brcm/brcmfmac43570-pcie.clm_blob
 brcm/brcmfmac43430-sdio.AP6212.txt
 brcm/brcmfmac4356-sdio.bin
+brcm/brcmfmac43012-sdio.clm_blob
 brcm/brcmfmac43455-sdio.MINIX-NEO Z83-4.txt
 brcm/brcmfmac43602-pcie.ap.bin
 brcm/bcm43xx_hdr-0.fw
@@ -814,6 +827,7 @@ htc_9271.fw
 i2400m-fw-usb-1.4.sbcf
 i2400m-fw-usb-1.5.sbcf
 i6050-fw-usb-1.5.sbcf
+i915/adls_dmc_ver2_01.bin
 i915/bxt_guc_ver8_7.bin
 i915/icl_huc_9.0.0.bin
 i915/ehl_huc_9.0.0.bin
@@ -823,6 +837,7 @@ i915/skl_guc_ver4.bin
 i915/skl_dmc_ver1_23.bin
 i915/skl_dmc_ver1_27.bin
 i915/kbl_guc_ver9_14.bin
+i915/dg1_huc_7.7.1.bin
 i915/icl_guc_33.0.0.bin
 i915/icl_dmc_ver1_07.bin
 i915/skl_dmc_ver1_26.bin
@@ -854,6 +869,7 @@ i915/kbl_guc_49.0.1.bin
 i915/bxt_guc_33.0.0.bin
 i915/tgl_dmc_ver2_06.bin
 i915/glk_guc_32.0.3.bin
+i915/dg1_guc_49.0.1.bin
 i915/kbl_dmc_ver1.bin
 i915/icl_guc_32.0.3.bin
 i915/tgl_dmc_ver2_04.bin
@@ -1158,6 +1174,7 @@ mediatek/mt7915_wm.bin
 mediatek/mt7662u_rom_patch.bin
 mediatek/mt7615_cr4.bin
 mediatek/mt8183/scp.img
+mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin
 mediatek/mt7915_wa.bin
 mediatek/mt7622_rom_patch.bin
 mediatek/mt7622pr2h.bin
@@ -1166,6 +1183,7 @@ mediatek/mt7663_n9_rebb.bin
 mediatek/mt7662u.bin
 mediatek/mt7915_rom_patch.bin
 mediatek/mt7663pr2h_rebb.bin
+mediatek/WIFI_RAM_CODE_MT7961_1.bin
 mediatek/mt7610e.bin
 mellanox/mlxsw_spectrum-13.2008.2018.mfa2
 mellanox/mlxsw_spectrum-13.2008.1310.mfa2
@@ -1179,7 +1197,9 @@ mellanox/mlxsw_spectrum-13.1620.192.mfa2
 mellanox/mlxsw_spectrum2-29.2008.1310.mfa2
 mellanox/mlxsw_spectrum2-29.2000.2308.mfa2
 mellanox/mlxsw_spectrum3-30.2008.1312.mfa2
+mellanox/mlxsw_spectrum2-29.2008.2304.mfa2
 mellanox/mlxsw_spectrum3-30.2008.2018.mfa2
+mellanox/mlxsw_spectrum3-30.2008.2304.mfa2
 mellanox/mlxsw_spectrum-13.1703.4.mfa2
 mellanox/mlxsw_spectrum3-30.2008.1310.mfa2
 mellanox/mlxsw_spectrum-13.2000.2308.mfa2
@@ -1191,6 +1211,7 @@ mellanox/mlxsw_spectrum2-29.2000.2714.mfa2
 mellanox/mlxsw_spectrum-13.1702.6.mfa2
 mellanox/mlxsw_spectrum-13.1530.152.mfa2
 mellanox/mlxsw_spectrum2-29.2007.1168.mfa2
+mellanox/mlxsw_spectrum-13.2008.2304.mfa2
 mellanox/mlxsw_spectrum-13.2000.2714.mfa2
 mellanox/mlxsw_spectrum-13.2008.1312.mfa2
 mellanox/mlxsw_spectrum2-29.2008.1036.mfa2
@@ -1736,6 +1757,26 @@ qca/nvm_usb_00000300.bin
 qca/crbtfw21.tlv
 qca/htnv20.bin
 qca/rampatch_00440302.bin
+qcom/sm8250/cdspr.jsn
+qcom/sm8250/a650_zap.mbn
+qcom/sm8250/adspua.jsn
+qcom/sm8250/adsp.mbn
+qcom/sm8250/cdsp.mbn
+qcom/sm8250/adspr.jsn
+qcom/vpu-1.0/venus.b19
+qcom/vpu-1.0/venus.b06
+qcom/vpu-1.0/venus.b09
+qcom/vpu-1.0/venus.b05
+qcom/vpu-1.0/venus.b02
+qcom/vpu-1.0/venus.mbn
+qcom/vpu-1.0/venus.b10
+qcom/vpu-1.0/venus.b07
+qcom/vpu-1.0/venus.b00
+qcom/vpu-1.0/venus.b03
+qcom/vpu-1.0/venus.b01
+qcom/vpu-1.0/venus.b04
+qcom/vpu-1.0/venus.mdt
+qcom/vpu-1.0/venus.b08
 qcom/sdm845/mba.mbn
 qcom/sdm845/cdspr.jsn
 qcom/sdm845/modem.mbn
@@ -1775,8 +1816,10 @@ qcom/venus-5.2/venus.mdt
 qcom/a630_gmu.bin
 qcom/a300_pm4.fw
 qcom/a530v3_gpmu.fw2
+qcom/a650_sqe.fw
 qcom/a300_pfp.fw
 qcom/a530_zap.b02
+qcom/a650_gmu.bin
 qcom/venus-4.2/venus.b02
 qcom/venus-4.2/venus.b00
 qcom/venus-4.2/venus.b03
@@ -2084,6 +2127,7 @@ rt73.bin
 rtl_bt/rtl8822b_fw.bin
 rtl_bt/rtl8723bs_fw.bin
 rtl_bt/rtl8723b_fw.bin
+rtl_bt/rtl8852au_config.bin
 rtl_bt/rtl8723d_fw.bin
 rtl_bt/rtl8822cu_fw.bin
 rtl_bt/rtl8822cs_config.bin
@@ -2096,6 +2140,7 @@ rtl_bt/rtl8761a_fw.bin
 rtl_bt/rtl8822b_config.bin
 rtl_bt/rtl8723bs_config-OBDA8723.bin
 rtl_bt/rtl8821c_config.bin
+rtl_bt/rtl8852au_fw.bin
 rtl_bt/rtl8723d_config.bin
 rtl_bt/rtl8192ee_fw.bin
 rtl_bt/rtl8723a_fw.bin

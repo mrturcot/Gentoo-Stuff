@@ -1,3 +1,11 @@
+dev-games/openscenegraph-openmw
+dev-games/recastnavigation
+games-engines/openmw
+x11-themes/kvantum
+sys-apps/bat
+media-fonts/nerd-fonts
+net-libs/libtorrent-rasterbar
+net-p2p/qbittorrent
 www-client/firefox
 dev-libs/nss
 www-client/librewolf
