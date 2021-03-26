@@ -37,3 +37,23 @@ sys-devel/gcc
 # required by sys-kernel/zen-sources (argument)
 =sys-kernel/zen-sources-5.11 ~amd64 
 kde-apps/kdenlive
+app-shells/bash
+# required by net-wireless/bluez-5.55::gentoo[-mesh,readline]
+# required by games-emulation/dolphin-5.0_p20200705::gentoo[bluetooth]
+# required by @selected
+# required by @world (argument)
+=sys-libs/readline-8.1 ~amd64
+app-admin/eclean-kernel
+media-libs/mesa
+app-shells/starship
+# required by xow (argument)
+=sys-kernel/xow-0.5 ~amd64
+# required by xpadneo (argument)
+=games-util/xpadneo-0.9 ~amd64
+# required by puddletag (argument)
+=media-sound/puddletag-2.0.1 ~amd64
+# required by =app-shells/bash-completion-9999 (argument)
+=app-shells/bash-completion-9999 **
+media-libs/dav1d
+# required by app-editors/atom (argument)
+=app-editors/atom-1.55.0 ~amd64

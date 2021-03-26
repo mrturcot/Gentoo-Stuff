@@ -32,6 +32,9 @@ GENTOO_MIRRORS="http://gentoo.gossamerhost.com rsync://gentoo.gossamerhost.com/g
 # GRUB
 GRUB_PLATFORMS="efi-64"
 
+# Shell
+SHELL=/bin/bash
+
 # Video Cards
 VIDEO_CARDS="amdgpu radeonsi"
 
