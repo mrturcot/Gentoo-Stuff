@@ -34,6 +34,19 @@ games-fps/gzdoom
 media-libs/zmusic
 media-sound/cava
 sys-devel/gcc
-# required by sys-kernel/zen-sources (argument)
-=sys-kernel/zen-sources-5.11 ~amd64 
 kde-apps/kdenlive
+sys-kernel/linux-headers
+sys-libs/glibc
+sys-libs/readline
+app-shells/bash
+dev-libs/xapian
+app-admin/eclean-kernel
+dev-libs/libfmt
+x11-libs/libdrm
+media-libs/mesa
+games-emulation/dolphin **
+app-shells/starship
+games-util/xpadneo
+media-sound/puddletag
+sys-process/bpytop
+

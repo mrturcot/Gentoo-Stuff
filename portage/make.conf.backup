@@ -11,10 +11,10 @@ MAKEOPTS="-j16"
 CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand \
 	       sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3"
  
-USE="-gnome -gtk -systemd -aqua -cdinstall -css -a52 -emboss \
-     -clamav -coreaudio -ios -ipod -ieee1394 -emacs -xemacs \
-     -3dfx -altivec -smartcard -cups -ibm -cjk alsa x qt4 qt5 kde \
-      bluetooth pulseaudio vulkan mtp vdpau vaapi samba unicode dbus"
+USE="-gnome -gtk -systemd -aqua -cdinstall -cdr -css -dvd -dvdr -a52 \
+     -clamav -coreaudio -ios -ipod -ieee1394 -emacs -xemacs -emboss \
+     -3dfx -altivec -smartcard -cups -ibm -cjk alsa x qt4 qt5 kde dbus \
+      bluetooth pulseaudio vulkan mtp vdpau vaapi samba unicode"
 
 # NOTE: This stage was built with the bindist Use flag enabled
 PORTDIR="/var/db/repos/gentoo"
@@ -24,6 +24,8 @@ PKGDIR="/var/cache/binpkgs"
 # This sets the language of build output to English.
 # Please keep this setting intact when reporting bugs.
 LC_MESSAGES=C
+
+GENTOO_MIRRORS="http://gentoo.gossamerhost.com rsync://gentoo.gossamerhost.com/gentoo-distfiles/ ftp://mirrors.tera-byte.com/pub/gentoo http://gentoo.mirrors.tera-byte.com/ rsync://mirrors.tera-byte.com/gentoo"
 
 #FEATURES="installsources"
 
@@ -41,5 +43,3 @@ VIDEO_CARDS="amdgpu radeonsi"
 
 # Whitelist 32/64 bit ABI
 #ABI_X86="64 32"
-
-GENTOO_MIRRORS="http://gentoo.gossamerhost.com http://gentoo.mirrors.tera-byte.com/ http://mirrors.aliyun.com/gentoo/"
