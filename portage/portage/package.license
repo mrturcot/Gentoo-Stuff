@@ -8,3 +8,11 @@ media-fonts/font-bh-type1 bh-luxi
 games-action/minecraft-launcher Mojang
 games-fps/gzdoom Activision ChexQuest3 DOOM-COLLECTORS-EDITION freedist WidePix
 www-plugins/chrome-binary-plugins google-chrome
+# required by media-video/transcode-1.1.7-r5::gentoo[aac]
+# required by kde-apps/k3b-20.08.3::gentoo[encode,dvd]
+# required by kde-apps/kdemultimedia-meta-20.08.3::gentoo[cdrom]
+# required by @selected
+# required by @world (argument)
+media-libs/faac MPEG-4
+# required by kochi-substitute (argument)
+media-fonts/kochi-substitute free-noncomm
