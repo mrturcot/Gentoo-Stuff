@@ -13,4 +13,6 @@ www-plugins/chrome-binary-plugins google-chrome
 # required by kde-apps/kdemultimedia-meta-20.08.3::gentoo[cdrom]
 # required by @selected
 # required by @world (argument)
->=media-libs/faac-1.30 MPEG-4
+media-libs/faac MPEG-4
+# required by kochi-substitute (argument)
+media-fonts/kochi-substitute free-noncomm
