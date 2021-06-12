@@ -1,9 +1,0 @@
-# created by eselect-repo
-
-
-
-
-[zugaina]
-location = /var/db/repos/zugaina
-sync-type = git
-sync-uri = https://github.com/gentoo-mirror/zugaina.git

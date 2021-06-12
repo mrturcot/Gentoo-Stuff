@@ -1,9 +1,0 @@
-www-client/w3m imlib
-# required by dev-libs/wayland-1.19.0::gentoo
-# required by kde-plasma/kscreenlocker-5.21.1::gentoo
-# required by kde-plasma/kwin-5.21.1::gentoo
-# required by kde-plasma/plasma-desktop-5.21.1::gentoo
-# required by kde-plasma/plasma-meta-5.21.1::gentoo
-# required by @selected
-# required by @world (argument)
->=dev-util/wayland-scanner-1.19.0 abi_x86_32
