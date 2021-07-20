@@ -88,3 +88,31 @@ media-libs/vulkan-loader
 dev-util/vulkan-tools
 dev-java/openjdk-bin
 dev-java/openjdk
+# required by games-emulation/retroarch-1.9.3::menelkir
+# required by @selected
+# required by @world (argument)
+games-emulation/libretro-info  ~amd64
+# required by games-emulation/retroarch-1.9.3::menelkir
+# required by @selected
+# required by @world (argument)
+games-emulation/libretro-common-overlays  ~amd64
+# required by games-emulation/retroarch-1.9.3::menelkir
+# required by @selected
+# required by @world (argument)
+games-emulation/libretro-database ~amd64
+# required by games-emulation/retroarch-1.9.3::menelkir[ozone]
+# required by @selected
+# required by @world (argument)
+games-emulation/retroarch ~amd64
+# required by media-fonts/inter (argument)
+media-fonts/inter ~amd64
+# required by x11-terms/cool-retro-term (argument)
+>=x11-terms/cool-retro-term-1.1.1-r2 ~amd64
+# required by x11-themes/papirus-filezilla-themes (argument)
+x11-themes/papirus-filezilla-themes ~amd64
+net-ftp/proftpd
+# required by lnav (argument)
+>=app-admin/lnav-0.9.0 ~amd64
+# required by x11-themes/materia-theme (argument)
+>=x11-themes/materia-theme-20210322 ~amd64
+dev-libs/nspr

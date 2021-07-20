@@ -18,6 +18,7 @@ fi
 # Put your fun stuff here.
 
 # Emerge aliases
+alias emerge-autounmask="emerge -av --autounmask --autounmask-unrestricted-atoms"
 alias sync="emaint -a sync"
 alias full-update="emerge --ask --verbose --update --deep --newuse --with-bdeps=y @world"
 alias full-update-noask="emerge --verbose --update --deep --newuse --with-bdeps=y @world"

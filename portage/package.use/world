@@ -487,3 +487,33 @@ www-client/w3m imlib
 # required by app-emulation/wine-staging-6.8_p1::bobwya[usb]
 # required by wine-staging (argument)
 >=sys-fs/eudev-3.2.10 abi_x86_32
+# required by games-emulation/retroarch-1.9.3::menelkir[ozone]
+# required by @selected
+# required by @world (argument)
+>=games-emulation/retroarch-assets-1_pre20210422 ozone
+# required by x11-terms/cool-retro-term-1.1.1-r2::gentoo
+# required by x11-terms/cool-retro-term (argument)
+>=dev-qt/qtdeclarative-5.15.2 localstorage
+# required by app-emulation/faudio-21.01::gentoo
+# required by app-emulation/wine-staging-6.11::gentoo[faudio]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libsdl2-2.0.14-r1 haptic abi_x86_32
+# required by media-libs/libsdl2-2.0.14-r1::gentoo[opengl]
+# required by app-emulation/faudio-21.01::gentoo
+# required by app-emulation/wine-staging-6.11::gentoo[faudio]
+# required by @selected
+# required by @world (argument)
+>=virtual/glu-9.0-r2 abi_x86_32
+# required by virtual/glu-9.0-r2::gentoo
+# required by app-emulation/wine-staging-6.11::gentoo[opengl]
+# required by @selected
+# required by @world (argument)
+>=media-libs/glu-9.0.1 abi_x86_32
+# required by x11-libs/pango-1.48.7::gentoo
+# required by gnome-base/librsvg-2.50.7::gentoo
+# required by media-video/vlc-3.0.14-r3::gentoo[svg]
+# required by media-sound/elisa-20.12.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.10.4 harfbuzz
