@@ -1,3 +1,4 @@
+ 
 # /etc/skel/.bashrc
 #
 # This file is sourced by all *interactive* bash shells on startup,
@@ -18,10 +19,11 @@ fi
 # Put your fun stuff here.
 
 # Emerge aliases
-alias emerge-autounmask="emerge -av --autounmask --autounmask-unrestricted-atoms"
+alias emerge-auto="emerge --ask --verbose --autounmask --autounmask-unrestricted-atoms"
 alias sync="emaint -a sync"
 alias full-update="emerge --ask --verbose --update --deep --newuse --with-bdeps=y @world"
 alias full-update-noask="emerge --verbose --update --deep --newuse --with-bdeps=y @world"
+alias full-update-auto="emerge --ask --verbose --update --deep --newuse --with-bdeps=y --autounmask --autounmask-unrestricted-atoms @world"
 alias clean="emerge --depclean --ask"
 alias search="emerge --search"
 
@@ -46,4 +48,3 @@ eval "$(starship init bash)"
 
 # Release colors
 colorscript -r
-

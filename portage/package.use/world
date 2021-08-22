@@ -517,3 +517,10 @@ www-client/w3m imlib
 # required by @selected
 # required by @world (argument)
 >=media-libs/freetype-2.10.4 harfbuzz
+# required by virtual/rust-1.53.0::gentoo
+# required by gnome-base/librsvg-2.50.7::gentoo
+# required by media-gfx/imagemagick-7.1.0.4::gentoo[svg]
+# required by app-misc/neofetch-7.1.0::gentoo[X]
+# required by @selected
+# required by @world (argument)
+>=dev-lang/rust-1.53.0 rustfmt

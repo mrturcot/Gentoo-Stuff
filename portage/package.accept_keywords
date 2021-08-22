@@ -32,7 +32,6 @@ games-action/minecraft-launcher
 games-fps/gzdoom
 media-libs/zmusic
 media-sound/cava
-kde-apps/kdenlive
 sys-kernel/linux-headers
 sys-libs/readline
 app-shells/bash
@@ -116,3 +115,5 @@ net-ftp/proftpd
 # required by x11-themes/materia-theme (argument)
 >=x11-themes/materia-theme-20210322 ~amd64
 dev-libs/nspr
+# required by app-shells/tmux-bash-completion (argument)
+>=app-shells/tmux-bash-completion-9999 **
