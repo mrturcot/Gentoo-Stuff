@@ -117,3 +117,5 @@ net-ftp/proftpd
 dev-libs/nspr
 # required by app-shells/tmux-bash-completion (argument)
 >=app-shells/tmux-bash-completion-9999 **
+# required by games-util/hid-nintendo (argument)
+>=games-util/hid-nintendo-9999 **

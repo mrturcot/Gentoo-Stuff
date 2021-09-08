@@ -524,3 +524,7 @@ www-client/w3m imlib
 # required by @selected
 # required by @world (argument)
 >=dev-lang/rust-1.53.0 rustfmt
+# required by games-action/minecraft-launcher-928-r4::gentoo
+# required by @selected
+# required by @world (argument)
+>=net-misc/curl-7.78.0-r1 adns
