@@ -1,5 +1,5 @@
 #!/bin/bash
-eselect kernel set 2
+eselect kernel set 2 &&
 cd /usr/src/linux &&
 zcat /proc/config.gz > /usr/src/linux/.config &&
 make olddefconfig &&
