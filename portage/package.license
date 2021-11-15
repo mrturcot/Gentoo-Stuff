@@ -16,3 +16,7 @@ www-plugins/chrome-binary-plugins google-chrome
 media-libs/faac MPEG-4
 # required by kochi-substitute (argument)
 media-fonts/kochi-substitute free-noncomm
+# required by games-emulation/libretro-snes9x (argument)
+>=games-emulation/libretro-snes9x-0.0.2_pre20200107 Snes9x
+# required by games-emulation/genesis_plus_gx_wide-libretro (argument)
+>=games-emulation/genesis_plus_gx_wide-libretro-1.0_pre20210409 GPGX

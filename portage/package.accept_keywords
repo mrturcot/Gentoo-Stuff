@@ -5,7 +5,7 @@ games-engines/openmw
 x11-themes/kvantum
 sys-apps/bat
 media-fonts/nerd-fonts
-net-libs/libtorrent-rasterbar
+# net-libs/libtorrent-rasterbar
 net-p2p/qbittorrent
 www-client/firefox
 dev-libs/nss
@@ -119,3 +119,37 @@ dev-libs/nspr
 >=app-shells/tmux-bash-completion-9999 **
 # required by games-util/hid-nintendo (argument)
 >=games-util/hid-nintendo-9999 **
+# required by games-emulation/retroarch-assets (argument)
+>=games-emulation/retroarch-assets-1_pre20210422 ~amd64
+# required by games-emulation/mupen64next-libretro (argument)
+>=games-emulation/mupen64next-libretro-1.0_pre20210321 ~amd64
+# required by games-emulation/mesens-libretro (argument)
+>=games-emulation/mesens-libretro-1.0_pre20210309-r1 ~amd64
+# required by games-emulation/bsnes-hd (argument)
+>=games-emulation/bsnes-hd-10.4_beta-r2 ~amd64
+# required by mednafen-bsnes-libretro (argument)
+>=games-emulation/mednafen-bsnes-libretro-1.0_pre20210101 ~amd64
+# required by games-emulation/libretro-snes9x (argument)
+>=games-emulation/libretro-snes9x-0.0.2_pre20200107 ~amd64
+# required by games-emulation/mesen-libretro (argument)
+>=games-emulation/mesen-libretro-0.9.9 ~amd64
+# required by games-emulation/libretro-nestopia (argument)
+>=games-emulation/libretro-nestopia-0.0.1_pre20180723 ~amd64
+# required by games-emulation/genesis_plus_gx_wide-libretro (argument)
+>=games-emulation/genesis_plus_gx_wide-libretro-1.0_pre20210409 ~amd64
+# required by games-emulation/genesis_plus_gx-libretro (argument)
+>=games-emulation/genesis_plus_gx-libretro-1.0_pre20210325 ~amd64
+# required by games-emulation/flycast-libretro (argument)
+>=games-emulation/flycast-libretro-1.0_pre20210503 ~amd64
+# required by games-emulation/mednafen-psx-hw-libretro (argument)
+>=games-emulation/mednafen-psx-hw-libretro-1.0_pre20210422 ~amd64
+sys-fs/cryfs
+# required by dev-games/openscenegraph-openmw-3.6_p20210610::gentoo[collada]
+# required by games-engines/openmw-0.47.0::gentoo[osg-fork]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/collada-dom-2.5.0 ~amd64
+# required by app-shells/starship-0.58.0::guru
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libgit2-1.3.0 ~amd64

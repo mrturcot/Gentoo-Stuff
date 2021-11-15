@@ -19,12 +19,14 @@ fi
 # Put your fun stuff here.
 
 # Emerge aliases
-alias emerge-auto="emerge --ask --verbose --autounmask --autounmask-unrestricted-atoms"
+alias emerge-autounmask="emerge --ask --verbose --autounmask --autounmask-unrestricted-atoms"
 alias full-update="emerge --ask --verbose --update --deep --newuse --with-bdeps=y @world"
 alias full-update-noask="emerge --verbose --update --deep --newuse --with-bdeps=y @world"
-alias full-update-auto="emerge --ask --verbose --update --deep --newuse --with-bdeps=y --autounmask --autounmask-unrestricted-atoms @world"
+alias full-update-autounmask="emerge --ask --verbose --update --deep --newuse --with-bdeps=y --autounmask --autounmask-unrestricted-atoms @world"
 alias clean="emerge --depclean --ask"
 alias search="emerge --search"
+alias mod="emerge @module-rebuild"
+alias unmerge="CONFIG_PROTECT="-*" emerge -av --unmerge"
 
 # Others
 alias grub-update="grub-mkconfig -o /boot/grub/grub.cfg"

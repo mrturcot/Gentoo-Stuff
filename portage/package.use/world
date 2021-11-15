@@ -528,3 +528,26 @@ www-client/w3m imlib
 # required by @selected
 # required by @world (argument)
 >=net-misc/curl-7.78.0-r1 adns
+# required by games-engines/openmw-0.47.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sci-physics/bullet-3.07 double-precision
+# required by games-engines/openmw-0.47.0::gentoo[osg-fork]
+# required by @selected
+# required by @world (argument)
+>=dev-games/openscenegraph-openmw-3.6_p20210610 collada
+# required by media-sound/pulseaudio-15.0-r1::gentoo
+# required by net-misc/freerdp-2.4.1-r1::gentoo[pulseaudio]
+# required by kde-apps/krdc-21.04.3::gentoo[rdp]
+# required by kde-apps/kdenetwork-meta-21.04.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/speexdsp-1.2.0 abi_x86_32
+# required by virtual/libcrypt-2::gentoo
+# required by sys-libs/pam-1.5.1_p20210622-r1::gentoo
+# required by sys-apps/shadow-4.9-r3::gentoo[pam]
+# required by net-misc/openssh-8.6_p1-r2::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=sys-libs/libxcrypt-4.4.25 abi_x86_32
+# required by media-libs/mlt[fftw] (argument)
+>=media-libs/mlt-6.26.1-r1 fftw
