@@ -1,0 +1,5 @@
+app-portage/eix::mv
+app-shells/push::mv
+app-shells/quoter::mv
+sys-apps/less::mv
+x11-libs/gtk+::mv

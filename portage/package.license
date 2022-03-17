@@ -20,3 +20,15 @@ media-fonts/kochi-substitute free-noncomm
 >=games-emulation/libretro-snes9x-0.0.2_pre20200107 Snes9x
 # required by games-emulation/genesis_plus_gx_wide-libretro (argument)
 >=games-emulation/genesis_plus_gx_wide-libretro-1.0_pre20210409 GPGX
+# required by media-video/makemkv (argument)
+>=media-video/makemkv-1.16.5 MakeMKV-EULA
+# required by media-fonts/corefonts (argument)
+>=media-fonts/corefonts-1-r7 MSttfEULA
+# required by media-fonts/aquapfont (argument)
+>=media-fonts/aquapfont-2.6-r2 aquafont
+# required by mikachan-font-otf (argument)
+>=media-fonts/mikachan-font-otf-9.1-r1 free-noncomm
+# required by mikachan-font-ttc (argument)
+>=media-fonts/mikachan-font-ttc-9.1 free-noncomm
+# required by mikachan-font-ttf (argument)
+>=media-fonts/mikachan-font-ttf-8.9-r2 free-noncomm
