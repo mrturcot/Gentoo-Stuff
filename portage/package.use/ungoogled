@@ -1,1 +1,1 @@
-www-client/ungoogled-chromium -vdpau
+www-client/ungoogled-chromium -vdpau thinlto optimize-thinlto optimize-webui

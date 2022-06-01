@@ -32,3 +32,22 @@ media-fonts/kochi-substitute free-noncomm
 >=media-fonts/mikachan-font-ttc-9.1 free-noncomm
 # required by mikachan-font-ttf (argument)
 >=media-fonts/mikachan-font-ttf-8.9-r2 free-noncomm
+# required by sys-boot/etcher (argument)
+>=sys-boot/etcher-1.5.115 GPL2
+# required by geekbench (argument)
+>=app-benchmarks/geekbench-5.4.4 geekbench
+# required by snes9x (argument)
+>=games-emulation/snes9x-1.61 Snes9x
+# required by games-util/xone (argument)
+>=games-util/xone-0.2 MS-TOU
+# required by media-fonts/steamfonts (argument)
+>=media-fonts/steamfonts-1 MSttfEULA
+# required by net-im/discord-bin (argument)
+>=net-im/discord-bin-0.0.17 all-rights-reserved
+# required by games-server/minecraft-server (argument)
+>=games-server/minecraft-server-1.18.2 Mojang
+# required by davinci-resolve-studio (argument)
+>=media-video/davinci-resolve-studio-17.4.5 Blackmagic
+# required by media-video/davinci-resolve-studio-17.4.5::inode64-overlay[video_cards_amdgpu]
+# required by davinci-resolve-studio (argument)
+>=dev-libs/amdgpu-pro-opencl-21.40.1.40501 AMD-GPU-PRO-EULA

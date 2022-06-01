@@ -580,3 +580,75 @@ www-client/w3m imlib
 # required by app-emulation/virt-manager-3.2.0-r1::gentoo[-test]
 # required by virt-manager (argument)
 >=net-dns/dnsmasq-2.85 script
+# required by media-libs/libsndfile-1.1.0-r1::gentoo[-minimal]
+# required by media-libs/zmusic-1.1.4::gentoo[sndfile]
+# required by games-fps/gzdoom-4.7.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-sound/lame-3.100-r3 abi_x86_32
+# required by media-sound/elisa-21.12.3::gentoo[-vlc]
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtmultimedia-5.15.3 gstreamer
+# required by games-emulation/zsnes-2.0.9::gentoo
+# required by games-emulation/zsnes (argument)
+>=media-libs/libsdl-1.2.15_p20210224 abi_x86_32
+# required by media-libs/libsdl-1.2.15_p20210224::gentoo[sound]
+# required by games-emulation/zsnes-2.0.9::gentoo
+# required by games-emulation/zsnes (argument)
+>=media-libs/audiofile-0.3.6-r4 abi_x86_32
+# required by app-emulation/wine-staging-7.8_p1::bobwya[kerberos]
+# required by @selected
+# required by @world (argument)
+>=virtual/krb5-0-r1 abi_x86_32
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-staging-7.8_p1::bobwya[kerberos]
+# required by @selected
+# required by @world (argument)
+>=app-crypt/mit-krb5-1.19.2-r4 abi_x86_32
+# required by app-crypt/mit-krb5-1.19.2-r4::gentoo
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-staging-7.8_p1::bobwya[kerberos]
+# required by @selected
+# required by @world (argument)
+>=sys-fs/e2fsprogs-1.46.5-r1 abi_x86_32
+# required by app-crypt/mit-krb5-1.19.2-r4::gentoo[keyutils]
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-staging-7.8_p1::bobwya[kerberos]
+# required by @selected
+# required by @world (argument)
+>=sys-apps/keyutils-1.6.3 abi_x86_32
+# required by app-crypt/mit-krb5-1.19.2-r4::gentoo[pkinit]
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-staging-7.8_p1::bobwya[kerberos]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/openssl-1.1.1n abi_x86_32
+# required by app-crypt/mit-krb5-1.19.2-r4::gentoo
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-staging-7.8_p1::bobwya[kerberos]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libverto-0.3.1-r1 abi_x86_32
+# required by dev-libs/libverto-0.3.1-r1::gentoo[libev]
+# required by app-crypt/mit-krb5-1.19.2-r4::gentoo
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-staging-7.8_p1::bobwya[kerberos]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libev-4.33 abi_x86_32
+# required by dev-libs/amdgpu-pro-opencl-21.40.1.40501::inode64-overlay
+# required by media-video/davinci-resolve-studio-17.4.5::inode64-overlay[video_cards_amdgpu]
+# required by davinci-resolve-studio (argument)
+>=x11-libs/libdrm-2.4.110 libkms
+# required by sys-fs/udev-250::gentoo
+# required by virtual/libudev-232-r7::gentoo[-systemd]
+# required by dev-qt/qtgui-5.15.3::gentoo
+# required by kde-plasma/layer-shell-qt-5.24.5::gentoo
+# required by kde-plasma/kscreenlocker-5.24.5::gentoo
+# required by kde-plasma/kwin-5.24.5-r2::gentoo
+# required by kde-plasma/plasma-desktop-5.24.5::gentoo
+# required by kde-plasma/plasma-meta-5.24.5::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-apps/systemd-utils-250.6 abi_x86_32

@@ -20,12 +20,9 @@ fi
 
 # Emerge aliases
 alias emerge-autounmask="emerge --ask --verbose --autounmask --autounmask-unrestricted-atoms"
-alias full-update="emerge --ask --verbose --update --deep --newuse --with-bdeps=y @world"
-alias full-update-noask="emerge --verbose --update --deep --newuse --with-bdeps=y @world"
-alias full-update-autounmask="emerge --ask --verbose --update --deep --newuse --with-bdeps=y --autounmask --autounmask-unrestricted-atoms @world"
+alias full-update="emerge --ask --verbose --update --deep --newuse @world"
+alias full-update-autounmask="emerge --ask --verbose --update --deep --newuse --autounmask --autounmask-unrestricted-atoms @world"
 alias clean="emerge --depclean --ask"
-alias search="emerge --search"
-alias mod="emerge @module-rebuild"
 alias unmerge="CONFIG_PROTECT="-*" emerge -av --unmerge"
 
 # Others
@@ -36,13 +33,13 @@ alias glances="glances --enable-plugin sensors"
 alias rr="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
 alias reboot="doas reboot"
 alias poweroff="doas poweroff"
+alias mc-server="/usr/lib64/openjdk-17/bin/java -Xms8G -Xmx8G -Xmn1G -XX:+UseG1GC -XX:ParallelGCThreads=8 -XX:ConcGCThreads=2 -jar /home/mrturcot/mc-server/PaperMC/paper-1.18.2-351.jar --nogui"
+alias java17="/usr/lib64/openjdk-17/bin/java"
 
-# Set VDPAU Driver
 export VDPAU_DRIVER=radeonsi
-
-# Bash History
 export HISTSIZE=10000
 export HISTFILESIZE=10000
+export EDITOR='/usr/bin/vim'
 
 # Starship shell prompt config
 eval "$(starship init bash)"

@@ -191,4 +191,103 @@ sys-fs/cryfs
 # required by sys-power/amdgpu-fan (argument)
 >=sys-power/amdgpu-fan-0.1.0-r1 ~amd64
 # required by powerstat (argument)
-=sys-power/powerstat-0.02.22 ~amd64
+sys-power/powerstat ~amd64
+# required by virtual/rust-1.59.0::gentoo
+# required by app-shells/starship-1.4.2::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-lang/rust-1.59.0 ~amd64
+# required by app-shells/starship-1.4.2::gentoo
+# required by @selected
+# required by @world (argument)
+>=virtual/rust-1.59.0 ~amd64
+# required by net-wireless/bluez-tools (argument)
+>=net-wireless/bluez-tools-0_p20201025 ~amd64
+# required by dev-games/mygui (argument)
+>=dev-games/mygui-3.4.1 ~amd64
+# required by games-emulation/bsnes-mercury-performance-libretro (argument)
+>=games-emulation/bsnes-mercury-performance-libretro-1.0_pre20210318-r1 ~amd64
+# required by dev-util/vulkan-tools-1.3.211::gentoo[cube]
+# required by @selected
+# required by @world (argument)
+#dev-util/glslang ~amd64
+media-libs/shaderc ~amd64
+# required by media-libs/shaderc-2022.1-r1::gentoo
+# required by media-libs/libplacebo-2.43.0::gentoo[shaderc]
+# required by media-video/mpv-0.33.1-r3::gentoo[vulkan]
+# required by @selected
+# required by @world (argument)
+dev-util/glslang ~amd64
+games-emulation/flycast **
+# required by dev-libs/libchdr (argument)
+>=dev-libs/libchdr-0_p20211127 ~amd64
+games-emulation/duckstation **
+# required by games-emulation/mednafen (argument)
+>=games-emulation/mednafen-1.29.0 ~amd64
+# required by games-emulation/mednafen-1.29.0::gentoo
+# required by games-emulation/mednafen (argument)
+>=dev-libs/trio-1.16 ~amd64
+# required by higan (argument)
+>=games-emulation/higan-116_pre20210818 ~amd64
+# required by snes9x (argument)
+>=games-emulation/snes9x-1.61 ~amd64
+# required by games-emulation/zsnes (argument)
+>=games-emulation/zsnes-2.0.9 ~amd64
+games-emulation/mupen64plus-qt **
+# required by games-emulation/mupen64plus-2.5.9::gentoo[ui-console]
+# required by games-emulation/mupen64plus (argument)
+>=games-emulation/mupen64plus-ui-console-2.5.9 ~amd64
+# required by games-emulation/mupen64plus (argument)
+>=games-emulation/mupen64plus-2.5.9 ~amd64
+# required by games-emulation/m64py-0.2.5::gentoo
+# required by games-emulation/mupen64plus-2.5.9::gentoo[ui-m64py]
+# required by games-emulation/mupen64plus (argument)
+>=games-emulation/mupen64plus-core-2.5.9-r2 ~amd64
+# required by games-emulation/mupen64plus-2.5.9::gentoo[video-glide64mk2]
+# required by games-emulation/mupen64plus (argument)
+>=games-emulation/mupen64plus-video-glide64mk2-2.5.9-r2 ~amd64
+# required by games-emulation/mupen64plus-2.5.9::gentoo[video-rice]
+# required by games-emulation/mupen64plus (argument)
+>=games-emulation/mupen64plus-video-rice-2.5.9-r2 ~amd64
+# required by games-emulation/mupen64plus-2.5.9::gentoo[audio-sdl]
+# required by games-emulation/mupen64plus (argument)
+>=games-emulation/mupen64plus-audio-sdl-2.5.9 ~amd64
+# required by games-emulation/mupen64plus-2.5.9::gentoo[rsp-hle]
+# required by games-emulation/mupen64plus (argument)
+>=games-emulation/mupen64plus-rsp-hle-2.5.9 ~amd64
+# required by games-emulation/mupen64plus-2.5.9::gentoo[input-sdl]
+# required by games-emulation/mupen64plus (argument)
+>=games-emulation/mupen64plus-input-sdl-2.5.9 ~amd64
+# required by games-emulation/mupen64plus-2.5.9::gentoo[ui-m64py]
+# required by games-emulation/mupen64plus (argument)
+>=games-emulation/m64py-0.2.5 ~amd64
+# required by games-emulation/m64py-0.2.5::gentoo
+# required by games-emulation/mupen64plus-2.5.9::gentoo[ui-m64py]
+# required by games-emulation/mupen64plus (argument)
+>=dev-python/PySDL2-0.9.11 ~amd64
+games-emulation/flycast-libretro **
+games-emulation/mednafen-psx-hw-libretro **
+games-emulation/mupen64next-libretro **
+games-emulation/bsnes-mercury-performance-libretro **
+games-emulation/mednafen-bsnes-libretro **
+games-emulation/mesens-libretro **
+games-emulation/libretro-snes9x **
+games-emulation/dolphin **
+dev-util/android-tools ~amd64
+# required by games-util/xone (argument)
+>=games-util/xone-0.2 ~amd64
+# required by media-fonts/steamfonts (argument)
+>=media-fonts/steamfonts-1 ~amd64
+kde-apps/kdenlive
+# required by davinci-resolve-studio (argument)
+>=media-video/davinci-resolve-studio-17.4.5 ~amd64
+# required by media-video/davinci-resolve-studio-17.4.5::inode64-overlay[video_cards_amdgpu]
+# required by davinci-resolve-studio (argument)
+>=dev-libs/amdgpu-pro-opencl-21.40.1.40501 ~amd64
+# required by games-action/multimc-bin (argument)
+>=games-action/multimc-bin-1.6.1-r1 ~amd64
+# required by games-action/ATLauncher (argument)
+>=games-action/ATLauncher-3.4.3.1 ~amd64
+media-libs/cubeb ~amd64
+dev-util/spirv-headers
+dev-util/spirv-tools
