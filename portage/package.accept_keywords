@@ -291,3 +291,18 @@ kde-apps/kdenlive
 media-libs/cubeb ~amd64
 dev-util/spirv-headers
 dev-util/spirv-tools
+# required by minizip-ng (argument)
+>=sys-libs/minizip-ng-3.0.1 ~amd64
+# required by discord-bin (argument)
+>=net-im/discord-bin-0.0.18 ~amd64
+app-shells/fish ~amd64
+# required by media-fonts/powerline-fonts (argument)
+>=media-fonts/powerline-fonts-9999-r2 ~amd64
+app-shells/zsh ~amd64
+app-shells/zsh-autosuggestions ~amd64
+app-shells/zsh-histdb ~amd64
+app-shells/zsh-history-substring-search ~amd64
+# required by app-shells/ohmyzsh (argument)
+>=app-shells/ohmyzsh-9999 **
+# required by thefuck (argument)
+>=app-shells/thefuck-3.32 ~amd64

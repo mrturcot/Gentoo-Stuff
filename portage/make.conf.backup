@@ -34,4 +34,4 @@ VIDEO_CARDS="amdgpu radeonsi"
 SHELL=/bin/bash
 #LUA_SINGLE_TARGET="lua5-4"
 
-GENTOO_MIRRORS="http://gentoo.mirrors.tera-byte.com/ ftp://mirrors.tera-byte.com/pub/gentoo"
+GENTOO_MIRRORS="http://gentoo.gossamerhost.com http://gentoo.mirrors.tera-byte.com/ http://mirrors.aliyun.com/gentoo/"

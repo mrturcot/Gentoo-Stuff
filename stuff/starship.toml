@@ -1,19 +1,123 @@
-# Don't print a new line at the start of the prompt
-add_newline = false
+# Inserts a blank line between shell prompts
+#add_newline = true
 
 # Replace the "❯" symbol in the prompt with "➜"
-[character]                            # The name of the module we are configuring is "character"
-success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+[character]
+success_symbol = "[➜](bold green)" 
+
+[username]
+style_user = "cyan bold"
+style_root = "red bold"
+format = " [$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[$ssh_symbol](bold blue) on [$hostname](bold green) "
+disabled = false
 
 [time]
 disabled = false
 format = '[\[ $time \]]($style) '
 use_12hr = true
 
-[username]
-style_user = "green bold"
-style_root = "black bold"
-format = "user: [$user]($style) "
-disabled = false
-show_always = true
+[cmd_duration]
+min_time = 500
+format = "took [$duration](bold yellow)"
 
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold #f57800"
+read_only = "🔒"
+read_only_style = "red"
+truncation_length = 10
+truncate_to_repo = false
+home_symbol = "/home/mrturcot"
+
+[git_branch]
+format = "on [$symbol $branch ]($style)"
+symbol = " "
+style = "bold purple"
+
+[git_commit]
+#format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
+style = "bold green"
+
+[git_status]
+format ='([\[$all_status$ahead_behind\]]($style))'
+conflicted = "="
+ahead =	"⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count} "
+stashed = "$${count} "
+modified = "!${count} "
+staged = "+${count} "
+renamed = "»${count} "
+deleted = "✘${count} "
+style =	"bold red"
+disabled = false
+
+[git_state]
+rebase = "REBASING"
+merge =	"MERGING"
+revert = "REVERTING"
+cherry_pick = "CHERRY-PICKING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style =	"bold yellow"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+disabled = false
+
+[hg_branch]
+symbol = " "
+style =	"bold purple"
+format = "on [$symbol$branch]($style) "
+
+[memory_usage]
+disabled = false
+format = "via $symbol [${ram}( | ${ram_pct})]($style)"
+symbol = " "
+style = "bold dimmed green"
+
+[nodejs]
+format = "via [$symbol$version]($style) "
+symbol = "⬢ "
+style = "bold green"
+disabled = false
+not_capable_style = "bold red"
+
+[status]
+format = "[$symbol$status]($style)"
+symbol = "✖"
+style = "bold red"
+disabled = true
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "

@@ -652,3 +652,15 @@ www-client/w3m imlib
 # required by @selected
 # required by @world (argument)
 >=sys-apps/systemd-utils-250.6 abi_x86_32
+# required by media-sound/pulseaudio-16.0::gentoo
+# required by app-accessibility/flite-2.2::gentoo[pulseaudio]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libpulse-16.0 abi_x86_32
+# required by media-sound/pulseaudio-modules-bt-1.4-r4::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-sound/pulseaudio-daemon-16.0-r1 -bluetooth
+# required by app-shells/fish-3.4.1::gentoo
+# required by app-shells/fish (argument)
+>=dev-libs/libpcre2-10.40 pcre32
