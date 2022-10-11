@@ -51,3 +51,15 @@ media-fonts/kochi-substitute free-noncomm
 # required by media-video/davinci-resolve-studio-17.4.5::inode64-overlay[video_cards_amdgpu]
 # required by davinci-resolve-studio (argument)
 >=dev-libs/amdgpu-pro-opencl-21.40.1.40501 AMD-GPU-PRO-EULA
+sys-apps/man-pages-posix freedist
+# required by media-gfx/epsonscan2-non-free-plugin (argument)
+>=media-gfx/epsonscan2-non-free-plugin-1.0.0.5 EPSON
+# required by dev-util/android-ndk-18::gentoo
+# required by dev-util/android-ndk (argument)
+>=dev-util/android-sdk-update-manager-24.4.1-r1 android
+# required by dev-util/android-ndk (argument)
+>=dev-util/android-ndk-18 android
+# required by dev-util/android-sdk-build-tools (argument)
+>=dev-util/android-sdk-build-tools-31 android
+# required by android-studio (argument)
+>=dev-util/android-studio-2021.3.1.16 android

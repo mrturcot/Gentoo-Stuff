@@ -1,0 +1,6 @@
+## Headless
+#dev-java/openjdk headless-awt -alsa -cups
+#dev-java/openjdk-bin headless-awt -alsa -cups -gentoo-vm
+
+#Mine
+dev-java/openjdk-bin -gentoo-vm

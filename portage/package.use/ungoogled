@@ -1,1 +1,1 @@
-www-client/ungoogled-chromium -vdpau thinlto optimize-thinlto optimize-webui
+www-client/ungoogled-chromium -system-ffmpeg -vdpau thinlto optimize-thinlto optimize-webu hevc optimize-webui system-openjpegi

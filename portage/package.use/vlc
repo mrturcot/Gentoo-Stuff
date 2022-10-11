@@ -1,1 +1,1 @@
-media-video/vlc projectm pulseaudio samba vaapi x265 matroska
+media-video/vlc -vaapi -dav1d -vdpau projectm pulseaudio samba x265 matroska

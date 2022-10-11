@@ -1,0 +1,13 @@
+# add lua5-3, keep profile defaults (5-1), resulting in LUA_TARGETS="lua5-1 lua5-3"
+*/* LUA_TARGETS: lua5-4
+
+# change single target default, can only have one so remove current value with -*
+#*/* LUA_SINGLE_TARGET: -* lua5-4
+
+# package only supports single target lua5-1
+dev-games/openscenegraph-openmw LUA_SINGLE_TARGET: -* lua5-1
+media-video/vlc LUA_SINGLE_TARGET: -* lua5-1
+
+# package works only with luajit and needs a dependency to support it as well
+#dev-lua/somedep LUA_TARGETS: luajit
+#category/otherpackage LUA_SINGLE_TARGET: -* luajit

@@ -1,1 +1,1 @@
-media-video/ffmpeg vaapi x265
+media-video/ffmpeg libass vaapi x265 fdk bluray libdrm cpudetection openh264

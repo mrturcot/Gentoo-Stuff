@@ -1,1 +1,1 @@
-media-sound/pulseaudio-daemon -aptx -ldac
+media-sound/pulseaudio-daemon aptx ldac

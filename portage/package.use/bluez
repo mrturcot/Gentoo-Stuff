@@ -1,1 +1,1 @@
-net-wireless/bluez -mesh deprecated
+net-wireless/bluez -mesh deprecated experimental

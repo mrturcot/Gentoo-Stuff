@@ -1,9 +1,50 @@
 # created by eselect-repo
 
-
-
-
-[zugaina]
-location = /var/db/repos/zugaina
+[mv]
+location = /var/db/repos/mv
 sync-type = git
-sync-uri = https://github.com/gentoo-mirror/zugaina.git
+sync-uri = https://github.com/gentoo-mirror/mv.git
+
+[steam-overlay]
+location = /var/db/repos/steam-overlay
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/steam-overlay.git
+
+[guru]
+location = /var/db/repos/guru
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/guru.git
+
+[menelkir]
+location = /var/db/repos/menelkir
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/menelkir.git
+
+[pf4public]
+location = /var/db/repos/pf4public
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/pf4public.git
+
+[src_prepare-overlay]
+location = /var/db/repos/src_prepare-overlay
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/src_prepare-overlay.git
+
+[gogooverlay]
+location = /var/db/repos/gogooverlay
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/gogooverlay.git
+
+
+
+[kde]
+location = /var/db/repos/kde
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/kde.git
+
+
+
+[raiagent]
+location = /var/db/repos/raiagent
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/raiagent.git

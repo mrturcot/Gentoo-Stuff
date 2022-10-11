@@ -5,8 +5,8 @@ games-engines/openmw
 x11-themes/kvantum
 sys-apps/bat
 media-fonts/nerd-fonts
-# net-libs/libtorrent-rasterbar
-net-p2p/qbittorrent
+net-libs/libtorrent-rasterbar
+net-p2p/qbittorrent **
 www-client/firefox
 dev-libs/nss
 www-client/librewolf
@@ -29,7 +29,7 @@ www-client/google-chrome
 dev-java/icedtea
 games-action/multimc
 games-action/minecraft-launcher
-games-fps/gzdoom
+games-fps/gzdoom **
 media-libs/zmusic
 media-sound/cava
 sys-kernel/linux-headers
@@ -40,7 +40,6 @@ app-admin/eclean-kernel
 dev-libs/libfmt
 x11-libs/libdrm
 media-libs/mesa
-games-emulation/dolphin
 app-shells/starship
 games-util/xpadneo
 media-sound/puddletag
@@ -272,13 +271,13 @@ games-emulation/bsnes-mercury-performance-libretro **
 games-emulation/mednafen-bsnes-libretro **
 games-emulation/mesens-libretro **
 games-emulation/libretro-snes9x **
-games-emulation/dolphin **
+games-emulation/dolphin
 dev-util/android-tools ~amd64
 # required by games-util/xone (argument)
 >=games-util/xone-0.2 ~amd64
 # required by media-fonts/steamfonts (argument)
 >=media-fonts/steamfonts-1 ~amd64
-kde-apps/kdenlive
+kde-apps/kdenlive **
 # required by davinci-resolve-studio (argument)
 >=media-video/davinci-resolve-studio-17.4.5 ~amd64
 # required by media-video/davinci-resolve-studio-17.4.5::inode64-overlay[video_cards_amdgpu]
@@ -306,3 +305,82 @@ app-shells/zsh-history-substring-search ~amd64
 >=app-shells/ohmyzsh-9999 **
 # required by thefuck (argument)
 >=app-shells/thefuck-3.32 ~amd64
+media-libs/glfw ~amd64
+media-libs/openal ~amd64
+# required by dev-java/lwjgl (argument)
+>=dev-java/lwjgl-2.9.3 ~amd64
+app-text/coolreader
+media-video/olive **
+media-libs/openimageio
+app-portage/genlop
+media-sound/picard
+media-sound/whipper
+# required by media-sound/whipper-0.10.0::gentoo
+# required by whipper (argument)
+>=dev-python/pycdio-2.1.1 ~amd64
+kde-apps/k3b
+# required by kde-apps/k3b-22.08.1-r1::gentoo
+# required by kde-apps/kdemultimedia-meta-22.04.3::gentoo[cdrom]
+# required by @selected
+# required by @world (argument)
+>=kde-apps/libkcddb-22.08.1 ~amd64
+media-gfx/gscan2pdf
+# required by media-gfx/epsonscan2 (argument)
+>=media-gfx/epsonscan2-6.6.42.0 ~amd64
+# required by media-gfx/epsonscan2-non-free-plugin (argument)
+>=media-gfx/epsonscan2-non-free-plugin-1.0.0.5 ~amd64
+media-libs/flac
+# required by app-cdr/cuegen (argument)
+>=app-cdr/cuegen-1.2.0-r1 ~amd64
+# required by games-fps/vkQuake2 (argument)
+>=games-fps/vkQuake2-1.5.8 ~amd64
+media-libs/vulkan-layers
+# required by app-emulation/dxvk (argument)
+=app-emulation/dxvk-1.10.3 ~amd64
+media-libs/libplacebo **
+media-video/mpv **
+# required by cli-visualizer (argument)
+>=app-misc/cli-visualizer-1.8 ~amd64
+dev-lang/luajit
+media-video/pipewire
+# required by dev-util/android-tools-33.0.3-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-util/android-udev-rules-20220903 ~amd64
+dev-util/meson
+dev-util/cmake
+kde-frameworks/extra-cmake-modules
+dev-util/ninja
+dev-lang/lua
+net-misc/yt-dlp
+net-wireless/bluez
+x11-terms/kitty **
+x11-terms/kitty-shell-integration **
+x11-terms/kitty-terminfo **
+media-gfx/imagemagick
+# required by x11-plugins/cairo-dock-plugins (argument)
+>=x11-plugins/cairo-dock-plugins-3.4.1_p20210730 ~amd64
+# required by x11-misc/cairo-dock (argument)
+>=x11-misc/cairo-dock-3.4.1 ~amd64
+# required by x11-misc/cairo-dock-3.4.1::pinkbyte
+# required by x11-misc/cairo-dock (argument)
+>=x11-libs/gtkglext-1.2.0-r5 ~amd64
+www-client/ungoogled-chromium
+x11-terms/alacritty **
+dev-util/android-ndk
+dev-util/android-sdk-update-manager
+x11-misc/plank **
+# required by x11-misc/plank-9999::edgets
+# required by x11-misc/plank (argument)
+=x11-libs/bamf-0.5.5 ~amd64
+kde-misc/latte-dock **
+media-sound/cmus **
+games-engines/openmw
+# required by games-engines/openmw-9999::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-cpp/sol2-3.3.0 ~amd64
+# required by android-studio (argument)
+>=dev-util/android-studio-2021.3.1.16 ~amd64
+media-video/mplayer
+media-video/ffmpeg

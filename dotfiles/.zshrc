@@ -8,10 +8,11 @@ zstyle ':completion::complete:*' use-cache 1
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/14/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/14/bin:/home/mrturcot/.local/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH=/usr/share/zsh/site-contrib/oh-my-zsh/
+ZSH_DISABLE_COMPFIX="true"
+export ZSH=/home/mrturcot/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -80,13 +81,15 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  zsh-autosuggestions
   bundler
-  zsh-history-substring-search
-  zsh-completions
+  git
+  sudo
   thefuck
+  zsh-autosuggestions
+  zsh-completions
   zsh-histdb
+  zsh-history-substring-search
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,6 +97,13 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export SHELL=/bin/zsh
+export EDITOR=/usr/bin/vim
+export USB_DEVFS_PATH=/dev/bus/usb
+#export XDG_DATA_HOME=${XDG_DATA_HOME:-"${HOME}/.local/share"}
+export VDPAU_DRIVER=radeonsi
+export ANDROID_HOME="/home/mrturcot/Android/Sdk"
+export REPO_OS_OVERRIDE=linux
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -126,20 +136,34 @@ alias uninstall="emerge --ask --verbose --depclean"
 
 # Others
 alias grub-update="grub-mkconfig -o /boot/grub/grub.cfg"
-alias ls="exa -alh --color=always --group-directories-first"
+alias l="exa -alhg --color=always --group-directories-first"
 alias wine32="WINEPREFIX="$HOME/.wine32" wine"
 alias glances="glances --enable-plugin sensors"
 alias rr="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
+alias mpv-complete="/home/mrturcot/scripts/./mpv-complete.sh"
+alias mpv-update="/home/mrturcot/scripts/./mpv-update.sh"
+alias ffmpeg-update="/home/mrturcot/scripts/./ffmpeg-update.sh"
+alias mlt-update="/home/mrturcot/scripts/./mlt-update.sh"
+alias placebo-update="/home/mrturcot/scripts/./placebo-update.sh"
+alias auto-kernel="/root/stuff/./autokernel.sh"
+alias mpv-android="/home/mrturcot/scripts/mpv-android-update.sh"
+alias vkquake="vkquake -basedir /mnt/hdd2/Games/vkquake"
+alias vkquake2="/home/mrturcot/scripts/./vkquake2.sh"
+alias vkquake-update="/home/mrturcot/scripts/./vkquake-update.sh"
+alias vkquake2-update="/home/mrturcot/scripts/./vkquake2-update.sh"
+alias gzdoom-update="/home/mrturcot/scripts/./gzdoom-update.sh"
+alias mplayer-update="/home/mrturcot/scripts/./mplayer-update.sh"
+alias kden-update="~/scripts/./kden-update.sh"
+alias kde-logout="qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
+alias gzdoom-git="~/github/gzdoom/build/./gzdoom"
 
-# zsh-syntax-highlighting
-source /usr/share/zsh/site-contrib/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export SHELL=/bin/zsh
-export EDITOR=/usr/bin/vim
-export VIDEO_CARDS="radeon"
+setopt NO_EQUALS
 
 # Release colors
 colorscript -r
 
 # Starship
 eval "$(starship init zsh)"
+
+# zsh-syntax-highlighting
+source /usr/share/zsh/site-contrib/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
