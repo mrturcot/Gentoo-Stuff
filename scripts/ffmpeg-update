@@ -1,0 +1,26 @@
+#!/bin/bash
+
+cd $HOME/github/ffmpeg
+make clean &&
+./configure \
+        --cc=/usr/lib/llvm/14/bin/clang \
+        --cxx=/usr/lib/llvm/14/bin/clang++ \
+        --pkg-config-flags="--static" \
+        --extra-libs="-lpthread -lm" \
+        --enable-openssl \
+        --enable-gpl \
+        --enable-nonfree \
+        --enable-libdrm \
+        --enable-libaom \
+        --enable-libass \
+        --enable-libfdk-aac \
+        --enable-libfreetype \
+        --enable-libmp3lame \
+        --enable-libopus \
+        --enable-libdav1d \
+        --enable-libvorbis \
+        --enable-libvpx \
+        --enable-libx264 \
+        --enable-libx265 && \
+make -j14
+## sudo make install

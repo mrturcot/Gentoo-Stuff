@@ -1,0 +1,83 @@
+#!/bin/bash
+
+#set -o xtrace
+
+source $HOME/scripts/colors
+
+echo -en '\n'
+echo -e "${BIB}###### [ ${UP}${BIP}!!SUPER MEGA UPDATE!!${NC}${BIB} ] ######"
+echo -en '\n'
+
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}eix-sync?${NC}${BIB} ] ###### ${NC}= "
+read -p "Do you want to proceed? (y/n) " yn
+case $yn in
+	[yY] ) echo ok, proceeding...;
+	sleep 1
+	eix-sync &&
+		break;;
+	[nN] ) echo exiting...;
+		break;;
+	* ) echo invalid response;;
+esac
+done
+echo -en '\n'
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}full-update?${NC}${BIB} ] ###### ${NC}= "
+read -p "Do you want to proceed? (y/n) " yn
+case $yn in
+	[yY] ) echo ok, proceeding...;
+	sleep 1
+	full-update &&
+		break;;
+	[nN] ) echo exiting...;
+		break;;
+	* ) echo invalid response;;
+esac
+done
+echo -en '\n'
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}update kernel?${NC}${BIB} ] ###### ${NC}= "
+read -p "Do you want to proceed? (y/n) " yn
+case $yn in
+	[yY] ) echo ok, proceeding...;
+	sleep 1
+	autokernel &&
+		break;;
+	[nN] ) echo exiting...;
+		break;;
+	* ) echo invalid response;;
+esac
+done
+echo -en '\n'
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}smart-live-rebuild?${NC}${BIB} ] ###### ${NC}= "
+read -p "Do you want to proceed? (y/n) " yn
+case $yn in
+	[yY] ) echo ok, proceeding...;
+	sleep 1
+	smart-update &&
+		break;;
+	[nN] ) echo exiting...;
+		break;;
+	* ) echo invalid response;;
+esac
+done
+echo -en '\n'
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}depclean?${NC}${BIB} ] ###### ${NC}= "
+read -p "Do you want to proceed? (y/n) " yn
+case $yn in
+	[yY] ) echo ok, proceeding...;
+	sleep 1
+	clean &&
+		break;;
+	[nN] ) echo exiting...;
+		break;;
+	* ) echo invalid response;;
+esac
+done
+echo -en '\n'
+
+#set +o xtrace
+

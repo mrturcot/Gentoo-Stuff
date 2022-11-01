@@ -1,0 +1,9 @@
+#!/bin/bash
+
+source $HOME/scripts/colors
+
+cd $HOME/github/snes9x
+cd gtk && rm -rf build
+meson build -Dwayland=false --buildtype=release --strip &&
+cd build
+ninja -j14

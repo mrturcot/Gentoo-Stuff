@@ -1,1 +1,2 @@
-x11-libs/libva abi_x86_32
+# move x11-libs/libva media-libs/libva
+media-libs/libva abi_x86_32

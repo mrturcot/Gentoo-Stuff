@@ -1,1 +1,1 @@
-app-emulation/wine-vanilla kerberos
+app-emulation/wine-vanilla -gstreamer dos vkd3d vaapi kerberos

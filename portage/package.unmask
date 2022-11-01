@@ -5,3 +5,5 @@
 # see e.g. https://bugs.gentoo.org/show_bug.cgi?id=261194
 # So install only if you are aware about the security risk.
 net-dns/noip-updater
+media-video/ffmpeg
+dev-qt/qtbase

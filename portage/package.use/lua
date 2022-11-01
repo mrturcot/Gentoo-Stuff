@@ -1,13 +1,10 @@
-# add lua5-3, keep profile defaults (5-1), resulting in LUA_TARGETS="lua5-1 lua5-3"
-*/* LUA_TARGETS: lua5-4
+### The LUA_TARGETS variable is used for packages that support enabling more than a single LUA implementation. Therefore, the variable may contain any number of implementations. ###
+*/* LUA_TARGETS: luajit lua5-4 -lua5-3 -lua5-1
 
-# change single target default, can only have one so remove current value with -*
-#*/* LUA_SINGLE_TARGET: -* lua5-4
+### The LUA_SINGLE_TARGET variable is used for packages that are built for a single implementation of choice only. It may contain only a single implementation. Due to technical limitations, the implementation specified as LUA_SINGLE_TARGET must also be included in LUA_TARGETS for the package in question.
+*/* LUA_SINGLE_TARGET: luajit
 
-# package only supports single target lua5-1
-dev-games/openscenegraph-openmw LUA_SINGLE_TARGET: -* lua5-1
-media-video/vlc LUA_SINGLE_TARGET: -* lua5-1
+# package only supports single target
+dev-lua/luv LUA_SINGLE_TARGET: -* luajit
+net-analyzer/nmap LUA_SINGLE_TARGET: -lua5-3
 
-# package works only with luajit and needs a dependency to support it as well
-#dev-lua/somedep LUA_TARGETS: luajit
-#category/otherpackage LUA_SINGLE_TARGET: -* luajit

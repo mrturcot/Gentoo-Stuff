@@ -6,7 +6,7 @@ x11-themes/kvantum
 sys-apps/bat
 media-fonts/nerd-fonts
 net-libs/libtorrent-rasterbar
-net-p2p/qbittorrent **
+net-p2p/qbittorrent
 www-client/firefox
 dev-libs/nss
 www-client/librewolf
@@ -14,7 +14,7 @@ sys-kernel/xpadneo
 # dev-libs/libfmt
 games-util/game-device-udev-rules
 games-util/steam-launcher
-# games-emulation/pcsx2
+games-emulation/pcsx2 **
 sys-process/gotop
 sys-kernel/dkms
 sys-kernel/zenpower
@@ -29,7 +29,7 @@ www-client/google-chrome
 dev-java/icedtea
 games-action/multimc
 games-action/minecraft-launcher
-games-fps/gzdoom **
+games-fps/gzdoom
 media-libs/zmusic
 media-sound/cava
 sys-kernel/linux-headers
@@ -302,7 +302,7 @@ app-shells/zsh-autosuggestions ~amd64
 app-shells/zsh-histdb ~amd64
 app-shells/zsh-history-substring-search ~amd64
 # required by app-shells/ohmyzsh (argument)
->=app-shells/ohmyzsh-9999 **
+app-shells/ohmyzsh **
 # required by thefuck (argument)
 >=app-shells/thefuck-3.32 ~amd64
 media-libs/glfw ~amd64
@@ -314,7 +314,7 @@ media-video/olive **
 media-libs/openimageio
 app-portage/genlop
 media-sound/picard
-media-sound/whipper
+media-sound/whipper **
 # required by media-sound/whipper-0.10.0::gentoo
 # required by whipper (argument)
 >=dev-python/pycdio-2.1.1 ~amd64
@@ -382,5 +382,101 @@ games-engines/openmw
 >=dev-cpp/sol2-3.3.0 ~amd64
 # required by android-studio (argument)
 >=dev-util/android-studio-2021.3.1.16 ~amd64
-media-video/mplayer
-media-video/ffmpeg
+media-video/mplayer **
+media-video/ffmpeg **
+media-gfx/sane-backends
+media-gfx/iscan
+# required by net-print/epson-printer-utility (argument)
+>=net-print/epson-printer-utility-1.0.0 ~amd64
+media-fonts/powerline-fonts
+dev-cpp/yaml-cpp
+dev-vcs/git
+x11-apps/radeon-profile **
+# required by sys-libs/zlib-ng (argument)
+>=sys-libs/zlib-ng-2.0.6 ~amd64
+games-emulation/libretro-nestopia **
+games-emulation/mesen-libretro **
+games-emulation/genesis_plus_gx-libretro **
+games-emulation/mgba-libretro
+games-emulation/fbneo-libretro **
+games-emulation/mame2003_plus-libretro **
+games-emulation/yuzu **
+# required by games-emulation/yuzu-9999::guru
+# required by games-emulation/yuzu (argument)
+>=dev-libs/sirit-0_p20220725 ~amd64
+# required by games-emulation/yuzu-9999::guru
+# required by games-emulation/yuzu (argument)
+>=dev-cpp/cpp-httplib-0.10.9 ~amd64
+# required by games-emulation/yuzu-9999::guru
+# required by games-emulation/yuzu (argument)
+>=dev-cpp/cpp-jwt-1.5_pre20220727 ~amd64
+# required by virtual/dotnet-sdk-6.0-r1::gentoo
+# required by games-emulation/ryujinx-1.1.326::tatsh-overlay
+# required by games-emulation/ryujinx (argument)
+>=dev-dotnet/dotnet-sdk-bin-6.0.402 ~amd64
+# required by games-emulation/ryujinx-1.1.326::tatsh-overlay
+# required by games-emulation/ryujinx (argument)
+>=virtual/dotnet-sdk-6.0-r1 ~amd64
+# required by games-emulation/ryujinx (argument)
+>=games-emulation/ryujinx-1.1.326 ~amd64
+media-libs/mlt
+#dev-util/vulkan-tools **
+#media-libs/vulkan-layers **
+#media-libs/vulkan-loader **
+#dev-util/spirv-tools **
+#dev-util/glslang **
+#dev-util/vulkan-headers **
+games-engines/openmw **
+app-shells/gentoo-zsh-completions **
+app-shells/zsh **
+app-shells/zsh-completions **
+# required by app-shells/zsh-9999::gentoo
+# required by app-shells/gentoo-zsh-completions-99999999::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-text/yodl-4.03.00 ~amd64
+# required by app-text/yodl-4.03.00::gentoo
+# required by app-shells/zsh-9999::gentoo
+# required by app-shells/gentoo-zsh-completions-99999999::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-util/icmake-9.03.01 ~amd64
+app-shells/auto-fu-zsh **
+app-shells/zsh-autosuggestions **
+app-shells/zsh-history-substring-search **
+app-shells/zsh-syntax-highlighting **
+app-shells/ohmyzsh **
+app-admin/sudo
+dev-vcs/git **
+# required by dev-qt/qtbase (argument)
+dev-qt/qtbase
+# dev-util/cmake **
+app-editors/atom-bin
+app-editors/neovim **
+# required by app-editors/neovim-9999::gentoo
+# required by app-editors/neovim (argument)
+>=dev-lua/luv-1.44.2.0 ~amd64
+# required by app-editors/neovim-9999::gentoo
+# required by app-editors/neovim (argument)
+>=dev-libs/libvterm-0.3 ~amd64
+# required by dev-lang/python:3.11 (argument)
+#>=dev-lang/python-3.11.0:3.11 ~amd64
+# required by dev-util/meson-0.63.3::gentoo[python_targets_python3_11]
+# required by x11-themes/materia-theme-20210322::guru
+# required by @selected
+# required by @world (argument)
+# >=dev-lang/python-3.11.0:3.11 ~amd64
+# required by dev-util/meson-0.63.3::gentoo[python_targets_python3_11]
+# required by x11-themes/materia-theme-20210322::guru
+# required by @selected
+# required by @world (argument)
+app-editors/atom
+#>=dev-lang/python-3.11.0:3.11 ~amd64
+#media-libs/vulkan-loader **
+#media-libs/vulkan-layers **
+#dev-util/vulkan-tools **
+#dev-util/vulkan-headers **
+#dev-util/spirv-tools **
+#dev-util/spirv-headers
+#dev-util/glslang **
+#dev-util/ninja **

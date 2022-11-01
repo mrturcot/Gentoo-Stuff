@@ -1,2 +1,2 @@
 #!/bin/sh
-eix-remote update
+# eix-remote update

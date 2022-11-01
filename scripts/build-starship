@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source $HOME/scripts/colors
+
+cd $HOME/github/starship
+cd install
+sudo ./install.sh

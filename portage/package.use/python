@@ -1,2 +1,5 @@
-## */* PYTHON_TARGETS: python3_9 python3_10
+### USE Flags ###
 dev-lang/python -bluetooth
+
+#*/* PYTHON_TARGETS: -python3_9 python3_10
+#*/* PYTHON_SINGLE_TARGET: -* python3_10

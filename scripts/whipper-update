@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd /home/mrturcot/github/whipper
+git pull
+while true; do
+read -p "whipper: Do you want to proceed? (y/n) " yn
+case $yn in
+	[yY] ) echo ok, we will proceed;
+		break;;
+	[nN] ) echo exiting...;
+		break;;
+	* ) echo invalid response;;
+esac
+done
+rm -rf build
+python3 setup.py install --user

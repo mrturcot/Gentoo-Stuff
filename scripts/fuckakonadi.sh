@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sleep 10 && akonadictl stop
+sleep 5
+akonadictl stop

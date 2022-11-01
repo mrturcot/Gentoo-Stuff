@@ -1,0 +1,30 @@
+#!/bin/bash
+
+source $HOME/scripts/colors
+
+echo -en '\n'
+cd $HOME/github/dolphin
+### update submodules
+echo -e "${BIB}###### [ ${BIC}dolphin ${BIW}pulling ${BY}${UY}submodules${NC}${BIB} ] ######${NC}"
+if [[ $(git pull --recurse-submodules) == "Fetching" ]]
+then
+   echo -e "${BIB}###### [ ${BIC}dolphin = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
+   sleep 1
+   build-dolphin &&
+   echo -e "${BIB}##### [ ${UP}${BIP}Done${NC}${BIB} ] #####"
+else
+   :
+fi
+### update main repo
+if [[ $(git pull) == "Already up to date." ]]
+then
+   echo -e "${BIB}###### [ ${BIC}dolphin ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}"
+else
+   echo -e "${BIB}###### [ ${BIC}dolphin = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
+   sleep 1
+   build-dolphin &&
+   echo -e "${BIB}##### [ ${UP}${BIP}Done${NC}${BIB} ] #####"
+fi
+
+echo -en '\n'
+

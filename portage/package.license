@@ -63,3 +63,11 @@ sys-apps/man-pages-posix freedist
 >=dev-util/android-sdk-build-tools-31 android
 # required by android-studio (argument)
 >=dev-util/android-studio-2021.3.1.16 android
+# required by media-gfx/iscan (argument)
+=media-gfx/iscan-2.30.4.2-r1 AVASYS
+# required by sci-libs/dcmtk (argument)
+=sci-libs/dcmtk-3.6.5 OFFIS
+# required by games-emulation/fbneo-libretro (argument)
+games-emulation/fbneo-libretro FBA
+# required by games-emulation/mame2003_plus-libretro (argument)
+games-emulation/mame2003_plus-libretro MAME-GPL

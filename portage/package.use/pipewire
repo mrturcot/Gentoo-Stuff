@@ -1,1 +1,1 @@
-media-video/pipewire sound-server pipewire-alsa
+media-video/pipewire abi_x86_32 sound-server pipewire-alsa

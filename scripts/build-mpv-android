@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source $HOME/scripts/colors
+
+cd $HOME/github/mpv-android
+rm -rf app/build
+cd buildscripts
+./download.sh &&
+./buildall.sh --arch arm64 mpv &&
+./buildall.sh --clean

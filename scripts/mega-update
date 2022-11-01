@@ -1,0 +1,94 @@
+#!/bin/bash
+
+#set -o xtrace
+
+source $HOME/scripts/colors
+
+echo -en '\n'
+echo -e "${BIB}###### [ ${UP}${BIY}!!SUPER MEGA UPDATE!!${NC}${BIB} ] ######${NC}"
+echo -en '\n'
+
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}eix-sync?${NC}${BIB} ] ######${NC}"
+read -p "Yes or No (y/n) " yn
+case $yn in
+	[yY] ) echo OK, we will proceed;
+        echo -en '\n'
+        sleep 1
+        eix-sync &&
+        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
+		break;;
+	[nN] ) echo Skipping...;
+		break;;
+	* ) echo invalid response;;
+esac
+done;
+echo -en '\n'
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}full-update?${NC}${BIB} ] ######${NC}"
+read -p "Yes or No (y/n) " yn
+case $yn in
+	[yY] ) echo OK, we will proceed;
+        sleep 1
+        full-update &&
+        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
+		break;;
+	[nN] ) echo Skipping...;
+		break;;
+	* ) echo invalid response;;
+esac
+done;
+echo -en '\n'
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}update kernel?${NC}${BIB} ] ######${NC}"
+read -p "Yes or No (y/n) " yn
+case $yn in
+	[yY] ) echo OK, we will proceed;
+        echo -en '\n'
+        sleep 1
+        autokernel &&
+        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
+		break;;
+	[nN] ) echo Skipping...;
+		break;;
+	* ) echo invalid response;;
+esac
+done;
+echo -en '\n'
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}smart-live-rebuild?${NC}${BIB} ] ######${NC}"
+read -p "Yes or No (y/n) " yn
+case $yn in
+	[yY] ) echo OK, we will proceed;
+        echo -en '\n'
+        sleep 1
+        smart-update &&
+        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
+		break;;
+	[nN] ) echo Skipping...;
+		break;;
+	* ) echo invalid response;;
+esac
+done;
+echo -en '\n'
+while true; do
+echo -e "${BIB}###### [ ${UP}${BIP}depclean?${NC}${BIB} ] ######${NC}"
+read -p "Yes or No (y/n) " yn
+case $yn in
+	[yY] ) echo OK, we will proceed;
+        sleep 1
+        clean &&
+        echo -en '\n'
+        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
+		break;;
+	[nN] ) echo Skipping...;
+		break;;
+	* ) echo invalid response;;
+esac
+done;
+
+echo -en '\n'
+echo -e "${BIB}###### [ ${UP}${BIY}!!FINISHED!!${NC}${BIB} ] ######${NC}"
+echo -en '\n'
+
+#set +o xtrace

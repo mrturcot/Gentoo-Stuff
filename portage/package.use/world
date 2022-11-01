@@ -7,9 +7,6 @@ www-client/w3m imlib
 # required by @selected
 # required by @world (argument)
 >=dev-util/wayland-scanner-1.19.0 abi_x86_32
-# required by dev-python/setuptools_scm-6.0.1-r1::gentoo
-# required by dev-python/setuptools-54.2.0::gentoo
-# required by dev-python/mako-1.1.4::gentoo
 # required by media-libs/mesa-21.1.0::gentoo
 # required by virtual/opengl-7.0-r2::gentoo
 # required by media-libs/libsdl-1.2.15_p20210224::gentoo[opengl]
@@ -18,7 +15,7 @@ www-client/w3m imlib
 # required by kde-apps/kdemultimedia-meta-20.12.3::gentoo[cdrom]
 # required by @selected
 # required by @world (argument)
->=dev-python/toml-0.10.2 python_targets_python3_7
+
 # required by sys-libs/libcap-2.43::gentoo
 # required by media-sound/pulseaudio-13.0-r1::gentoo[caps]
 # required by media-sound/mpg123-1.26.5::gentoo[pulseaudio]
@@ -666,159 +663,6 @@ www-client/w3m imlib
 # required by media-video/openshot-2.6.1::gentoo
 # required by media-video/openshot (argument)
 >=media-video/ffmpeg-4.4.2 vpx theora
-# required by dev-python/pyzmq-23.2.0::gentoo[-test]
-# required by media-video/openshot-2.6.1::gentoo[python_single_target_python3_10]
-# required by media-video/openshot (argument)
->=net-libs/zeromq-4.3.4-r1 drafts
-# required by dev-python/PyQtWebEngine-5.15.5::gentoo
-# required by media-video/openshot-2.6.1::gentoo[python_single_target_python3_10]
-# required by media-video/openshot (argument)
->=dev-python/PyQt5-5.15.6 webchannel
-# required by media-sound/picard-2.8.3::gentoo[fingerprints]
-# required by media-sound/picard (argument)
->=media-libs/chromaprint-1.5.1-r2 tools
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/pycdio-2.1.1 python_targets_python3_9
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/pygobject-3.42.2 python_targets_python3_9
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/python-discid-1.2.0-r1 python_targets_python3_9
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/python-musicbrainzngs-0.7.1 python_targets_python3_9
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/ruamel-yaml-0.17.21-r2 python_targets_python3_9
-# required by dev-python/python-discid-1.2.0-r1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/setuptools-63.4.3 python_targets_python3_9
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=media-libs/mutagen-1.45.1 python_targets_python3_9
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/setuptools_scm-7.0.5 python_targets_python3_9
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/packaging-21.3-r2 python_targets_python3_9
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/tomli-2.0.1-r1 python_targets_python3_9
-# required by dev-python/setuptools_scm-7.0.5::gentoo
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/typing-extensions-4.3.0 python_targets_python3_9
-# required by dev-python/more-itertools-8.13.0::gentoo
-# required by dev-python/jaraco-functools-3.5.1::gentoo
-# required by dev-python/jaraco-text-3.8.1::gentoo
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/gpep517-9 python_targets_python3_9
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/wheel-0.37.1-r1 python_targets_python3_9
-# required by dev-python/wheel-0.37.1-r1::gentoo
-# required by dev-python/python-discid-1.2.0-r1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/flit_core-3.7.1 python_targets_python3_9
-# required by dev-python/gpep517-9::gentoo
-# required by dev-python/python-discid-1.2.0-r1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/installer-0.5.1-r1 python_targets_python3_9
-# required by dev-python/packaging-21.3-r2::gentoo
-# required by dev-python/nspektr-0.4.0::gentoo
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/pyparsing-3.0.9 python_targets_python3_9
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/appdirs-1.4.4-r2 python_targets_python3_9
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/jaraco-text-3.8.1 python_targets_python3_9
-# required by dev-python/nspektr-0.4.0::gentoo
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/more-itertools-8.13.0 python_targets_python3_9
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/nspektr-0.4.0 python_targets_python3_9
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/ordered-set-4.1.0 python_targets_python3_9
-# required by dev-python/nspektr-0.4.0::gentoo[python_targets_python3_9,-python_targets_python3_8]
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/importlib_metadata-4.12.0 python_targets_python3_9
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/certifi-3021.3.16-r2 python_targets_python3_9
-# required by dev-python/importlib_metadata-4.12.0::gentoo
-# required by dev-python/nspektr-0.4.0::gentoo[python_targets_python3_9,-python_targets_python3_8]
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/zipp-3.8.1 python_targets_python3_9
-# required by dev-python/nspektr-0.4.0::gentoo
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/jaraco-context-4.1.2 python_targets_python3_9
-# required by dev-python/nspektr-0.4.0::gentoo
-# required by dev-python/setuptools-63.4.3::gentoo
-# required by dev-python/pycdio-2.1.1::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/jaraco-functools-3.5.1 python_targets_python3_9
-# required by dev-python/ruamel-yaml-0.17.21-r2::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/ruamel-yaml-clib-0.2.6-r2 python_targets_python3_9
-# required by dev-python/ruamel-yaml-clib-0.2.6-r2::gentoo
-# required by dev-python/ruamel-yaml-0.17.21-r2::gentoo
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/cython-0.29.32 python_targets_python3_9
-# required by dev-python/pygobject-3.42.2::gentoo[cairo]
-# required by media-sound/whipper-0.10.0::gentoo
-# required by whipper (argument)
->=dev-python/pycairo-1.21.0 python_targets_python3_9
 # required by app-emulation/wine-vanilla-7.0-r2::gentoo[scanner]
 # required by @selected
 # required by @world (argument)

@@ -7,13 +7,13 @@ CFLAGS="${COMMON_FLAGS}"
 CXXFLAGS="${COMMON_FLAGS}"
 FCFLAGS="${COMMON_FLAGS}"
 FFLAGS="${COMMON_FLAGS}"
-MAKEOPTS="-j13"
+MAKEOPTS="-j12"
 
-USE="-gnome -systemd -aqua -cdinstall -css -a52 -emboss \
+USE="-radeon -gnome -systemd -aqua -cdinstall -css -a52 -emboss \
      -clamav -coreaudio -ios -ipod -ieee1394 -emacs -xemacs \
      -3dfx -altivec -smartcard -cups -ibm -cjk alsa x qt4 qt5 kde \
-      bluetooth pulseaudio vulkan mtp vdpau vaapi samba unicode \
-      dbus gtk gtk4 dri lm-sensors drm"
+     bluetooth pulseaudio vulkan mtp vdpau vaapi samba unicode \
+     dbus gtk gtk4 dri lm-sensors drm x265 scanner ldac atpx pipewire"
 
 # NOTE: This stage was built with the bindist Use flag enabled
 PORTDIR="/var/db/repos/gentoo"
@@ -31,7 +31,6 @@ PORTAGE_ELOG_CLASSES="warn error info log qa"
 # Other
 GRUB_PLATFORMS="efi-64"
 VIDEO_CARDS="amdgpu radeonsi"
-SHELL=/bin/bash
-#LUA_SINGLE_TARGET="lua5-4"
+SANE_BACKENDS="epson2"
 
-GENTOO_MIRRORS="http://gentoo.gossamerhost.com http://gentoo.mirrors.tera-byte.com/ http://mirrors.aliyun.com/gentoo/"
+GENTOO_MIRRORS="http://gentoo.gossamerhost.com http://gentoo.mirrors.tera-byte.com/"

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source $HOME/scripts/colors
+
+cd $HOME/github/ares
+make clean &&
+make -j14 build=optimized

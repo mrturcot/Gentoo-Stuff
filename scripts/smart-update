@@ -1,0 +1,3 @@
+#!/bin/bash
+
+emerge --exclude media-video/mplayer -av @smart-live-rebuild

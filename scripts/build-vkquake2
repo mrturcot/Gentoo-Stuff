@@ -1,0 +1,19 @@
+#!/bin/bash
+
+source $HOME/scripts/colors
+
+cd $HOME/github/vkQuake2
+if [[ $(git pull) == "Already up to date." ]];
+then
+   echo -e "${BIB}###### [ ${BIC}vkQuake2  ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}";
+else
+   echo -e "${BIB}###### [ ${BIC}vkQuake2 = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
+   sleep 1
+   cd linux && rm -rf releasex64-glibc
+   make clean &&
+   make -j12 release &&
+   cp -r /mnt/hdd2/Games/vkquake2/baseq2/* /home/mrturcot/github/vkQuake2/linux/releasex64-glibc/baseq2/
+   cp -r /mnt/hdd2/Games/vkquake2/rogue/* /home/mrturcot/github/vkQuake2/linux/releasex64-glibc/rogue/
+   cp -r /mnt/hdd2/Games/vkquake2/xatrix/* /home/mrturcot/github/vkQuake2/linux/releasex64-glibc/xatrix/
+   echo -e "${BIB}##### [ ${UP}${BIP}Done${NC}${BIB} ] #####";
+fi

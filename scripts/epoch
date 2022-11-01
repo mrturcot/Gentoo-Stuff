@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git show -s --format=%ct HEAD
+
+
+EXTRA_ECONF="-Dbuild-date=true" emerge -1 mpv && mpv -v
