@@ -3,81 +3,105 @@
 #set -o xtrace
 
 source $HOME/scripts/colors
-
 echo -en '\n'
-echo -e "${BIB}###### [ ${UP}${BIP}!!SUPER MEGA UPDATE!!${NC}${BIB} ] ######"
+echo -e "${BIB}###### [ ${BIY}!! SUPER MEGA UPDATE !!${NC}${BIB} ] ######${NC}"
 echo -en '\n'
-
 while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}eix-sync?${NC}${BIB} ] ###### ${NC}= "
-read -p "Do you want to proceed? (y/n) " yn
+echo -e "${BIB}###### [ ${BIP}PASS 1${NC}${BIB} ] ######${NC}"
+read -p "$(echo -e "[${BG}Yes${NC}/${BR}No${NC}]") " yn
+echo -en '\n'
 case $yn in
-	[yY] ) echo ok, proceeding...;
-	sleep 1
-	eix-sync &&
+	[yY] ) echo -e " ${BIY}* ${BIG}OK${NC}, we will proceed${BIB} ......${NC}"
+		echo -en '\n'
+        sleep 1
+        clang --version &&
+        echo -en '\n'
+        echo -e "${BIB}###### [ ${BIP}!! Done !!${NC}${BIB} ] ######${NC}"
 		break;;
-	[nN] ) echo exiting...;
+	[nN] ) echo -e " ${BIY}*${NC} Skipping${BIB} ......${NC}"
 		break;;
-	* ) echo invalid response;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
 esac
 done
 echo -en '\n'
 while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}full-update?${NC}${BIB} ] ###### ${NC}= "
-read -p "Do you want to proceed? (y/n) " yn
+echo -e "${BIB}###### [ ${BIP}PASS 2${NC}${BIB} ] ######${NC}"
+read -p "$(echo -e "[${BG}Yes${NC}/${BR}No${NC}]") " yn
+echo -en '\n'
 case $yn in
-	[yY] ) echo ok, proceeding...;
-	sleep 1
-	full-update &&
+	[yY] ) echo -e " ${BIY}* ${BIG}OK${NC}, we will proceed${BIB} ......${NC}"
+		echo -en '\n'
+        sleep 1
+        clang --version &&
+        echo -en '\n'
+        echo -e "${BIB}###### [ ${BIP}!! Done !!${NC}${BIB} ] ######${NC}"
 		break;;
-	[nN] ) echo exiting...;
+	[nN] ) echo -e " ${BIY}*${NC} Skipping${BIB} ......${NC}"
 		break;;
-	* ) echo invalid response;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
 esac
 done
 echo -en '\n'
 while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}update kernel?${NC}${BIB} ] ###### ${NC}= "
-read -p "Do you want to proceed? (y/n) " yn
+echo -e "${BIB}###### [ ${BIP}PASS 3${NC}${BIB} ] ######${NC}"
+read -p "$(echo -e "[${BG}Yes${NC}/${BR}No${NC}]") " yn
+echo -en '\n'
 case $yn in
-	[yY] ) echo ok, proceeding...;
-	sleep 1
-	autokernel &&
+	[yY] ) echo -e " ${BIY}* ${BIG}OK${NC}, we will proceed${BIB} ......${NC}"
+		echo -en '\n'
+        sleep 1
+        clang --version &&
+        echo -en '\n'
+        echo -e "${BIB}###### [ ${BIP}!! Done !!${NC}${BIB} ] ######${NC}"
 		break;;
-	[nN] ) echo exiting...;
+	[nN] ) echo -e " ${BIY}*${NC} Skipping${BIB} ......${NC}"
 		break;;
-	* ) echo invalid response;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
 esac
 done
 echo -en '\n'
 while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}smart-live-rebuild?${NC}${BIB} ] ###### ${NC}= "
-read -p "Do you want to proceed? (y/n) " yn
+echo -e "${BIB}###### [ ${BIP}PASS 4${NC}${BIB} ] ######${NC}"
+read -p "$(echo -e "[${BG}Yes${NC}/${BR}No${NC}]") " yn
+echo -en '\n'
 case $yn in
-	[yY] ) echo ok, proceeding...;
-	sleep 1
-	smart-update &&
+	[yY] ) echo -e " ${BIY}* ${BIG}OK${NC}, we will proceed${BIB} ......${NC}"
+		echo -en '\n'
+        sleep 1
+        clang --version &&
+        echo -en '\n'
+        echo -e "${BIB}###### [ ${BIP}!! Done !!${NC}${BIB} ] ######${NC}"
 		break;;
-	[nN] ) echo exiting...;
+	[nN] ) echo -e " ${BIY}*${NC} Skipping${BIB} ......${NC}"
 		break;;
-	* ) echo invalid response;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
 esac
 done
 echo -en '\n'
 while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}depclean?${NC}${BIB} ] ###### ${NC}= "
-read -p "Do you want to proceed? (y/n) " yn
+echo -e "${BIB}###### [ ${BIP}PASS 5${NC}${BIB} ] ######${NC}"
+read -p "$(echo -e "[${BG}Yes${NC}/${BR}No${NC}]") " yn
+echo -en '\n'
 case $yn in
-	[yY] ) echo ok, proceeding...;
-	sleep 1
-	clean &&
+	[yY] ) echo -e " ${BIY}* ${BIG}OK${NC}, we will proceed${BIB} ......${NC}"
+		echo -en '\n'
+        sleep 1
+        clang --version &&
+        echo -en '\n'
+        echo -e "${BIB}###### [ ${BIP}!! Done !!${NC}${BIB} ] ######${NC}"
 		break;;
-	[nN] ) echo exiting...;
+	[nN] ) echo -e " ${BIY}*${NC} Skipping${BIB} ......${NC}"
 		break;;
-	* ) echo invalid response;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
 esac
 done
+echo -en '\n'
+echo -e "${BIB}###### [ ${BIY}!! FINISHED !!${NC}${BIB} ] ######${NC}"
 echo -en '\n'
 
 #set +o xtrace
-

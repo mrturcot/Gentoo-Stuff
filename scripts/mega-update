@@ -3,92 +3,102 @@
 #set -o xtrace
 
 source $HOME/scripts/colors
-
 echo -en '\n'
-echo -e "${BIB}###### [ ${UP}${BIY}!!SUPER MEGA UPDATE!!${NC}${BIB} ] ######${NC}"
+echo -e "${BB}###### [ ${BY}!! SUPER MEGA UPDATE !!${NC}${BB} ] ######${NC}"
 echo -en '\n'
-
 while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}eix-sync?${NC}${BIB} ] ######${NC}"
-read -p "Yes or No (y/n) " yn
+echo -e "${BB}###### [ ${BIP}eix-sync ???${NC}${BB} ] ######${NC}"
+read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+echo -en '\n'
 case $yn in
-	[yY] ) echo OK, we will proceed;
-        echo -en '\n'
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
+		echo -en '\n'
         sleep 1
         eix-sync &&
-        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
-		break;;
-	[nN] ) echo Skipping...;
-		break;;
-	* ) echo invalid response;;
-esac
-done;
-echo -en '\n'
-while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}full-update?${NC}${BIB} ] ######${NC}"
-read -p "Yes or No (y/n) " yn
-case $yn in
-	[yY] ) echo OK, we will proceed;
-        sleep 1
-        full-update &&
-        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
-		break;;
-	[nN] ) echo Skipping...;
-		break;;
-	* ) echo invalid response;;
-esac
-done;
-echo -en '\n'
-while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}update kernel?${NC}${BIB} ] ######${NC}"
-read -p "Yes or No (y/n) " yn
-case $yn in
-	[yY] ) echo OK, we will proceed;
         echo -en '\n'
+        echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
+		break;;
+	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
+		break;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
+esac
+done
+echo -en '\n'
+while true; do
+echo -e "${BB}###### [ ${BIP}make && install kernel ???${NC}${BB} ] ######${NC}"
+read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+echo -en '\n'
+case $yn in
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
+		echo -en '\n'
         sleep 1
         autokernel &&
-        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
+        echo -en '\n'
+        echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
-	[nN] ) echo Skipping...;
+	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
 		break;;
-	* ) echo invalid response;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
 esac
-done;
+done
 echo -en '\n'
 while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}smart-live-rebuild?${NC}${BIB} ] ######${NC}"
-read -p "Yes or No (y/n) " yn
+echo -e "${BB}###### [ ${BIP}full-update ???${NC}${BB} ] ######${NC}"
+read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+echo -en '\n'
 case $yn in
-	[yY] ) echo OK, we will proceed;
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
+        sleep 1
+        full-update &&
         echo -en '\n'
+        echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
+		break;;
+	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
+		break;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
+esac
+done
+echo -en '\n'
+while true; do
+echo -e "${BB}###### [ ${BIP}smart-live-rebuild ???${NC}${BB} ] ######${NC}"
+read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+echo -en '\n'
+case $yn in
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
         sleep 1
         smart-update &&
-        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
+        echo -en '\n'
+        echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
-	[nN] ) echo Skipping...;
+	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
 		break;;
-	* ) echo invalid response;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
 esac
-done;
+done
 echo -en '\n'
 while true; do
-echo -e "${BIB}###### [ ${UP}${BIP}depclean?${NC}${BIB} ] ######${NC}"
-read -p "Yes or No (y/n) " yn
+echo -e "${BB}###### [ ${BIP}depclean ???${NC}${BB} ] ######${NC}"
+read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+echo -en '\n'
 case $yn in
-	[yY] ) echo OK, we will proceed;
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
         sleep 1
         clean &&
         echo -en '\n'
-        echo -e "${BIB}###### [ ${UP}${BIC}Done${NC}${BIB} ] ######${NC}"
+        echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
-	[nN] ) echo Skipping...;
+	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
 		break;;
-	* ) echo invalid response;;
+	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+		echo -en '\n';;
 esac
-done;
-
+done
 echo -en '\n'
-echo -e "${BIB}###### [ ${UP}${BIY}!!FINISHED!!${NC}${BIB} ] ######${NC}"
+echo -e "${BB}###### [ ${BY}!! FINISHED !!${NC}${BB} ] ######${NC}"
 echo -en '\n'
 
 #set +o xtrace

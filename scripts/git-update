@@ -12,161 +12,176 @@ cd $HOME/github/ares
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}ares ${BIW}up to date = ${UY}skipping${NC}${BIB} ] ######${NC}"
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}ares = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-ares &&
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######"
 fi
-
 echo -en '\n'
 cd $HOME/github/cli-visualizer
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}cli-visualizer  ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}";
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}cli-visualizer = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-vis
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######";
 fi
-
 echo -en '\n'
 cd $HOME/github/dhewm3
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}dhewm3 ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}"
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}dhewm3 = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-dhewm3 &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######"
 fi
-
 echo -en '\n'
 cd $HOME/github/dolphin
 ### update submodules
 if [[ $(git pull --recurse-submodules |& tee) == *From* ]]; then
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}dolphin = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-dolphin &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######"
-else
-   :
+else :
 fi
 ### update main repo
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}dolphin ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}"
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}dolphin = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-dolphin &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######"
 fi
-
 echo -en '\n'
 cd $HOME/github/duckstation
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}duckstation ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}"
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}duckstation = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-duckstation &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######"
 fi
-
 echo -en '\n'
 cd $HOME/github/gzdoom
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}gzdoom ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}"
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}gzdoom = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-gzdoom &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######"
 fi
-
 echo -en '\n'
 cd $HOME/github/mlt
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}mlt ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}";
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}mlt = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-mlt &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######";
 fi
-
 echo -en '\n'
 cd $HOME/github/mpv-android
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}mpv-android ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}";
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}mpv-android = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-mpv-android &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######";
 fi
-
 echo -en '\n'
 cd $HOME/github/snes9x
 ### update submodules
 if [[ $(git pull --recurse-submodules |& tee) == *From* ]]; then
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}snes9x = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-snes9x &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######"
-else
-   :
+else :
 fi
 ### update main repo
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}snes9x ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}"
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}snes9x = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-snes9x &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######"
 fi
-
 echo -en '\n'
 cd $HOME/github/starship
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}starship ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}";
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}starship = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-starship &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######";
 fi
-
 echo -en '\n'
 cd $HOME/github/VulkanMemoryAllocator
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}vkmemory ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}";
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}vkmemory ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-vkmemory &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######";
 fi
-
 echo -en '\n'
 cd $HOME/github/vkQuake
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}vkQuake  ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}";
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}vkQuake = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-vkquake &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######";
 fi
-
 echo -en '\n'
 cd $HOME/github/vkQuake2
 if [[ $(git pull) == *Already* ]]; then
    echo -e "${BIB}###### [ ${BIC}vkQuake2  ${BIW}up to date = ${BY}${UY}skipping${NC}${BIB} ] ######${NC}";
 else
+   echo -en '\n'
    echo -e "${BIB}###### [ ${BIC}vkQuake2 = ${BIG}${UG}updating${NC}${BIB} ] ######${NC}"
-   sleep 1
+   sleep 2
    build-vkquake2 &&
+   echo -en '\n'
    echo -e "${BIB}###### [ ${UP}${BIP}Done${NC}${BIB} ] ######";
 fi
 
