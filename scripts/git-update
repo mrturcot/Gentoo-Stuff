@@ -2,6 +2,7 @@
 
 #set -o xtrace
 
+# get colors
 source $HOME/scripts/colors
 
 echo -en '\n'

@@ -1,10 +1,24 @@
 #!/bin/bash
 
+echo "selecting new kernel"
+sleep 1
 eselect kernel set 2
+echo "going to source"
+sleep 1
 cd /usr/src/linux
-zcat /proc/config.gz > /usr/src/linux/.config
+echo "copying .config"
+sleep 1
+zcat /proc/config.gz > /usr/src/linux/.config &&
+echo olddefconfig
+sleep 1
 make olddefconfig &&
+echo "make && install"
+sleep 1
 make -j14 && make -j14 modules_install &&
 make install &&
-eclean-kernel -n2
-emerge @module-rebuild &&
+echo eclean
+sleep 1
+eclean-kernel -An2
+echo module-rebuild
+sleep 1
+emerge @module-rebuild

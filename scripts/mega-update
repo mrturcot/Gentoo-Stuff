@@ -2,10 +2,13 @@
 
 #set -o xtrace
 
+# get colors
 source $HOME/scripts/colors
+
 echo -en '\n'
 echo -e "${BB}###### [ ${BY}!! SUPER MEGA UPDATE !!${NC}${BB} ] ######${NC}"
 echo -en '\n'
+
 while true; do
 echo -e "${BB}###### [ ${BIP}eix-sync ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
@@ -26,14 +29,14 @@ esac
 done
 echo -en '\n'
 while true; do
-echo -e "${BB}###### [ ${BIP}make && install kernel ???${NC}${BB} ] ######${NC}"
+echo -e "${BB}###### [ ${BIP}full-update ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
 echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
 		echo -en '\n'
         sleep 1
-        autokernel &&
+        full-update &&
         echo -en '\n'
         echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -45,13 +48,13 @@ esac
 done
 echo -en '\n'
 while true; do
-echo -e "${BB}###### [ ${BIP}full-update ???${NC}${BB} ] ######${NC}"
+echo -e "${BB}###### [ ${BIP}make & install kernel ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
 echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
         sleep 1
-        full-update &&
+        autokernel &&
         echo -en '\n'
         echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
