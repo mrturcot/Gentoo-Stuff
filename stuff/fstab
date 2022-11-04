@@ -28,8 +28,20 @@
 #LABEL=swap		none		swap		sw		0 0
 #/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
 
-UUID=3BE7-CA42		/boot		vfat		defaults,noatime	0 2
-UUID=6af33f70-23a4-4758-ab7c-e00e2ab97839		/		ext4		discard,noatime		0 1
-UUID=0CF2209CF2208BD0		/mnt/hdd1	ntfs		auto,defaults,uid=1000,gid=1000,umask=022	0 2
-UUID=466AD5AA6AD596D1		/mnt/hdd2	ntfs		auto,defaults,uid=1000,gid=1000,umask=022	0 2
-UUID=0060CA0D60CA08FC		/mnt/hdd3	ntfs		auto,defaults,uid=1000,gid=1000,umask=022	0 2
+# /root
+# /dev/nvme1n1p3 
+UUID=9574ab28-6ed7-470b-a038-75a9d53ff88c	/	ext4	rw,relatime 0 1
+
+# /boot
+# /dev/nvme1n1p1
+UUID=D0D8-106F	/boot	vfat	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# swap
+# /dev/nvme1n1p2
+UUID=77c1e9d2-fa0b-490f-be1b-10fe6bf06695	none	swap	defaults	0 0
+
+# hard drives
+UUID=0CF2209CF2208BD0	/mnt/Movies	auto nosuid,nodev,nofail,x-gvfs-show	0 0
+UUID=466AD5AA6AD596D1	/mnt/Games	auto nosuid,nodev,nofail,x-gvfs-show    0 0
+UUID=0060CA0D60CA08FC	/mnt/Music	auto nosuid,nodev,nofail,x-gvfs-show    0 0
+
