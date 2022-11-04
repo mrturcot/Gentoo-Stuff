@@ -18,7 +18,7 @@ make -j14 && make -j14 modules_install &&
 make install &&
 echo eclean
 sleep 1
-eclean-kernel -An2
+eclean-kernel -n2
 echo module-rebuild
 sleep 1
 emerge @module-rebuild

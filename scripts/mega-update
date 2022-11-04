@@ -7,11 +7,10 @@ source $HOME/scripts/colors
 
 echo -en '\n'
 echo -e "${BB}###### [ ${BY}!! SUPER MEGA UPDATE !!${NC}${BB} ] ######${NC}"
-echo -en '\n'
-
 while true; do
+echo -en '\n'
 echo -e "${BB}###### [ ${BIP}eix-sync ???${NC}${BB} ] ######${NC}"
-read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
@@ -30,14 +29,12 @@ done
 echo -en '\n'
 while true; do
 echo -e "${BB}###### [ ${BIP}full-update ???${NC}${BB} ] ######${NC}"
-read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
-		echo -en '\n'
         sleep 1
         full-update &&
-        echo -en '\n'
         echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
 	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
@@ -48,11 +45,12 @@ esac
 done
 echo -en '\n'
 while true; do
-echo -e "${BB}###### [ ${BIP}make & install kernel ???${NC}${BB} ] ######${NC}"
-read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+echo -e "${BB}###### [ ${BIP}make kernel ???${NC}${BB} ] ######${NC}"
+read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
+		echo -en '\n'
         sleep 1
         autokernel &&
         echo -en '\n'
@@ -67,13 +65,12 @@ done
 echo -en '\n'
 while true; do
 echo -e "${BB}###### [ ${BIP}smart-live-rebuild ???${NC}${BB} ] ######${NC}"
-read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
         sleep 1
         smart-update &&
-        echo -en '\n'
         echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
 	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
@@ -85,7 +82,7 @@ done
 echo -en '\n'
 while true; do
 echo -e "${BB}###### [ ${BIP}depclean ???${NC}${BB} ] ######${NC}"
-read -p "$(echo -e "[${BG}y${NC}/${BR}n${NC}]") " yn
+read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
@@ -101,7 +98,6 @@ case $yn in
 esac
 done
 echo -en '\n'
-echo -e "${BB}###### [ ${BY}!! FINISHED !!${NC}${BB} ] ######${NC}"
-echo -en '\n'
+echo -e "${BB}###### [ ${BY}!! Finished !!${NC}${BB} ] ######${NC}"
 
 #set +o xtrace
