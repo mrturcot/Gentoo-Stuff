@@ -1,1 +1,1 @@
-dev-lang/spidermonkey clang lto
+#dev-lang/spidermonkey -clang

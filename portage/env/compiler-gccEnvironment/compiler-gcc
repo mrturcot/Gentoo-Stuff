@@ -1,0 +1,12 @@
+# GCC Fallback
+C="gcc"
+CXX="g++"
+
+AR="${CHOST}-ar"
+NM="${CHOST}-nm"
+RANLIB="${CHOST}-ranlib"
+
+COMMON_FLAGS="-O2 -march=znver1"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+LDFLAGS="-Wl,--as-needed"

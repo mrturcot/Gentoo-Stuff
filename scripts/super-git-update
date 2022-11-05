@@ -5,58 +5,69 @@
 # Get colors
 source $HOME/scripts/colors
 
-echo -en '\n'
-echo -e "${BB}###### [ ${BIG}!! SUPER MEGA GIT UPDATE !!${NC}${BB} ] ######${NC}"
-sleep 1
+## ares
+
 cd $HOME/github/ares
+echo -en '\n'
+
+echo -e "${BB}###### [ ${BIG}!! SUPER MEGA GIT UPDATE !!${NC}${BB} ] ######${NC}"
 echo -en '\n'
 echo -e "${BIB}###### [ ${BIC}ares ${NC}${BIB}] ######${NC}"
 if [[ $(git pull --dry-run) == ** ]]; then
 while true; do
-echo -e "${BB}###### [ ${BIP}update ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}update ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
-echo -en '\n'
+	echo -en '\n'
 case $yn in
-   [yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
-   echo -en '\n'
-   sleep 0
-   echo build command here &&
-   echo -en '\n'
-   echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB}] ######${NC}"
-   break;;
-   [nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
-   break;;
-   * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
-   echo -en '\n';;
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
+	echo -en '\n'
+	sleep 0
+	echo -e "${BY}build command here${NC}"
+	echo -en '\n'
+	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB}] ######${NC}"
+		break;;
+	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
+		break;;
+	* )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+	echo -en '\n';;
 esac
 done
 else
-echo -e "${BIB}###### [ ${BIY}Up to Date, Skipping${NC}${BIB} ] ######${NC}";
-fi
-cd $HOME/github/dhewm3
-echo -en '\n'
-echo -e "${BIB}###### [ ${BIC}dhewm3 ${NC}${BIB} ] ######${NC}"
-if [[ $(git pull --dry-run) == *Fetching* ]]; then
-while true; do
-echo -e "${BB}###### [ ${BIP}update ???${NC}${BB} ] ######${NC}"
-read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
-echo -en '\n'
-case $yn in
-   [yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
-   echo -en '\n'
-   sleep 0
-   echo build command here &&
-   echo -en '\n'
-   echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
-   break;;
-   [nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
-   break;;
-   * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
-   echo -en '\n';;
-esac
-done
-else
-echo -e "${BIB}###### [ ${BIY}Up to Date, Skipping${NC}${BIB} ] ######${NC}";
+	echo -e "${BIB}###### [ ${BIY}Up to Date, Skipping${NC}${BIB} ] ######${NC}";
 fi
 echo -en '\n'
 echo -e "${BB}###### [ ${BIG}!! FINISHED !!${NC}${BB} ] ######${NC}"
+
+## dhewm3...
+
+cd $HOME/github/dhewm3
+echo -en '\n'
+
+echo -e "${BIB}###### [ ${BIC}dhewm3 ${NC}${BIB} ] ######${NC}"
+if [[ $(git pull --dry-run) == ** ]]; then
+while true; do
+	echo -e "${BB}###### [ ${BIP}update ???${NC}${BB} ] ######${NC}"
+read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
+	echo -en '\n'
+case $yn in
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
+	echo -en '\n'
+	sleep 0
+	echo -e "${BY}build command here${NC}"
+	echo -en '\n'
+	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
+		break;;
+	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
+		break;;
+	* )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+	echo -en '\n';;
+esac
+done
+else
+	echo -e "${BIB}###### [ ${BIY}Up to Date, Skipping${NC}${BIB} ] ######${NC}";
+fi
+echo -en '\n'
+echo -e "${BB}###### [ ${BIG}!! FINISHED !!${NC}${BB} ] ######${NC}"
+
+#set -o xtrace
+

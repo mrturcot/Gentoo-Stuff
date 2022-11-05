@@ -1,1 +1,0 @@
-media-video/vlc -chromaprint -vaapi -dav1d -vdpau projectm pulseaudio samba x265 matroska

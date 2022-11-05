@@ -1,0 +1,4 @@
+# Compiled using GCC with no link-time optimization since package baz fails using lto
+app-bar/baz compiler-gcc
+# Compiled using GCC with link-time optimization since package bar compiles using lto
+app-foo/bar compiler-gcc-lto

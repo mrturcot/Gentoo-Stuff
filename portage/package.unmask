@@ -1,9 +1,0 @@
-# required by net-dns/noip-updater (argument)
-# /var/lib/layman/mv/profiles/package.mask:
-# Martin Väth <martin@mvath.de> (03 Jan 2016)
-# net-dns/noip-updater does not use https for transferring user sensitive data,
-# see e.g. https://bugs.gentoo.org/show_bug.cgi?id=261194
-# So install only if you are aware about the security risk.
-net-dns/noip-updater
-media-video/ffmpeg
-dev-qt/qtbase

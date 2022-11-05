@@ -28,20 +28,22 @@
 #LABEL=swap		none		swap		sw		0 0
 #/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
 
-# /root
-# /dev/nvme1n1p3 
-UUID=9574ab28-6ed7-470b-a038-75a9d53ff88c	/	ext4	rw,relatime 0 1
+## Samsung SSD 970 EVO NVMe M.2 500GB
+# Root
+# /dev/nvme0n1p3 
+UUID=93112223-2a3a-47b1-900e-2b8dccbf9061	/	ext4	rw,relatime 0 1
+# EFI
+# /dev/nvme0n1p1
+UUID=8007-0478	/boot	vfat	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+# Swap
+# /dev/nvme0n1p2
+UUID=26d076b1-bdd9-4972-9afb-9d67bedf5939	none	swap	defaults	0 0
 
-# /boot
-# /dev/nvme1n1p1
-UUID=D0D8-106F	/boot	vfat	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
-
-# swap
-# /dev/nvme1n1p2
-UUID=77c1e9d2-fa0b-490f-be1b-10fe6bf06695	none	swap	defaults	0 0
-
-# hard drives
+## Hard Drives
+# /dev/sda1
 UUID=0CF2209CF2208BD0	/mnt/Movies	auto nosuid,nodev,nofail,x-gvfs-show	0 0
+# /dev/sdb2
 UUID=466AD5AA6AD596D1	/mnt/Games	auto nosuid,nodev,nofail,x-gvfs-show    0 0
+# /dev/sdc2
 UUID=0060CA0D60CA08FC	/mnt/Music	auto nosuid,nodev,nofail,x-gvfs-show    0 0
 

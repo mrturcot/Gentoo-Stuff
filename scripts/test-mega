@@ -28,7 +28,8 @@ case $yn in
 	sleep 1
 		break;;
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
-    esac
+	echo -en '\n';;
+esac
 done
 
 echo -en '\n'
@@ -52,7 +53,7 @@ case $yn in
 		break;;
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
 	echo -en '\n';;
-    esac
+esac
 done
 
 echo -en '\n'
@@ -76,7 +77,7 @@ case $yn in
 		break;;
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
 	echo -en '\n';;
-    esac
+esac
 done
 
 echo -en '\n'
@@ -99,7 +100,7 @@ case $yn in
 		break;;
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
 	echo -en '\n';;
-    esac
+esac
 done
 
 echo -en '\n'
@@ -123,7 +124,7 @@ case $yn in
 		break;;
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
 	echo -en '\n';;
-    esac
+esac
 done
 
 echo -en '\n'
