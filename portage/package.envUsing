@@ -1,0 +1,7 @@
+# compiler-clang: build with a general Clang environment (see Clang article)
+# clang-chromium: build with tweaks specifically for Chromium
+www-client/ungoogled-chromium compiler-clang clang-chromium
+sys-libs/compiler-rt compiler-clang
+sys-libs/compiler-rf-sanitizers compiler-clang
+www-client/librewolf compiler-clang
+dev-lang/spidermonkey compiler-clang

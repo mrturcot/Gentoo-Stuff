@@ -1,2 +1,4 @@
 # required by linux-firmware (argument)
 =sys-kernel/linux-firmware-20221012 linux-fw-redistributable no-source-code
+# required by app-editors/sublime-text (argument)
+>=app-editors/sublime-text-4_p4126 Sublime

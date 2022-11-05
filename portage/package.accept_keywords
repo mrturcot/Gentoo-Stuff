@@ -6,3 +6,5 @@ sys-kernel/gentoo-sources
 x11-terms/kitty **
 x11-terms/kitty-shell-integration **
 x11-terms/kitty-terminfo **
+# required by app-editors/sublime-text (argument)
+=app-editors/sublime-text-4_p4126 ~amd64

@@ -1,5 +1,4 @@
-# GCC Fallback
-C="gcc"
+CC="gcc"
 CXX="g++"
 
 AR="${CHOST}-ar"
