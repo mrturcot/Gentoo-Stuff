@@ -2,9 +2,35 @@
 
 sys-kernel/gentoo-sources
 # required by zenpower3 (argument)
-=sys-kernel/zenpower3-0.2.0 ~amd64
+>=sys-kernel/zenpower3-0.2.0 ~amd64
 x11-terms/kitty **
 x11-terms/kitty-shell-integration **
 x11-terms/kitty-terminfo **
 # required by app-editors/sublime-text (argument)
-=app-editors/sublime-text-4_p4126 ~amd64
+>=app-editors/sublime-text-4_p4126 ~amd64
+#net-p2p/qbittorrent
+# required by librewolf (argument)
+>=www-client/librewolf-106.0.1_p1 ~amd64
+# required by www-client/librewolf-106.0.1_p1::librewolf[wayland,pgo]
+# required by librewolf (argument)
+>=gui-libs/wlroots-0.15.1-r1 ~amd64
+# required by net-misc/networkmanager-1.38.4::gentoo
+# required by app-misc/tracker-miners-3.3.1::gentoo[networkmanager]
+# required by app-misc/tracker-3.3.3::gentoo[miners]
+# required by gnome-base/nautilus-42.2::gentoo
+# required by app-text/evince-42.3::gentoo[nautilus]
+# required by gnome-extra/sushi-42.0::gentoo
+>=dev-libs/nss-3.84-r1 ~amd64
+# required by app-eselect/eselect-luajit (argument)
+>=app-eselect/eselect-luajit-1 ~amd64
+# required by app-eselect/eselect-ld (argument)
+>=app-eselect/eselect-ld-1.0.0 ~amd64
+# required by app-eselect/eselect-autostart (argument)
+>=app-eselect/eselect-autostart-1.0.0 ~amd64
+media-libs/libplacebo **
+media-video/mpv **
+app-misc/radeontop **
+# required by x11-themes/materia-theme (argument)
+>=x11-themes/materia-theme-20210322 ~amd64
+# required by media-fonts/symbola (argument)
+>=media-fonts/symbola-13.00 ~amd64

@@ -91,6 +91,9 @@ source $ZSH/oh-my-zsh.sh
 
 colorscript random
 
+export VDPAU_DRIVER=radeonsi
+export EDITOR=/usr/bin/vim
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

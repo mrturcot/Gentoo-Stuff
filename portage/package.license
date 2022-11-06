@@ -2,3 +2,12 @@
 =sys-kernel/linux-firmware-20221012 linux-fw-redistributable no-source-code
 # required by app-editors/sublime-text (argument)
 >=app-editors/sublime-text-4_p4126 Sublime
+# required by media-fonts/symbola (argument)
+>=media-fonts/symbola-13.00 UFAS
+# required by media-fonts/mikachan-font-ttf (argument)
+>=media-fonts/mikachan-font-ttf-8.9-r2 free-noncomm
+# required by media-fonts/corefonts (argument)
+>=media-fonts/corefonts-1-r7 MSttfEULA
+# required by media-fonts/fonts-meta-3::gentoo[latin]
+# required by media-fonts/fonts-meta (argument)
+>=media-fonts/font-bh-ttf-1.0.3-r2 bh-luxi
