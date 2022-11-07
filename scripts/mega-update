@@ -13,7 +13,7 @@ sleep 1
 
 while true; do
 	echo -en '\n'
-	echo -e "${BB}###### [ ${BIP}Sync ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}Sync All Repos ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
@@ -30,10 +30,9 @@ case $yn in
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
     esac
 done
-
 echo -en '\n'
 
-## emerge -avuND
+## emerge --ask --verbose --update --newuse --deep @world
 
 while true; do
 	echo -e "${BB}###### [ ${BIP}Update ???${NC}${BB} ] ######${NC}"
@@ -54,13 +53,12 @@ case $yn in
 	echo -en '\n';;
     esac
 done
-
 echo -en '\n'
 
-## Make / Install Kernel
+## Run automated kernel make/build script
 
 while true; do
-	echo -e "${BB}###### [ ${BIP}Make Kernel ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}Make && Install Kernel ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
@@ -78,13 +76,12 @@ case $yn in
 	echo -en '\n';;
     esac
 done
-
 echo -en '\n'
 
-## @smart-live-rebuild
+## emerge @smart-live-rebuild
 
 while true; do
-	echo -e "${BB}###### [ ${BIP}Smart Rebuild ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}Smart Live Rebuild ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
@@ -101,13 +98,12 @@ case $yn in
 	echo -en '\n';;
     esac
 done
-
 echo -en '\n'
 
-## --depclean
+## emerge --ask --depclean
 
 while true; do
-	echo -e "${BB}###### [ ${BIP}depclean ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}Clean Dependencies ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
@@ -125,8 +121,8 @@ case $yn in
 	echo -en '\n';;
     esac
 done
-
 echo -en '\n'
+
 echo -e "${BB}###### [ ${BY}!! Finished !!${NC}${BB} ] ######${NC}"
 sleep 1
 
