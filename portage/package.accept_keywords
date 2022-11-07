@@ -34,3 +34,21 @@ app-misc/radeontop **
 >=x11-themes/materia-theme-20210322 ~amd64
 # required by media-fonts/symbola (argument)
 >=media-fonts/symbola-13.00 ~amd64
+# required by games-emulation/yuzu-0_p20220725::guru
+# required by yuzu (argument)
+>=dev-cpp/cpp-httplib-0.10.9 ~amd64
+# required by games-emulation/yuzu-0_p20220725::guru
+# required by yuzu (argument)
+>=dev-libs/sirit-0_p20220725 ~amd64
+# required by yuzu (argument)
+games-emulation/yuzu **
+kde-misc/kdeconnect
+# required by games-emulation/yuzu-9999::guru
+# required by games-emulation/yuzu (argument)
+>=dev-cpp/cpp-jwt-1.5_pre20220727 ~amd64
+# required by sys-kernel/xow (argument)
+>=sys-kernel/xow-0.5 ~amd64
+# required by games-util/xone (argument)
+>=games-util/xone-0.3 ~amd64
+media-sound/audacious **
+media-plugins/audacious-plugins **

@@ -5,15 +5,16 @@
 # Get colors
 source $HOME/scripts/colors
 
-## ares
+## vkquake
 
-cd $HOME/github/ares
+cd $HOME/github/vkquake
+
 echo -en '\n'
-
 echo -e "${BB}###### [ ${BIG}!! SUPER MEGA GIT UPDATE !!${NC}${BB} ] ######${NC}"
 echo -en '\n'
-echo -e "${BIB}###### [ ${BIC}ares ${NC}${BIB}] ######${NC}"
-if [[ $(git pull --dry-run) == ** ]]; then
+
+echo -e "${BIB}###### [ ${BIC}vkQuake ${NC}${BIB}] ######${NC}"
+if [[ $(git pull --dry-run) == *master* ]]; then
 while true; do
 	echo -e "${BB}###### [ ${BIP}update ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
@@ -21,8 +22,8 @@ read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
 	echo -en '\n'
-	sleep 0
-	echo -e "${BY}build command here${NC}"
+	sleep 1
+	build-vkquake &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB}] ######${NC}"
 		break;;
@@ -38,13 +39,13 @@ fi
 echo -en '\n'
 echo -e "${BB}###### [ ${BIG}!! FINISHED !!${NC}${BB} ] ######${NC}"
 
-## dhewm3...
+## vkquake2
 
-cd $HOME/github/dhewm3
+cd $HOME/github/vkquake2
+
 echo -en '\n'
-
-echo -e "${BIB}###### [ ${BIC}dhewm3 ${NC}${BIB} ] ######${NC}"
-if [[ $(git pull --dry-run) == ** ]]; then
+echo -e "${BIB}###### [ ${BIC}vkQuake2 ${NC}${BIB} ] ######${NC}"
+if [[ $(git pull --dry-run) == *master* ]]; then
 while true; do
 	echo -e "${BB}###### [ ${BIP}update ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
@@ -52,8 +53,8 @@ read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} we will proceed${BB} ......${NC}"
 	echo -en '\n'
-	sleep 0
-	echo -e "${BY}build command here${NC}"
+	sleep 1
+	build-vkquake2 &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -61,11 +62,12 @@ case $yn in
 		break;;
 	* )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
 	echo -en '\n';;
-esac
+    esac
 done
 else
 	echo -e "${BIB}###### [ ${BIY}Up to Date, Skipping${NC}${BIB} ] ######${NC}";
 fi
+
 echo -en '\n'
 echo -e "${BB}###### [ ${BIG}!! FINISHED !!${NC}${BB} ] ######${NC}"
 

@@ -13,14 +13,14 @@ sleep 1
 
 while true; do
 	echo -en '\n'
-	echo -e "${BB}###### [ ${BIP}eix-sync ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}Sync ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Syncing${BB} ......${NC}"
 	echo -en '\n'
 	sleep 1
-	echo run eix eync
+	eix-sync &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -36,14 +36,14 @@ echo -en '\n'
 ## emerge -avuND
 
 while true; do
-	echo -e "${BB}###### [ ${BIP}full-update ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}Update ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Updating${BB} ......${NC}"
 	echo -en '\n'
 	sleep 1
-	echo run full-update
+	emerge-update &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -60,14 +60,14 @@ echo -en '\n'
 ## Make / Install Kernel
 
 while true; do
-	echo -e "${BB}###### [ ${BIP}Build Kernel ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}Make Kernel ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Building${BB} ......${NC}"
 	echo -en '\n'
 	sleep 1
-	echo make kernel
+	autokernel &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -84,14 +84,14 @@ echo -en '\n'
 ## @smart-live-rebuild
 
 while true; do
-	echo -e "${BB}###### [ ${BIP}smart-live-rebuild ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}Smart Rebuild ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Rebuilding${BB} ......${NC}"
 	echo -en '\n'
 	sleep 1
-	echo smart-update
+	emerge @smart-live-rebuild &&
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
 	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
@@ -114,7 +114,7 @@ case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Cleaning${BB} ......${NC}"
 	echo -en '\n'
 	sleep 1
-	echo clean
+	emerge-depclean &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;

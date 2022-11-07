@@ -2,7 +2,7 @@
 
 source $HOME/scripts/colors
 
-cd $HOME/github/vkQuake
+cd $HOME/github/vkquake
 rm -rf build
 meson build &&
 ninja -j12 -C build

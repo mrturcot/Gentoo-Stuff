@@ -20,5 +20,5 @@ cd $HOME/github/repos/ffmpeg
 	--enable-libx264 \
 	--enable-libx265 \
 	--enable-vulkan && \
-make -j14 &&
-sudo make install
+make -j14
+#sudo make install
