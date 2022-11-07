@@ -15,3 +15,5 @@ media-libs/vulkan-loader::pg_overlay
 dev-util/spirv-tools::pg_overlay
 net-libs/libpsl::didos
 dev-lang/orc::pg_overlay
+
+>=media-libs/shaderc-2022.2
