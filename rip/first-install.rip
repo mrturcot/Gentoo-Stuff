@@ -1,0 +1,31 @@
+
+### [Backstory > https://forums.gentoo.org/viewtopic-t-1158723.html]
+
+## what happened you ask???
+# step by step breakdown of events below
+
+# defining variables of the situation
+idiot='me'
+careless'ya, also me'
+system='my gentoo install'
+
+# only a real carless idiot would ever do this... xdxd
+
+#!/bin/bash
+if [[ ${idiot} == *"${careless} in an elevated shell"* ]]; then
+        cd && rm -rf bin;
+        # Command not found: /bin/sh
+        # Command not found: /bin/sh
+        # Command not found: /bin/sh
+        # Command not found: /bin/sh
+        # Command not found: /bin/sh
+        # Command not found: /bin/sh
+        # Command not found: /bin/sh
+        # Command not found: /bin/sh
+        # Command not found: /bin/sh
+        shutdown -h now;
+break;;${system}
+fi
+
+# game over :(
+## do not pass Go, do not collect two hundred dollars
