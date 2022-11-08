@@ -52,3 +52,27 @@ kde-misc/kdeconnect
 >=games-util/xone-0.3 ~amd64
 media-sound/audacious **
 media-plugins/audacious-plugins **
+# required by mailspring-bin (argument)
+>=mail-client/mailspring-bin-1.10.5 ~amd64
+games-emulation/dolphin
+games-fps/gzdoom
+# required by games-fps/gzdoom-9999::thegreatmcpain
+# required by gzdoom (argument)
+>=media-libs/zmusic-1.1.4 ~amd64
+games-emulation/duckstation **
+# required by dev-python/PyQt6 (argument)
+>=dev-python/PyQt6-6.4.0 ~amd64
+# required by dev-python/PyQt6-6.4.0::gentoo
+# required by dev-python/PyQt6 (argument)
+>=dev-python/PyQt6-sip-13.4.0 ~amd64
+# required by dev-qt/qtsvg-6.4.0::gentoo
+# required by dev-python/PyQt6-6.4.0::gentoo[svg]
+# required by dev-python/PyQt6 (argument)
+=dev-qt/qtbase-6.4.0 ~amd64
+# required by dev-python/PyQt6-6.4.0::gentoo[svg]
+# required by dev-python/PyQt6 (argument)
+>=dev-qt/qtsvg-6.4.0 ~amd64
+www-client/firefox
+# required by https_dns_proxy (argument)
+=net-dns/https_dns_proxy-0_pre20200925 ~amd64
+dev-lang/rust

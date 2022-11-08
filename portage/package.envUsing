@@ -4,4 +4,5 @@ www-client/ungoogled-chromium compiler-clang clang-chromium
 sys-libs/compiler-rt compiler-clang
 sys-libs/compiler-rf-sanitizers compiler-clang
 www-client/librewolf compiler-clang
+www-client/firefox compiler-clang
 dev-lang/spidermonkey compiler-clang

@@ -1,1 +1,21 @@
 ### unmask
+dev-python/PyQt6
+# required by dev-python/PyQt6-6.4.0::gentoo[svg]
+# required by dev-python/PyQt6 (argument)
+# /var/db/repos/gentoo/profiles/package.mask:
+# Jimi Huotari <chiitoo@gentoo.org> (2022-08-02)
+# Masked for testing. The split of some packages may still
+# change. bug #838970.
+>=dev-qt/qtsvg-6.4.0
+# required by dev-qt/qtsvg-6.4.0::gentoo
+# required by dev-python/PyQt6-6.4.0::gentoo[svg]
+# required by dev-python/PyQt6 (argument)
+# /var/db/repos/gentoo/profiles/package.mask:
+# Jimi Huotari <chiitoo@gentoo.org> (2022-08-02)
+# Masked for testing. The split of some packages may still
+# change. bug #838970.
+=dev-qt/qtbase-6.4.0
+# required by www-client/firefox-106.0.5::gentoo
+# required by www-client/firefox::gentoo (argument)
+# /etc/portage/package.mask:
+>=sys-devel/clang-14.0.6-r1:14

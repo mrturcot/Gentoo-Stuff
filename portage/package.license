@@ -13,3 +13,7 @@
 >=media-fonts/font-bh-ttf-1.0.3-r2 bh-luxi
 # required by games-util/xone (argument)
 >=games-util/xone-0.3 MS-TOU
+# required by gzdoom (argument)
+>=games-fps/gzdoom-9999 Activision ChexQuest3 DOOM-COLLECTORS-EDITION WidePix freedist
+# required by gzdoom (argument)
+=games-fps/gzdoom-4.8.2-r1 Activision ChexQuest3 DOOM-COLLECTORS-EDITION WidePix freedist

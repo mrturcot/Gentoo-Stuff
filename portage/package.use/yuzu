@@ -5,3 +5,9 @@ games-emulation/yuzu **
 # required by games-emulation/yuzu-0_p20220725::guru
 # required by yuzu (argument)
 >=dev-libs/boost-1.79.0 context
+# required by www-client/firefox-106.0.5::pg_overlay[system-png]
+# required by www-client/firefox (argument)
+>=media-libs/libpng-1.6.37-r2 apng
+# required by dev-lang/rust-1.65.0::pg_overlay[system-llvm]
+# required by dev-lang/rust (argument)
+>=sys-devel/clang-runtime-15.0.3 libcxx

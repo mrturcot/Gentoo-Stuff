@@ -1,11 +1,19 @@
-# Go Home
-cd $HOME
+## Enabling Portage completions and Gentoo prompt for zsh
+autoload -U compinit promptinit
+compinit
+promptinit; prompt gentoo
+
+## Enabling cache for the completions for zsh
+zstyle ':completion::complete:*' use-cache 1
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/home/mrturcot/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/14/bin:/home/mrturcot/bin:/usr/lib/qt5/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+# source oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -87,12 +95,44 @@ plugins=(
 # source oh-my-zsh.sh
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-colorscript random
-
+# Enviroment variables
+export CMAKE_BINARY="/usr/bin/cmake"
+export VDPAU_DRIVER="radeonsi"
+export EDITOR="/usr/bin/vim"
+export SHELL=/bin/zsh
+export USB_DEVFS_PATH=/dev/bus/usb
+export QT_SELECT=qt5
 export VDPAU_DRIVER=radeonsi
-export EDITOR=/usr/bin/vim
+export ANDROID_HOME="/home/mrturcot/Android/Sdk"
+export REPO_OS_OVERRIDE=linux
+export TERM=xterm-kitty
+export KITTY_SHELL_INTEGRATION="enabled no-cursor"
+export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-$(date +%s)}"
+export BUILD_DATE="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y-%m-%d-%H-%S)"
+export CMAKE_MODULE_PATH="/usr/share/cmake/Modules/;/usr/share/ECM"
+export CMAKE_PREFIX_PATH="/usr/lib/cmake;/usr/lib64/cmake;/usr/include/yaml-cpp"
+#export LD_LIBRARY_PATH="/usr/local/lib;/usr/local/lib64"
+#export PLASMA_USE_QT_SCALING=1
+#export GDK_SCALE=2
+#export GDK_DPI_SCALE=0.5
+#export XDG_DATA_HOME=${XDG_DATA_HOME:-"${HOME}/.local/share"}
+#export MANPATH="/usr/local/man:$MANPATH"
+#export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
+
+# Environment variables accepted:
+# QTCHOOSER_RUNTOOL  name of the tool to be run (same as the -run-tool argument)
+# QT_SELECT          version of Qt to be run (same as the -qt argument)
+#export QTCHOOSER_RUNTOOL=
+
+# Unsetting
+unset XCURSOR_THEME
+unset XCURSOR_SIZE
+
+# Compilation flags
+#export ARCHFLAGS="-arch x86_64"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -100,11 +140,11 @@ export EDITOR=/usr/bin/vim
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -117,6 +157,9 @@ export EDITOR=/usr/bin/vim
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+
+colorscript -r
+setopt NO_EQUALS
+
 # Starship Prompt
 eval "$(starship init zsh)"
