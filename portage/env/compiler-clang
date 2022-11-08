@@ -11,8 +11,9 @@ CXX="clang++"
 AR="llvm-ar"
 NM="llvm-nm"
 RANLIB="llvm-ranlib"
-
 LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
+
+### I Disabled Hardening because some packages fail with these flags on && im not hiding from the NSA.. shhh
 
 ## Hardening which isn't (yet?) done by default for Clang, unlike GCC.
 #_HARDENING_FLAGS="-fstack-protector-strong -D_FORTIFY_SOURCE=2"
