@@ -1,8 +1,4 @@
 ## mask
-
-sys-devel/clang:13
-sys-devel/clang:14
-
 app-portage/eix::pg_overlay
 app-shells/push::pg_overlay
 app-shells/quoter::pg_overlay
