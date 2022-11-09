@@ -1,6 +1,6 @@
+#!/bin/bash
 
 ### [Backstory > https://forums.gentoo.org/viewtopic-t-1158723.html]
-
 ## what happened you ask???
 # step by step breakdown of events below
 
@@ -9,9 +9,7 @@ idiot='me'
 careless'ya, also me'
 system='my gentoo install'
 
-# only a real carless idiot would ever do this... xdxd
-
-#!/bin/bash
+# only a real careless idiot would ever do this... lulz xdxd
 if [[ ${idiot} == *"${careless} in an elevated shell"* ]]; then
         cd && rm -rf bin;
         # Command not found: /bin/sh
