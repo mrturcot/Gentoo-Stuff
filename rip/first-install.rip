@@ -6,7 +6,7 @@
 
 # defining variables of the situation
 idiot='me'
-careless'ya, also me'
+careless='ya, also me'
 system='my gentoo install'
 
 # only a real careless idiot would ever do this... lulz xdxd
@@ -26,4 +26,4 @@ break;;${system}
 fi
 
 # game over :(
-## do not pass Go, do not collect two hundred dollars
+## do not pass Go, do not collect two hundred dollars...
