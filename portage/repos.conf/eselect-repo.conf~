@@ -21,6 +21,11 @@ location = /var/db/repos/R_Overlay
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/R_Overlay.git
 
+[pg_overlay]
+location = /var/db/repos/pg_overlay
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/pg_overlay.git
+
 [didos]
 location = /var/db/repos/didos
 sync-type = git

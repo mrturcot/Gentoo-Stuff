@@ -1,16 +1,1 @@
-## mask
-app-portage/eix::pg_overlay
-app-shells/push::pg_overlay
-app-shells/quoter::pg_overlay
-dev-perl/TermReadKey::pg_overlay
-x11-base/xorg-server::pg_overlay
-x11-libs/gtk+::pg_overlay
-dev-util/glslang::pg_overlay
-dev-util/vulkan-headers::pg_overlay
-media-libs/vulkan-loader::pg_overlay
-dev-util/spirv-tools::pg_overlay
-net-libs/libpsl::didos
-dev-lang/orc::pg_overlay
-media-libs/shaderc::pg_overlay
-www-client/firefox::pg_overlay
-dev-lang/rust::pg_overlay
+## package mask
