@@ -12,3 +12,4 @@ dev-util/spirv-tools::pg_overlay
 net-libs/libpsl::didos
 dev-lang/orc::pg_overlay
 media-libs/shaderc::pg_overlay
+www-client/firefox::pg_overlay

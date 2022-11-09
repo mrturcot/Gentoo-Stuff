@@ -1,3 +1,5 @@
+## GCC fallback environment ##
+
 CC="gcc"
 CXX="g++"
 

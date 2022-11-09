@@ -5,3 +5,5 @@ sys-libs/compiler-rt compiler-clang compiler-clang-lto
 sys-libs/compiler-rf-sanitizers compiler-clang compiler-clang-lto
 www-client/librewolf compiler-clang compiler-clang-lto
 www-client/firefox compiler-clang compiler-clang-lto
+sys-libs/libcxx compiler-clang compiler-clang-lto
+sys-libs/libcxxabi compiler-clang compiler-clang-lto

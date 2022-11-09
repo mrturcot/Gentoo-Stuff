@@ -1,3 +1,9 @@
+## For full LTO, replace -flto=thin with -flto in the following examples. 
+## There should be no compatibility differences between full LTO and thin LTO.
+## Additionally, if Clang was not built with the default-lld USE flag,
+## add the -fuse-ld=lld value to the following LDFLAGS. 
+
+# Enable clang-lto
 CFLAGS="${CFLAGS} -flto=thin"
 CXXFLAGS="${CXXFLAGS} -flto=thin"
 # -O2 in LDFLAGS refers to binary size optimization during linking, it is NOT related to the -O levels of the compiler          

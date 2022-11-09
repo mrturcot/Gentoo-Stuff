@@ -76,3 +76,4 @@ www-client/firefox
 # required by https_dns_proxy (argument)
 =net-dns/https_dns_proxy-0_pre20200925 ~amd64
 dev-lang/rust
+media-libs/mlt **
