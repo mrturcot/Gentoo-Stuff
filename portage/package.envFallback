@@ -1,0 +1,5 @@
+## In the event GCC should be used as the fallback environment
+## Falling back to GCC for app-foo/bar and app-bar/baz
+
+# Compiled using GCC with no link-time optimization since package baz fails using lto
+#app-bar/baz compiler-gcc

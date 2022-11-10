@@ -110,7 +110,6 @@ export CMAKE_MODULE_PATH="/usr/share/cmake/Modules/;/usr/share/ECM"
 export CMAKE_PREFIX_PATH="/usr/lib/cmake;/usr/lib64/cmake;/usr/include/yaml-cpp"
 export CMAKE_USE_DIR="${S}"
 #export LD_LIBRARY_PATH="/usr/local/lib;/usr/local/lib64"
-#export PLASMA_USE_QT_SCALING=1
 #export GDK_SCALE=2
 #export GDK_DPI_SCALE=0.5
 #export XDG_DATA_HOME=${XDG_DATA_HOME:-"${HOME}/.local/share"}
@@ -123,9 +122,9 @@ unset XCURSOR_SIZE
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-	  export EDITOR='vim'
+	export EDITOR='vim'
   else
-	    export EDITOR='vi'
+	export EDITOR='vi'
 fi
 
 # export MANPATH="/usr/local/man:$MANPATH"

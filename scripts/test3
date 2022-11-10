@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#result=$(git fetch --dry-run | grep master)
+#echo $result
+
+#result=$(git fetch --dry-run|tee)
+#string="master"
+#if [[ $result == *"$string"* ]]; then
+#    echo "'$string' found"
+#else
+#    echo "'$string' not found in text:"
+#    echo "$text"
+#fi
+
+#if [[ $(git fetch --dry-run) =~ *"master"* ]]; then
+#    echo "master found"
+#else
+#    echo "master not found"
+#fi
+
+#git fetch | find /i "master"
+#if not errorlevel 1 (
+#   echo works?
+#)
+
+#if [[ $(git status | grep 'master') ]]; then
+#  echo "Found a Tomcat!"
+#fi
+
+#case "$(netstat -lnp | grep ':8080')" in
+#  *java*)  echo "Found a Tomcat!";;
+#esac
+
+if [[ $(git fetch --dry-run 2>/dev/null | grep "master") ]]; then
+    echo "YESSSSSSSSSS"
+else
+    echo "NNOOOOOOOOOO"
+fi

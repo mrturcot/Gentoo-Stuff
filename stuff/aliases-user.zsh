@@ -1,5 +1,9 @@
+# root
+alias root="sudo su -"
+
 # The Rest
-alias grub-update="grub-mkconfig -o /boot/grub/grub.cfg"
+alias reboot="sudo /sbin/reboot"
+alias shutdown="sudo /sbin/shutdown -h now"
 alias l="exa -alh --color=always --group-directories-first"
 alias b="bat -p"
 alias c="clear"
