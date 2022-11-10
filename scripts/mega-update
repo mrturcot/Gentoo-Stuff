@@ -9,11 +9,11 @@ echo -en '\n'
 echo -e "${BB}###### [ ${BY}!! SUPER MEGA UPDATE !!${NC}${BB} ] ######${NC}"
 sleep 1
 
-## eix-sync
+## sync all repos on sytem
 
 while true; do
 	echo -en '\n'
-	echo -e "${BB}###### [ ${BIP}Sync All Repos ???${NC}${BB} ] ######${NC}"
+	echo -e "${BB}###### [ ${BIP}Sync Repos ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
@@ -32,7 +32,7 @@ case $yn in
 done
 echo -en '\n'
 
-## emerge --ask --verbose --update --newuse --deep @world
+## full system update
 
 while true; do
 	echo -e "${BB}###### [ ${BIP}Update ???${NC}${BB} ] ######${NC}"
@@ -42,7 +42,7 @@ case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Updating${BB} ......${NC}"
 	echo -en '\n'
 	sleep 1
-	emerge-update &&
+	emerge --ask --verbose --update --newuse --deep @world
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -55,7 +55,7 @@ case $yn in
 done
 echo -en '\n'
 
-## Run automated kernel make/build script
+## run automated kernel make/build script
 
 while true; do
 	echo -e "${BB}###### [ ${BIP}Make && Install Kernel ???${NC}${BB} ] ######${NC}"
@@ -78,7 +78,7 @@ case $yn in
 done
 echo -en '\n'
 
-## emerge @smart-live-rebuild
+## check & update all *-9999 *.git packages
 
 while true; do
 	echo -e "${BB}###### [ ${BIP}Smart Live Rebuild ???${NC}${BB} ] ######${NC}"
@@ -88,7 +88,7 @@ case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Rebuilding${BB} ......${NC}"
 	echo -en '\n'
 	sleep 1
-	emerge -av @smart-live-rebuild &&
+	emerge --ask --verbose @smart-live-rebuild &&
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
 	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
@@ -100,7 +100,7 @@ case $yn in
 done
 echo -en '\n'
 
-## emerge --ask --depclean
+## check and un-merge unneeded dependencies
 
 while true; do
 	echo -e "${BB}###### [ ${BIP}Clean Dependencies ???${NC}${BB} ] ######${NC}"
