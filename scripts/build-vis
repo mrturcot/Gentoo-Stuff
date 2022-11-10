@@ -1,7 +1,0 @@
-#!/bin/bash
-
-cd $HOME/github/cli-visualizer
-rm -rf build && mkdir build && cd build
-cmake ../ &&
-make clean &&
-make -j14
