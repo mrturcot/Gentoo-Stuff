@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /home/mrturcot/github/osg
-git pull
+if [[ $(git remote show origin | grep 'out of date') ]]; then
 while true; do
 read -p "osg: Do you want to proceed? (y/n) " yn
 case $yn in
