@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source $HOME/scripts/colors
-
 cd $HOME/github/gzdoom
 rm -rf build && mkdir -pv build
 a='' && [ "$(uname -m)" = x86_64 ] && a=64

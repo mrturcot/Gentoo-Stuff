@@ -1,10 +1,6 @@
 #!/bin/bash
 
-source $HOME/scripts/colors
-
 cd $HOME/github/vkquake2/linux
 rm -rf releasex64-glibc
 make clean
-make -j14 release &&
-cp -r /mnt/Games/Classic/vkquake2/baseq2/* /home/mrturcot/github/vkquake2/linux/releasex64-glibc/baseq2/
-cp -r /mnt/Games/Classic/vkquake2/rogue/* /home/mrturcot/github/vkquake2/linux/releasex64-glibc/rogue/
+make -j14 release

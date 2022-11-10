@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source $HOME/scripts/colors
-
 cd $HOME/github/dhewm3
 rm -rf build
 mkdir -p build && cd build

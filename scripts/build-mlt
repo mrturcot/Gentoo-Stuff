@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source $HOME/scripts/colors
-
 cd $HOME/github/mlt
 rm -rf build && mkdir -pv build && cd build
 cmake ../ &&

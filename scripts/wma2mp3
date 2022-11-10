@@ -15,4 +15,5 @@ mplayer -vo null -vc dummy -af resample=44100 -ao pcm:waveheader $i && lame -m s
 #convert file names
 for i in *.wma; do mv "$i" "`basename "$i" .wma`.mp3"; done
 
+#remove left over file
 rm audiodump.wav

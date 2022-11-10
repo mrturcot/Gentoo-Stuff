@@ -1,9 +1,6 @@
 #!/bin/bash
 
-source $HOME/scripts/colors
-
 cd $HOME/github/duckstation
 rm -rf build-release && mkdir -pv build-release
 cmake -Bbuild-release -DCMAKE_BUILD_TYPE=Release -GNinja &&
-cmake --build build-release --parallel &&
-
+cmake --build build-release --parallel
