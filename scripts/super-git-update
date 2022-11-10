@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Script to automatically check repo git status. If 'behind' then pull & build; if not SKIP...
+## Script to automatically check repo git status. If 'out of date' then pull & build; if not SKIP...
 
 #set -o xtrace
 
@@ -53,7 +53,7 @@ case $yn in
 	echo -en '\n'
 	sleep 1
 	git pull &&
-	build-dhewm &&
+	build-dhewm3 &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;

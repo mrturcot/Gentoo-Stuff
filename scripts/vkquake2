@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd /home/mrturcot/github/vkquake2/linux/releasex64-glibc &&
-./quake2

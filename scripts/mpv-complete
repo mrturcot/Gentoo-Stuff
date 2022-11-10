@@ -1,5 +1,0 @@
-#!/bin/bash
-
-libplacebo-update &&
-ffmpeg-update &&
-mpv-update

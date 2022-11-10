@@ -3,22 +3,24 @@
 echo "selecting new kernel"
 sleep 1
 eselect kernel set 2
-echo "going to source"
+echo "going to kernel source"
 sleep 1
 cd /usr/src/linux
-echo "copying .config"
+echo "copying old kernel .config to new sources"
 sleep 1
 zcat /proc/config.gz > /usr/src/linux/.config &&
-echo olddefconfig
+## Running make olddefconfig will keep all of the options from the old 
+## .config and set the new options to their recommended (i.e. default)
+echo "make olddefconfig"
 sleep 1
 make olddefconfig &&
-echo "make && install"
+echo "make && install kernel"
 sleep 1
 make -j14 && make -j14 modules_install &&
 make install &&
-echo eclean
+echo "eclean & remove old kernels"
 sleep 1
 eclean-kernel -n2
-echo module-rebuild
+echo "rebuild kernel modules"
 sleep 1
 emerge @module-rebuild

@@ -78,7 +78,7 @@ case $yn in
 done
 echo -en '\n'
 
-## check & update all *-9999 *.git packages
+## check & update latest upstream versions *-9999 (git) packages
 
 while true; do
 	echo -e "${BB}###### [ ${BIP}Smart Live Rebuild ???${NC}${BB} ] ######${NC}"
