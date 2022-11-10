@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#set -o xtrace
-
 # get colors
 source $HOME/scripts/colors
 
@@ -9,7 +7,7 @@ echo -en '\n'
 echo -e "${BB}###### [ ${BY}!! SUPER MEGA UPDATE !!${NC}${BB} ] ######${NC}"
 sleep 1
 
-## sync all repos on sytem
+## sync all repos on system
 
 while true; do
 	echo -en '\n'
@@ -18,7 +16,6 @@ read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Syncing${BB} ......${NC}"
-	echo -en '\n'
 	sleep 1
 	eix-sync &&
 	echo -en '\n'
@@ -30,19 +27,18 @@ case $yn in
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
     esac
 done
-echo -en '\n'
 
-## full system update
+## update all @world-set packages
 
 while true; do
+	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}Update ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Updating${BB} ......${NC}"
-	echo -en '\n'
 	sleep 1
-	emerge --ask --verbose --update --newuse --deep @world
+	emerge --ask --verbose --update --newuse --deep @world &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -50,22 +46,20 @@ case $yn in
 	sleep 1
 		break;;
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
-	echo -en '\n';;
     esac
 done
-echo -en '\n'
 
-## run automated kernel make/build script
+## run automated kernel make/install script
 
 while true; do
-	echo -e "${BB}###### [ ${BIP}Make && Install Kernel ???${NC}${BB} ] ######${NC}"
+	echo -en '\n'
+	echo -e "${BB}###### [ ${BIP}Make && Install Kernel???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
-	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Building${BB} ......${NC}"
-	echo -en '\n'
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Roll it up bro${BB} ......${NC}"
 	sleep 1
-	autokernel &&
+	auto-kernel &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -73,57 +67,51 @@ case $yn in
 	sleep 1
 		break;;
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
-	echo -en '\n';;
     esac
 done
-echo -en '\n'
 
-## check & update latest upstream versions *-9999 (git) packages
+## check & update all latest upstream versions "*-9999 (git) packages""
 
 while true; do
+	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}Smart Live Rebuild ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
-	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Rebuilding${BB} ......${NC}"
-	echo -en '\n'
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Updating gits${BB} ......${NC}"
 	sleep 1
 	emerge --ask --verbose @smart-live-rebuild &&
+	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
 	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
 	sleep 1
 		break;;
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
-	echo -en '\n';;
     esac
 done
-echo -en '\n'
 
-## check and un-merge unneeded dependencies
+## check @world-set & un-merge unneeded dependencies
 
 while true; do
+	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}Clean Dependencies ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 	echo -en '\n'
 case $yn in
-	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Cleaning${BB} ......${NC}"
-	echo -en '\n'
+	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Checking...${BB} ......${NC}"
 	sleep 1
 	emerge --ask --depclean &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
 	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
-		sleep 1
+	sleep 1
 		break;;
 	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
-	echo -en '\n';;
     esac
 done
-echo -en '\n'
 
+echo -en '\n'
 echo -e "${BB}###### [ ${BY}!! Finished !!${NC}${BB} ] ######${NC}"
 sleep 1
-
-#set +o xtrace
