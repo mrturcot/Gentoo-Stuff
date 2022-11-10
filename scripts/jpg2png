@@ -1,7 +1,5 @@
 #!/bin/sh
 
-current_directory=$( pwd )
-
-for f in $1/*.jpg; do 
+for f in $1*.jpg; do 
     mv -- "$f" "${f%.jpg}.png"
 done
