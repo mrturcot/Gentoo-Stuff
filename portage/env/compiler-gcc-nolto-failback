@@ -1,6 +1,7 @@
 ## NO-LTO GCC fallback option
-CFLAGS="-march=znver1 -O2 -pipe"
+CFLAGS="-march=znver1 -O2 -pipe -fomit-frame-pointer"
 CXXFLAGS="${CFLAGS}"
+MAKEOPTS="-j14"
 
 CC="gcc"
 CXX="g++"
