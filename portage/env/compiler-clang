@@ -9,7 +9,7 @@ CC="/usr/lib/llvm/15/bin/clang-15"
 CXX="/usr/lib/llvm/15/bin/clang++-15"
 AR="/usr/lib/llvm/15/bin/llvm-ar"
 NM="/usr/lib/llvm/15/bin/llvm-nm"
-RANLIB="llvm-ranlib"
+RANLIB="/usr/lib/llvm/15/bin/llvm-ranlib"
 LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
 
 ### Disabling hardening because some packages fail with these flags on
