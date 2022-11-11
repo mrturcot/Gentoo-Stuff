@@ -18,7 +18,7 @@
 >=games-fps/gzdoom-4.8.2 ~amd64
 -------------------------------------------------------------------------------------------
 ### auto added by system using...
-## emerge --autounmask [ y | n ] (with) --autounmask-unrestricted-atoms [ y | n ]
+## emerge --autounmask=y & --autounmask-unrestricted-atoms=y
 ## so as to not restrict to installed package version only.
 -------------------------------------------------------------------------------------------
 # required by zenpower3 (argument)
