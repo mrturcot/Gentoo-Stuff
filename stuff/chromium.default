@@ -7,4 +7,27 @@
 # Options to pass to ungoogled-chromium.
 # See https://github.com/Eloston/ungoogled-chromium#features for additional
 # command-line switches.
-CHROMIUM_FLAGS="--disable-features=UseChromeOSDirectVideoDecoder --enable-accelerated-video-decode --enable-features=VaapiVideoEncoder,VaapiVideoDecoder,CanvasOopRasterization --ignore-gpu-blocklist --ignore-gpu-blacklist --gtk-version=4"
+CHROMIUM_FLAGS="
+	--ignore-gpu-blocklist \
+	--ignore-gpu-blacklist \
+	--disable-raw-draw \
+	--disable-features=UseChromeOSDirectVideoDecoder \
+	--use-gl=desktop \
+	--use-cmd-decoder=validating \
+	--disable-software-rasterizer \
+	--disable-font-subpixel-positioning \
+	--disable-gpu-driver-bug-workarounds \
+	--disable-gpu-driver-workarounds \
+	--disable-gpu-vsync \
+	--enable-zero-copy \
+	--enable-accelerated-video-decode \
+	--enable-accelerated-mjpeg-decode \
+	--enable-gpu-compositing \
+	--enable-gpu-rasterization \
+	--enable-native-gpu-memory-buffers \
+	--enable-oop-rasterization \
+	--canvas-oop-rasterization \
+	--use-vulkan \
+	--check-for-update-interval=604800 \
+	--enable-features=VaapiVideoEncoder,VaapiVideoDecoder,CanvasOopRasterization \
+	--gtk-version=4"
