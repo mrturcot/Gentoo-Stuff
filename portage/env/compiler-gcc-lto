@@ -1,6 +1,6 @@
 ## Enabling GCC LTO
-# $N refers to the amount of threads used during LTO, one option is to be set to the value of $(nproc)
-CFLAGS="-flto=14 -march=znver1 -O2 -pipe -fomit-frame-pointer"
+# "-flto=$(12)" refers to the amount of threads used during LTO, one option is to be set to the value of $(nproc)
+CFLAGS="-flto=12 -march=znver1 -O2 -pipe -fomit-frame-pointer"
 CXXFLAGS="${CFLAGS}"
 
 CC="gcc"
