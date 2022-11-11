@@ -1,7 +1,7 @@
 My Gentoo / Linux Stuff
 
- - mpv: my mpv.conf with a few nice scripts ive gatherd eg. "right click context menu"
- - portage: dir with some key gentoo configs & clang env (per-package) setup
+ - mpv: my mpv.conf with a few nice scripts gathered eg. "right click context menu"
+ - portage: dir with key gentoo configs && a clang-lto-env (per-package) setup
  - rip: :( *we dont talk about that*
- - scripts: some scripts for auto building git packages and auto system/user package upgrades
+ - scripts: git-repo check/pull/build & auto full gentoo upgrade & other handy things 
  - stuff: random linux config files
