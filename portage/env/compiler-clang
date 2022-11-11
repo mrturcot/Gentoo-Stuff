@@ -5,10 +5,10 @@ CXXFLAGS="${COMMON_FLAGS}"
 MAKEOPTS="-j12"
 
 ## Clang settings
-CC="clang"
-CXX="clang++"
-AR="llvm-ar"
-NM="llvm-nm"
+CC="/usr/lib/llvm/15/bin/clang-15"
+CXX="/usr/lib/llvm/15/bin/clang++-15"
+AR="/usr/lib/llvm/15/bin/llvm-ar"
+NM="/usr/lib/llvm/15/bin/llvm-nm"
 RANLIB="llvm-ranlib"
 LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
 
