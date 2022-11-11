@@ -1,5 +1,7 @@
-### my accept package keywords
-## upstream packages (-9999 **)
+### manually added accept package keywords
+-------------------------------------------------------------------------------------------
+## upstream packages (-9999 ** = git)
+-------------------------------------------------------------------------------------------
 >=x11-terms/kitty-9999 **
 >=x11-terms/kitty-shell-integration-9999 **
 >=x11-terms/kitty-terminfo-9999 **
@@ -7,13 +9,18 @@
 >=media-video/mpv-9999 **
 >=app-misc/radeontop-9999 **
 >=games-emulation/yuzu-9999 **
-## "testing/unstable" (~amd64) & 
+-------------------------------------------------------------------------------------------
+## testing/unstable (~amd64) & 
+-------------------------------------------------------------------------------------------
 >=sys-kernel/gentoo-sources-6.0 ~amd64
 >=www-client/firefox-102.4.0 ~amd64
 >=games-emulation/dolphin-5.0 ~amd64
 >=games-fps/gzdoom-4.8.2 ~amd64
-
-## automatic via emerge "--autounmask=y --autounmask-unrestricted-atoms" option
+-------------------------------------------------------------------------------------------
+### auto added by system using...
+## emerge --autounmask [ y | n ] (with) --autounmask-unrestricted-atoms [ y | n ]
+## so as to not restrict to installed package version only.
+-------------------------------------------------------------------------------------------
 # required by zenpower3 (argument)
 >=sys-kernel/zenpower3-0.2.0 ~amd64
 # required by app-editors/sublime-text (argument)
