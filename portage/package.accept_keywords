@@ -1,58 +1,11 @@
-## package accept
+### accept package keywords for "testing" (~amd64) & upstream packages (-9999 **)
+## mine
 
-sys-kernel/gentoo-sources
-# required by zenpower3 (argument)
->=sys-kernel/zenpower3-0.2.0 ~amd64
-x11-terms/kitty **
-x11-terms/kitty-shell-integration **
-x11-terms/kitty-terminfo **
-# required by app-editors/sublime-text (argument)
->=app-editors/sublime-text-4_p4126 ~amd64
-#net-p2p/qbittorrent
->=gui-libs/wlroots-0.15.1-r1 ~amd64
-# required by net-misc/networkmanager-1.38.4::gentoo
-# required by app-misc/tracker-miners-3.3.1::gentoo[networkmanager]
-# required by app-misc/tracker-3.3.3::gentoo[miners]
-# required by gnome-base/nautilus-42.2::gentoo
-# required by app-text/evince-42.3::gentoo[nautilus]
-# required by gnome-extra/sushi-42.0::gentoo
->=dev-libs/nss-3.84-r1 ~amd64
-# required by app-eselect/eselect-luajit (argument)
->=app-eselect/eselect-luajit-1 ~amd64
-# required by app-eselect/eselect-ld (argument)
->=app-eselect/eselect-ld-1.0.0 ~amd64
-# required by app-eselect/eselect-autostart (argument)
->=app-eselect/eselect-autostart-1.0.0 ~amd64
-media-libs/libplacebo **
-media-video/mpv **
-app-misc/radeontop **
-# required by x11-themes/materia-theme (argument)
->=x11-themes/materia-theme-20210322 ~amd64
-# required by media-fonts/symbola (argument)
->=media-fonts/symbola-13.00 ~amd64
-# required by games-emulation/yuzu-0_p20220725::guru
-# required by yuzu (argument)
->=dev-cpp/cpp-httplib-0.10.9 ~amd64
-# required by games-emulation/yuzu-0_p20220725::guru
-# required by yuzu (argument)
->=dev-libs/sirit-0_p20220725 ~amd64
-# required by yuzu (argument)
-games-emulation/yuzu **
-# required by games-emulation/yuzu-9999::guru
-# required by games-emulation/yuzu (argument)
->=dev-cpp/cpp-jwt-1.5_pre20220727 ~amd64
-# required by sys-kernel/xow (argument)
->=sys-kernel/xow-0.5 ~amd64
-# required by games-util/xone (argument)
->=games-util/xone-0.3 ~amd64
-# required by mailspring-bin (argument)
->=mail-client/mailspring-bin-1.10.5 ~amd64
-games-emulation/dolphin
-games-fps/gzdoom
-# required by games-fps/gzdoom-9999::thegreatmcpain
-# required by gzdoom (argument)
->=media-libs/zmusic-1.1.4 ~amd64
-www-client/firefox
-# required by https_dns_proxy (argument)
-=net-dns/https_dns_proxy-0_pre20200925 ~amd64
-dev-lang/rust
+>=sys-kernel/gentoo-sources-6.0 ~amd64
+>=x11-terms/kitty-9999 **
+>=x11-terms/kitty-shell-integration-9999 **
+>=x11-terms/kitty-terminfo-9999 **
+>=www-client/firefox-102.4.0 ~amd64
+
+## emerge "--autounmask=y --autounmask-unrestricted-atoms" option
+
