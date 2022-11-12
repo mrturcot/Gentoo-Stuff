@@ -14,7 +14,8 @@
 
 
 Further edit the configs to your liking if you so choose && emerge @everything!  
-<sub>kernel not included</sub>  
+<sub>kernel not included, however you could possibley use a kernel.bin eg. sys-kernel/
+gentoo-kernel-bin (i have not tested this) Moreover, i do provide my kernel .config shared in "/stuff". This is for AMD Ryzen 2700 znver1!. I guess it would work for other with same chip, maybe? Untested... </sub>  
 
 ```
  System GCC-LTO with Graphite  
