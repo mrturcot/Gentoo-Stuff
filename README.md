@@ -13,6 +13,9 @@
  GCC Fallback  
  GCC-NO-LTO Fallback  
 ```
+**Notice**  
+ - To maintain high stability and compatibility across toolchains and libraries etc... it is HIGHLY recommeded to rebuild @system & @world after most if not all of these changes...  (See this article https://wiki.gentoo.org/wiki/Upgrading_GCC#Rebuilding_everything)
+
 ------------------------------
  
  - mpv: my mpv.conf with a few nice scripts gathered eg. "right click context menu"
