@@ -8,9 +8,9 @@
  
   - CPU_FLAGS_X86 in package.use/00cpu-flags (see https://wiki.gentoo.org/wiki/CPU_FLAGS_X86)  
 
-  - COMMON_FLAGS="-march=?" option in make.conf & package.env/compiler-* environment (see https://wiki.gentoo.org/wiki/Safe_CFLAGS)  
+  - COMMON_FLAGS="-march=?" option in make.conf & portage/env/compiler-* environment (see https://wiki.gentoo.org/wiki/Safe_CFLAGS)  
 
-  - MAKEOPTS="-j?" option in make.conf & package.env/compiler-* environment (see https://wiki.gentoo.org/wiki/MAKEOPTS)   
+  - MAKEOPTS="-j?" option in make.conf & portage/env/compiler-* environment (see https://wiki.gentoo.org/wiki/MAKEOPTS)   
 
 
 Further edit the configs to your liking if you so choose && emerge @everything!  
