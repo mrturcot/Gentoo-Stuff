@@ -1,6 +1,6 @@
 **My Gentoo / Linux Stuff**
 
-  - Gentoox86-64 AMDGPU OpenRC Gnome X11 - Portage configs
+  - Gentoox86-64 AMDGPU (vaapi) OpenRC Gnome X11 Pipewire - Portage configs
  
  Should work on other similar setups with amdgpu, after setting GCC (COMMON_FLAGS eg. "-march=native") in provided files.
 
