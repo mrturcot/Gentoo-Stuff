@@ -1,9 +1,9 @@
 # -------------------------------------------------------------------
-### auto added by system using...
+### automatically added by portage using...
 ## emerge option --autounmask-license=y - Allow autounmask package.license changes.
 # -------------------------------------------------------------------
 # required by linux-firmware (argument)
-=sys-kernel/linux-firmware-20221012 linux-fw-redistributable no-source-code
+>=sys-kernel/linux-firmware-20221012 linux-fw-redistributable no-source-code
 # required by app-editors/sublime-text (argument)
 >=app-editors/sublime-text-4_p4126 Sublime
 # required by media-fonts/symbola (argument)
@@ -20,4 +20,4 @@
 # required by gzdoom (argument)
 >=games-fps/gzdoom-9999 Activision ChexQuest3 DOOM-COLLECTORS-EDITION WidePix freedist
 # required by gzdoom (argument)
-=games-fps/gzdoom-4.8.2-r1 Activision ChexQuest3 DOOM-COLLECTORS-EDITION WidePix freedist
+>=games-fps/gzdoom-4.8.2-r1 Activision ChexQuest3 DOOM-COLLECTORS-EDITION WidePix freedist

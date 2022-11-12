@@ -17,7 +17,7 @@
 >=games-emulation/dolphin-5.0 ~amd64
 >=games-fps/gzdoom-4.8.2 ~amd64
 # -------------------------------------------------------------------
-### auto added by system using
+### automatically added by portage using...
 ## emerge --autounmask=y & --autounmask-unrestricted-atoms=y
 ## so as to not restrict to installed package version only.
 # -------------------------------------------------------------------
