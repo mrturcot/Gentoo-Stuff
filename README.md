@@ -17,8 +17,8 @@ Further edit the configs to your liking if you so choose && emerge @everything!
 <sub>kernel not included</sub>  
 
 ```
- System-wide GCC-LTO with Graphite  
- System-wide Profile-guided optimizationS  
+ System GCC-LTO with Graphite  
+ System Profile-guided optimizations  
  LLVM_TARGETS="AArch64 AMDGPU"  
  Per package environment setup for:  
  Clang & Clang-LTO  
