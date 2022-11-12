@@ -4,7 +4,7 @@
  
  /etc/portage files inculded in this repo, could possibly serve as drop-in replacements for other similar setups.  
 
-**User needs to set**  
+  - **User needs to set**  
  
  **CPU_FLAGS_X86** in /portage/package.use/00cpu-flags (see https://wiki.gentoo.org/wiki/CPU_FLAGS_X86)  
 
