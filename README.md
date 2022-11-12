@@ -2,7 +2,7 @@
 
   - Gentoox86-64 AMDGPU (vaapi) OpenRC Gnome X11 Pipewire - Portage configs
  
- Should work on other similar setups with amdgpu, after setting Safe CFLAGS https://wiki.gentoo.org/wiki/Safe_CFLAGS & MAKEOPTS https://wiki.gentoo.org/wiki/MAKEOPTS in provided files to match your system specs...
+ Should work on other similar setups with amdgpu, after setting COMMON_FLAGS="-march=?" option (See https://wiki.gentoo.org/wiki/Safe_CFLAGS) & MAKEOPTS="-j?" https://wiki.gentoo.org/wiki/MAKEOPTS in provided files to match your system specs...
 
 ```
  System-wide GCC Graphite & profile-guided optimization  
