@@ -2,15 +2,15 @@
 
   - Portage configs for a Gentoo x86-64 Stable efi AMDGPU OpenRC Gnome X11 Pipewire system.  
  
- /etc/portage files inculded in this repo, could possibly serve as drop-in replacements for other similar setups.  
+ /etc/portage files included in this repo, could possibly serve as drop-in replacements for other similar setups.  
 
-  - **User needs to set**  
+**User needs to set**  
  
- **CPU_FLAGS_X86** in /portage/package.use/00cpu-flags (see https://wiki.gentoo.org/wiki/CPU_FLAGS_X86)  
+  - CPU_FLAGS_X86 in package.use/00cpu-flags (see https://wiki.gentoo.org/wiki/CPU_FLAGS_X86)  
 
- **COMMON_FLAGS="-march=?"** option in make.conf & package.env/compiler-* environment (see https://wiki.gentoo.org/wiki/Safe_CFLAGS)  
+  - COMMON_FLAGS="-march=?" option in make.conf & package.env/compiler-* environment (see https://wiki.gentoo.org/wiki/Safe_CFLAGS)  
 
- **MAKEOPTS="-j?"** option in make.conf & package.env/compiler-* environment (see https://wiki.gentoo.org/wiki/MAKEOPTS)   
+  - MAKEOPTS="-j?" option in make.conf & package.env/compiler-* environment (see https://wiki.gentoo.org/wiki/MAKEOPTS)   
 
 
 Further edit the configs to your liking if you so choose && emerge @everything!  
