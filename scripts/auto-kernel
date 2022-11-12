@@ -6,6 +6,8 @@ eselect kernel set 2
 echo "going to kernel source"
 sleep 1
 cd /usr/src/linux
+# sys-kernel/gentoo-sources need to be emerged with  
+# (USE=experimental) to have /proc/config.gz
 echo "copying old kernel .config to new sources"
 sleep 1
 zcat /proc/config.gz > /usr/src/linux/.config
