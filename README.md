@@ -1,9 +1,10 @@
 **My Gentoo / Linux Stuff**
 
-  - Gentoox86-64 amdgpu OpenRC Gnome - Portage configs
+  - Gentoox86-64 AMDGPU OpenRC Gnome X11 - Portage configs
  
- Should work on other similar setups with amdgpu, after ajusting their CPU flags. Default is "-march=native"  
- ```
+ Should work on other similar setups with amdgpu, after setting GCC (COMMON_FLAGS eg. "-march=native") in provided files.
+
+```
  System-wide GCC Graphite & profile-guided optimization  
  LLVM_TARGETS="AArch64 AMDGPU"  
  Per Package Enviroment Setup  
