@@ -2,7 +2,7 @@
 
   - Portage configs for a Gentoo x86-64 Stable efi AMDGPU OpenRC Gnome X11 Pipewire system, built with optimizations for speed and top quality gaming performance in mind... 
  
- /etc/portage files included in this repo, could serve as drop-in replacements for other similar setups. One helpful use case scenario would be downloading this repo as a zip=[https://github.com/mrturcot/Gentoo-Stuff/archive/refs/heads/master.zip] using wget. Once initially mounted and chrooted into a new Gentoo install. Extract the repo then edit/use/rm any configs as deemed needed to get you going way ahead of schedule :)
+ /etc/portage files included in this repo, could serve as drop-in replacements for other similar setups. One helpful use case scenario would be downloading this repo as a zip=[https://github.com/mrturcot/Gentoo-Stuff/archive/refs/heads/master.zip] using wget. Once initially mounted and chrooted into a new Gentoo install, extract the repo then edit/use/rm any configs as deemed needed to get you going way ahead of schedule :)
 
 **User needs to set**  
  
