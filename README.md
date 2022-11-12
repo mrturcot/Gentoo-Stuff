@@ -1,6 +1,6 @@
 **My Gentoo / Linux Stuff**
 
-  - Portage configs for a Gentoo x86-64 Stable efi AMDGPU OpenRC Gnome X11 Pipewire setup...  
+  - Portage configs for a Gentoo x86-64 Stable efi AMDGPU OpenRC Gnome X11 Pipewire system.  
  
  /etc/portage files inculded in this repo, could possibly serve as drop-in replacements for other similar setups.  
 
