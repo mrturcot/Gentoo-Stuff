@@ -1,4 +1,4 @@
-My Gentoo / Linux Stuff
+**My Gentoo / Linux Stuff**
 
   - Gentoox86-64 amdgpu OpenRC Gnome - Portage configs
  
@@ -12,7 +12,6 @@ My Gentoo / Linux Stuff
  GCC Fallback  
  GCC-NO-LTO Fallback  
 ```
-
 ------------------------------
  
  - mpv: my mpv.conf with a few nice scripts gathered eg. "right click context menu"
