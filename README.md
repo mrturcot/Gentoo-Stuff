@@ -3,14 +3,16 @@
   - Gentoox86-64 AMDGPU (vaapi) OpenRC Gnome X11 Pipewire - Portage configs
  
  /etc/portage files could serve as a drop-in replacement for other similar setups with amdgpu.   
- User needs to set
+
+User needs to set
  
  CPU_FLAGS_X86 in "/portage/package.use/00cpu-flags" (see https://wiki.gentoo.org/wiki/CPU_FLAGS_X86)
  
  COMMON_FLAGS="-march=?" option (see https://wiki.gentoo.org/wiki/Safe_CFLAGS)  
  
  MAKEOPTS="-j?" option (see https://wiki.gentoo.org/wiki/MAKEOPTS)   
- Edit the configs to your liking if you so choose & emerge @everything!   
+
+Edit the configs to your liking if you so choose & emerge @everything!   
  
  <sub>kernel not included</sub>
 
