@@ -1,6 +1,6 @@
 **My Gentoo / Linux Stuff**
 
-  - Gentoox86-64 AMDGPU (vaapi) OpenRC Gnome X11 Pipewire - Portage configs
+  - Gentoox86-64 Stable AMDGPU (vaapi) OpenRC Gnome X11 Pipewire - Portage configs
  
  /etc/portage files inculded in this repo, could possibly serve as drop-in replacements for other similar setups.  
 
