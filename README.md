@@ -2,7 +2,7 @@
 
   - Gentoox86-64 AMDGPU (vaapi) OpenRC Gnome X11 Pipewire - Portage configs
  
- /etc/portage files could serve as a drop-in replacement for other similar setups with amdgpu.   
+ /etc/portage files could serve as a drop-in replacement for other setups.   
 
 User needs to set
  
