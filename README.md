@@ -1,6 +1,6 @@
 **My Gentoo / Linux Stuff**
 
-  - Gentoox86-64 Stable efi AMDGPU (vaapi) OpenRC Gnome X11 Pipewire - Portage configs
+  - Gentoo x86-64 Stable efi AMDGPU (vaapi) OpenRC Gnome X11 Pipewire - Portage configs
  
  /etc/portage files inculded in this repo, could possibly serve as drop-in replacements for other similar setups.  
 
@@ -29,7 +29,10 @@ Further edit the configs to your liking if you so choose && emerge @everything!
 
 ------------------------------
  
- - mpv: my mpv.conf with a few nice scripts gathered eg. "right click context menu"
- - rip: :( *we dont talk about that*
- - scripts: git-repo check/pull/build & auto full gentoo upgrade & other handy things 
- - stuff: random linux config files
+ - mpv: my mpv.conf with a few nice scripts gathered eg. "right click context menu"  
+
+ - scripts: git-repo check/pull/build & auto full gentoo upgrade & other handy things  
+
+ - stuff: random linux config files  
+
+ - rip: :( *we dont talk about that*  
