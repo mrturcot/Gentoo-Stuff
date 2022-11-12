@@ -7,9 +7,7 @@
 ***User needs to set***
  
  **CPU_FLAGS_X86** in "/portage/package.use/00cpu-flags" (see https://wiki.gentoo.org/wiki/CPU_FLAGS_X86)
- 
  **COMMON_FLAGS="-march=?"** option (see https://wiki.gentoo.org/wiki/Safe_CFLAGS)  
- 
  **MAKEOPTS="-j?"** option (see https://wiki.gentoo.org/wiki/MAKEOPTS)   
 
 Further edit the configs to your liking if you so choose && emerge @everything!
