@@ -15,7 +15,9 @@
 
 Further edit the configs to your liking if you so choose && emerge @everything!  
 <sub>kernel not included, however you could possibley use a kernel.bin [LAME!!!] eg. sys-kernel/
-gentoo-kernel-bin (i have not tested this) Moreover, i do provide my .config for "6.0.8-gentoo-sources" super trimmed down kernel (10MB) shared in "/stuff". This is for AMD Ryzen 2700 znver1!. I guess it would work for other with same chip, maybe? Untested... </sub>  
+gentoo-kernel-bin</sub>   
+
+(i have not tested this) Moreover, i do provide my .config for current "6.0.8-gentoo-sources" super trimmed down kernel (10MB) shared in "/stuff". This is for AMD Ryzen 2700 x470 znver1!. I guess it would work for other with same chipset [*not* as a drop in but maybe a start/base?], (running "make menuconfig" in the activily set gentoo kernel sources "/usr/src/linux" would be 100% manditory as other hardware specifications would need to be set for your setup...) Untested...  
 
 ```
  System GCC-LTO with Graphite  
