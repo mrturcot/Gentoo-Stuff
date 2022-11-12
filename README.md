@@ -8,7 +8,7 @@
  System-wide GCC Graphite & profile-guided optimization  
  LLVM_TARGETS="AArch64 AMDGPU"  
  Per Package Enviroment Setup  
- Clang++-15 & Clang-LTO  
+ Clang & Clang-LTO  
  GCC-LTO  
  GCC Fallback  
  GCC-NO-LTO Fallback  
