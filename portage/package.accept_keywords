@@ -9,6 +9,7 @@
 >=media-video/mpv-9999 **
 >=app-misc/radeontop-9999 **
 >=games-emulation/yuzu-9999 **
+>=media-sound/whipper-9999 **
 # -------------------------------------------------------------------
 ## testing/unstable (~amd64) & 
 # -------------------------------------------------------------------
@@ -61,3 +62,6 @@
 >=media-libs/zmusic-1.1.4 ~amd64
 # required by https_dns_proxy (argument)
 >=net-dns/https_dns_proxy-0_pre20200925 ~amd64
+# required by media-sound/whipper-9999::4nykey[-test]
+# required by media-sound/whipper (argument)
+>=dev-python/pycdio-2.1.1 ~amd64
