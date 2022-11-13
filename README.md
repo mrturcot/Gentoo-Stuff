@@ -21,7 +21,7 @@ gentoo-kernel-bin</sub>
 
 ```
 mrturcot  on GentooRig /home/mrturcot/github/gentoo-stuff on   master [!1 ]
-[ 04:10:05 PM ] ➜ l
+[ 04:10:05 PM ] ➜ l /boot
 Permissions Size User Date Modified Name
 .rwxr-xr-x  144k root  7 Nov 03:37  config-6.0.7-gentoo
 .rwxr-xr-x  144k root 10 Nov 15:06  config-6.0.8-gentoo
