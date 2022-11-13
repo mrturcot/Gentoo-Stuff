@@ -63,14 +63,12 @@ Permissions Size User Date Modified Name
 .rwxr-xr-x   10M root 10 Nov 15:06  vmlinuz-6.0.8-gentoo
 ```
 ```
- System GCC-LTO with Graphite  
- System Profile-guided optimizations  
- LLVM_TARGETS="AArch64 AMDGPU"  
- Per package environment setup for:  
- Clang & Clang-LTO  
- GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback  
-```
-   
+ System-wide GCC-LTO with Graphite  
+ System-wide Profile-guided optimizations  
+ System-wide LLVM_TARGETS="AArch64 AMDGPU"  
+ Per-package environment configurations for:  
+ Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback  
+```  
    
 Every package currently set in portage/package.env is confirmed working with the specified per-package build environment(s) eg. compiler-clang   
    
