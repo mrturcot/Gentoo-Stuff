@@ -34,7 +34,8 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
  PER-Package compiler environment configurations (as defined in env & package.env) for:  
  Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback 
    
- Local USE Flags enabled (select packages only) "Can be overridden with using PER-Package env's compiler-$(environment)"  
+ Local USE Flags enabled (select packages only) 
+ ## Can be overridden with using PER-Package env's compiler-$(environment)  
  Clang = Force building using installed clang (rather than the default CC/CXX).
  LTO = Build using Link Time Optimizations (LTO)  
  PGO = Profile-guided optimizations   
