@@ -62,6 +62,7 @@ Permissions Size User Date Modified Name
 .rwxr-xr-x   10M root  7 Nov 03:37  vmlinuz-6.0.7-gentoo
 .rwxr-xr-x   10M root 10 Nov 15:06  vmlinuz-6.0.8-gentoo
 ```
+ - **Main Features**
 ```
  System-wide GCC-LTO with Graphite  
  System-wide Profile-guided optimizations  
