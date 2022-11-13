@@ -64,6 +64,8 @@ Permissions Size User Date Modified Name
  GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback  
 ```
 
+Every package currently set in portage/package.env is confirmed working with the specified per-package build environment(s) eg. compiler-clang   
+
 **Notice**
    - In order to maintain high stability and compatibility across toolchains and libraries etc... ~~It is???~~ I personally HIGHLY recommeded to rebuild @system & @world after most if not all of these changes...  (See this article for steps https://wiki.gentoo.org/wiki/Upgrading_GCC#Rebuilding_everything)
 
