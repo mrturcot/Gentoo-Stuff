@@ -25,7 +25,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
 ```
 
 
-  - Portage configs for a Gentoo x86-64 Stable Znver1 AMDGPU OpenRC efi Gnome X11 Pipewire system, built with optimizations for speed and top quality gaming performance in mind... 
+  - Portage configs for a Gentoo x86-64 Stable Znver1 AMDGPU OpenRC efi Gnome-Light X11 Pipewire system, built with optimizations for speed and top quality gaming performance in mind... 
  
  /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. One helpful use case scenario could be. Once initially mounted and chrooted into a new Gentoo install environment, download this repo as a zip=[https://github.com/mrturcot/Gentoo-Stuff/archive/refs/heads/master.zip] using wget (we dont have git rn). Then extract & edit/use/rm any configs you choose to get you going way ahead of schedule :)
 
