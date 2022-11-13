@@ -33,6 +33,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
  AMDGPU target (supports R600 and GCN GPUs)  
  PER-Package compiler environment configurations (as defined in env & package.env) for:  
  Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback 
+   
  Local USE Flags enabled (select packages only) Can be overridden with PER-Package env's  
  Clang = Force building using installed clang (rather than the default CC/CXX).
  LTO = Build using Link Time Optimizations (LTO)  
