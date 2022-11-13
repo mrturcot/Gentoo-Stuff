@@ -1,5 +1,30 @@
 **My Gentoo / Linux Stuff**
 
+
+```
+ mrturcot  on GentooRig /home/mrturcot/github/gentoo-stuff on   master took 7s
+[ 05:07:34 PM ] ➜ neofetch
+         -/oyddmdhs+:.                mrturcot@GentooRig 
+     -odNMMMMMMMMNNmhy+-`             ------------------ 
+   -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
+ `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: X470 AORUS GAMING 7 WIFI 
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.0.8-gentoo 
+.ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hours, 41 mins 
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1062 (emerge) 
+  :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
+    .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Resolution: 3840x2160 
+       /mMMMMMMNNNmmmdddhhhhhmMNhs:   DE: GNOME 42.5 
+    `oNMMMMMMMNNNmmmddddhhdmMNhs+`    WM: Mutter 
+  `sNMMMMMMMMNNNmmmdddddmNMmhs/.      WM Theme: Equilux 
+ /NMMMMMMMMNNNNmmmdddmNMNdso:`        Theme: Equilux [GTK2/3] 
++MMMMMMMNNNNNmmmmdmNMNdso/-           Icons: Papirus [GTK2/3] 
+yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty 
+/hMMNNNNNNNNMNdhs++/-`                CPU: AMD Ryzen 7 2700 (16) @ 3.800GHz 
+`/ohdmmddhys+++/:.`                   GPU: AMD ATI Radeon RX 470/480/570/570X/580/580X/590 
+  `-//////:--.                        Memory: 2797MiB / 32032MiB 
+```
+
+
   - Portage configs for a Gentoo x86-64 Stable efi AMDGPU OpenRC Gnome X11 Pipewire system, built with optimizations for speed and top quality gaming performance in mind... 
  
  /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. One helpful use case scenario could be. Once initially mounted and chrooted into a new Gentoo install environment, download this repo as a zip=[https://github.com/mrturcot/Gentoo-Stuff/archive/refs/heads/master.zip] using wget (we dont have git rn). Then extract & edit/use/rm any configs you choose to get you going way ahead of schedule :)
