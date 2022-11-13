@@ -15,7 +15,7 @@
 ## Testing/unstable (~amd64) & 
 # -------------------------------------------------------------------
 >=sys-kernel/gentoo-sources-6.0 ~amd64
->=www-client/firefox-102.4.0 ~amd64
+>=www-client/firefox-106.0.5 ~amd64
 >=games-emulation/dolphin-5.0 ~amd64
 >=games-fps/gzdoom-4.8.2 ~amd64
 # -------------------------------------------------------------------
@@ -68,3 +68,8 @@
 # required by media-sound/whipper-9999::4nykey[-test]
 # required by media-sound/whipper (argument)
 >=dev-python/pycdio-2.1.1 ~amd64
+# required by games-util/steam-launcher-1.0.0.74-r1::steam-overlay[udev,joystick]
+# required by games-util/steam-launcher (argument)
+>=games-util/game-device-udev-rules-20220311 ~amd64
+# required by games-util/steam-launcher (argument)
+>=games-util/steam-launcher-1.0.0.74-r1 ~amd64

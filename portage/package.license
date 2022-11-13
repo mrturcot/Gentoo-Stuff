@@ -21,3 +21,5 @@
 >=games-fps/gzdoom-9999 Activision ChexQuest3 DOOM-COLLECTORS-EDITION WidePix freedist
 # required by gzdoom (argument)
 >=games-fps/gzdoom-4.8.2-r1 Activision ChexQuest3 DOOM-COLLECTORS-EDITION WidePix freedist
+# required by games-util/steam-launcher (argument)
+>=games-util/steam-launcher-1.0.0.74-r1 ValveSteamLicense
