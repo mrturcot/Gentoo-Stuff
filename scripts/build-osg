@@ -1,5 +1,5 @@
-## https://github.com/OpenMW/osg
 #!/bin/bash
+## https://github.com/OpenMW/osg
 
 cd $HOME/github/osg
 rm -rf build

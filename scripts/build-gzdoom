@@ -1,5 +1,5 @@
-## https://github.com/ZDoom/gzdoom
 #!/bin/bash
+## https://github.com/ZDoom/gzdoom
 
 cd $HOME/github/gzdoom
 rm -rf build && mkdir -pv build

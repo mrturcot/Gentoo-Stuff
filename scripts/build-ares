@@ -1,5 +1,5 @@
-## https://github.com/ares-emulator/ares
 #!/bin/bash
+## https://github.com/ares-emulator/ares
 
 cd $HOME/github/ares
 make clean

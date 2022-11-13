@@ -1,5 +1,5 @@
-## https://github.com/stenzek/duckstation
 #!/bin/bash
+## https://github.com/stenzek/duckstation
 
 cd $HOME/github/duckstation
 rm -rf build-release && mkdir -pv build-release

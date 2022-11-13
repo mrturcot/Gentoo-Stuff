@@ -1,5 +1,5 @@
-## https://github.com/Novum/vkQuake
 #!/bin/bash
+## https://github.com/Novum/vkQuake
 
 cd $HOME/github/vkquake
 rm -rf build

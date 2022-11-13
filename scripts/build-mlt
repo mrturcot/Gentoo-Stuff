@@ -1,5 +1,5 @@
-## https://github.com/mltframework/mlt
 #!/bin/bash
+## https://github.com/mltframework/mlt
 
 cd $HOME/github/mlt
 rm -rf build && mkdir -pv build && cd build

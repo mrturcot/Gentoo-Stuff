@@ -1,5 +1,5 @@
-## https://github.com/OpenMW/openmw
 #!/bin/bash
+## https://github.com/OpenMW/openmw
 
 cd $HOME/github/openmw
 rm -rf build

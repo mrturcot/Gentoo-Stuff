@@ -1,5 +1,5 @@
-## https://github.com/mpv-android/mpv-android
 #!/bin/bash
+## https://github.com/mpv-android/mpv-android
 
 cd $HOME/github/mpv-android
 rm -rf app/build

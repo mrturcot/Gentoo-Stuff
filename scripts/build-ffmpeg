@@ -1,6 +1,6 @@
+#!/bin/bash
 ### https://ffmpeg.org/download.html
 ## git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
-#!/bin/bash
 
 cd $HOME/github/repos/ffmpeg
 #make clean &&

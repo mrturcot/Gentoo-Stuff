@@ -1,5 +1,5 @@
-## https://github.com/whipper-team/whipper
 #!/bin/bash
+## https://github.com/whipper-team/whipper
 
 cd $HOME/github/whipper
 rm -rf build

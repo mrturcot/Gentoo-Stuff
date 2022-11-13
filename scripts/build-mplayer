@@ -1,6 +1,6 @@
+#!/bin/bash
 ### http://www.mplayerhq.hu/design7/dload.html
 ## svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
-#!/bin/bash
 
 cd $HOME/github/mplayer
 svn update
