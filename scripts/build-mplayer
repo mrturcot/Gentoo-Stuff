@@ -1,9 +1,9 @@
+### http://www.mplayerhq.hu/design7/dload.html
+## svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
 #!/bin/bash
 
-cd /home/mrturcot/github/mplayer
+cd $HOME/github/mplayer
 svn update
-# rm -rf mplayer &&
-# svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
 make clean
 rm -rf ffmpeg
 ./configure &&

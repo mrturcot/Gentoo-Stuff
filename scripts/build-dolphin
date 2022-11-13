@@ -1,3 +1,4 @@
+## https://github.com/dolphin-emu/dolphin
 #!/bin/bash
 
 cd $HOME/github/dolphin

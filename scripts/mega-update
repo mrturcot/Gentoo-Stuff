@@ -73,21 +73,20 @@ done
 ## check & update all latest upstream versions "*-9999 (git) packages""
 
 while true; do
-	echo -en '\n'
-	echo -e "${BB}###### [ ${BIP}Smart Live Rebuild ???${NC}${BB} ] ######${NC}"
+   echo -en '\n'
+   echo -e "${BB}###### [ ${BIP}Smart Live Rebuild ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
-	echo -en '\n'
+   echo -en '\n'
 case $yn in
-	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Updating gits${BB} ......${NC}"
-	sleep 1
-	emerge --ask --verbose @smart-live-rebuild &&
-	echo -en '\n'
-	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
-		break;;
-	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
-	sleep 1
-		break;;
-	 * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
+   [yY] ) echo -e " ${BY}* ${BIG}OK${NC} Updating gits${BB} ......${NC}"
+   sleep 1
+   emerge --ask --verbose @smart-live-rebuild &&
+   echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
+      break;;
+   [nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
+   sleep 1
+      break;;
+    * )echo -e "${R} ****** INVALID RESPONSE ******${NC}"
     esac
 done
 

@@ -1,6 +1,7 @@
+## https://code.videolan.org/videolan/libplacebo.git
 #!/bin/bash
 
-cd /home/mrturcot/github/libplacebo
+cd $HOME/github/libplacebo
 rm -rf build
 ./compile
 ## sudo ninja -Cbuild install

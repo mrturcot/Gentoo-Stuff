@@ -1,5 +1,6 @@
+## https://github.com/whipper-team/whipper
 #!/bin/bash
 
-cd /home/mrturcot/github/whipper
+cd $HOME/github/whipper
 rm -rf build
 python3 setup.py install --user

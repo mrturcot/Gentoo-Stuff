@@ -1,6 +1,7 @@
+## https://github.com/OpenMW/osg
 #!/bin/bash
 
-cd /home/mrturcot/github/osg
+cd $HOME/github/osg
 rm -rf build
 mkdir build && cd build
 cmake ../ &&

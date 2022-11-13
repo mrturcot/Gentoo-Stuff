@@ -1,6 +1,7 @@
+## https://github.com/OpenMW/openmw
 #!/bin/bash
 
-cd /home/mrturcot/github/openmw
+cd $HOME/github/openmw
 rm -rf build
 mkdir build && cd build
 cmake ../ &&

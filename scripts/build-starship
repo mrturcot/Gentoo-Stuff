@@ -1,3 +1,4 @@
+## https://github.com/starship/starship
 #!/bin/bash
 
 cd $HOME/github/starship
