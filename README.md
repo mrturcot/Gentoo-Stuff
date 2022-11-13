@@ -39,7 +39,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
  Clang = Force building using installed clang (rather than the default CC/CXX).  
  LTO = Build using Link Time Optimizations (LTO)  
  PGO = Profile-guided optimizations   
- and more... see "make.conf USE"$(Flags)
+ and more... see make.conf "USE=$(Flags)"  
 ```  
 
    
