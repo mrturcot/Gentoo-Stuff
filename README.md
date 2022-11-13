@@ -42,7 +42,7 @@ Further edit the configs to your liking if you so choose && emerge @everything!
 <sub>kernel not included, however you could possibley use a kernel.bin [*not recommended as its extremely lame*] eg. sys-kernel/
 gentoo-kernel-bin</sub>   
 
-(I have not tested this) furthermore, I do provide my .config for current "6.0.8-gentoo-sources" super trimmed down kernel (10MB) shared in "/stuff". This is for AMD Ryzen 2700 x470 znver1 & AMDGPU Arctic Islands - POLARIS10/11/12, VEGAM. I guess it would work for other with same chipset [*not* as a drop in but maybe a start/base?], (running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in the activily set gentoo kernel sources "/usr/src/linux" would be 100% manditory as other hardware specifications would need to be set for your setup...) Untested...  
+(I have not tested this) furthermore, I do provide my .config for current "6.0-gentoo-sources" super trimmed down kernel (10MB) shared in "/stuff". This is for a basic AMD Ryzen 2700 x470 znver1 & AMDGPU Arctic Islands - POLARIS10/11/12, VEGAM setup. I guess it would work for others with same chipsets? [*not* as a drop in but maybe a start/base?], (running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in the activily set gentoo kernel sources "/usr/src/linux" would be 100% manditory as other hardware specifications would need to be set for your setup...) This is *Untested*...  
 
 ```
 mrturcot on GentooRig /home/mrturcot/github/gentoo-stuff on   master [!1 ]
