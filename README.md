@@ -31,7 +31,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
  System-wide LLVM_TARGETS="AArch64 AMDGPU" 
  AArch64 CPU target (arm64 in Gentoo) 
  AMDGPU target (supports R600 and GCN GPUs)  
- Per-package compiler environment configurations for:  
+ PER-Package compiler environment configurations (as defined in package.env) for:  
  Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback 
  System USE Flag enabled (select packages) = Profile-guided optimizations   
 ```  
