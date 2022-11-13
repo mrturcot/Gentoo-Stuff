@@ -67,7 +67,7 @@ Permissions Size User Date Modified Name
  System-wide GCC-LTO with Graphite  
  System-wide Profile-guided optimizations  
  System-wide LLVM_TARGETS="AArch64 AMDGPU"  
- Per-package environment configurations for:  
+ Per-package compiler environment configurations for:  
  Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback  
 ```  
    
