@@ -33,7 +33,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
  AMDGPU target (supports R600 and GCN GPUs)  
  Per-package compiler environment configurations for:  
  Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback 
- System-wide USE Flag Enabled = Profile-guided optimizations   
+ System USE Flag enabled (select packages) = Profile-guided optimizations   
 ```  
 
    
