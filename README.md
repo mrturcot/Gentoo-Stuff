@@ -40,7 +40,7 @@ Permissions Size User Date Modified Name
 ```
 
 **Notice**
-   - In order to maintain high stability and compatibility across toolchains and libraries etc... it is HIGHLY recommeded to rebuild @system & @world after most if not all of these changes...  (See this article https://wiki.gentoo.org/wiki/Upgrading_GCC#Rebuilding_everything)
+   - In order to maintain high stability and compatibility across toolchains and libraries etc... ~~It is???~~ I personally HIGHLY recommeded to rebuild @system & @world after most if not all of these changes...  (See this article for steps https://wiki.gentoo.org/wiki/Upgrading_GCC#Rebuilding_everything)
 
 ------------------------------
  
