@@ -60,7 +60,7 @@ Then before **Updating the @world set** (https://wiki.gentoo.org/wiki/Handbook:A
   - MAKEOPTS="-j?" option in make.conf & portage/env/compiler-$(environment) (see https://wiki.gentoo.org/wiki/MAKEOPTS)   
    
    
-<sub>~~kernel not included~~, however you could possibly use a kernel.bin [*not recommended as thats pretty lame*] eg. sys-kernel/
+<sub>~~kernel not included~~, however you could possibly use a kernel.bin [*not recommended as thats pretty lame*] unless its my rolled up kernel then you're *extra* cool eg. sys-kernel/
 gentoo-kernel-bin</sub>   
    
   
