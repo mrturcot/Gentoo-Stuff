@@ -27,8 +27,8 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
 
  - **Main Features**
 ```
- System-wide GCC-LTO with Graphite  
- System-wide USE Flag Profile-guided optimizations  
+ GCC Compiled with Graphite optimizations  
+ System-wide USE Flag = Profile-guided optimizations  
  System-wide LLVM_TARGETS="AArch64 AMDGPU" 
  AArch64 CPU target (arm64 in Gentoo) 
  AMDGPU target (supports R600 and GCN GPUs)  
