@@ -49,7 +49,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
  eselect profile list = default/linux/amd64/17.1/desktop/gnome
 ```
 
-Then before **Updating the @world set** (https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Updating_the_.40world_set) download this repo as a zip=[https://github.com/mrturcot/Gentoo-Stuff/archive/refs/heads/master.zip] using wget (we dont have git rn). Extract & add/edit/use/remove the configs you choose *then* "emerge --ask --verbose --update --deep --newuse @world" Grab a coffee, save some time? Headaches maybe? Yes, I think so. Nevertheless   
+Then before **Updating the @world set** (https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Updating_the_.40world_set) download this repo as a zip=[https://github.com/mrturcot/Gentoo-Stuff/archive/refs/heads/master.zip] using wget (we dont have git rn). Extract & add/edit/use/remove the configs you choose *then* "emerge --ask --verbose --update --deep --newuse @world" Grab a coffee, save some time? Save a headaches maybe? Yes, I think so. Nevertheless   
    
  **User needs to set** <sub>(Unless you have znver1 cpu and okay with 12 threads?)</sub>   
  
