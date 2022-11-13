@@ -20,7 +20,7 @@ gentoo-kernel-bin</sub>
 (i have not tested this) Moreover, i do provide my .config for current "6.0.8-gentoo-sources" super trimmed down kernel (10MB) shared in "/stuff". This is for AMD Ryzen 2700 x470 znver1 & AMDGPU (Arctic Islands - POLARIS10/11/12, VEGAM). I guess it would work for other with same chipset [*not* as a drop in but maybe a start/base?], (running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in the activily set gentoo kernel sources "/usr/src/linux" would be 100% manditory as other hardware specifications would need to be set for your setup...) Untested...  
 
 ```
-mrturcot  on GentooRig /home/mrturcot/github/gentoo-stuff on   master [!1 ]
+mrturcot on GentooRig /home/mrturcot/github/gentoo-stuff on   master [!1 ]
 [ 04:10:05 PM ] ➜ l /boot
 Permissions Size User Date Modified Name
 .rwxr-xr-x  144k root  7 Nov 03:37  config-6.0.7-gentoo
@@ -29,7 +29,8 @@ Permissions Size User Date Modified Name
 .rwxr-xr-x  5.6M root 10 Nov 15:06  System.map-6.0.8-gentoo
 .rwxr-xr-x   10M root  7 Nov 03:37  vmlinuz-6.0.7-gentoo
 .rwxr-xr-x   10M root 10 Nov 15:06  vmlinuz-6.0.8-gentoo
-
+```
+```
  System GCC-LTO with Graphite  
  System Profile-guided optimizations  
  LLVM_TARGETS="AArch64 AMDGPU"  
