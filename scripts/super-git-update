@@ -1,7 +1,7 @@
-#!/bin/bash
-
 ## Script to automatically check repo git status. If 'out of date' then pull & build; if not SKIP.
-## Location of build-* scripts need to be in your $PATH i.e "$HOME/scripts"
+## Location of build-$(scripts) need to be in your $PATH i.e "$HOME/scripts".  
+
+#!/bin/bash
 
 # Get colors
 source $HOME/scripts/colors
