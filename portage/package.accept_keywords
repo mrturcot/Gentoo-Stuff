@@ -1,3 +1,4 @@
+# -------------------------------------------------------------------
 ### manually added accept package keywords
 # -------------------------------------------------------------------
 ## upstream packages (-9999 ** = git)
@@ -17,6 +18,8 @@
 >=www-client/firefox-102.4.0 ~amd64
 >=games-emulation/dolphin-5.0 ~amd64
 >=games-fps/gzdoom-4.8.2 ~amd64
+# -------------------------------------------------------------------
+
 # -------------------------------------------------------------------
 ### automatically added by portage using...
 ## emerge --autounmask=y & --autounmask-unrestricted-atoms=y
