@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------
-### manually added accept package keywords
+### Manually added accept package keywords
 # -------------------------------------------------------------------
-## upstream packages (-9999 ** = git)
+## Upstream packages (-9999 ** = git)
 # -------------------------------------------------------------------
 >=x11-terms/kitty-9999 **
 >=x11-terms/kitty-shell-integration-9999 **
@@ -12,7 +12,7 @@
 >=games-emulation/yuzu-9999 **
 >=media-sound/whipper-9999 **
 # -------------------------------------------------------------------
-## testing/unstable (~amd64) & 
+## Testing/unstable (~amd64) & 
 # -------------------------------------------------------------------
 >=sys-kernel/gentoo-sources-6.0 ~amd64
 >=www-client/firefox-102.4.0 ~amd64
@@ -21,7 +21,7 @@
 # -------------------------------------------------------------------
 
 # -------------------------------------------------------------------
-### automatically added by portage using...
+### Automatically added by portage using...
 ## emerge --autounmask=y & --autounmask-unrestricted-atoms=y
 ## so as to not restrict to installed package version only.
 # -------------------------------------------------------------------
