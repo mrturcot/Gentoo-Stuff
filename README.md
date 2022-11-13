@@ -24,6 +24,19 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
   `-//////:--.                        Memory: 829MiB / 32032MiB 
 ```
    
+
+ - **Main Features**
+```
+ System-wide GCC-LTO with Graphite  
+ System-wide Profile-guided optimizations  
+ System-wide LLVM_TARGETS="AArch64 AMDGPU" 
+ AArch64 CPU target (arm64 in Gentoo) 
+ AMDGPU target (supports R600 and GCN GPUs)  
+ System-wide Clang & Clang-LTO
+ Also per-package compiler environment configurations for:  
+ Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback  
+```  
+
    
   - Portage & Kernel setup for a Stable Gentoo x86-64 EFI, Ryzen Zen-Ver.1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system. Configured with optimizations for speed and gaming performance in mind...  
    
@@ -66,17 +79,7 @@ Permissions Size User Date Modified Name
 .rwxr-xr-x   10M root  7 Nov 03:37  vmlinuz-6.0.7-gentoo
 .rwxr-xr-x   10M root 10 Nov 15:06  vmlinuz-6.0.8-gentoo
 ```
- - **Main Features**
-```
- System-wide GCC-LTO with Graphite  
- System-wide Profile-guided optimizations  
- System-wide LLVM_TARGETS="AArch64 AMDGPU" 
- AArch64 CPU target (arm64 in Gentoo) 
- AMDGPU target (supports R600 and GCN GPUs)  
- System-wide Clang & Clang-LTO
- Also per-package compiler environment configurations for:  
- Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback  
-```  
+
    
 Every package currently set in portage/package.env is confirmed working with the specified per-package build environment(s) eg. compiler-clang   
    
