@@ -41,11 +41,17 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
   - Portage & Kernel setup for a Stable Gentoo x86-64 EFI, Ryzen Zen-Ver.1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system. Configured with optimizations for speed and gaming performance in mind...  
    
    
- /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. One helpful use case scenario could be. Once initially mounted and chrooted into a new Gentoo install environment, download this repo as a zip=[https://github.com/mrturcot/Gentoo-Stuff/archive/refs/heads/master.zip] using wget (we dont have git rn). Then extract & edit/use/rm any configs you choose to get you going way ahead of schedule :)
+ /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. One helpful use case scenario could be. Once initially mounted and chrooted into a new Gentoo install environment. Complete the install as normal 
+
+```
+ emerge-webrsync
+ emerge --sync
+ eselect profile list = default/linux/amd64/17.1/desktop/gnome
+```
+
+Then at before **Updating the @world set** (https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Updating_the_.40world_set) download this repo as a zip=[https://github.com/mrturcot/Gentoo-Stuff/archive/refs/heads/master.zip] using wget (we dont have git rn). Extract & add/edit/use/remove the configs you choose *then* "emerge --ask --verbose --update --deep --newuse @world"
    
-   
-   
-**User needs to set** <sub>(Unless you have znver1 cpu and okay with 12 threads?)</sub>   
+ **User needs to set** <sub>(Unless you have znver1 cpu and okay with 12 threads?)</sub>   
  
   - CPU_FLAGS_X86 in package.use/00cpu-flags (see https://wiki.gentoo.org/wiki/CPU_FLAGS_X86)  
 
@@ -54,8 +60,6 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
   - MAKEOPTS="-j?" option in make.conf & portage/env/compiler-$(environment) (see https://wiki.gentoo.org/wiki/MAKEOPTS)   
    
    
-   
-Further edit the configs to your liking if you so choose, continue the install as normal && emerge @everything once done!  
 <sub>~~kernel not included~~, however you could possibly use a kernel.bin [*not recommended as thats pretty lame*] eg. sys-kernel/
 gentoo-kernel-bin</sub>   
    
