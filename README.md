@@ -43,7 +43,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
    
    
 Further edit the configs to your liking if you so choose && emerge @everything!  
-<sub>kernel not included, however you could possibley use a kernel.bin [*not recommended as thats extremely lame*] eg. sys-kernel/
+<sub>kernel not included, however you could possibly use a kernel.bin [*not recommended as thats pretty lame*] eg. sys-kernel/
 gentoo-kernel-bin</sub>   
    
    
