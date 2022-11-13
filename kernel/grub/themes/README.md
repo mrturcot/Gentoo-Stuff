@@ -1,2 +1,3 @@
 ## Themes
-## https://github.com/Telemin/gentoo-grub-themes
+
+ - https://github.com/Telemin/gentoo-grub-themes
