@@ -32,7 +32,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
    
    
    
-**User needs to set** (Unless you have znver1 cpu and okay with 12 threads?)  
+**User needs to set** <sub>(Unless you have znver1 cpu and okay with 12 threads?)</sub>   
  
   - CPU_FLAGS_X86 in package.use/00cpu-flags (see https://wiki.gentoo.org/wiki/CPU_FLAGS_X86)  
 
