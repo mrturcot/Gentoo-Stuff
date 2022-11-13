@@ -37,7 +37,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
 ```  
 
    
-  - Portage & Kernel setup for a Stable Gentoo x86-64 EFI, Ryzen Zen-Ver.1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system. Configured with optimizations for speed and gaming performance in mind...  
+  - Portage & Kernel setup for a Stable Gentoo x86-64 EFI, Ryzen ZenVer1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system. Configured with optimizations for speed and gaming performance in mind...  
    
    
  /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. One helpful use case scenario could be. Once initially mounted and chrooted into a new Gentoo install environment. Complete the install as normal 
