@@ -55,7 +55,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
    
    
    
-Further edit the configs to your liking if you so choose && emerge @everything!  
+Further edit the configs to your liking if you so choose, continue the install as normal && emerge @everything once done!  
 <sub>~~kernel not included~~, however you could possibly use a kernel.bin [*not recommended as thats pretty lame*] eg. sys-kernel/
 gentoo-kernel-bin</sub>   
    
@@ -83,6 +83,7 @@ Permissions Size User Date Modified Name
    
 Every package currently set in portage/package.env is confirmed working with the specified per-package build environment(s) eg. compiler-clang   
    
+
 **Notice**
    - In order to maintain high stability and compatibility across toolchains and libraries etc... ~~It is???~~ I personally HIGHLY recommeded to rebuild @system & @world after most if not all of these changes...  (See this article for steps [not opinions xd] https://wiki.gentoo.org/wiki/Upgrading_GCC#Rebuilding_everything)
    
