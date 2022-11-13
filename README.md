@@ -27,10 +27,11 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
 
 
 
-  - Portage configs for a Gentoo x86-64 Stable Znver1 AMDGPU OpenRC efi Gnome-Light X11 Pipewire system, built with optimizations for speed and top quality gaming performance in mind... 
+  - Portage configs for a Gentoo x86-64 Stable Znver1 AMDGPU OpenRC EFI Gnome-Light X11 Pipewire system, built with optimizations for speed and top quality gaming performance in mind... 
  
 
  /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. One helpful use case scenario could be. Once initially mounted and chrooted into a new Gentoo install environment, download this repo as a zip=[https://github.com/mrturcot/Gentoo-Stuff/archive/refs/heads/master.zip] using wget (we dont have git rn). Then extract & edit/use/rm any configs you choose to get you going way ahead of schedule :)
+
 
 
 **User needs to set**  
@@ -42,12 +43,15 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
   - MAKEOPTS="-j?" option in make.conf & portage/env/compiler-$(environment) (see https://wiki.gentoo.org/wiki/MAKEOPTS)   
 
 
+
 Further edit the configs to your liking if you so choose && emerge @everything!  
 <sub>kernel not included, however you could possibley use a kernel.bin [*not recommended as its extremely lame*] eg. sys-kernel/
 gentoo-kernel-bin</sub>   
 
 
+
 (I have not tested this) furthermore, I do provide my .config for current "6.0-gentoo-sources" super trimmed down kernel (10MB) shared in "/stuff". This is for a basic AMD Ryzen 2700 x470 znver1 & AMDGPU Arctic Islands - POLARIS10/11/12, VEGAM setup. I guess it would work for others with same chipsets? [*not* as a drop in but maybe a start/base?], (running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in the activily set gentoo kernel sources "/usr/src/linux" would be 100% manditory as other hardware specifications would need to be set for your setup...) This is *Untested*...   
+
 
 
 ```
