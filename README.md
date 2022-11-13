@@ -35,7 +35,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
  Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback 
    
  Local USE Flags enabled (select packages only eg. GCC)  
- ## Can be overridden with using PER-Package env's compiler-$(environment) *not PGO*  
+ ## Can be overridden using PER-Package env's compiler-$(environment) *not PGO*  
  Clang = Force building using installed clang (rather than the default CC/CXX).  
  LTO = Build using Link Time Optimizations (LTO)  
  PGO = Profile-guided optimizations   
