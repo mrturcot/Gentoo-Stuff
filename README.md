@@ -66,7 +66,9 @@ Permissions Size User Date Modified Name
 ```
  System-wide GCC-LTO with Graphite  
  System-wide Profile-guided optimizations  
- System-wide LLVM_TARGETS="AArch64 AMDGPU"  
+ System-wide LLVM_TARGETS="AArch64 AMDGPU" 
+ AArch64 CPU target (arm64 in Gentoo) 
+ AMDGPU target (supports R600 and GCN GPUs)  
  System-wide Clang & Clang-LTO
  Also per-package compiler environment configurations for:  
  Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback  
