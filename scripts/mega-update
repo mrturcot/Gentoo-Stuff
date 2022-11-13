@@ -1,8 +1,8 @@
+#!/bin/bash
+
 ## Script to sync, update, build-install/kernel  
 ## update & build upstream git (9999**) packages  
 ## & finally clean dependencies 
-
-#!/bin/bash
 
 # get colors
 source $HOME/scripts/colors
