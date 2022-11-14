@@ -5,7 +5,9 @@ CXXFLAGS="${COMMON_FLAGS}"
 MAKEOPTS="-j12"
 
 ## Clang settings
-# *sys-libs/llvm-libunwind needed for (${LDFLAGS} -unwindlib=libunwind)
+# sys-libs/libunwind **OR** sys-libs/llvm-libunwind needed for (${LDFLAGS} -unwindlib=libunwind)
+# If you switch later you will need to @preserved-rebuild anything build against old unwind
+
 CC="/usr/lib/llvm/15/bin/clang-15"
 CXX="/usr/lib/llvm/15/bin/clang++-15"
 AR="/usr/lib/llvm/15/bin/llvm-ar"
