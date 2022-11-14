@@ -73,3 +73,5 @@
 >=games-util/game-device-udev-rules-20220311 ~amd64
 # required by games-util/steam-launcher (argument)
 >=games-util/steam-launcher-1.0.0.74-r1 ~amd64
+# required by games-action/multimc-bin (argument)
+>=games-action/multimc-bin-1.6.1-r1 ~amd64

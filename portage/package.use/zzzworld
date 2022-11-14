@@ -844,3 +844,6 @@
 # required by app-emulation/wine-vanilla-7.0-r3::gentoo[gstreamer]
 # required by app-emulation/wine-vanilla (argument)
 >=media-sound/cdparanoia-3.10.2-r7 abi_x86_32
+# required by dev-libs/libappindicator-12.10.1_p20200706::gentoo
+# required by dev-libs/libappindicator (argument)
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3
