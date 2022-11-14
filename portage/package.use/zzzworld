@@ -1,4 +1,8 @@
-### Portage --autounmask auto-added packages
+# -------------------------------------------------------------------
+### Automatically added by portage using...
+## emerge --autounmask=y --autounmask-unrestricted-atoms=y --autounmask-use=y
+## so as to not restrict to installed package version only.
+# -------------------------------------------------------------------
 # required by games-emulation/yuzu-0_p20220725::guru
 # required by yuzu (argument)
 >=net-libs/mbedtls-2.28.0-r1 cmac
