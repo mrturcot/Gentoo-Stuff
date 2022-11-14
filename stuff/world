@@ -6,6 +6,8 @@ app-editors/nano
 app-editors/sublime-text
 app-editors/vim
 app-emacs/eselect-mode
+app-emulation/wine-vanilla
+app-emulation/winetricks
 app-eselect/eselect-autostart
 app-eselect/eselect-gradle
 app-eselect/eselect-java
@@ -38,6 +40,7 @@ app-shells/starship
 app-shells/zsh
 app-text/gspell
 app-vim/eselect-syntax
+dev-java/gradle-bin
 dev-java/openjdk-bin:17
 dev-java/openjdk-bin:8
 dev-java/openjdk:17
