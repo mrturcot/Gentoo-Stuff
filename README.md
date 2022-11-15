@@ -26,14 +26,18 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
    
 
  - **Main Features**
+
 ```
  GCC set to compile with Graphite, LTO & PGO optimizations  
  System-wide LLVM_TARGETS="AArch64 AMDGPU" 
  AArch64 CPU target (arm64 in Gentoo) 
  AMDGPU target (supports R600 and GCN GPUs)  
+```
+```
  PER-Package compiler environment configurations (as defined in portage/env & package.env) for:  
  Clang, Clang-LTO, GCC-LTO, GCC Fallback & GCC-NO-LTO Fallback 
-   
+```
+```
  Local USE Flags enabled (select packages only eg. GCC)  
  ## Can be overridden using PER-Package env's compiler-$(environment) *not PGO*  
  Clang = Force building using installed clang (rather than the default CC/CXX).  
@@ -41,7 +45,6 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
  PGO = Profile-guided optimizations   
  and more... see portage/make.conf "USE=$(Flags)"  
 ```  
-
    
   - My in sync Portage & Kernel setup for a Stable Gentoo x86-64 EFI, Ryzen ZenVer1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system configuration. With optimizations for speed and gaming performance in mind...  
    
