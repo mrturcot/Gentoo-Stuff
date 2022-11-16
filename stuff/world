@@ -45,9 +45,12 @@ dev-java/openjdk-bin:17
 dev-java/openjdk-bin:8
 dev-java/openjdk:17
 dev-java/openjdk:8
+dev-lang/go
 dev-lang/luajit
+dev-lang/rust-bin
 dev-lang/rust::gentoo
 dev-libs/appstream-glib
+dev-libs/libappindicator
 dev-perl/TermReadKey::gentoo
 dev-qt/qtchooser
 dev-qt/qtconcurrent
@@ -58,6 +61,7 @@ dev-util/spirv-headers
 dev-util/spirv-tools
 dev-util/vulkan-tools
 dev-vcs/git
+games-action/multimc-bin
 games-emulation/dolphin
 games-emulation/yuzu
 games-fps/gzdoom
@@ -90,14 +94,17 @@ media-plugins/audacious-plugins
 media-sound/audacious
 media-sound/whipper
 media-video/libva-utils
+media-video/mplayer
 media-video/mpv
 media-video/mpv::vapoursynth
 net-analyzer/nmap
 net-dns/bind-tools
 net-dns/https_dns_proxy
 net-ftp/vsftpd
+net-im/discord-bin
 net-libs/libpsl::gentoo
 net-libs/libssh
+net-libs/libtorrent-rasterbar
 net-misc/chrony
 net-misc/openssh
 net-p2p/qbittorrent
@@ -114,7 +121,7 @@ sys-auth/pambase::gentoo
 sys-block/gparted
 sys-boot/grub
 sys-devel/lld
-sys-devel/lld:14
+sys-fs/dosfstools
 sys-fs/ntfs3g
 sys-fs/udisks::gentoo
 sys-kernel/gentoo-sources
@@ -137,5 +144,4 @@ x11-libs/libXxf86dga
 x11-terms/kitty
 x11-terms/kitty-shell-integration
 x11-terms/kitty-terminfo
-x11-themes/materia-theme
 x11-themes/papirus-icon-theme

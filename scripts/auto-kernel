@@ -23,7 +23,7 @@ make CC=clang LD=ld.lld NM=llvm-nm AR=llvm-ar LLVM_IAS=1 -j14 modules_install &&
 make install
 echo "remove all built kernel files and build dirs; keep 2 kernels (past/current)"
 sleep 1
-eclean-kernel -n2
+eclean-kernel -n3
 echo "rebuild kernel modules"
 sleep 1
 emerge @module-rebuild
