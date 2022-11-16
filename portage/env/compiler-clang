@@ -8,11 +8,11 @@ MAKEOPTS="-j12"
 # sys-libs/libunwind **OR** sys-libs/llvm-libunwind needed for (${LDFLAGS} -unwindlib=libunwind)
 # If you switch later you will need to @preserved-rebuild anything build against old unwind
 
-CC="/usr/lib/llvm/15/bin/clang-15"
-CXX="/usr/lib/llvm/15/bin/clang++-15"
-AR="/usr/lib/llvm/15/bin/llvm-ar"
-NM="/usr/lib/llvm/15/bin/llvm-nm"
-RANLIB="/usr/lib/llvm/15/bin/llvm-ranlib"
+CC="clang"
+CXX="clang++"
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
 LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
 
 ### Disabling hardening because some packages fail with these flags on
