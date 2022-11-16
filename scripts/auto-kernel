@@ -18,7 +18,8 @@ sleep 1
 make olddefconfig
 echo "make && install kernel"
 sleep 1
-make -j14 && make -j14 modules_install &&
+make CC=clang LD=ld.lld NM=llvm-nm AR=llvm-ar LLVM_IAS=1 -j14 &&
+make CC=clang LD=ld.lld NM=llvm-nm AR=llvm-ar LLVM_IAS=1 -j14 modules_install &&
 make install
 echo "remove all built kernel files and build dirs; keep 2 kernels (past/current)"
 sleep 1
