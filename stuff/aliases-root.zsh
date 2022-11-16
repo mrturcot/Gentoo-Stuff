@@ -1,6 +1,6 @@
 # Big bois
 alias emerge-system="emerge --ask --verbose --emptytree --usepkg=n @system"
-alias emerge-world="emerge --ask --verbose --emptytree --usepkg=n @world"
+alias emerge-world="emerge --ask --verbose --emptytree --usepkg=n --keep-going=y @world"
 
 # Gentoo 
 alias emerge-sync="eix-sync"
@@ -21,5 +21,6 @@ alias grub-update="grub-mkconfig -o /boot/grub/grub.cfg"
 alias l="exa -alh --color=always --group-directories-first"
 alias b="bat -p"
 alias c="clear"
+alias e="exit"
 alias watch-sensors="watch -n 1 sensors"
 alias watch-genlop="watch -cn 3 genlop -ci"
