@@ -21,7 +21,7 @@ sleep 1
 make -j14 &&
 make -j14 modules_install &&
 make install
-echo "remove all built kernel files and build dirs; keep 2 kernels (past/current)"
+echo "remove all old built kernels, files & build directories. Keep 2 (past/current)"
 sleep 1
 eclean-kernel -n2
 echo "rebuild kernel modules"

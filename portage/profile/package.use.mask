@@ -1,0 +1,6 @@
+## /etc/portage/profile/package.use.mask file contains per-package USE flag masks
+
+# unmask package "foo-bar/package -flag"
+dev-lang/rust -system-llvm
+
+#mask package "foo-bar/package flag"

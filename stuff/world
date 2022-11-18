@@ -81,6 +81,7 @@ media-fonts/noto-emoji
 media-fonts/roboto
 media-fonts/source-code-pro
 media-fonts/symbola
+media-gfx/eog
 media-gfx/gimp
 media-libs/graphene::gentoo
 media-libs/libplacebo
