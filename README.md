@@ -9,7 +9,7 @@
    -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
  `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: X470 AORUS GAMING 7 WIFI 
  omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.0.9-gentoo 
-.ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hour, 20 mins 
+.ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hours, 20 mins 
  oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1080 (emerge) 
   :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
     .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Resolution: 3840x2160 
@@ -20,8 +20,8 @@
 +MMMMMMMNNNNNmmmmdmNMNdso/-           Icons: Papirus [GTK2/3] 
 yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty 
 /hMMNNNNNNNNMNdhs++/-`                CPU: AMD Ryzen 7 2700 (16) @ 3.800GHz 
-`/ohdmmddhys+++/:.`                   GPU: AMD ATI Radeon RX 470/480/570/570X/580/580X/590
-  `-//////:--.                        Memory: 829MiB / 32032MiB 
+`/ohdmmddhys+++/:.`                   GPU: AMD ATI Radeon RX 470/480/570/570X/580/580X/590 
+  `-//////:--.                        Memory: 832MiB / 32032MiB 
 ```
    
 
