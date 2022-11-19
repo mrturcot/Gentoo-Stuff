@@ -77,3 +77,5 @@
 >=games-util/steam-launcher-1.0.0.74-r1 ~amd64
 # required by games-action/multimc-bin (argument)
 >=games-action/multimc-bin-1.6.1-r1 ~amd64
+# required by games-action/minecraft-launcher (argument)
+>=games-action/minecraft-launcher-1.0.1221 ~amd64

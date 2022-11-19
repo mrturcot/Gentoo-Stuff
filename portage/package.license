@@ -26,3 +26,5 @@
 >=games-util/steam-launcher-1.0.0.74-r1 ValveSteamLicense
 # required by net-im/discord-bin (argument)
 >=net-im/discord-bin-0.0.21-r1 all-rights-reserved
+# required by games-action/minecraft-launcher (argument)
+>=games-action/minecraft-launcher-1.0.1221 Mojang

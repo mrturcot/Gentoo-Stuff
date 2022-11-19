@@ -5,16 +5,17 @@ alias emerge-world="emerge --ask --verbose --emptytree --usepkg=n --keep-going=y
 # Gentoo 
 alias emerge-sync="eix-sync"
 alias emerge-update="emerge --ask --verbose --update --newuse --deep @world"
+alias emerge-update-auto="emerge --ask --verbose --update --newuse --deep --autounmask=y --autounmask-unrestricted-atoms --autounmask-use=y --autounmask-license=y @world"
 alias emerge-install="emerge --ask --verbose"
 alias emerge-oneshot="emerge --ask --verbose --oneshot"
 alias emerge-autounmask="emerge --ask --verbose --autounmask=y --autounmask-unrestricted-atoms --autounmask-use=y --autounmask-license=y"
 alias emerge-newuse="emerge --ask --verbose --newuse --deep @world"
 alias emerge-changeuse="emerge --ask --verbose --changed-use --deep @world"
 alias emerge-depclean="emerge --ask --depclean"
-alias emerge-smart="emerge @smart-live-rebuild"
+alias emerge-smart="emerge --ask @smart-live-rebuild"
 alias emerge-noreplace="emerge --noreplace"
 alias emerge-deselect="emerge --deselect"
-alias eix-cache="eix-update && eix-remote update"
+alias emerge-cache="eix-update && eix-remote update"
 
 # The Rest
 alias grub-update="grub-mkconfig -o /boot/grub/grub.cfg"

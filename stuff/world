@@ -56,11 +56,13 @@ dev-qt/qtchooser
 dev-qt/qtconcurrent
 dev-qt/qttranslations
 dev-util/cbindgen
+dev-util/debugedit
 dev-util/glslang
 dev-util/spirv-headers
 dev-util/spirv-tools
 dev-util/vulkan-tools
 dev-vcs/git
+games-action/minecraft-launcher
 games-action/multimc-bin
 games-emulation/dolphin
 games-emulation/yuzu
@@ -121,6 +123,7 @@ sys-apps/smartmontools
 sys-auth/pambase::gentoo
 sys-block/gparted
 sys-boot/grub
+sys-devel/gdb
 sys-devel/lld
 sys-fs/dosfstools
 sys-fs/ntfs3g
