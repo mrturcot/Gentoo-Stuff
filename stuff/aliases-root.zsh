@@ -12,12 +12,13 @@ alias emerge-autounmask="emerge --ask --verbose --autounmask=y --autounmask-unre
 alias emerge-newuse="emerge --ask --verbose --newuse --deep @world"
 alias emerge-changeuse="emerge --ask --verbose --changed-use --deep @world"
 alias emerge-depclean="emerge --ask --depclean"
-alias emerge-smart="emerge --ask @smart-live-rebuild"
+alias emerge-smart="emerge --ask --verbose @smart-live-rebuild"
 alias emerge-noreplace="emerge --noreplace"
 alias emerge-deselect="emerge --deselect"
 alias emerge-cache="eix-update && eix-remote update"
 
 # The Rest
+alias grub-install="grub-install --target=x86_64-efi --efi-directory=/boot"
 alias grub-update="grub-mkconfig -o /boot/grub/grub.cfg"
 alias l="exa -alh --color=always --group-directories-first"
 alias b="bat -p"
