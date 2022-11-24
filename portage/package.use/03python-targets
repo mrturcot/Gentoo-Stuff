@@ -1,3 +1,8 @@
+### System
 ## This is disabled for now: Using profile default
 #*/* PYTHON_TARGETS: python3_11
 #*/* PYTHON_SINGLE_TARGET: -* python3_11
+
+## Per-Package
+media-video/mpv PYTHON_TARGETS: -* python3_11 PYTHON_SINGLE_TARGET: -* python3_11
+x11-terms/kitty PYTHON_TARGETS: -* python3_11 PYTHON_SINGLE_TARGET: -* python3_11
