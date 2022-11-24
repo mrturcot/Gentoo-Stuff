@@ -9,7 +9,7 @@ source $HOME/scripts/colors
 
 echo -en '\n'
 echo -e "${BB}###### [ ${BY}!! SUPER MEGA UPDATE !!${NC}${BB} ] ######${NC}"
-sleep 1
+sleep 0.5
 
 ## sync all repos on system
 
@@ -117,4 +117,4 @@ done
 
 echo -en '\n'
 echo -e "${BB}###### [ ${BY}!! Finished !!${NC}${BB} ] ######${NC}"
-sleep 1
+sleep 0.5
