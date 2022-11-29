@@ -1,0 +1,8 @@
+### System
+## This is disabled for now: Using profile default
+#*/* LUA_TARGETS: lua5-4
+#*/* LUA_SINGLE_TARGET: -* lua5-4
+
+## Per-Package
+games-emulation/flycast LUA_TARGETS: -* lua5-4 LUA_SINGLE_TARGET: -* lua5-4
+games-engines/openmw LUA_TARGETS: -* luajit LUA_SINGLE_TARGET: -* luajit

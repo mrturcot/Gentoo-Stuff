@@ -846,4 +846,19 @@
 >=media-sound/cdparanoia-3.10.2-r7 abi_x86_32
 # required by dev-libs/libappindicator-12.10.1_p20200706::gentoo
 # required by dev-libs/libappindicator (argument)
->=dev-libs/libdbusmenu-16.04.0-r2 gtk3
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3# required by games-emulation/retroarch-1.10.3::menelkir[ozone]
+# required by games-emulation/retroarch (argument)
+>=games-emulation/retroarch-assets-1_pre20210422-r1 ozone
+# required by games-emulation/retroarch-1.10.3::menelkir[materialui]
+# required by @selected
+# required by @world (argument)
+>=games-emulation/retroarch-assets-1_pre20210422-r1 materialui
+# required by games-emulation/pcsx2-9999::gentoo
+# required by games-emulation/pcsx2 (argument)
+>=dev-libs/libzip-1.9.2 zstd
+# required by games-engines/openmw-9999::gentoo
+# required by games-engines/openmw (argument)
+>=sci-physics/bullet-3.21 double-precision
+# required by games-emulation/duckstation-9999::guru[retroachievements]
+# required by games-emulation/duckstation::guru (argument)
+>=net-misc/curl-7.86.0-r3 curl_ssl_gnutls

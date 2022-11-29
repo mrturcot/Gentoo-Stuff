@@ -1,0 +1,1 @@
+games-emulation/retroarch -sdl materialui libusb libcaca ffmpeg freetype

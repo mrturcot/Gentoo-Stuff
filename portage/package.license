@@ -28,3 +28,13 @@
 >=net-im/discord-bin-0.0.21-r1 all-rights-reserved
 # required by games-action/minecraft-launcher (argument)
 >=games-action/minecraft-launcher-1.0.1221 Mojang
+# required by games-emulation/libretro-snes9x (argument)
+>=games-emulation/libretro-snes9x-9999 Snes9x
+# required by games-emulation/genesis_plus_gx-libretro (argument)
+>=games-emulation/genesis_plus_gx-libretro-9999 GPGX
+# required by games-emulation/fbneo-libretro (argument)
+>=games-emulation/fbneo-libretro-9999 FBA
+# required by games-emulation/mame2003_plus-libretro (argument)
+>=games-emulation/mame2003_plus-libretro-9999 MAME-GPL
+# required by games-emulation/vba-next-libretro (argument)
+>=games-emulation/vba-next-libretro-9999-r3 vba
