@@ -139,3 +139,5 @@
 >=dev-qt/qttools-6.4.0 ~amd64
 # required by games-fps/dhewm3 (argument)
 >=games-fps/dhewm3-1.5.1_rc2 ~amd64
+# required by minecraft-launcher (argument)
+>=games-action/minecraft-launcher-1.0.1221 ~amd64
