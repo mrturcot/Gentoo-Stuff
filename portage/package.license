@@ -38,3 +38,11 @@
 >=games-emulation/mame2003_plus-libretro-9999 MAME-GPL
 # required by games-emulation/vba-next-libretro (argument)
 >=games-emulation/vba-next-libretro-9999-r3 vba
+# required by media-video/mplayer-9999::bircoph[rar]
+# required by @selected
+# required by @world (argument)
+=app-arch/unrar-6.1.7 unRAR
+# required by media-video/mplayer-9999::bircoph[faac,encode]
+# required by @selected
+# required by @world (argument)
+>=media-libs/faac-1.30 MPEG-4

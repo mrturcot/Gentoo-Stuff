@@ -3,46 +3,50 @@
 # -------------------------------------------------------------------
 ## Upstream packages (-9999 ** = git)
 # -------------------------------------------------------------------
+>=app-misc/radeontop-9999 **
+>=games-emulation/bsnes-mercury-performance-libretro-9999 **
+>=games-emulation/desmume-libretro-9999 **
+>=games-emulation/duckstation-9999 **
+>=games-emulation/fbneo-libretro-9999 **
+>=games-emulation/flycast-9999 **
+>=games-emulation/flycast-libretro-9999 **
+>=games-emulation/gambatte-libretro-9999 **
+>=games-emulation/genesis_plus_gx-libretro-9999 **
+>=games-emulation/libretro-fceumm-9999 **
+>=games-emulation/libretro-nestopia-9999 **
+>=games-emulation/libretro-snes9x-9999 **
+>=games-emulation/mame2003_plus-libretro-9999 **
+>=games-emulation/mednafen-psx-hw-libretro-9999 **
+>=games-emulation/melonds-libretro-9999 **
+>=games-emulation/mesen-libretro-9999 **
+>=games-emulation/mupen64next-libretro-9999 **
+>=games-emulation/parallel_n64-libretro-9999 **
+>=games-emulation/pcsx2-9999 **
+>=games-emulation/vba-next-libretro-9999 **
+>=games-emulation/yuzu-9999 **
+>=games-engines/openmw-9999 **
+>=media-libs/libplacebo-9999 **
+>=media-sound/cmus-9999 **
+>=media-sound/whipper-9999 **
+>=media-video/mplayer-9999 **
+>=media-video/mpv-9999 **
+>=net-p2p/qbittorrent-9999 **
 >=x11-terms/kitty-9999 **
 >=x11-terms/kitty-shell-integration-9999 **
 >=x11-terms/kitty-terminfo-9999 **
->=media-libs/libplacebo-9999 **
->=media-video/mpv-9999 **
->=app-misc/radeontop-9999 **
->=games-emulation/yuzu-9999 **
->=media-sound/whipper-9999 **
->=net-p2p/qbittorrent-9999 **
->=media-sound/cmus-9999 **
->=games-emulation/duckstation-9999 **
->=games-engines/openmw-9999 **
->=games-emulation/flycast-9999 **
->=games-emulation/mednafen-psx-hw-libretro-9999 **
->=games-emulation/pcsx2-9999 **
->=games-emulation/flycast-libretro-9999 **
->=games-emulation/mupen64next-libretro-9999 **
->=games-emulation/mesen-libretro-9999 **
->=games-emulation/libretro-snes9x-9999 **
->=games-emulation/gambatte-libretro-9999 **
->=games-emulation/genesis_plus_gx-libretro-9999 **
->=games-emulation/parallel_n64-libretro-9999 **
->=games-emulation/fbneo-libretro-9999 **
->=games-emulation/mame2003_plus-libretro-9999 **
->=games-emulation/melonds-libretro-9999 **
->=games-emulation/vba-next-libretro-9999 **
->=games-emulation/libretro-fceumm-9999 **
->=games-emulation/desmume-libretro-9999 **
->=games-emulation/bsnes-mercury-performance-libretro-9999 **
->=games-emulation/libretro-nestopia-9999 **
 # -------------------------------------------------------------------
 ## Testing/unstable (~amd64) & 
 # -------------------------------------------------------------------
->=sys-kernel/gentoo-sources-6.0 ~amd64
->=www-client/firefox-106.0.5 ~amd64
+>=dev-util/cmake-3.25.0 ~amd64
 >=games-emulation/dolphin-5.0 ~amd64
->=games-fps/gzdoom-4.8.2 ~amd64
->=net-libs/libtorrent-rasterbar-2.0.8 ~amd64
->=sys-process/glances-3.3.0 ~amd64
 >=games-emulation/mgba-libretro-1.0_pre20210114 ~amd64
+>=games-fps/gzdoom-4.8.2 ~amd64
+>=media-libs/mesa-22.2.3 ~amd64
+>=net-libs/libtorrent-rasterbar-2.0.8 ~amd64
+>=sys-kernel/gentoo-sources-6.0 ~amd64
+>=sys-kernel/linux-headers-6.0 ~amd64
+>=sys-process/glances-3.3.0 ~amd64
+>=www-client/firefox-106.0.5 ~amd64
 # -------------------------------------------------------------------
 
 # -------------------------------------------------------------------
@@ -114,8 +118,6 @@
 # required by games-emulation/retroarch-1.10.3::menelkir
 # required by games-emulation/retroarch (argument)
 =games-emulation/libretro-common-overlays-1_pre20210503-r1 ~amd64
-# required by games-emulation/duckstation (argument)
->=games-emulation/duckstation-9999 **
 # required by games-emulation/pcsx2-9999::gentoo
 # required by games-emulation/pcsx2 (argument)
 >=dev-libs/libchdr-0_p20220917 ~amd64
@@ -141,3 +143,5 @@
 >=games-fps/dhewm3-1.5.1_rc2 ~amd64
 # required by minecraft-launcher (argument)
 >=games-action/minecraft-launcher-1.0.1221 ~amd64
+# required by dev-qt/qtsvg:6 (argument)
+>=dev-qt/qtsvg-6.4.0 ~amd64

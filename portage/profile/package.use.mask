@@ -1,6 +1,13 @@
-## /etc/portage/profile/package.use.mask file contains per-package USE flag masks
+### /etc/portage/profile/package.use.mask file contains per-package USE flag masks
 
-# unmask package "foo-bar/package -flag"
+# -------------------------------------------------------------------
+### Manually unmasked
+# -------------------------------------------------------------------
+# unmask foo-bar/package USE=-flag "foo-bar/package -flag"
 dev-lang/rust -system-llvm
+games-emulation/pcsx2 -qt6
 
-#mask package "foo-bar/package flag"
+# -------------------------------------------------------------------
+### Manually masked
+# -------------------------------------------------------------------
+# mask foo-bar/package USE=flag "foo-bar/package flag"

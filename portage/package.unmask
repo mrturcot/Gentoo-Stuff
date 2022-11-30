@@ -1,3 +1,17 @@
-## package unmask
+# -------------------------------------------------------------------
+### Manually unmasked
+# -------------------------------------------------------------------
 dev-qt/qtbase
 dev-qt/qttools
+
+# -------------------------------------------------------------------
+### Automatically unmasked by portage using...
+## emerge --autounmask=y --autounmask-unrestricted-atoms=y
+## so as to not restrict to installed package version only.
+# -------------------------------------------------------------------
+# required by dev-qt/qtsvg:6 (argument)
+# /var/db/repos/gentoo/profiles/package.mask:
+# Jimi Huotari <chiitoo@gentoo.org> (2022-08-02)
+# Masked for testing. The split of some packages may still
+# change. bug #838970.
+>=dev-qt/qtsvg-6.4.0
