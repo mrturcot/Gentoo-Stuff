@@ -6,6 +6,7 @@
 # unmask foo-bar/package USE=-flag "foo-bar/package -flag"
 dev-lang/rust -system-llvm
 games-emulation/pcsx2 -qt6
+www-client/firefox -system-python-libs
 
 # -------------------------------------------------------------------
 ### Manually masked

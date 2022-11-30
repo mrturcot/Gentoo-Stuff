@@ -37,6 +37,8 @@
 # -------------------------------------------------------------------
 ## Testing/unstable (~amd64) & 
 # -------------------------------------------------------------------
+>=dev-lang/spidermonkey-102.5.0 ~amd64
+>=dev-libs/gjs-1.74.1 ~amd64
 >=dev-util/cmake-3.25.0 ~amd64
 >=games-emulation/dolphin-5.0 ~amd64
 >=games-emulation/mgba-libretro-1.0_pre20210114 ~amd64
@@ -47,6 +49,7 @@
 >=sys-kernel/linux-headers-6.0 ~amd64
 >=sys-process/glances-3.3.0 ~amd64
 >=www-client/firefox-106.0.5 ~amd64
+>=www-client/librewolf-107.0_p1 ~amd64
 # -------------------------------------------------------------------
 
 # -------------------------------------------------------------------

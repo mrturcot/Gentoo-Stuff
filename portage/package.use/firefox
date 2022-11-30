@@ -1,1 +1,1 @@
-www-client/firefox hardened hwaccel system-png -wayland
+www-client/firefox -wayland hardened hwaccel system-png system-python-libs
