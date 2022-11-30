@@ -29,5 +29,7 @@ CHROMIUM_FLAGS="
 	--canvas-oop-rasterization \
 	--use-vulkan \
 	--check-for-update-interval=604800 \
-	--enable-features=VaapiVideoEncoder,VaapiVideoDecoder,CanvasOopRasterization \
-	--gtk-version=4"
+	--enable-features=PlatformHEVCDecoderSupport \
+	--enable-features=VaapiVideoEncoder,VaapiVideoDecoder,CanvasOopRasterization"
+
+## --gtk-version=4
