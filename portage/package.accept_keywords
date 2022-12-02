@@ -3,6 +3,8 @@
 # -------------------------------------------------------------------
 ## Upstream packages (-9999 ** = git)
 # -------------------------------------------------------------------
+>=app-editors/vim-9999 **
+>=app-misc/neofetch-9999 **
 >=app-misc/radeontop-9999 **
 >=games-emulation/bsnes-mercury-performance-libretro-9999 **
 >=games-emulation/desmume-libretro-9999 **
@@ -31,12 +33,17 @@
 >=media-video/mplayer-9999 **
 >=media-video/mpv-9999 **
 >=net-p2p/qbittorrent-9999 **
+>=sys-process/htop-9999 **
 >=x11-terms/kitty-9999 **
 >=x11-terms/kitty-shell-integration-9999 **
 >=x11-terms/kitty-terminfo-9999 **
 # -------------------------------------------------------------------
 ## Testing/unstable (~amd64) & 
 # -------------------------------------------------------------------
+>=app-shells/starship-1.11.0 ~amd64
+>=dev-java/gradle-bin-7.6 ~amd64
+>=dev-java/openjdk-17.0.5_p8 ~amd64
+>=dev-java/openjdk-bin-17.0.5_p8 ~amd64
 >=dev-lang/spidermonkey-102.5.0 ~amd64
 >=dev-libs/gjs-1.74.1 ~amd64
 >=dev-util/cmake-3.25.0 ~amd64
@@ -45,6 +52,7 @@
 >=games-fps/gzdoom-4.8.2 ~amd64
 >=media-libs/mesa-22.2.3 ~amd64
 >=net-libs/libtorrent-rasterbar-2.0.8 ~amd64
+>=sys-apps/bat-0.21.0 ~amd64
 >=sys-kernel/gentoo-sources-6.0 ~amd64
 >=sys-kernel/linux-headers-6.0 ~amd64
 >=sys-process/glances-3.3.0 ~amd64
@@ -148,3 +156,9 @@
 >=games-action/minecraft-launcher-1.0.1221 ~amd64
 # required by dev-qt/qtsvg:6 (argument)
 >=dev-qt/qtsvg-6.4.0 ~amd64
+# required by app-editors/vim-9999::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-editors/vim-core-9999 **
+# required by app-vim/rust-vim (argument)
+>=app-vim/rust-vim-1_pre20210215 ~amd64
