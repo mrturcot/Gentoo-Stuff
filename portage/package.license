@@ -1,4 +1,9 @@
 # -------------------------------------------------------------------
+### Manually unmasked license changes
+# -------------------------------------------------------------------
+>=app-arch/unrar-6.1.7 unRAR
+
+# -------------------------------------------------------------------
 ### Automatically added by portage using...
 ## emerge --autounmask=y --autounmask-unrestricted-atoms=y --autounmask-license=y
 ## so as to not restrict to installed package version only.
