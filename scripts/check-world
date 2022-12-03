@@ -1,6 +1,5 @@
-## https://wiki.gentoo.org/wiki/User:Feng/World_file
-
 #!/bin/bash
+## https://wiki.gentoo.org/wiki/User:Feng/World_file
 
 while read i ; do \
         if [ -n "$(qdepends -Q $i)" ]; then \
