@@ -1,0 +1,9 @@
+sys-devel/clang
+sys-devel/lld
+sys-devel/llvm
+sys-libs/compiler-rt
+sys-libs/compiler-rt-sanitizers
+sys-libs/libcxx
+sys-libs/libcxxabi
+sys-libs/libomp
+sys-libs/llvm-libunwind
