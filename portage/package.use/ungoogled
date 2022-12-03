@@ -1,27 +1,17 @@
-## Add
+## Add USE
 www-client/ungoogled-chromium thinlto optimize-thinlto optimize-webui hevc system-ffmpeg system-openjpeg
 
-## Remove
+## Remove USE
 www-client/ungoogled-chromium -vdpau -qt5
 
-## Portage *--autounmask option*
+# -------------------------------------------------------------------
+### Automatically added by portage using...
+## emerge --autounmask=y --autounmask-unrestricted-atoms=y --autounmask-use=y
+## so as to not restrict to installed package version only.
+# -------------------------------------------------------------------
 # required by www-client/ungoogled-chromium-107.0.5304.87_p1::pf4public
 # required by www-client/ungoogled-chromium (argument)
 >=sys-libs/zlib-1.2.12-r3 minizip
 # required by www-client/ungoogled-chromium-107.0.5304.87_p1::pf4public
 # required by www-client/ungoogled-chromium (argument)
 >=net-libs/nodejs-18.10.0 inspector
-# required by www-client/librewolf-106.0.1_p1::librewolf[system-libvpx]
-# required by librewolf (argument)
->=media-libs/libvpx-1.12.0 postproc
-# required by www-client/librewolf-106.0.1_p1::librewolf[X,pgo]
-# required by librewolf (argument)
->=x11-base/xorg-server-21.1.4 xvfb
-# required by www-client/librewolf-106.0.1_p1::librewolf[wayland,pgo]
-# required by librewolf (argument)
->=gui-libs/wlroots-0.15.1-r1 tinywl
-# required by net-print/cups-filters-1.28.15::gentoo[postscript]
-# required by net-print/cups-2.4.2-r5::gentoo
-# required by dev-java/openjdk-8.332_p09::gentoo
-# required by openjdk:8 (argument)
->=app-text/ghostscript-gpl-9.56.1-r3 cups
