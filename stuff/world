@@ -22,7 +22,7 @@ app-portage/genlop
 app-portage/gentoolkit
 app-portage/smart-live-rebuild
 app-shells/gentoo-zsh-completions
-app-shells/push::gentoo
+app-shells/push
 app-shells/starship
 app-text/gspell
 app-vim/rust-vim
