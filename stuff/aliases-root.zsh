@@ -12,10 +12,12 @@ alias emerge-autounmask="emerge --ask --verbose --autounmask=y --autounmask-unre
 alias emerge-newuse="emerge --ask --verbose --newuse --deep @world"
 alias emerge-changeuse="emerge --ask --verbose --changed-use --deep @world"
 alias emerge-depclean="emerge --ask --depclean"
-alias emerge-smart="emerge --ask --verbose @smart-live-rebuild"
+alias emerge-smart="emerge --ask --verbose --exclude media-video/mplayer --exclude games-emulation/yuzu @smart-live-rebuild"
 alias emerge-noreplace="emerge --noreplace"
 alias emerge-deselect="emerge --deselect"
 alias emerge-cache="eix-update && eix-remote update"
+alias emerge-clang-toolchain="emerge --ask --verbose @clang-toolchain"
+alias emerge-clang-rebuild="emerge --ask --verbose @clang-rebuild"
 
 # The Rest
 alias grub-install="grub-install --target=x86_64-efi --efi-directory=/boot"

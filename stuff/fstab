@@ -41,7 +41,7 @@ UUID=26d076b1-bdd9-4972-9afb-9d67bedf5939	none	swap	defaults	0 0
 
 ## Hard Drives
 # /dev/sda1
-UUID=0CF2209CF2208BD0	/mnt/Movies	auto nosuid,nodev,nofail,x-gvfs-show	0 0
+UUID=0CF2209CF2208BD0	/mnt/Shows	auto nosuid,nodev,nofail,x-gvfs-show	0 0
 # /dev/sdb2
 UUID=466AD5AA6AD596D1	/mnt/Games	auto nosuid,nodev,nofail,x-gvfs-show    0 0
 # /dev/sdc2
