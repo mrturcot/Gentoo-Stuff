@@ -1,0 +1,2 @@
+## no-tmpfs env
+PORTAGE_TMPDIR="/var/tmp/notmpfs"
