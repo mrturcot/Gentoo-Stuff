@@ -29,7 +29,7 @@ dev-util/vulkan-tools
 games-emulation/bsnes-mercury-performance-libretro
 games-emulation/desmume-libretro
 games-emulation/dolphin
-games-emulation/duckstation
+#games-emulation/duckstation
 games-emulation/fbneo-libretro
 games-emulation/flycast-libretro
 games-emulation/gambatte-libretro

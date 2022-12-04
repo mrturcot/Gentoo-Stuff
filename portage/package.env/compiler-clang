@@ -1,0 +1,8 @@
+## Using compiler-$(environment) for app-foo/bar
+# app-foo/bar compiler-clang
+
+## Clang: Basic Setup (https://wiki.gentoo.org/wiki/Clang#Basic_setup)
+# compiler-clang: build with a general Clang environment
+net-libs/libtorrent-rasterbar compiler-clang #qbittorrent wont build with clang-lto enabled here
+sys-libs/compiler-rt compiler-clang #doesnt use lto
+sys-libs/llvm-libunwind compiler-clang #doesnt use lto

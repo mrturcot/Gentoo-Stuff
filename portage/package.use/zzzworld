@@ -892,3 +892,17 @@
 # required by www-client/librewolf-106.0.1_p1::librewolf[wayland,pgo]
 # required by librewolf (argument)
 >=gui-libs/wlroots-0.15.1-r1 tinywl
+# required by app-emulation/qemu-7.0.0-r3::gentoo[static-user,-static]
+# required by qemu (argument)
+>=dev-libs/glib-2.74.1-r1 static-libs
+# required by app-emulation/qemu-7.0.0-r3::gentoo[static-user,-static]
+# required by qemu (argument)
+>=sys-libs/zlib-1.2.13-r1 static-libs
+# required by app-emulation/qemu-7.0.0-r3::gentoo[static-user,xattr,-static]
+# required by qemu (argument)
+>=sys-apps/attr-2.5.1-r2 static-libs
+# required by dev-libs/glib-2.74.1-r1::gentoo
+# required by net-libs/libslirp-4.6.1::gentoo
+# required by app-emulation/qemu-7.0.0-r3::gentoo[slirp,-static]
+# required by qemu (argument)
+>=dev-libs/libpcre2-10.40 static-libs

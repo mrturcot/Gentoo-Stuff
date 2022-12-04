@@ -1,0 +1,23 @@
+# -------------------------------------------------------------------
+## Testing/unstable (~amd64) & 
+# -------------------------------------------------------------------
+>=app-emulation/qemu-7.1.0-r2 ~amd64
+>=app-shells/starship-1.11.0 ~amd64
+>=dev-java/gradle-bin-7.6 ~amd64
+>=dev-java/openjdk-17.0.5_p8 ~amd64
+>=dev-java/openjdk-bin-17.0.5_p8 ~amd64
+>=dev-lang/spidermonkey-102.5.0 ~amd64
+>=dev-libs/gjs-1.74.1 ~amd64
+>=dev-util/cmake-3.25.0 ~amd64
+>=games-emulation/dolphin-5.0 ~amd64
+>=games-emulation/mgba-libretro-1.0_pre20210114 ~amd64
+>=games-fps/gzdoom-4.8.2 ~amd64
+>=media-libs/mesa-22.2.3 ~amd64
+>=media-video/pipewire-0.3.61 ~amd64
+>=net-libs/libtorrent-rasterbar-2.0.8 ~amd64
+>=sys-apps/bat-0.21.0 ~amd64
+>=sys-kernel/gentoo-sources-6.0 ~amd64
+>=sys-kernel/linux-headers-6.0 ~amd64
+>=sys-process/glances-3.3.0 ~amd64
+>=www-client/firefox-106.0.5 ~amd64
+>=www-client/librewolf-107.0_p1 ~amd64

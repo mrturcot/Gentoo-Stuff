@@ -1,67 +1,4 @@
 # -------------------------------------------------------------------
-### Manually added accept package keywords
-# -------------------------------------------------------------------
-## Upstream packages (-9999 ** = git)
-# -------------------------------------------------------------------
->=app-editors/vim-9999 **
->=app-misc/neofetch-9999 **
->=app-misc/radeontop-9999 **
->=games-emulation/bsnes-mercury-performance-libretro-9999 **
->=games-emulation/desmume-libretro-9999 **
->=games-emulation/duckstation-9999 **
->=games-emulation/fbneo-libretro-9999 **
->=games-emulation/flycast-9999 **
->=games-emulation/flycast-libretro-9999 **
->=games-emulation/gambatte-libretro-9999 **
->=games-emulation/genesis_plus_gx-libretro-9999 **
->=games-emulation/libretro-fceumm-9999 **
->=games-emulation/libretro-nestopia-9999 **
->=games-emulation/libretro-snes9x-9999 **
->=games-emulation/mame2003_plus-libretro-9999 **
->=games-emulation/mednafen-psx-hw-libretro-9999 **
->=games-emulation/melonds-libretro-9999 **
->=games-emulation/mesen-libretro-9999 **
->=games-emulation/mupen64next-libretro-9999 **
->=games-emulation/parallel_n64-libretro-9999 **
->=games-emulation/pcsx2-9999 **
->=games-emulation/vba-next-libretro-9999 **
->=games-emulation/yuzu-9999 **
->=games-engines/openmw-9999 **
->=media-libs/libplacebo-9999 **
->=media-sound/cmus-9999 **
->=media-sound/whipper-9999 **
->=media-video/mplayer-9999 **
->=media-video/mpv-9999 **
->=net-p2p/qbittorrent-9999 **
->=sys-process/htop-9999 **
->=x11-terms/kitty-9999 **
->=x11-terms/kitty-shell-integration-9999 **
->=x11-terms/kitty-terminfo-9999 **
-# -------------------------------------------------------------------
-## Testing/unstable (~amd64) & 
-# -------------------------------------------------------------------
->=app-shells/starship-1.11.0 ~amd64
->=dev-java/gradle-bin-7.6 ~amd64
->=dev-java/openjdk-17.0.5_p8 ~amd64
->=dev-java/openjdk-bin-17.0.5_p8 ~amd64
->=dev-lang/spidermonkey-102.5.0 ~amd64
->=dev-libs/gjs-1.74.1 ~amd64
->=dev-util/cmake-3.25.0 ~amd64
->=games-emulation/dolphin-5.0 ~amd64
->=games-emulation/mgba-libretro-1.0_pre20210114 ~amd64
->=games-fps/gzdoom-4.8.2 ~amd64
->=media-libs/mesa-22.2.3 ~amd64
->=media-video/pipewire-0.3.61 ~amd64
->=net-libs/libtorrent-rasterbar-2.0.8 ~amd64
->=sys-apps/bat-0.21.0 ~amd64
->=sys-kernel/gentoo-sources-6.0 ~amd64
->=sys-kernel/linux-headers-6.0 ~amd64
->=sys-process/glances-3.3.0 ~amd64
->=www-client/firefox-106.0.5 ~amd64
->=www-client/librewolf-107.0_p1 ~amd64
-# -------------------------------------------------------------------
-
-# -------------------------------------------------------------------
 ### Automatically added by portage using...
 ## emerge --autounmask=y & --autounmask-unrestricted-atoms=y
 ## so as to not restrict to installed package version only.
@@ -95,8 +32,6 @@
 # required by games-emulation/yuzu-9999::guru
 # required by games-emulation/yuzu (argument)
 >=dev-cpp/cpp-jwt-1.5_pre20220727 ~amd64
-# required by sys-kernel/xow (argument)
->=sys-kernel/xow-0.5 ~amd64
 # required by games-util/xone (argument)
 >=games-util/xone-0.3 ~amd64
 # required by mailspring-bin (argument)
@@ -163,3 +98,9 @@
 >=app-editors/vim-core-9999 **
 # required by app-vim/rust-vim (argument)
 >=app-vim/rust-vim-1_pre20210215 ~amd64
+# required by app-emulation/qemu-7.1.0-r2::gentoo[qemu_softmmu_targets_x86_64,qemu_softmmu_targets_i386,pin-upstream-blobs]
+# required by qemu (argument)
+>=sys-firmware/edk2-ovmf-bin-202202 ~amd64
+# required by app-emulation/qemu-7.1.0-r2::gentoo[pin-upstream-blobs,qemu_softmmu_targets_i386,qemu_softmmu_targets_ppc,qemu_softmmu_targets_x86_64,qemu_softmmu_targets_ppc64]
+# required by qemu (argument)
+>=sys-firmware/seabios-bin-1.16.0 ~amd64
