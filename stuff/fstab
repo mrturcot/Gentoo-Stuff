@@ -48,4 +48,4 @@ UUID=466AD5AA6AD596D1		/mnt/Games		auto nosuid,nodev,nofail,x-gvfs-show    0 0
 UUID=0060CA0D60CA08FC		/mnt/Music		auto nosuid,nodev,nofail,x-gvfs-show    0 0
 
 ## tmpfs
-tmpfs		/var/tmp/portage		tmpfs	size=16G,uid=portage,gid=portage,mode=775,nosuid,noatime,nodev	0 0
+tmpfs		/var/tmp/portage		tmpfs	size=32G,uid=portage,gid=portage,mode=775,nosuid,noatime,nodev	0 0
