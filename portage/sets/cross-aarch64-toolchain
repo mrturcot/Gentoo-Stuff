@@ -1,0 +1,7 @@
+## arm64/aarch64 cross compiling tools
+# overlay 4nykey https://github.com/gentoo-mirror/4nykey.git
+
+cross-aarch64-unknown-linux-gnu/binutils
+cross-aarch64-unknown-linux-gnu/gcc
+cross-aarch64-unknown-linux-gnu/glibc
+cross-aarch64-unknown-linux-gnu/linux-headers
