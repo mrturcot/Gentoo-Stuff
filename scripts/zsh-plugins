@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd $HOME/stuff/test
+git clone https://github.com/marlonrichert/zsh-autocomplete.git
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-completions.git
+git clone https://github.com/larkery/zsh-histdb.git
+git clone https://github.com/zsh-users/zsh-history-substring-search.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
