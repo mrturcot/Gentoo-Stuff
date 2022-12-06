@@ -10,7 +10,7 @@
  `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: X470 AORUS GAMING 7 WIFI 
  omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.0.11-gentoo 
 .ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hours, 20 mins 
- oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1154 (emerge) 
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1171 (emerge) 
   :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
     .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Resolution: 3840x2160 
        /mMMMMMMNNNmmmdddhhhhhmMNhs:   DE: GNOME 42.5 
@@ -49,7 +49,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
   - My in sync Portage & Kernel setup for a Stable Gentoo x86-64 EFI, Ryzen ZenVer1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system configuration. With optimizations for speed and gaming performance in mind...  
    
    
- /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. It should also be noted, the PER-Package build environments are portable and modular, they should work with most Gentoo based systems with Clang 14 & 15 installed, plug & play, (upon setting a few values mentioned below)   
+  - /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. It should also be noted, the PER-Package build environments are portable and modular, they should work with most Gentoo based systems with Clang 14 & 15 installed, plug & play, (upon setting a few values mentioned below)   
 
  One helpful use case scenario could be. Once initially mounted and chrooted into a new Gentoo install environment. Complete the install as normal 
 
