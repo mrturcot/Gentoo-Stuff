@@ -2,6 +2,8 @@
 ## https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator
 
 cd $HOME/github/VulkanMemoryAllocator
-rm -rf build && mkdir -pv build && cd build
+rm -rf build
+mkdir -pv build
+cd build
 cmake .. &&
 make -j14

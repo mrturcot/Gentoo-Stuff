@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd $HOME/servers/purpur-mc
-screen -dmS purpur java -Xms16G -Xmx16G -Xmn1G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:ConcGCThreads=2 -XX:G1NewSizePercent=40 -XX:G1MaxNewSizePercent=50 -XX:MaxGCPauseMillis=200 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=15 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=20 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+ParallelRefProcEnabled -XX:ParallelGCThreads=8 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:+UseCompressedOops -XX:-UsePerfData -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true --add-modules=jdk.incubator.vector -jar purpur/build/libs/purpurclip.jar nogui
