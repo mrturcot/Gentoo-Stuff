@@ -3,7 +3,7 @@ alias emerge-emptysystem="emerge --ask --verbose --emptytree --usepkg=n --keep-g
 alias emerge-emptyworld="emerge --ask --verbose --emptytree --usepkg=n --keep-going @world"
 
 # Gentoo 
-alias emerge-sync="eix-sync"
+alias emerge-sync="emaint --auto sync"
 alias emerge-system="emerge --ask --verbose --update --newuse --deep @system"
 alias emerge-world="emerge --ask --verbose --update --newuse --deep @world"
 alias emerge-autosystem="emerge --ask --verbose --update --newuse --deep --autounmask=y --autounmask-unrestricted-atoms --autounmask-use=y --autounmask-license=y @system"
