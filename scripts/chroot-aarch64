@@ -1,10 +1,12 @@
 #!/bin/bash
 
+echo ':aarch64:M::\x7fELF\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\xb7\x00:\xff\xff\xff\xff\xff\xff\xff\xfc\xff\xff\xff\xff\xff\xff\xff\xff\xfe\xff\xff\xff:/usr/bin/qemu-aarch64:' > /proc/sys/fs/binfmt_misc/register
+
 cd /usr/aarch64-unknown-linux-gnu
 mount --bind /proc proc
 mount --bind /sys sys
 mount --bind /dev dev
 mount --bind /dev/pts dev/pts
 mount --bind /var/tmp/portage var/tmp/portage
-cp --dereference /etc/resolv.conf /mnt/gentoo/etc
+cp --dereference /etc/resolv.conf mnt/gentoo/etc
 chroot . bin/bash --login
