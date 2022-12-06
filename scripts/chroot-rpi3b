@@ -2,11 +2,11 @@
 
 echo ':aarch64:M::\x7fELF\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\xb7\x00:\xff\xff\xff\xff\xff\xff\xff\xfc\xff\xff\xff\xff\xff\xff\xff\xff\xfe\xff\xff\xff:/usr/bin/qemu-aarch64:' > /proc/sys/fs/binfmt_misc/register
 
-cd /mnt/gentoo
-mount --bind /proc /mnt/gentoo/proc
-mount --bind /sys /mnt/gentoo/sys
-mount --bind /dev /mnt/gentoo/dev
-mount --bind /dev/pts /mnt/gentoo/dev/pts
-mount --bind /var/tmp/portage /mnt/gentoo/var/tmp/portage
-cp --dereference /etc/resolv.conf /mnt/gentoo/etc
+cd /mnt/rpi3b
+mount --bind /proc /mnt/rpi3b/proc
+mount --bind /sys /mnt/rpi3b/sys
+mount --bind /dev /mnt/rpi3b/dev
+mount --bind /dev/pts /mnt/rpi3b/dev/pts
+mount --bind /var/tmp/portage /mnt/rpi3b/var/tmp/portage
+cp --dereference /etc/resolv.conf /mnt/rpi3b/etc
 chroot . bin/bash --login
