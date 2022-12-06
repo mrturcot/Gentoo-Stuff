@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd $HOME/stuff/test
+rm -rf $HOME/.oh-my-zsh/custom/plugins/*
+cd $HOME/.oh-my-zsh/custom/plugins
 git clone https://github.com/marlonrichert/zsh-autocomplete.git
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/zsh-users/zsh-completions.git
