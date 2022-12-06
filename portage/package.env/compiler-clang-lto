@@ -1,65 +1,63 @@
 ### Using compiler-$(environment) for app-foo/bar
-# app-foo/bar compiler-clang compiler-clang-lto
+# app-foo/bar compiler-clang-lto
 
 ## Clang: Advanced Setup (https://wiki.gentoo.org/wiki/Clang#Advanced_examples)
-# compiler-clang: build with a general Clang environment
 # compiler-clang-lto: build with Clang-LTO environment
-app-admin/keepassxc compiler-clang compiler-clang-lto
-app-editors/vim compiler-clang compiler-clang-lto
-app-editors/vim-core compiler-clang compiler-clang-lto
-app-shells/starship compiler-clang compiler-clang-lto
-dev-games/openscenegraph-openmw compiler-clang compiler-clang-lto
-dev-lang/rust compiler-clang compiler-clang-lto
-dev-libs/boost compiler-clang compiler-clang-lto
-dev-libs/openssl compiler-clang compiler-clang-lto
-dev-util/cmake compiler-clang compiler-clang-lto
-dev-util/glslang compiler-clang compiler-clang-lto
-dev-util/spirv-tools compiler-clang compiler-clang-lto
-dev-util/vulkan-tools compiler-clang compiler-clang-lto
-games-emulation/bsnes-mercury-performance-libretro compiler-clang compiler-clang-lto
-games-emulation/desmume-libretro compiler-clang compiler-clang-lto
-games-emulation/dolphin compiler-clang compiler-clang-lto
-games-emulation/duckstation compiler-clang compiler-clang-lto
-games-emulation/fbneo-libretro compiler-clang compiler-clang-lto
-games-emulation/flycast-libretro compiler-clang compiler-clang-lto
-games-emulation/gambatte-libretro compiler-clang compiler-clang-lto
-games-emulation/genesis_plus_gx-libretro compiler-clang compiler-clang-lto
-games-emulation/higan compiler-clang compiler-clang-lto
-games-emulation/libretro-fceumm compiler-clang compiler-clang-lto
-games-emulation/libretro-nestopia compiler-clang compiler-clang-lto
-games-emulation/libretro-snes9x compiler-clang compiler-clang-lto
-games-emulation/melonds-libretro compiler-clang compiler-clang-lto
-games-emulation/mesen-libretro compiler-clang compiler-clang-lto
+app-admin/keepassxc compiler-clang-lto
+app-editors/vim compiler-clang-lto
+app-editors/vim-core compiler-clang-lto
+app-shells/starship compiler-clang-lto
+dev-games/openscenegraph-openmw compiler-clang-lto
+dev-lang/rust compiler-clang-lto
+dev-libs/boost compiler-clang-lto
+dev-libs/openssl compiler-clang-lto
+dev-util/cmake compiler-clang-lto
+dev-util/glslang compiler-clang-lto
+dev-util/spirv-tools compiler-clang-lto
+dev-util/vulkan-tools compiler-clang-lto
+games-emulation/bsnes-mercury-performance-libretro compiler-clang-lto
+games-emulation/desmume-libretro compiler-clang-lto
+games-emulation/dolphin compiler-clang-lto
+games-emulation/duckstation compiler-clang-lto
+games-emulation/fbneo-libretro compiler-clang-lto
+games-emulation/flycast-libretro compiler-clang-lto
+games-emulation/gambatte-libretro compiler-clang-lto
+games-emulation/genesis_plus_gx-libretro compiler-clang-lto
+games-emulation/higan compiler-clang-lto
+games-emulation/libretro-fceumm compiler-clang-lto
+games-emulation/libretro-nestopia compiler-clang-lto
+games-emulation/libretro-snes9x compiler-clang-lto
+games-emulation/melonds-libretro compiler-clang-lto
+games-emulation/mesen-libretro compiler-clang-lto
 games-emulation/mupen64next-libretro compiler-clang
-games-emulation/pcsx2 compiler-clang compiler-clang-lto
-games-emulation/retroarch compiler-clang compiler-clang-lto
-games-emulation/vba-next-libretro compiler-clang compiler-clang-lto
-games-engines/openmw compiler-clang compiler-clang-lto
+games-emulation/pcsx2 compiler-clang-lto
+games-emulation/retroarch compiler-clang-lto
+games-emulation/vba-next-libretro compiler-clang-lto
+games-engines/openmw compiler-clang-lto
 ### gzdoom only builds with clang using llvm-libunwind
-games-fps/gzdoom compiler-clang compiler-clang-lto
-gnome-base/gdm compiler-clang compiler-clang-lto
-gui-libs/gtk compiler-clang compiler-clang-lto
-media-libs/libplacebo compiler-clang compiler-clang-lto
-media-libs/mesa compiler-clang compiler-clang-lto
-media-libs/vulkan-layers compiler-clang compiler-clang-lto
-media-libs/vulkan-loader compiler-clang compiler-clang-lto
-media-plugins/audacious-plugins compiler-clang compiler-clang-lto
-media-sound/audacious compiler-clang compiler-clang-lto
-media-video/ffmpeg compiler-clang compiler-clang-lto
-media-video/mpv compiler-clang compiler-clang-lto
-media-video/pipewire compiler-clang compiler-clang-lto
-net-misc/networkmanager compiler-clang compiler-clang-lto
-net-p2p/qbittorrent compiler-clang compiler-clang-lto
-net-wireless/bluez compiler-clang compiler-clang-lto
-sys-apps/openrc compiler-clang compiler-clang-lto
-sys-apps/preload compiler-clang compiler-clang-lto
-sys-devel/clang compiler-clang compiler-clang-lto
-sys-devel/lld compiler-clang compiler-clang-lto
-sys-devel/llvm compiler-clang compiler-clang-lto
-sys-libs/compiler-rt-sanitizers compiler-clang compiler-clang-lto
-sys-libs/libcxx compiler-clang compiler-clang-lto
-sys-libs/libcxxabi compiler-clang compiler-clang-lto
-sys-libs/zlib compiler-clang compiler-clang-lto
-sys-process/htop compiler-clang compiler-clang-lto
-x11-libs/gtk+ compiler-clang compiler-clang-lto
-x11-terms/kitty compiler-clang compiler-clang-lto
+games-fps/gzdoom compiler-clang-lto
+gnome-base/gdm compiler-clang-lto
+gui-libs/gtk compiler-clang-lto
+media-libs/libplacebo compiler-clang-lto
+media-libs/mesa compiler-clang-lto
+media-libs/vulkan-layers compiler-clang-lto
+media-libs/vulkan-loader compiler-clang-lto
+media-plugins/audacious-plugins compiler-clang-lto
+media-sound/audacious compiler-clang-lto
+media-video/ffmpeg compiler-clang-lto
+media-video/mpv compiler-clang-lto
+media-video/pipewire compiler-clang-lto
+net-misc/networkmanager compiler-clang-lto
+net-p2p/qbittorrent compiler-clang-lto
+net-wireless/bluez compiler-clang-lto
+sys-apps/openrc compiler-clang-lto
+sys-apps/preload compiler-clang-lto
+sys-devel/clang compiler-clang-lto
+sys-devel/lld compiler-clang-lto
+sys-devel/llvm compiler-clang-lto
+sys-libs/compiler-rt-sanitizers compiler-clang-lto
+sys-libs/libcxx compiler-clang-lto
+sys-libs/libcxxabi compiler-clang-lto
+sys-process/htop compiler-clang-lto
+x11-libs/gtk+ compiler-clang-lto
+x11-terms/kitty compiler-clang-lto

@@ -4,6 +4,7 @@
 ### Manually unmasked
 # -------------------------------------------------------------------
 # unmask foo-bar/package USE=-flag "foo-bar/package -flag"
+app-misc/radeontop VIDEO_CARDS: -amdgpu
 dev-lang/rust -system-llvm -llvm-libunwind -parallel-compiler
 games-emulation/pcsx2 -qt6
 www-client/firefox -system-python-libs

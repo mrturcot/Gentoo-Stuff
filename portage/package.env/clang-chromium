@@ -1,0 +1,6 @@
+## Using compiler-$(environment) for app-foo/bar
+# app-foo/bar clang-chromium
+
+## Clang: Basic Setup (https://wiki.gentoo.org/wiki/Clang#Basic_setup)
+# clang-chromium: build with tweaks specifically for Chromium
+www-client/ungoogled-chromium clang-chromium

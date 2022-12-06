@@ -31,6 +31,7 @@
 >=media-video/mplayer-9999 **
 >=media-video/mpv-9999 **
 >=net-p2p/qbittorrent-9999 **
+>=sys-kernel/raspberrypi-sources-5.15.61_p20220830 **
 >=sys-process/htop-9999 **
 >=x11-terms/kitty-9999 **
 >=x11-terms/kitty-shell-integration-9999 **

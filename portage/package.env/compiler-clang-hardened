@@ -3,9 +3,7 @@
 
 ## Clang: Advanced Setup (https://wiki.gentoo.org/wiki/Clang#Advanced_examples)
 # compiler-clang-hardened: build with a hardened Clang environment
-# compiler-clang-lto: build with Clang-LTO environment
-# clang-chromium: build with tweaks specifically for Chromium
-dev-lang/spidermonkey compiler-clang-hardened compiler-clang-lto
-www-client/firefox compiler-clang-hardened compiler-clang-lto
-www-client/librewolf compiler-clang-hardened compiler-clang-lto
-www-client/ungoogled-chromium compiler-clang-hardened compiler-clang-lto clang-chromium
+dev-lang/spidermonkey compiler-clang-hardened
+www-client/firefox compiler-clang-hardened
+www-client/librewolf compiler-clang-hardened
+www-client/ungoogled-chromium compiler-clang-hardened

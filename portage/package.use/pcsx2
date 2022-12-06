@@ -1,1 +1,1 @@
-games-emulation/pcsx2 qt6
+games-emulation/pcsx2 qt6 cpu_flags_x86_sse4_1

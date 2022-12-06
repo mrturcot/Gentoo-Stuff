@@ -63,7 +63,6 @@ net-p2p/qbittorrent
 net-wireless/bluez
 sys-apps/openrc
 sys-apps/preload
-sys-libs/zlib
 sys-process/htop
 www-client/firefox
 www-client/librewolf

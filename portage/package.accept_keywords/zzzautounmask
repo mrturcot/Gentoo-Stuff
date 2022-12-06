@@ -104,3 +104,5 @@
 # required by app-emulation/qemu-7.1.0-r2::gentoo[pin-upstream-blobs,qemu_softmmu_targets_i386,qemu_softmmu_targets_ppc,qemu_softmmu_targets_x86_64,qemu_softmmu_targets_ppc64]
 # required by qemu (argument)
 >=sys-firmware/seabios-bin-1.16.0 ~amd64
+# required by sys-apps/qemu-openrc (argument)
+=sys-apps/qemu-openrc-0.10.0 ~amd64
