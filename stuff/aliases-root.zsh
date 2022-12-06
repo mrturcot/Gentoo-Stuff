@@ -1,6 +1,6 @@
 # Big bois
-alias emerge-emptysystem="emerge --ask --verbose --emptytree --usepkg=n @system"
-alias emerge-emptyworld="emerge --ask --verbose --emptytree --usepkg=n --keep-going=y @world"
+alias emerge-emptysystem="emerge --ask --verbose --emptytree --usepkg=n --keep-going @system"
+alias emerge-emptyworld="emerge --ask --verbose --emptytree --usepkg=n --keep-going @world"
 
 # Gentoo 
 alias emerge-sync="eix-sync"
