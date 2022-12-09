@@ -8,9 +8,9 @@
      -odNMMMMMMMMNNmhy+-`             ------------------ 
    -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
  `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: X470 AORUS GAMING 7 WIFI 
- omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.0.11-gentoo 
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.0.12-gentoo 
 .ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hours, 20 mins 
- oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1171 (emerge) 
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1170 (emerge) 
   :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
     .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Resolution: 3840x2160 
        /mMMMMMMNNNmmmdddhhhhhmMNhs:   DE: GNOME 42.5 
