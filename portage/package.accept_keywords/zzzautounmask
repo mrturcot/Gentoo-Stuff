@@ -106,3 +106,5 @@
 >=sys-firmware/seabios-bin-1.16.0 ~amd64
 # required by sys-apps/qemu-openrc (argument)
 =sys-apps/qemu-openrc-0.10.0 ~amd64
+# required by emlop (argument)
+>=app-portage/emlop-0.5.0 ~amd64

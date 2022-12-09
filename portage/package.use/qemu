@@ -1,1 +1,1 @@
-app-emulation/qemu static-user
+app-emulation/qemu static-user static-libs -gtk -alsa -fuse -opengl -pulseaudio -sdl
