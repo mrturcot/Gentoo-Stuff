@@ -7,10 +7,10 @@
          -/oyddmdhs+:.                mrturcot@GentooRig 
      -odNMMMMMMMMNNmhy+-`             ------------------ 
    -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
- `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: X470 AORUS GAMING 7 WIFI 
- omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.0.12-gentoo 
+ `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: Gigabyte Technology Co., Ltd. X470 AORUS GAMING 7 WIFI-CF 
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.0.12-gentoo-filthy 
 .ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hours, 20 mins 
- oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1170 (emerge) 
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1168 (emerge) 
   :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
     .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Resolution: 3840x2160 
        /mMMMMMMNNNmmmdddhhhhhmMNhs:   DE: GNOME 42.5 
@@ -19,9 +19,10 @@
  /NMMMMMMMMNNNNmmmdddmNMNdso:`        Theme: Equilux [GTK2/3] 
 +MMMMMMMNNNNNmmmmdmNMNdso/-           Icons: Papirus [GTK2/3] 
 yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty 
-/hMMNNNNNNNNMNdhs++/-`                CPU: AMD Ryzen 7 2700 (16) @ 3.800GHz 
-`/ohdmmddhys+++/:.`                   GPU: AMD ATI Radeon RX 470/480/570/570X/580/580X/590 
-  `-//////:--.                        Memory: 832MiB / 64240MiB 
+/hMMNNNNNNNNMNdhs++/-`                Terminal Font: source code pro 14.0 
+`/ohdmmddhys+++/:.`                   CPU: AMD Ryzen 7 2700 (16) @ 3.800GHz 
+  `-//////:--.                        GPU: AMD ATI Radeon RX 590 
+                                      Memory: 832MiB / 64242MiB
 ```
    
 
