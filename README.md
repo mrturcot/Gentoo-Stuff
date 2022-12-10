@@ -76,22 +76,22 @@ Then before >> **Updating the @world set** (https://wiki.gentoo.org/wiki/Handboo
   
  - **Untested**  
 
-Furthermore, I do provide my own kernel (LOL if someone actually boots this) and .config for current "6.0-gentoo-sources" trimmed down (10MB) shared in /kernel. This is for a basic AMD Ryzen 2700 x470 znver1 & AMDGPU Arctic Islands - POLARIS10/11/12, VEGAM setup with support for NVMe-SDD and SATA-HDD (ext4, fat & ntfs) with Network etc... Basically enough to boot and get going, thats it (all this stuff here works https://www.gigabyte.com/Motherboard/X470-AORUS-ULTRA-GAMING-rev-10/sp#sp). I guess it would work for others with same chipsets? not sure but maybe? I dont know... Completely UNTESTED.    
+Furthermore, I do provide my own kernel (LOL if someone actually boots this) and .config for current "6.0-gentoo-sources" trimmed down (8MB) shared in /kernel. This is for a basic AMD Ryzen 2700 x470 znver1 & AMDGPU Arctic Islands - POLARIS10/11/12, VEGAM setup with support for NVMe-SDD and SATA-HDD (ext4, fat & ntfs) with Network etc... Basically enough to boot and get going, thats it (all this stuff here works https://www.gigabyte.com/Motherboard/X470-AORUS-ULTRA-GAMING-rev-10/sp#sp). I guess it would work for others with same chipsets? not sure but maybe? I dont know... Completely UNTESTED.    
 
 Running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in your activily set gentoo kernel sources in "/usr/src/linux" would be very strongly recommened making your own kernel from the kernel.config provided, as other hardware specifications that differ from this would most definitely need to be set for your setup... This is *Untested*...     
    
    
    
 ```
-mrturcot on GentooRig /home/mrturcot/github/gentoo-stuff on   master [!1 ]
-[ 04:10:05 PM ] ➜ l /boot
+ mrturcot  on GentooRig /home/mrturcot/github/gentoo-stuff on   master took 7s
+[ 11:06:54 PM ] ➜ l /boot                      
 Permissions Size User Date Modified Name
-.rwxr-xr-x  144k root  7 Nov 03:37  config-6.0.7-gentoo
-.rwxr-xr-x  144k root 10 Nov 15:06  config-6.0.8-gentoo
-.rwxr-xr-x  5.6M root  7 Nov 03:37  System.map-6.0.7-gentoo
-.rwxr-xr-x  5.6M root 10 Nov 15:06  System.map-6.0.8-gentoo
-.rwxr-xr-x   10M root  7 Nov 03:37  vmlinuz-6.0.7-gentoo
-.rwxr-xr-x   10M root 10 Nov 15:06  vmlinuz-6.0.8-gentoo
+drwxr-xr-x     - root  5 Nov 00:57  EFI
+drwxr-xr-x     - root  9 Dec 20:48  grub
+drwxr-xr-x     - root  8 Dec 23:57  overlays
+.rwxr-xr-x  143k root  9 Dec 20:47  config-6.0.12-gentoo-filthy
+.rwxr-xr-x  5.5M root  9 Dec 20:47  System.map-6.0.12-gentoo-filthy
+.rwxr-xr-x  8.6M root  9 Dec 20:47  vmlinuz-6.0.12-gentoo-filthy
 ```
 
    
