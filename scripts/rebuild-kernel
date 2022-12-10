@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "go to kernel sources"
+sleep 1
+cd /usr/src/linux
+sleep 1
+echo "make && install kernel"
+sleep 1
+make -j14 && make -j14 modules_install &&
+make install &&
+echo "update grub"
+sleep 1
+grub-mkconfig -o /boot/grub/grub.cfg
