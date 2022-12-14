@@ -24,12 +24,6 @@ app-shells/starship compiler-clang
 dev-games/openscenegraph-openmw compiler-clang
 dev-lang/spidermonkey compiler-clang
 dev-lang/rust compiler-clang
-dev-libs/boost compiler-clang
-dev-libs/openssl compiler-clang
-dev-util/cmake compiler-clang
-dev-util/glslang compiler-clang
-dev-util/spirv-tools compiler-clang
-dev-util/vulkan-tools compiler-clang
 games-emulation/bsnes-mercury-performance-libretro compiler-clang
 games-emulation/desmume-libretro compiler-clang
 games-emulation/dolphin compiler-clang
@@ -51,13 +45,8 @@ games-emulation/vba-next-libretro compiler-clang
 games-engines/openmw compiler-clang
 games-fps/gzdoom compiler-clang
 gnome-base/gdm compiler-clang
-gui-libs/gtk compiler-clang
 media-libs/libplacebo compiler-clang
 media-libs/mesa compiler-clang
-media-libs/vulkan-layers compiler-clang
-media-libs/vulkan-loader compiler-clang
-media-plugins/audacious-plugins compiler-clang
-media-sound/audacious compiler-clang
 media-video/ffmpeg compiler-clang
 media-video/mpv compiler-clang
 media-video/pipewire compiler-clang
@@ -72,4 +61,3 @@ www-client/firefox compiler-clang
 www-client/librewolf compiler-clang
 www-client/ungoogled-chromium compiler-clang
 x11-terms/kitty compiler-clang
-x11-libs/gtk+ compiler-clang

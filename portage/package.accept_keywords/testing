@@ -12,10 +12,12 @@
 >=games-emulation/dolphin-5.0 ~amd64
 >=games-emulation/mgba-libretro-1.0_pre20210114 ~amd64
 >=games-fps/gzdoom-4.8.2 ~amd64
+>=kde-frameworks/extra-cmake-modules-5.101.0 ~amd64
 >=media-libs/mesa-22.2.3 ~amd64
 >=media-video/pipewire-0.3.61 ~amd64
 >=net-libs/libtorrent-rasterbar-2.0.8 ~amd64
 >=sys-apps/bat-0.21.0 ~amd64
+>=sys-devel/gcc-12.2.0 ~amd64
 >=sys-kernel/gentoo-sources-6.0 ~amd64
 >=sys-kernel/linux-headers-6.0 ~amd64
 >=sys-process/glances-3.3.0 ~amd64

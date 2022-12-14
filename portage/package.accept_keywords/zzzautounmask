@@ -108,3 +108,5 @@
 =sys-apps/qemu-openrc-0.10.0 ~amd64
 # required by emlop (argument)
 >=app-portage/emlop-0.5.0 ~amd64
+# required by dev-libs/cpuinfo (argument)
+>=dev-libs/cpuinfo-2022.03.26 ~amd64
