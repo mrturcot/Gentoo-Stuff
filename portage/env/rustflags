@@ -1,0 +1,1 @@
+RUSTFLAGS="-C opt-level=3 -C linker=clang -C target-cpu=native -C linker-plugin-lto -C link-arg=-fuse-ld=lld"
