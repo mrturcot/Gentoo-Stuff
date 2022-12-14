@@ -17,7 +17,7 @@ RANLIB="llvm-ranlib"
 LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
 
 ## Hardening which isn't (yet?) done by default for Clang, unlike GCC.
-_HARDENING_FLAGS="-fstack-protector-strong -D_FORTIFY_SOURCE=2"
+_HARDENING_FLAGS="-fPIE -fstack-protector-all -D_FORTIFY_SOURCE=2"
 CFLAGS="${CFLAGS} ${_HARDENING_FLAGS}"
 CXXFLAGS="${CXXFLAGS} ${_HARDENING_FLAGS}"
-LDFLAGS="${LDFLAGS} -Wl,-z,relro,-z,now"
+LDFLAGS="${LDFLAGS} -Wl,-z,now -Wl,-z,relro"
