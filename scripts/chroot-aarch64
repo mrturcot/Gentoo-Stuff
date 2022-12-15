@@ -7,6 +7,6 @@ mount --bind /proc proc
 mount --bind /sys sys
 mount --bind /dev dev
 mount --bind /dev/pts dev/pts
-mount --bind /var/tmp/portage var/tmp/portage
+mount --bind /var/tmp var/tmp
 cp --dereference /etc/resolv.conf mnt/gentoo/etc
-chroot . bin/bash --login
+chroot . /bin/bash --login

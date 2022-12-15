@@ -7,6 +7,6 @@ mount -o bind /proc /mnt/rpi3b/proc
 mount -o bind /sys /mnt/rpi3b/sys
 mount -o bind /dev /mnt/rpi3b/dev
 mount -o rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 devpts /mnt/rpi3b/dev/pts -t devpts 
-mount --bind /var/tmp/portage /mnt/rpi3b/var/tmp/portage
+mount --bind /var/tmp /mnt/rpi3b/var/tmp
 cp --dereference /etc/resolv.conf /mnt/rpi3b/etc
 chroot . /bin/bash --login
