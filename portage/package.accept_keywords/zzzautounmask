@@ -92,10 +92,6 @@
 >=games-action/minecraft-launcher-1.0.1221 ~amd64
 # required by dev-qt/qtsvg:6 (argument)
 >=dev-qt/qtsvg-6.4.0 ~amd64
-# required by app-editors/vim-9999::gentoo
-# required by @selected
-# required by @world (argument)
->=app-editors/vim-core-9999 **
 # required by app-vim/rust-vim (argument)
 >=app-vim/rust-vim-1_pre20210215 ~amd64
 # required by app-emulation/qemu-7.1.0-r2::gentoo[qemu_softmmu_targets_x86_64,qemu_softmmu_targets_i386,pin-upstream-blobs]
@@ -110,3 +106,5 @@
 >=app-portage/emlop-0.5.0 ~amd64
 # required by dev-libs/cpuinfo (argument)
 >=dev-libs/cpuinfo-2022.03.26 ~amd64
+# required by bashtop (argument)
+>=sys-process/bashtop-0.9.25 ~amd64

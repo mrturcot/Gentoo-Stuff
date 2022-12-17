@@ -2,6 +2,7 @@
 ## Upstream packages (-9999 ** = git)
 # -------------------------------------------------------------------
 >=app-editors/vim-9999 **
+>=app-editors/vim-core-9999 **
 >=app-misc/neofetch-9999 **
 >=app-misc/radeontop-9999 **
 >=games-emulation/bsnes-mercury-performance-libretro-9999 **

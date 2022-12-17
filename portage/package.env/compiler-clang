@@ -44,17 +44,14 @@ games-emulation/retroarch compiler-clang
 games-emulation/vba-next-libretro compiler-clang
 games-engines/openmw compiler-clang
 games-fps/gzdoom compiler-clang
-gnome-base/gdm compiler-clang
 media-libs/libplacebo compiler-clang
 media-libs/mesa compiler-clang
 media-video/ffmpeg compiler-clang
 media-video/mpv compiler-clang
 media-video/pipewire compiler-clang
 net-libs/libtorrent-rasterbar compiler-clang
-net-misc/networkmanager compiler-clang
 net-p2p/qbittorrent compiler-clang
 net-wireless/bluez compiler-clang
-sys-apps/openrc compiler-clang
 sys-apps/preload compiler-clang
 sys-process/htop compiler-clang
 www-client/firefox compiler-clang
