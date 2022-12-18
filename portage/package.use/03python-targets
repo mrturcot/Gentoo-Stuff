@@ -4,7 +4,6 @@
 #*/* PYTHON_SINGLE_TARGET: -* python3_11
 
 ## Per-Package
-app-emulation/qemu PYTHON_TARGETS: -* python3_11 PYTHON_SINGLE_TARGET: -* python3_11
 app-editors/vim PYTHON_TARGETS: -* python3_11 PYTHON_SINGLE_TARGET: -* python3_11
 dev-libs/boost PYTHON_TARGETS: -* python3_11 PYTHON_SINGLE_TARGET: -* python3_11
 media-video/mpv PYTHON_TARGETS: -* python3_11 PYTHON_SINGLE_TARGET: -* python3_11

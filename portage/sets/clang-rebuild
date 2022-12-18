@@ -1,21 +1,4 @@
 # -------------------------------------------------------------------
-### llvm/clang toolchain
-# -------------------------------------------------------------------
-sys-devel/clang
-sys-devel/clang-common
-sys-devel/clang-runtime
-sys-devel/clang-toolchain-symlinks
-sys-devel/lld
-sys-devel/llvm
-sys-devel/llvmgold
-sys-devel/llvm-toolchain-symlinks
-sys-libs/compiler-rt
-sys-libs/compiler-rt-sanitizers
-sys-libs/libcxx
-sys-libs/libcxxabi
-sys-libs/libomp
-sys-libs/llvm-libunwind
-# -------------------------------------------------------------------
 ### Using llvm/clang build environment
 # -------------------------------------------------------------------
 app-admin/keepassxc
@@ -28,7 +11,6 @@ dev-lang/rust
 games-emulation/bsnes-mercury-performance-libretro
 games-emulation/desmume-libretro
 games-emulation/dolphin
-games-emulation/duckstation
 games-emulation/fbneo-libretro
 games-emulation/flycast-libretro
 games-emulation/gambatte-libretro

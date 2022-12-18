@@ -27,7 +27,6 @@ dev-lang/rust compiler-clang
 games-emulation/bsnes-mercury-performance-libretro compiler-clang
 games-emulation/desmume-libretro compiler-clang
 games-emulation/dolphin compiler-clang
-games-emulation/duckstation
 games-emulation/fbneo-libretro compiler-clang
 games-emulation/flycast-libretro compiler-clang
 games-emulation/gambatte-libretro compiler-clang

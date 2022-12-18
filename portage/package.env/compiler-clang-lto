@@ -25,7 +25,6 @@ dev-lang/rust compiler-clang-lto
 games-emulation/bsnes-mercury-performance-libretro compiler-clang-lto
 games-emulation/desmume-libretro compiler-clang-lto
 games-emulation/dolphin compiler-clang-lto
-games-emulation/duckstation
 games-emulation/fbneo-libretro compiler-clang-lto
 games-emulation/flycast-libretro compiler-clang-lto
 games-emulation/gambatte-libretro compiler-clang-lto
@@ -36,7 +35,7 @@ games-emulation/libretro-nestopia compiler-clang-lto
 games-emulation/libretro-snes9x compiler-clang-lto
 games-emulation/melonds-libretro compiler-clang-lto
 games-emulation/mesen-libretro compiler-clang-lto
-games-emulation/mupen64next-libretro compiler-clang-lto
+#games-emulation/mupen64next-libretro compiler-clang-lto
 games-emulation/pcsx2 compiler-clang-lto
 games-emulation/retroarch compiler-clang-lto
 games-emulation/vba-next-libretro compiler-clang-lto
