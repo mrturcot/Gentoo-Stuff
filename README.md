@@ -8,15 +8,15 @@
      -odNMMMMMMMMNNmhy+-`             ------------------ 
    -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
  `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: Gigabyte Technology Co., Ltd. X470 AORUS GAMING 7 WIFI-CF 
- omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.0.12-gentoo-filthy 
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.1.0-gentoo-filthy 
 .ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hours, 20 mins 
- oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1168 (emerge) 
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1166 (emerge) 
   :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
     .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Resolution: 3840x2160 
-       /mMMMMMMNNNmmmdddhhhhhmMNhs:   DE: GNOME 42.5 
+       /mMMMMMMNNNmmmdddhhhhhmMNhs:   DE: GNOME 43.2 
     `oNMMMMMMMNNNmmmddddhhdmMNhs+`    WM: Mutter 
-  `sNMMMMMMMMNNNmmmdddddmNMmhs/.      WM Theme: Equilux 
- /NMMMMMMMMNNNNmmmdddmNMNdso:`        Theme: Equilux [GTK2/3] 
+  `sNMMMMMMMMNNNmmmdddddmNMmhs/.      WM Theme: Orchis-Dark 
+ /NMMMMMMMMNNNNmmmdddmNMNdso:`        Theme: Orchis-Dark [GTK2/3] 
 +MMMMMMMNNNNNmmmmdmNMNdso/-           Icons: Papirus [GTK2/3] 
 yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty 
 /hMMNNNNNNNNMNdhs++/-`                Terminal Font: source code pro 14.0 
@@ -76,22 +76,18 @@ Then before >> **Updating the @world set** (https://wiki.gentoo.org/wiki/Handboo
   
  - **Untested**  
 
-Furthermore, I do provide my own kernel (LOL if someone actually boots this) and .config for current "6.0-gentoo-sources" trimmed down (8MB) shared in /kernel. This is for a basic AMD Ryzen 2700 x470 znver1 & AMDGPU Arctic Islands - POLARIS10/11/12, VEGAM setup with support for NVMe-SDD and SATA-HDD (ext4, fat & ntfs) with Network etc... Basically enough to boot and get going, thats it (all this stuff here works https://www.gigabyte.com/Motherboard/X470-AORUS-ULTRA-GAMING-rev-10/sp#sp). I guess it would work for others with same chipsets? not sure but maybe? I dont know... Completely UNTESTED.    
+Furthermore, I do provide my own kernel (LOL if someone actually boots this) and .config for current "6.1-gentoo-sources" trimmed down (8MB) shared in /kernel. This is for a basic AMD Ryzen 2700 x470 znver1 & AMDGPU Arctic Islands - POLARIS10/11/12, VEGAM setup with support for NVMe-SDD and SATA-HDD (ext4, fat & ntfs) with Network etc... Basically enough to boot and get going, thats it (all this stuff here works https://www.gigabyte.com/Motherboard/X470-AORUS-ULTRA-GAMING-rev-10/sp#sp). I guess it would work for others with same chipsets? not sure but maybe? I dont know... Completely UNTESTED.    
 
 Running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in your activily set gentoo kernel sources in "/usr/src/linux" would be very strongly recommened making your own kernel from the kernel.config provided, as other hardware specifications that differ from this would most definitely need to be set for your setup... This is *Untested*...     
    
    
    
 ```
- mrturcot  on GentooRig /home/mrturcot/github/gentoo-stuff on   master took 7s
-[ 11:06:54 PM ] ➜ l /boot                      
+ mrturcot  on GentooRig /home/mrturcot 
+[ 11:19:03 PM ] ➜ l /boot
 Permissions Size User Date Modified Name
-drwxr-xr-x     - root  5 Nov 00:57  EFI
-drwxr-xr-x     - root  9 Dec 20:48  grub
-drwxr-xr-x     - root  8 Dec 23:57  overlays
-.rwxr-xr-x  143k root  9 Dec 20:47  config-6.0.12-gentoo-filthy
-.rwxr-xr-x  5.5M root  9 Dec 20:47  System.map-6.0.12-gentoo-filthy
-.rwxr-xr-x  8.6M root  9 Dec 20:47  vmlinuz-6.0.12-gentoo-filthy
+.rwxr-xr-x  145k root 15 Dec 00:42  config-6.1.0-gentoo-filthy
+.rwxr-xr-x  8.7M root 15 Dec 00:42  vmlinuz-6.1.0-gentoo-filthy
 ```
 
    
