@@ -42,7 +42,7 @@ read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Updating${BB} ......${NC}"
 	sleep 1
-	emerge --ask --verbose --update --newuse --deep --with-bdeps=y @world &&
+	emerge --ask --verbose --update --newuse --deep --usepkg=n --with-bdeps=y @world &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -84,7 +84,7 @@ read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 case $yn in
    [yY] ) echo -e " ${BY}* ${BIG}OK${NC} Updating gits${BB} ......${NC}"
    sleep 1
-   emerge --ask --verbose @smart-live-rebuild &&
+   emerge --ask --verbose -X yuzu -X mplayer -X flycast @smart-live-rebuild &&
    echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
       break;;
    [nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"

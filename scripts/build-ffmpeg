@@ -2,11 +2,11 @@
 ### https://ffmpeg.org/download.html
 ## git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
 
-cd $HOME/github/repos/ffmpeg
+cd $HOME/github/ffmpeg
 #make clean &&
 ./configure \
 	--prefix=/home/mrturcot/github/builds \
-	--cc=/usr/lib/llvm/15/bin/clang++ \
+	--cc=/usr/lib/llvm/15/bin/clang \
 	--cxx=/usr/lib/llvm/15/bin/clang++ \
 	--pkg-config-flags="--static" \
 	--extra-libs="-lpthread -lm" \

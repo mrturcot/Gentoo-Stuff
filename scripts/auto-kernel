@@ -2,7 +2,7 @@
 
 echo "selecting new kernel"
 sleep 1
-eselect kernel set 2
+eselect kernel set 3
 echo "going to kernel source"
 sleep 1
 cd /usr/src/linux
