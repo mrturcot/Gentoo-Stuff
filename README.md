@@ -38,6 +38,9 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
  PER-Package compiler environments (as defined in portage/env & portage/package.env) for:  
  Clang, Clang-LTO, Clang-Hardended, GCC-LTO, GCC-Fallback, GCC-NO-LTO-Fallback & more
 ```
+
+Every package currently set in portage/package.env is confirmed working with the specified per-package build environment(s) eg. compiler-clang  
+
 ```
  GCC set to compile with Graphite, LTO & PGO optimizations  
  System-wide LLVM_TARGETS="AArch64 AMDGPU" 
@@ -84,20 +87,7 @@ Then before >> **Updating the @world set** (https://wiki.gentoo.org/wiki/Handboo
 
 Furthermore, I do provide my own kernel and .config for current "6.1-gentoo-sources". This is for AMD Ryzen znver1 & AMDGPU Arctic Islands - POLARIS10/11/12 setup with support for NVMe-SDD and SATA-HDD (ext4, fat & ntfs) with Network etc... (all this stuff here works https://www.gigabyte.com/Motherboard/X470-AORUS-ULTRA-GAMING-rev-10/sp#sp).  
 
-Running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in your activily set gentoo kernel sources in "/usr/src/linux" would be very strongly recommened making your own kernel from the kernel.config provided, as other hardware specifications that differ from this would most definitely need to be set for your setup... This is *Untested*...     
-      
-   
-```
- mrturcot  on GentooRig /home/mrturcot 
-[ 08:10:38 AM ] ➜ l /boot         
-Permissions Size User Date Modified Name
-.rwxr-xr-x  145k root 23 Dec 03:51  config-6.1.1-gentoo-filthy
-.rwxr-xr-x     0 root 23 Dec 03:51  System.map-6.1.1-gentoo-filthy
-.rwxr-xr-x  9.0M root 23 Dec 03:51  vmlinuz-6.1.1-gentoo-filthy
-```
-
-   
-Every package currently set in portage/package.env is confirmed working with the specified per-package build environment(s) eg. compiler-clang   
+Running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in your activily set gentoo kernel sources in "/usr/src/linux" would be very strongly recommened making your own kernel from the kernel.config provided, as other hardware specifications that differ from this would most definitely need to be set for your setup... This is *Untested*...      
    
 
 **Notice**
