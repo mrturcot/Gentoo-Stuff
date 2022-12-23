@@ -85,7 +85,7 @@ Then before >> **Updating the @world set** (https://wiki.gentoo.org/wiki/Handboo
    
 - **Untested**  
 
-Furthermore, I do provide my own kernel and .config for current "6.1-gentoo-sources". This is for AMD Ryzen znver1 & AMDGPU Arctic Islands - POLARIS10/11/12 setup with support for NVMe-SDD and SATA-HDD (ext4, fat & ntfs) with Network etc... (all this stuff here works https://www.gigabyte.com/Motherboard/X470-AORUS-ULTRA-GAMING-rev-10/sp#sp).  
+Furthermore, I do provide my own kernel and .config for current "6.1-gentoo-sources". This is for AMD Ryzen znver1 & AMDGPU Arctic Islands - POLARIS10/11/12 setup with support for NVMe-SDD and SATA-HDD (ext4, fat & ntfs) with Network etc... (all this stuff here works https://www.gigabyte.com/Motherboard/X470-AORUS-GAMING-7-WIFI-rev-10/sp#sp).  
 
 Running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in your activily set gentoo kernel sources in "/usr/src/linux" would be very strongly recommened making your own kernel from the kernel.config provided, as other hardware specifications that differ from this would most definitely need to be set for your setup... This is *Untested*...      
    
