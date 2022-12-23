@@ -11,6 +11,7 @@ MAKEOPTS="-j12"
 # If you switch later you will need to @preserved-rebuild anything build against old unwind
 CC="clang"
 CXX="clang++"
+LD="ld.lld"
 AR="llvm-ar"
 NM="llvm-nm"
 RANLIB="llvm-ranlib"

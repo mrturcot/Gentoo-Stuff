@@ -108,3 +108,11 @@
 >=dev-libs/cpuinfo-2022.03.26 ~amd64
 # required by bashtop (argument)
 >=sys-process/bashtop-0.9.25 ~amd64
+# required by games-emulation/yuzu-0.610::menelkir[cubeb]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/cubeb-0.2_p20210505 ~amd64
+# required by minizip-ng (argument)
+>=sys-libs/minizip-ng-3.0.7 ~amd64
+# required by sys-libs/zlib-ng (argument)
+>=sys-libs/zlib-ng-2.0.6 ~amd64

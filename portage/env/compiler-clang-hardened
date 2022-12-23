@@ -1,21 +1,3 @@
-## Normal GCC settings here
-COMMON_FLAGS="-march=znver1 -O2 -pipe -fomit-frame-pointer"
-CFLAGS="${COMMON_FLAGS}"
-CXXFLAGS="${COMMON_FLAGS}"
-FCFLAGS="${COMMON_FLAGS}"
-FFLAGS="${COMMON_FLAGS}"
-MAKEOPTS="-j12"
-
-## Clang settings
-# sys-libs/libunwind **OR** sys-libs/llvm-libunwind needed for (${LDFLAGS} -unwindlib=libunwind)
-# If you switch later you will need to @preserved-rebuild anything build against old unwind
-CC="clang"
-CXX="clang++"
-AR="llvm-ar"
-NM="llvm-nm"
-RANLIB="llvm-ranlib"
-LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
-
 ## Hardening which isn't (yet?) done by default for Clang, unlike GCC.
 _HARDENING_FLAGS="-fPIE -fstack-protector-all -D_FORTIFY_SOURCE=2"
 CFLAGS="${CFLAGS} ${_HARDENING_FLAGS}"

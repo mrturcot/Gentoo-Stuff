@@ -41,6 +41,7 @@ games-emulation/mupen64next-libretro compiler-clang
 games-emulation/pcsx2 compiler-clang
 games-emulation/retroarch compiler-clang
 games-emulation/vba-next-libretro compiler-clang
+games-emulation/yuzu compiler-clang
 games-engines/openmw compiler-clang
 games-fps/gzdoom compiler-clang
 media-libs/libplacebo compiler-clang
@@ -57,3 +58,5 @@ www-client/firefox compiler-clang
 www-client/librewolf compiler-clang
 www-client/ungoogled-chromium compiler-clang
 x11-terms/kitty compiler-clang
+x11-wm/mutter compiler-clang
+games-util/xone compiler-clang
