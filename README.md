@@ -26,11 +26,13 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
 ```
    
 
- - **Main Features**
 
   - My in sync Portage directory & Kernel for a Stable Gentoo x86-64 EFI, Ryzen ZenVer1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system configuration. With optimizations for speed and gaming performance in mind...  
 
   - /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. It should also be noted, the PER-Package build environments are portable and modular, they should work with most Gentoo based systems with LLVM/Clang installed, (upon setting a few values mentioned below)   
+
+
+ - **Main Features**
 
 ```
  PER-Package compiler environments (as defined in portage/env & portage/package.env) for:  
