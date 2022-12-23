@@ -1,0 +1,73 @@
+kernel/arch/x86/kvm/kvm-amd.ko:
+kernel/fs/isofs/isofs.ko:
+kernel/fs/fuse/fuse.ko:
+kernel/fs/udf/udf.ko: kernel/lib/crc-itu-t.ko
+kernel/fs/efivarfs/efivarfs.ko:
+kernel/crypto/deflate.ko:
+kernel/lib/crc-itu-t.ko:
+kernel/drivers/acpi/video.ko: kernel/drivers/platform/x86/wmi.ko
+kernel/drivers/gpu/drm/display/drm_display_helper.ko:
+kernel/drivers/gpu/drm/drm_buddy.ko:
+kernel/drivers/gpu/drm/scheduler/gpu-sched.ko:
+kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko: kernel/drivers/acpi/video.ko kernel/drivers/platform/x86/wmi.ko kernel/drivers/mfd/mfd-core.ko kernel/drivers/gpu/drm/scheduler/gpu-sched.ko kernel/drivers/gpu/drm/drm_buddy.ko kernel/drivers/gpu/drm/display/drm_display_helper.ko
+kernel/drivers/mfd/mfd-core.ko:
+kernel/drivers/nvme/host/nvme-fabrics.ko:
+kernel/drivers/nvme/host/nvme-fc.ko: kernel/drivers/nvme/host/nvme-fabrics.ko
+kernel/drivers/nvme/host/nvme-tcp.ko: kernel/drivers/nvme/host/nvme-fabrics.ko
+kernel/drivers/net/ethernet/intel/e100.ko: kernel/drivers/net/mii.ko
+kernel/drivers/net/ethernet/intel/e1000/e1000.ko:
+kernel/drivers/net/ethernet/intel/igb/igb.ko:
+kernel/drivers/net/ethernet/intel/igbvf/igbvf.ko:
+kernel/drivers/net/ethernet/intel/ixgb/ixgb.ko:
+kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko: kernel/net/wireless/cfg80211.ko
+kernel/drivers/net/wireless/intel/iwlwifi/dvm/iwldvm.ko: kernel/net/mac80211/mac80211.ko kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko kernel/net/wireless/cfg80211.ko
+kernel/drivers/net/wireless/intel/iwlwifi/mvm/iwlmvm.ko: kernel/net/mac80211/mac80211.ko kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko kernel/net/wireless/cfg80211.ko
+kernel/drivers/net/mii.ko:
+kernel/drivers/usb/typec/tcpm/tcpm.ko: kernel/drivers/usb/roles/roles.ko
+kernel/drivers/usb/roles/roles.ko:
+kernel/drivers/input/misc/uinput.ko:
+kernel/drivers/bluetooth/hci_uart.ko:
+kernel/drivers/bluetooth/btusb.ko: kernel/drivers/bluetooth/btrtl.ko kernel/drivers/bluetooth/btbcm.ko kernel/drivers/bluetooth/btintel.ko
+kernel/drivers/bluetooth/btintel.ko:
+kernel/drivers/bluetooth/btbcm.ko:
+kernel/drivers/bluetooth/btrtl.ko:
+kernel/drivers/hid/hid-logitech-dj.ko:
+kernel/drivers/hid/hid-logitech-hidpp.ko:
+kernel/drivers/hid/hid-steam.ko:
+kernel/drivers/platform/x86/wmi.ko:
+kernel/drivers/platform/x86/wmi-bmof.ko: kernel/drivers/platform/x86/wmi.ko
+kernel/drivers/platform/x86/eeepc-laptop.ko: kernel/drivers/acpi/video.ko kernel/drivers/platform/x86/wmi.ko
+kernel/net/netfilter/nf_conntrack_ftp.ko:
+kernel/net/netfilter/nf_log_syslog.ko:
+kernel/net/netfilter/nf_nat_ftp.ko: kernel/net/netfilter/nf_conntrack_ftp.ko
+kernel/net/netfilter/xt_mark.ko:
+kernel/net/netfilter/xt_nat.ko:
+kernel/net/netfilter/xt_LOG.ko:
+kernel/net/netfilter/xt_MASQUERADE.ko:
+kernel/net/netfilter/xt_addrtype.ko:
+kernel/net/netfilter/xt_comment.ko:
+kernel/net/netfilter/xt_hl.ko:
+kernel/net/netfilter/xt_limit.ko:
+kernel/net/netfilter/xt_multiport.ko:
+kernel/net/netfilter/xt_recent.ko:
+kernel/net/netfilter/ipset/ip_set.ko:
+kernel/net/netfilter/ipvs/ip_vs.ko:
+kernel/net/ipv4/netfilter/iptable_nat.ko:
+kernel/net/ipv4/ah4.ko:
+kernel/net/ipv4/esp4.ko:
+kernel/net/ipv4/ipcomp.ko: kernel/net/xfrm/xfrm_ipcomp.ko
+kernel/net/ipv4/xfrm4_tunnel.ko:
+kernel/net/ipv4/udp_diag.ko:
+kernel/net/xfrm/xfrm_ipcomp.ko:
+kernel/net/bridge/netfilter/nf_conntrack_bridge.ko:
+kernel/net/bluetooth/bnep/bnep.ko:
+kernel/net/wireless/cfg80211.ko:
+kernel/net/mac80211/mac80211.ko: kernel/net/wireless/cfg80211.ko
+kernel/drivers/input/joystick/xone-gip-gamepad.ko: kernel/drivers/input/joystick/xone-gip.ko
+misc/zenpower.ko:
+kernel/drivers/input/joystick/xone-gip-chatpad.ko: kernel/drivers/input/joystick/xone-gip.ko
+kernel/drivers/input/joystick/xone-gip-headset.ko: kernel/drivers/input/joystick/xone-gip.ko
+kernel/drivers/input/joystick/xone-gip.ko:
+kernel/drivers/input/joystick/xone-gip-guitar.ko: kernel/drivers/input/joystick/xone-gip.ko
+kernel/drivers/input/joystick/xone-dongle.ko: kernel/drivers/input/joystick/xone-gip.ko kernel/net/wireless/cfg80211.ko
+kernel/drivers/input/joystick/xone-wired.ko: kernel/drivers/input/joystick/xone-gip.ko
