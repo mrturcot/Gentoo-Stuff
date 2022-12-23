@@ -38,8 +38,24 @@ Linux version 6.1.1-gentoo-filthy (root@GentooRig) (clang version 15.0.6, LLD 15
 
 ```
  PER-Package compiler environments (as defined in portage/env & portage/package.env) for:  
- Clang, Clang-LTO Clang-Hardended, GCC-LTO, GCC-Fallback, GCC-NO-LTO-Fallback & more
+ Clang, Clang-LTO, Clang-Hardended, GCC-LTO, GCC-Fallback, GCC-NO-LTO-Fallback & more
 ```
+
+```
+ GCC set to compile with Graphite, LTO & PGO optimizations  
+ System-wide LLVM_TARGETS="AArch64 AMDGPU" 
+ AArch64 CPU target (arm64 in Gentoo) 
+ AMDGPU target (supports R600 and GCN GPUs)  
+```
+
+```
+ Local USE Flags enabled (select packages only eg. GCC)  
+ ## Can be overridden using PER-Package env's compiler-$(environment) *not PGO*  
+ Clang = Force building using installed clang (rather than the default CC/CXX).  
+ LTO = Build using Link Time Optimizations (LTO)  
+ PGO = Profile-guided optimizations   
+ and more... see portage/make.conf "USE=$(Flags)"  
+```  
 
    
   - My in sync Portage directory & Kernel for a Stable Gentoo x86-64 EFI, Ryzen ZenVer1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system configuration. With optimizations for speed and gaming performance in mind...  
