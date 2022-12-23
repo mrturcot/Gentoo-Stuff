@@ -1,19 +1,38 @@
 #!/bin/bash
 
-current_directory=$( pwd )
+# Is ffmpeg even installed?
+if ! command -v ffmpeg > /dev/null; then
+  echo "ffmpeg is not installed. Please install it and try again."
+  exit 1
+fi
 
-#remove spaces
-for i in *.wma; do mv "$i" `echo $i | tr ' ' '_'`; done
+echo -en '\n'
+echo "Okay lets convert"
+echo -en '\n'
+sleep 1
 
-#remove uppercase
-for i in *.[Ww][Mm][Aa]; do mv "$i" `echo $i | tr '[A-Z]' '[a-z]'`; done
+# Set the input directory
+input_dir="./"
 
-#Rip with Mplayer / encode with LAME
-for i in *.wma ; do 
-mplayer -vo null -vc dummy -af resample=44100 -ao pcm:waveheader $i && lame -m s -h -V0 --vbr-new audiodump.wav -o $i; done
+# Set the output directory
+output_dir="./converted"
 
-#convert file names
-for i in *.wma; do mv "$i" "`basename "$i" .wma`.mp3"; done
+# Create the output directory if it doesn't exist
+if [ ! -d "$output_dir" ]; then
+  mkdir "$output_dir"
+fi
 
-#remove left over file
-rm audiodump.wav
+# Find all .wma files in the input directory & convert to .mp3 using highest quality
+find "$input_dir" -name "*.wma" -exec bash -c '
+  # Set the input file and output file names
+  input_file=$0
+  output_file="'$output_dir'/${0%.*}.mp3"
+
+  # Convert the file
+  ffmpeg -i "$input_file" -codec:a libmp3lame -qscale:a 0 "$output_file"
+
+  echo "Converted $input_file to $output_file"
+' {} \;
+
+echo -en '\n'
+echo "Conversion complete"
