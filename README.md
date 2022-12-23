@@ -28,26 +28,20 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty
 
  - **Main Features**
 
+  - My in sync Portage directory & Kernel for a Stable Gentoo x86-64 EFI, Ryzen ZenVer1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system configuration. With optimizations for speed and gaming performance in mind...  
 
-Clang Kernel
-
-```
-➜ cat /proc/version
-Linux version 6.1.1-gentoo-filthy (root@GentooRig) (clang version 15.0.6, LLD 15.0.6) #5 SMP PREEMPT_DYNAMIC Fri Dec 23 03:48:45 PST 2022
-```
+  - /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. It should also be noted, the PER-Package build environments are portable and modular, they should work with most Gentoo based systems with LLVM/Clang installed, (upon setting a few values mentioned below)   
 
 ```
  PER-Package compiler environments (as defined in portage/env & portage/package.env) for:  
  Clang, Clang-LTO, Clang-Hardended, GCC-LTO, GCC-Fallback, GCC-NO-LTO-Fallback & more
 ```
-
 ```
  GCC set to compile with Graphite, LTO & PGO optimizations  
  System-wide LLVM_TARGETS="AArch64 AMDGPU" 
  AArch64 CPU target (arm64 in Gentoo) 
  AMDGPU target (supports R600 and GCN GPUs)  
 ```
-
 ```
  Local USE Flags enabled (select packages only eg. GCC)  
  ## Can be overridden using PER-Package env's compiler-$(environment) *not PGO*  
@@ -57,11 +51,13 @@ Linux version 6.1.1-gentoo-filthy (root@GentooRig) (clang version 15.0.6, LLD 15
  and more... see portage/make.conf "USE=$(Flags)"  
 ```  
 
-   
-  - My in sync Portage directory & Kernel for a Stable Gentoo x86-64 EFI, Ryzen ZenVer1, AMDGPU, OpenRC, Gnome-*Light*, X11, Pipewire based system configuration. With optimizations for speed and gaming performance in mind...  
-   
-   
-  - /etc/portage files included in this repo, could serve as drop-in replacements for others with similar hardware setups. It should also be noted, the PER-Package build environments are portable and modular, they should work with most Gentoo based systems with LLVM/Clang installed, (upon setting a few values mentioned below)   
+Clang Kernel
+```
+➜ cat /proc/version
+Linux version 6.1.1-gentoo-filthy (root@GentooRig) (clang version 15.0.6, LLD 15.0.6) #5 SMP PREEMPT_DYNAMIC Fri Dec 23 03:48:45 PST 2022
+```   
+
+ - **Use Case**
 
  One helpful use case scenario could be. Once initially mounted and chrooted into a new Gentoo install environment. Complete the install as normal 
 
@@ -87,8 +83,7 @@ Then before >> **Updating the @world set** (https://wiki.gentoo.org/wiki/Handboo
 Furthermore, I do provide my own kernel and .config for current "6.1-gentoo-sources". This is for AMD Ryzen znver1 & AMDGPU Arctic Islands - POLARIS10/11/12 setup with support for NVMe-SDD and SATA-HDD (ext4, fat & ntfs) with Network etc... (all this stuff here works https://www.gigabyte.com/Motherboard/X470-AORUS-ULTRA-GAMING-rev-10/sp#sp).  
 
 Running "make menuconfig [https://wiki.gentoo.org/wiki/Kernel/Configuration#Configuration]" in your activily set gentoo kernel sources in "/usr/src/linux" would be very strongly recommened making your own kernel from the kernel.config provided, as other hardware specifications that differ from this would most definitely need to be set for your setup... This is *Untested*...     
-   
-   
+      
    
 ```
  mrturcot  on GentooRig /home/mrturcot 
