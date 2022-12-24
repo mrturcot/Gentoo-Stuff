@@ -112,7 +112,6 @@ kernel/lib/asn1_decoder.ko
 kernel/lib/fonts/font.ko
 kernel/lib/oid_registry.ko
 kernel/lib/ucs2_string.ko
-kernel/drivers/video/vgastate.ko
 kernel/drivers/video/console/vgacon.ko
 kernel/drivers/video/backlight/backlight.ko
 kernel/drivers/video/fbdev/core/fb.ko
@@ -123,8 +122,6 @@ kernel/drivers/video/fbdev/core/sysfillrect.ko
 kernel/drivers/video/fbdev/core/syscopyarea.ko
 kernel/drivers/video/fbdev/core/sysimgblt.ko
 kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/video/fbdev/vesafb.ko
-kernel/drivers/video/fbdev/vga16fb.ko
 kernel/drivers/acpi/ac.ko
 kernel/drivers/acpi/button.ko
 kernel/drivers/acpi/fan.ko
@@ -153,7 +150,6 @@ kernel/drivers/char/agp/amd64-agp.ko
 kernel/drivers/char/agp/intel-agp.ko
 kernel/drivers/char/agp/intel-gtt.ko
 kernel/drivers/iommu/amd/iommu_v2.ko
-kernel/drivers/iommu/ioasid.ko
 kernel/drivers/iommu/iova.ko
 kernel/drivers/gpu/drm/drm.ko
 kernel/drivers/gpu/drm/drm_panel_orientation_quirks.ko
@@ -259,7 +255,11 @@ kernel/drivers/hid/hid-sony.ko
 kernel/drivers/hid/hid-sunplus.ko
 kernel/drivers/hid/hid-topseed.ko
 kernel/drivers/hid/usbhid/usbhid.ko
+kernel/drivers/vhost/vhost_net.ko
+kernel/drivers/vhost/vhost.ko
+kernel/drivers/vhost/vhost_iotlb.ko
 kernel/drivers/platform/x86/amd/pmf/amd-pmf.ko
+kernel/drivers/virt/vmgenid.ko
 kernel/drivers/nvmem/nvmem_core.ko
 kernel/sound/soundcore.ko
 kernel/sound/core/snd.ko
