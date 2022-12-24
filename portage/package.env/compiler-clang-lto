@@ -42,6 +42,7 @@ games-emulation/vba-next-libretro compiler-clang-lto
 games-emulation/yuzu compiler-clang-lto
 games-engines/openmw compiler-clang-lto
 games-fps/gzdoom compiler-clang-lto
+games-util/xone compiler-clang
 media-libs/libplacebo compiler-clang-lto
 media-libs/mesa compiler-clang-lto
 media-video/ffmpeg compiler-clang-lto
@@ -51,6 +52,7 @@ net-libs/libtorrent-rasterbar compiler-clang-lto
 net-p2p/qbittorrent compiler-clang-lto
 net-wireless/bluez compiler-clang-lto
 sys-apps/preload compiler-clang-lto
+sys-kernel/zenpower compiler-clang-lto
 sys-process/htop compiler-clang-lto
 www-client/firefox compiler-clang-lto
 www-client/librewolf compiler-clang-lto

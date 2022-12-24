@@ -28,6 +28,7 @@ games-emulation/vba-next-libretro
 games-emulation/yuzu
 games-engines/openmw
 games-fps/gzdoom
+games-util/xone
 media-libs/libplacebo
 media-libs/mesa
 media-video/ffmpeg
@@ -37,6 +38,7 @@ net-libs/libtorrent-rasterbar
 net-p2p/qbittorrent
 net-wireless/bluez
 sys-apps/preload
+#sys-kernel/zenpower
 sys-process/htop
 www-client/firefox
 www-client/librewolf

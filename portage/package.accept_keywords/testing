@@ -10,6 +10,7 @@
 >=dev-java/openjdk-bin-17.0.5_p8 ~amd64
 >=dev-lang/spidermonkey-102.5.0 ~amd64
 >=dev-libs/gjs-1.74.1 ~amd64
+>=dev-util/bindgen-0.62.0 ~amd64
 >=dev-util/cmake-3.25.0 ~amd64
 >=games-emulation/dolphin-5.0 ~amd64
 >=games-emulation/mgba-libretro-1.0_pre20210114 ~amd64
@@ -19,6 +20,7 @@
 >=media-libs/mesa-22.2.3 ~amd64
 >=media-video/pipewire-0.3.61 ~amd64
 >=net-libs/libtorrent-rasterbar-2.0.8 ~amd64
+>=net-misc/megasync-4.8.1.0 ~amd64
 >=net-wireless/bluez-tools-0_p20201025 ~amd64
 >=net-wireless/gnome-bluetooth-42.5 ~amd64
 >=sys-apps/bat-0.21.0 ~amd64
@@ -29,3 +31,5 @@
 >=sys-process/glances-3.3.0 ~amd64
 >=www-client/firefox-106.0.5 ~amd64
 >=www-client/librewolf-107.0_p1 ~amd64
+
+>=sys-kernel/zenpower-0.1.12 ~amd64

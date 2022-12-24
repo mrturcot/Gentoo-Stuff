@@ -116,3 +116,17 @@
 >=sys-libs/minizip-ng-3.0.7 ~amd64
 # required by sys-libs/zlib-ng (argument)
 >=sys-libs/zlib-ng-2.0.6 ~amd64
+# required by net-misc/megasync-4.8.1.0::4nykey
+# required by net-misc/megasync (argument)
+=net-misc/meganz-sdk-4.7.1 ~amd64
+# required by dev-util/breakpad-2022.06.04::gentoo
+# required by net-misc/megasync-4.8.1.0::4nykey
+# required by net-misc/megasync (argument)
+>=dev-embedded/libdisasm-0.23 ~amd64
+# required by dev-util/breakpad-2022.06.04::gentoo
+# required by net-misc/megasync-4.8.1.0::4nykey
+# required by net-misc/megasync (argument)
+>=dev-libs/linux-syscall-support-2021.05.03 ~amd64
+# required by net-misc/megasync-4.8.1.0::4nykey
+# required by net-misc/megasync (argument)
+>=dev-util/breakpad-2022.06.04 ~amd64

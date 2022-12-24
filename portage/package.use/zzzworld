@@ -861,11 +861,6 @@
 >=sci-physics/bullet-3.21 double-precision
 # required by games-emulation/duckstation-9999::guru[retroachievements]
 # required by games-emulation/duckstation::guru (argument)
->=net-misc/curl-7.86.0-r3 curl_ssl_gnutls
-# required by media-libs/mesa-22.2.3::gentoo[-video_cards_radeon,llvm,-opencl,-video_cards_r600,video_cards_radeonsi]
-# required by www-client/firefox-107.0.1::gentoo
-# required by @selected
-# required by @world (argument)
 >=sys-devel/llvm-15.0.3 abi_x86_32
 # required by media-libs/vulkan-loader-1.3.224::gentoo[layers]
 # required by dev-util/vulkan-tools-1.3.224::gentoo
@@ -906,3 +901,51 @@
 # required by app-emulation/qemu-7.0.0-r3::gentoo[slirp,-static]
 # required by qemu (argument)
 >=dev-libs/libpcre2-10.40 static-libs
+# required by app-emulation/wine-vanilla-7.0.1::gentoo[kerberos]
+# required by app-emulation/wine-vanilla (argument)
+>=virtual/krb5-0-r1 abi_x86_32
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-vanilla-7.0.1::gentoo[kerberos]
+# required by app-emulation/wine-vanilla (argument)
+>=app-crypt/mit-krb5-1.20.1 abi_x86_32
+# required by app-crypt/mit-krb5-1.20.1::gentoo
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-vanilla-7.0.1::gentoo[kerberos]
+# required by app-emulation/wine-vanilla (argument)
+>=sys-fs/e2fsprogs-1.46.5-r3 abi_x86_32
+# required by app-crypt/mit-krb5-1.20.1::gentoo[keyutils]
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-vanilla-7.0.1::gentoo[kerberos]
+# required by app-emulation/wine-vanilla (argument)
+>=sys-apps/keyutils-1.6.3 abi_x86_32
+# required by app-crypt/mit-krb5-1.20.1::gentoo[nls]
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-vanilla-7.0.1::gentoo[kerberos]
+# required by app-emulation/wine-vanilla (argument)
+>=sys-devel/gettext-0.21.1 abi_x86_32
+# required by app-crypt/mit-krb5-1.20.1::gentoo[pkinit]
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-vanilla-7.0.1::gentoo[kerberos]
+# required by app-emulation/wine-vanilla (argument)
+>=dev-libs/openssl-1.1.1s abi_x86_32
+# required by app-crypt/mit-krb5-1.20.1::gentoo
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-vanilla-7.0.1::gentoo[kerberos]
+# required by app-emulation/wine-vanilla (argument)
+>=dev-libs/libverto-0.3.1-r1 abi_x86_32
+# required by dev-libs/libverto-0.3.1-r1::gentoo[libev]
+# required by app-crypt/mit-krb5-1.20.1::gentoo
+# required by virtual/krb5-0-r1::gentoo
+# required by app-emulation/wine-vanilla-7.0.1::gentoo[kerberos]
+# required by app-emulation/wine-vanilla (argument)
+>=dev-libs/libev-4.33 abi_x86_32
+# required by dev-util/bindgen-0.62.0::gentoo
+# required by dev-util/bindgen (argument)
+>=virtual/rust-1.65.0-r1 rustfmt
+# required by virtual/rust-1.65.0-r1::gentoo
+# required by dev-util/bindgen-0.62.0::gentoo
+# required by dev-util/bindgen (argument)
+>=dev-lang/rust-1.65.0 rustfmt
+# required by net-misc/megasync-4.8.1.0::4nykey
+# required by net-misc/megasync (argument)
+>=net-misc/meganz-sdk-4.7.1 libuv qt
