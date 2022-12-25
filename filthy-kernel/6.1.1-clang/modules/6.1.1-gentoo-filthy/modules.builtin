@@ -3,6 +3,7 @@ kernel/arch/x86/events/amd/amd-uncore.ko
 kernel/arch/x86/kvm/kvm.ko
 kernel/arch/x86/kernel/msr.ko
 kernel/arch/x86/kernel/cpuid.ko
+kernel/arch/x86/crypto/libblake2s-x86_64.ko
 kernel/kernel/configs.ko
 kernel/mm/zswap.ko
 kernel/mm/zpool.ko
@@ -51,6 +52,7 @@ kernel/crypto/dh_generic.ko
 kernel/crypto/rsa_generic.ko
 kernel/crypto/crypto_acompress.ko
 kernel/crypto/cryptomgr.ko
+kernel/crypto/crypto_user.ko
 kernel/crypto/cmac.ko
 kernel/crypto/hmac.ko
 kernel/crypto/crypto_null.ko
@@ -80,6 +82,8 @@ kernel/crypto/drbg.ko
 kernel/crypto/jitterentropy_rng.ko
 kernel/crypto/ghash-generic.ko
 kernel/crypto/af_alg.ko
+kernel/crypto/algif_hash.ko
+kernel/crypto/algif_skcipher.ko
 kernel/crypto/algif_aead.ko
 kernel/crypto/zstd.ko
 kernel/crypto/ecc.ko
@@ -92,8 +96,6 @@ kernel/crypto/asymmetric_keys/pkcs7_message.ko
 kernel/crypto/kdf_sp800108.ko
 kernel/block/bsg.ko
 kernel/block/mq-deadline.ko
-kernel/block/kyber-iosched.ko
-kernel/block/bfq.ko
 kernel/lib/math/rational.ko
 kernel/lib/crypto/libcryptoutils.ko
 kernel/lib/crypto/libaes.ko
@@ -160,8 +162,6 @@ kernel/drivers/char/hw_random/rng-core.ko
 kernel/drivers/char/hw_random/via-rng.ko
 kernel/drivers/char/agp/agpgart.ko
 kernel/drivers/char/agp/amd64-agp.ko
-kernel/drivers/char/agp/intel-agp.ko
-kernel/drivers/char/agp/intel-gtt.ko
 kernel/drivers/iommu/amd/iommu_v2.ko
 kernel/drivers/iommu/iova.ko
 kernel/drivers/gpu/drm/drm.ko
@@ -195,7 +195,6 @@ kernel/drivers/net/phy/realtek.ko
 kernel/drivers/net/mdio/acpi_mdio.ko
 kernel/drivers/net/mdio/fwnode_mdio.ko
 kernel/drivers/net/tun.ko
-kernel/drivers/net/ethernet/intel/e1000e/e1000e.ko
 kernel/drivers/net/ppp/ppp_generic.ko
 kernel/drivers/net/ppp/ppp_async.ko
 kernel/drivers/net/ppp/bsd_comp.ko
@@ -233,14 +232,16 @@ kernel/drivers/rtc/rtc-cmos.ko
 kernel/drivers/i2c/i2c-core.ko
 kernel/drivers/i2c/i2c-mux.ko
 kernel/drivers/i2c/algos/i2c-algo-bit.ko
+kernel/drivers/i2c/busses/i2c-amd756.ko
 kernel/drivers/media/cec/core/cec.ko
 kernel/drivers/media/cec/platform/cec-gpio/cec-gpio.ko
 kernel/drivers/pps/pps_core.ko
-kernel/drivers/ptp/ptp.ko
 kernel/drivers/power/supply/power_supply.ko
 kernel/drivers/hwmon/hwmon.ko
 kernel/drivers/hwmon/drivetemp.ko
 kernel/drivers/hwmon/fam15h_power.ko
+kernel/drivers/watchdog/watchdog.ko
+kernel/drivers/watchdog/sp5100_tco.ko
 kernel/drivers/md/md-mod.ko
 kernel/drivers/md/dm-mod.ko
 kernel/drivers/md/dm-crypt.ko
@@ -254,6 +255,7 @@ kernel/drivers/cpufreq/cpufreq_performance.ko
 kernel/drivers/cpufreq/cpufreq_userspace.ko
 kernel/drivers/cpufreq/cpufreq_ondemand.ko
 kernel/drivers/cpufreq/amd_pstate.ko
+kernel/drivers/cpuidle/cpuidle-haltpoll.ko
 kernel/drivers/leds/led-class.ko
 kernel/drivers/leds/trigger/ledtrig-audio.ko
 kernel/drivers/hid/hid.ko
