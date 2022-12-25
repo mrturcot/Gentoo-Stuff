@@ -15,6 +15,8 @@ alias symbol:drm_dp_mst_get_port_malloc drm_display_helper
 alias symbol:drm_dsc_dp_pps_header_init drm_display_helper
 alias symbol:ieee80211_get_vht_max_nss cfg80211
 alias symbol:drm_dp_link_rate_to_bw_code drm_display_helper
+alias symbol:sev_platform_status ccp
+alias symbol:cryptd_skcipher_child cryptd
 alias symbol:drm_edp_backlight_disable drm_display_helper
 alias symbol:ieee80211_chswitch_done mac80211
 alias symbol:iwl_nvm_fixups iwlwifi
@@ -120,6 +122,7 @@ alias symbol:drm_dp_128b132b_read_aux_rd_interval drm_display_helper
 alias symbol:ieee80211_get_fils_discovery_tmpl mac80211
 alias symbol:iwl_uefi_get_sgom_table iwlwifi
 alias symbol:iwl_phy_db_init iwlwifi
+alias symbol:psp_check_tee_status ccp
 alias symbol:drm_gem_ttm_vunmap drm_ttm_helper
 alias symbol:drm_sched_job_add_implicit_dependencies gpu_sched
 alias symbol:fuse_free_conn fuse
@@ -131,6 +134,7 @@ alias symbol:cfg80211_register_netdevice cfg80211
 alias symbol:drm_dp_send_query_stream_enc_status drm_display_helper
 alias symbol:ip_set_nfnl_get_byindex ip_set
 alias symbol:usb_role_switch_get roles
+alias symbol:cryptd_shash_desc cryptd
 alias symbol:drm_dp_downstream_debug drm_display_helper
 alias symbol:drm_dp_lttpr_link_train_clock_recovery_delay drm_display_helper
 alias symbol:drm_sched_fini gpu_sched
@@ -171,11 +175,13 @@ alias symbol:__ieee80211_get_assoc_led_name mac80211
 alias symbol:vbg_warn vboxguest
 alias symbol:ip_set_alloc ip_set
 alias symbol:drm_dp_add_payload_part2 drm_display_helper
+alias symbol:cryptd_ahash_queued cryptd
 alias symbol:hci_uart_tx_wakeup hci_uart
 alias symbol:ieee80211_nan_func_terminated mac80211
 alias symbol:cfg80211_rx_spurious_frame cfg80211
 alias symbol:mfd_cell_enable mfd_core
 alias symbol:drm_gem_vram_plane_helper_prepare_fb drm_vram_helper
+alias symbol:cryptd_alloc_ahash cryptd
 alias symbol:ttm_bo_vmap ttm
 alias symbol:fuse_do_open fuse
 alias symbol:__gip_register_driver xone_gip
@@ -203,7 +209,9 @@ alias symbol:ieee80211_get_buffered_bc mac80211
 alias symbol:vbg_put_gdev vboxguest
 alias symbol:iwl_free_fw_paging iwlwifi
 alias symbol:gip_create_adapter xone_gip
+alias symbol:cryptd_free_ahash cryptd
 alias symbol:drm_dp_downstream_420_passthrough drm_display_helper
+alias symbol:sev_guest_deactivate ccp
 alias symbol:ttm_bo_validate ttm
 alias symbol:nvme_fc_set_remoteport_devloss nvme_fc
 alias symbol:ieee80211_data_to_8023_exthdr cfg80211
@@ -254,6 +262,7 @@ alias symbol:drm_dsc_pps_payload_pack drm_display_helper
 alias symbol:ttm_device_init ttm
 alias symbol:cfg80211_assoc_comeback cfg80211
 alias symbol:__SCT__tp_func_iwlwifi_dev_ucode_cont_event iwlwifi
+alias symbol:psp_copy_user_blob ccp
 alias symbol:fuse_conn_get fuse
 alias symbol:drm_dp_link_train_clock_recovery_delay drm_display_helper
 alias symbol:ieee80211_rate_control_register mac80211
@@ -293,6 +302,7 @@ alias symbol:ieee80211_channel_switch_disconnect mac80211
 alias symbol:tcpm_pd_receive tcpm
 alias symbol:ttm_device_swapout ttm
 alias symbol:drm_sched_job_add_dependency gpu_sched
+alias symbol:cryptd_alloc_skcipher cryptd
 alias symbol:drm_sched_suspend_timeout gpu_sched
 alias symbol:drm_sched_entity_modify_sched gpu_sched
 alias symbol:cfg80211_get_p2p_attr cfg80211
@@ -377,6 +387,7 @@ alias symbol:cfg80211_bss_flush cfg80211
 alias symbol:iwl_trans_send_cmd iwlwifi
 alias symbol:drm_dp_mst_put_port_malloc drm_display_helper
 alias symbol:wiphy_apply_custom_regulatory cfg80211
+alias symbol:cryptd_skcipher_queued cryptd
 alias symbol:fuse_mount_destroy fuse
 alias symbol:ieee80211_rx_list mac80211
 alias symbol:regulatory_pre_cac_allowed cfg80211
@@ -410,6 +421,7 @@ alias symbol:btbcm_setup_apple btbcm
 alias symbol:iwl_acpi_get_tas iwlwifi
 alias symbol:tcpm_pd_hard_reset tcpm
 alias symbol:ieee80211_get_tkip_rx_p1k mac80211
+alias symbol:sev_issue_cmd_external_user ccp
 alias symbol:iwl_fw_dbg_stop_restart_recording iwlwifi
 alias symbol:wiphy_register cfg80211
 alias symbol:cfg80211_merge_profile cfg80211
@@ -511,6 +523,7 @@ alias symbol:drm_scdc_get_scrambling_status drm_display_helper
 alias symbol:iwl_parse_nvm_data iwlwifi
 alias symbol:btintel_send_intel_reset btintel
 alias symbol:crc_itu_t crc_itu_t
+alias symbol:sev_guest_df_flush ccp
 alias symbol:ip_vs_new_conn_out ip_vs
 alias symbol:drm_gem_vram_vunmap drm_vram_helper
 alias symbol:drm_lspcon_get_mode drm_display_helper
@@ -534,8 +547,10 @@ alias symbol:__cfg80211_alloc_reply_skb cfg80211
 alias symbol:ieee80211_free_txskb mac80211
 alias symbol:drm_buddy_init drm_buddy
 alias symbol:cfg80211_nan_func_terminated cfg80211
+alias symbol:cryptd_free_aead cryptd
 alias symbol:drm_gem_ttm_mmap drm_ttm_helper
 alias symbol:iwl_acpi_get_object iwlwifi
+alias symbol:cryptd_alloc_aead cryptd
 alias symbol:wiphy_new_nm cfg80211
 alias symbol:drm_dp_set_phy_test_pattern drm_display_helper
 alias symbol:fuse_dev_fiq_ops fuse
@@ -557,6 +572,7 @@ alias symbol:ip_vs_conn_put ip_vs
 alias symbol:cfg80211_crit_proto_stopped cfg80211
 alias symbol:gip_set_power_mode xone_gip
 alias symbol:__SCK__tp_func_iwlwifi_dev_ucode_cont_event iwlwifi
+alias symbol:cryptd_ahash_child cryptd
 alias symbol:drm_dp_dsc_sink_line_buf_depth drm_display_helper
 alias symbol:iwl_sar_get_wrds_table iwlwifi
 alias symbol:ip_vs_conn_out_get_proto ip_vs
@@ -579,6 +595,7 @@ alias symbol:ieee80211_update_p2p_noa mac80211
 alias symbol:usb_role_switch_put roles
 alias symbol:cfg80211_ibss_joined cfg80211
 alias symbol:ieee80211_find_sta_by_ifaddr mac80211
+alias symbol:sev_platform_init ccp
 alias symbol:vbg_get_gdev vboxguest
 alias symbol:ip_set_get_ip6_port ip_set
 alias symbol:drm_dp_calc_pbn_mode drm_display_helper
@@ -649,6 +666,7 @@ alias symbol:iwl_rfi_guid iwlwifi
 alias symbol:btintel_check_bdaddr btintel
 alias symbol:gip_suggest_audio_format xone_gip
 alias symbol:gip_unregister_driver xone_gip
+alias symbol:psp_tee_process_cmd ccp
 alias symbol:drm_dp_pcon_pps_override_buf drm_display_helper
 alias symbol:ieee80211_get_bssid mac80211
 alias symbol:drm_edp_backlight_init drm_display_helper
@@ -680,12 +698,14 @@ alias symbol:cfg80211_probe_status cfg80211
 alias symbol:drm_vram_mm_debugfs_init drm_vram_helper
 alias symbol:wdev_chandef cfg80211
 alias symbol:cfg80211_auth_timeout cfg80211
+alias symbol:ccp_present ccp
 alias symbol:cfg80211_ch_switch_started_notify cfg80211
 alias symbol:ip_set_put_byindex ip_set
 alias symbol:ieee80211_txq_get_depth mac80211
 alias symbol:ieee80211_find_sta_by_link_addrs mac80211
 alias symbol:cfg80211_free_nan_func cfg80211
 alias symbol:ttm_bo_vm_reserve ttm
+alias symbol:ccp_enqueue_cmd ccp
 alias symbol:btrtl_initialize btrtl
 alias symbol:ieee80211_iterate_stations_atomic mac80211
 alias symbol:btintel_exit_mfg btintel
@@ -728,6 +748,7 @@ alias symbol:cfg80211_rx_unprot_mlme_mgmt cfg80211
 alias symbol:ttm_bo_wait ttm
 alias symbol:ieee80211_iter_keys_rcu mac80211
 alias symbol:drm_dp_get_adjust_request_pre_emphasis drm_display_helper
+alias symbol:cryptd_aead_queued cryptd
 alias symbol:drm_dp_mst_topology_mgr_destroy drm_display_helper
 alias symbol:bridge_tunnel_header cfg80211
 alias symbol:ip_set_put_flags ip_set
@@ -823,7 +844,10 @@ alias symbol:drm_dp_read_clock_recovery_delay drm_display_helper
 alias symbol:mfd_remove_devices_late mfd_core
 alias symbol:ttm_resource_fini ttm
 alias symbol:drm_dp_mst_update_slots drm_display_helper
+alias symbol:cryptd_aead_child cryptd
 alias symbol:ip_vs_scheduler_err ip_vs
+alias symbol:sev_guest_activate ccp
+alias symbol:cryptd_free_skcipher cryptd
 alias symbol:iwl_read_eeprom iwlwifi
 alias symbol:ieee80211_color_change_finish mac80211
 alias symbol:drm_gem_vram_fill_create_dumb drm_vram_helper
@@ -832,6 +856,7 @@ alias symbol:cfg80211_pmsr_report cfg80211
 alias symbol:cfg80211_pmsr_complete cfg80211
 alias symbol:ip_vs_conn_out_get ip_vs
 alias symbol:ttm_bo_vm_fault ttm
+alias symbol:ccp_version ccp
 alias symbol:__SCT__tp_func_iwlwifi_dev_ucode_wrap_event iwlwifi
 alias symbol:mfd_add_devices mfd_core
 alias symbol:iwl_acpi_get_wifi_pkg_range iwlwifi
@@ -845,6 +870,7 @@ alias symbol:ttm_tt_fini ttm
 alias symbol:drm_atomic_get_mst_payload_state drm_display_helper
 alias symbol:drm_dp_downstream_is_type drm_display_helper
 alias symbol:tcpm_sink_frs tcpm
+alias symbol:sev_guest_decommission ccp
 alias symbol:drm_dp_dsc_sink_supported_input_bpcs drm_display_helper
 alias symbol:ieee80211_sta_recalc_aggregates mac80211
 alias symbol:drm_dp_dsc_sink_max_slice_count drm_display_helper
