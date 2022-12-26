@@ -872,6 +872,13 @@ alias pci:v00008086d0000A840sv*sd*bc*sc*i* iwlwifi
 alias pci:v00008086d00007740sv*sd*bc*sc*i* iwlwifi
 alias char-major-10-223 uinput
 alias devname:uinput uinput
+alias input:b*v*p*e*-e*3,*k*r*a*0,*m*l*s*f*w* joydev
+alias input:b*v*p*e*-e*3,*k*r*a*2,*m*l*s*f*w* joydev
+alias input:b*v*p*e*-e*3,*k*r*a*8,*m*l*s*f*w* joydev
+alias input:b*v*p*e*-e*3,*k*r*a*6,*m*l*s*f*w* joydev
+alias input:b*v*p*e*-e*1,*k*120,*r*a*m*l*s*f*w* joydev
+alias input:b*v*p*e*-e*1,*k*130,*r*a*m*l*s*f*w* joydev
+alias input:b*v*p*e*-e*1,*k*2C0,*r*a*m*l*s*f*w* joydev
 alias tty-ldisc-15 hci_uart
 alias of:N*T*Cusb1286,204e btusb
 alias of:N*T*Cusb1286,204eC* btusb
@@ -981,7 +988,6 @@ alias hid:b0003g*v000028DEp00001142 hid_steam
 alias acpi*:PNP0C14:* wmi
 alias acpi*:pnp0c14:* wmi
 alias wmi:DEADBEEF-2001-0000-00A0-C90629100000 gigabyte_wmi
-alias acpi*:ASUS010:* eeepc_laptop
 alias pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i* vboxguest
 alias ip_conntrack_ftp nf_conntrack_ftp
 alias nfct-helper-ftp nf_conntrack_ftp

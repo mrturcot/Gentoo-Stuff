@@ -33,8 +33,8 @@ kernel/drivers/nvme/host/nvme-fc.ko.zst: kernel/drivers/nvme/host/nvme-fabrics.k
 kernel/drivers/nvme/host/nvme-tcp.ko.zst: kernel/drivers/nvme/host/nvme-fabrics.ko.zst
 kernel/drivers/net/ethernet/intel/e100.ko.zst: kernel/drivers/net/mii.ko.zst
 kernel/drivers/net/ethernet/intel/e1000/e1000.ko.zst:
-kernel/drivers/net/ethernet/intel/e1000e/e1000e.ko.zst: kernel/drivers/ptp/ptp.ko.zst
-kernel/drivers/net/ethernet/intel/igb/igb.ko.zst: kernel/drivers/ptp/ptp.ko.zst
+kernel/drivers/net/ethernet/intel/e1000e/e1000e.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
+kernel/drivers/net/ethernet/intel/igb/igb.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
 kernel/drivers/net/ethernet/intel/igbvf/igbvf.ko.zst:
 kernel/drivers/net/ethernet/intel/ixgb/ixgb.ko.zst:
 kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko.zst: kernel/net/wireless/cfg80211.ko.zst
@@ -44,8 +44,9 @@ kernel/drivers/net/mii.ko.zst:
 kernel/drivers/usb/typec/tcpm/tcpm.ko.zst: kernel/drivers/usb/roles/roles.ko.zst
 kernel/drivers/usb/roles/roles.ko.zst:
 kernel/drivers/input/misc/uinput.ko.zst:
-kernel/drivers/ptp/ptp.ko.zst:
-kernel/drivers/ptp/ptp_kvm.ko.zst: kernel/drivers/ptp/ptp.ko.zst
+kernel/drivers/input/joydev.ko.zst:
+kernel/drivers/ptp/ptp.ko.zst: kernel/drivers/pps/pps_core.ko.zst
+kernel/drivers/ptp/ptp_kvm.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
 kernel/drivers/bluetooth/hci_uart.ko.zst:
 kernel/drivers/bluetooth/btusb.ko.zst: kernel/drivers/bluetooth/btrtl.ko.zst kernel/drivers/bluetooth/btintel.ko.zst kernel/drivers/bluetooth/btbcm.ko.zst
 kernel/drivers/bluetooth/btintel.ko.zst:
@@ -60,8 +61,8 @@ kernel/drivers/hid/hid-logitech-hidpp.ko.zst:
 kernel/drivers/hid/hid-steam.ko.zst:
 kernel/drivers/platform/x86/wmi.ko.zst:
 kernel/drivers/platform/x86/gigabyte-wmi.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
-kernel/drivers/platform/x86/eeepc-laptop.ko.zst: kernel/drivers/acpi/video.ko.zst kernel/drivers/platform/x86/wmi.ko.zst
 kernel/drivers/virt/vboxguest/vboxguest.ko.zst:
+kernel/drivers/pps/pps_core.ko.zst:
 kernel/net/netfilter/nf_conntrack_ftp.ko.zst:
 kernel/net/netfilter/nf_log_syslog.ko.zst:
 kernel/net/netfilter/nf_nat_ftp.ko.zst: kernel/net/netfilter/nf_conntrack_ftp.ko.zst

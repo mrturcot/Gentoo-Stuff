@@ -44,6 +44,7 @@ alias symbol:ieee80211_report_low_ack mac80211
 alias symbol:drm_buddy_block_trim drm_buddy
 alias symbol:fuse_dev_operations fuse
 alias symbol:drm_dp_vsc_sdp_log drm_display_helper
+alias symbol:pps_lookup_dev pps_core
 alias symbol:drm_hdmi_avi_infoframe_bars drm_display_helper
 alias symbol:acpi_video_get_backlight_type video
 alias symbol:nvmf_ip_options_match nvme_fabrics
@@ -296,6 +297,7 @@ alias symbol:fuse_abort_conn fuse
 alias symbol:ptp_clock_register ptp
 alias symbol:iwl_fw_dbg_error_collect iwlwifi
 alias symbol:drm_gem_vram_unpin drm_vram_helper
+alias symbol:pps_unregister_source pps_core
 alias symbol:ip_set_match_extensions ip_set
 alias symbol:ieee80211_tkip_add_iv mac80211
 alias symbol:ieee80211_channel_switch_disconnect mac80211
@@ -650,6 +652,7 @@ alias symbol:nvme_fc_register_remoteport nvme_fc
 alias symbol:ieee80211_cqm_beacon_loss_notify mac80211
 alias symbol:drm_dp_start_crc drm_display_helper
 alias symbol:iwl_acpi_get_ppag_table iwlwifi
+alias symbol:pps_event pps_core
 alias symbol:drm_sched_increase_karma gpu_sched
 alias symbol:mii_ethtool_gset mii
 alias symbol:cfg80211_put_bss cfg80211
@@ -874,6 +877,7 @@ alias symbol:ieee80211_sta_recalc_aggregates mac80211
 alias symbol:drm_dp_dsc_sink_max_slice_count drm_display_helper
 alias symbol:ttm_sg_tt_init ttm
 alias symbol:drm_gem_ttm_vmap drm_ttm_helper
+alias symbol:pps_register_source pps_core
 alias symbol:drm_sched_entity_push_job gpu_sched
 alias symbol:iwl_force_nmi iwlwifi
 alias symbol:drm_dp_send_real_edid_checksum drm_display_helper

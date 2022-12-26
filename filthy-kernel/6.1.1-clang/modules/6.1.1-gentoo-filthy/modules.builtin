@@ -145,6 +145,7 @@ kernel/drivers/acpi/thermal.ko
 kernel/drivers/acpi/platform_profile.ko
 kernel/drivers/acpi/battery.ko
 kernel/drivers/dma/virt-dma.ko
+kernel/drivers/dma/ptdma/ptdma.ko
 kernel/drivers/dma/dw/dw_dmac_core.ko
 kernel/drivers/dma/hsu/hsu_dma.ko
 kernel/drivers/tty/n_null.ko
@@ -188,12 +189,6 @@ kernel/drivers/ata/pata_amd.ko
 kernel/drivers/ata/pata_oldpiix.ko
 kernel/drivers/ata/pata_sch.ko
 kernel/drivers/net/netconsole.ko
-kernel/drivers/net/phy/mdio_devres.ko
-kernel/drivers/net/phy/libphy.ko
-kernel/drivers/net/phy/fixed_phy.ko
-kernel/drivers/net/phy/realtek.ko
-kernel/drivers/net/mdio/acpi_mdio.ko
-kernel/drivers/net/mdio/fwnode_mdio.ko
 kernel/drivers/net/tun.ko
 kernel/drivers/net/ppp/ppp_generic.ko
 kernel/drivers/net/ppp/ppp_async.ko
@@ -235,7 +230,6 @@ kernel/drivers/i2c/algos/i2c-algo-bit.ko
 kernel/drivers/i2c/busses/i2c-amd756.ko
 kernel/drivers/media/cec/core/cec.ko
 kernel/drivers/media/cec/platform/cec-gpio/cec-gpio.ko
-kernel/drivers/pps/pps_core.ko
 kernel/drivers/power/supply/power_supply.ko
 kernel/drivers/hwmon/hwmon.ko
 kernel/drivers/hwmon/drivetemp.ko
@@ -294,11 +288,9 @@ kernel/sound/pci/hda/snd-hda-intel.ko
 kernel/sound/hda/snd-hda-core.ko
 kernel/sound/hda/snd-intel-dspcfg.ko
 kernel/sound/hda/snd-intel-sdw-acpi.ko
-kernel/net/core/selftests.ko
 kernel/net/llc/llc.ko
 kernel/net/802/p8022.ko
 kernel/net/802/psnap.ko
-kernel/net/802/fddi.ko
 kernel/net/802/stp.ko
 kernel/net/netfilter/nfnetlink.ko
 kernel/net/netfilter/nfnetlink_log.ko
