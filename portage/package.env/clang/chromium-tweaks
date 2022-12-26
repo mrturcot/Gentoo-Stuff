@@ -3,4 +3,4 @@
 
 ## Clang: Basic Setup (https://wiki.gentoo.org/wiki/Clang#Basic_setup)
 # clang-chromium: build with tweaks specifically for Chromium
-www-client/ungoogled-chromium clang-chromium
+www-client/ungoogled-chromium compiler-clang/chromium-tweaks

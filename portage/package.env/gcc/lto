@@ -1,0 +1,13 @@
+## Using compiler-$(environment) for app-foo/bar
+# app-foo/bar compiler-gcc/lto
+
+# compiler-gcc/lto: compiled using GCC with LTO
+>=dev-java/openjdk-17 compiler-gcc/lto
+dev-lang/python compiler-gcc/lto
+games-emulation/mame2003_plus-libretro compiler-gcc/lto
+games-emulation/mednafen-psx-hw-libretro compiler-gcc/lto
+games-emulation/mgba-libretro compiler-gcc/lto
+net-libs/nodejs compiler-gcc/lto
+sys-devel/gcc compiler-gcc/lto
+sys-fs/e2fsprogs compiler-gcc/lto
+gnome-base/nautilus compiler-gcc/lto
