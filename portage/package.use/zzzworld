@@ -949,3 +949,6 @@
 # required by net-misc/megasync-4.8.1.0::4nykey
 # required by net-misc/megasync (argument)
 >=net-misc/meganz-sdk-4.7.1 libuv qt
+# required by app-benchmarks/phoronix-test-suite-9999::guru
+# required by app-benchmarks/phoronix-test-suite (argument)
+>=dev-lang/php-8.1.12 sockets truetype pcntl zip gd curl

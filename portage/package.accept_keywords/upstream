@@ -27,11 +27,11 @@
 >=media-sound/cmus-9999 **
 >=media-sound/whipper-9999 **
 >=media-video/mpv-9999 **
+>=net-misc/meganz-sdk-9999 **
+>=net-misc/megasync-9999 **
 >=net-p2p/qbittorrent-9999 **
 >=sys-kernel/zenpower-0.1.12-r1 **
 >=sys-process/htop-9999 **
 >=x11-terms/kitty-9999 **
 >=x11-terms/kitty-shell-integration-9999 **
 >=x11-terms/kitty-terminfo-9999 **
-#>=net-misc/meganz-sdk-9999 **
-#>=net-misc/megasync-9999 **

@@ -3,6 +3,7 @@
 # -------------------------------------------------------------------
 dev-qt/qtbase
 dev-qt/qttools
+games-emulation/pcsx2
 
 # -------------------------------------------------------------------
 ### Automatically unmasked by portage using...
