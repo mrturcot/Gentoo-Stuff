@@ -35,14 +35,13 @@ games-emulation/libretro-nestopia compiler-clang/lto
 games-emulation/libretro-snes9x compiler-clang/lto
 games-emulation/melonds-libretro compiler-clang/lto
 games-emulation/mesen-libretro compiler-clang/lto
-#games-emulation/mupen64next-libretro compiler-clang/lto
 games-emulation/pcsx2 compiler-clang/lto
 games-emulation/retroarch compiler-clang/lto
 games-emulation/vba-next-libretro compiler-clang/lto
 games-emulation/yuzu compiler-clang/lto
 games-engines/openmw compiler-clang/lto
 games-fps/gzdoom compiler-clang/lto
-games-util/xone compiler-clang
+games-util/xone compiler-clang/lto
 media-libs/libplacebo compiler-clang/lto
 media-libs/mesa compiler-clang/lto
 media-video/ffmpeg compiler-clang/lto
