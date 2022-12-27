@@ -25,7 +25,6 @@ dev-games/openscenegraph-openmw compiler-clang/default-libc++
 dev-lang/spidermonkey compiler-clang/default-libc++
 dev-lang/rust compiler-clang/default-libc++
 games-emulation/bsnes-mercury-performance-libretro compiler-clang/default-libc++
-#games-emulation/desmume-libretro compiler-clang/default-libc++
 games-emulation/dolphin compiler-clang/default-libc++
 games-emulation/fbneo-libretro compiler-clang/default-libc++
 games-emulation/flycast-libretro compiler-clang/default-libc++
@@ -33,15 +32,8 @@ games-emulation/gambatte-libretro compiler-clang/default-libc++
 games-emulation/genesis_plus_gx-libretro compiler-clang/default-libc++
 games-emulation/higan compiler-clang/default-libc++
 games-emulation/libretro-fceumm compiler-clang/default-libc++
-#games-emulation/libretro-nestopia compiler-clang/default-libc++
-#games-emulation/libretro-snes9x compiler-clang/default-libc++
-#games-emulation/melonds-libretro compiler-clang/default-libc++
-#games-emulation/mesen-libretro compiler-clang/default-libc++
-#games-emulation/mupen64next-libretro compiler-clang/default-libc++
-games-emulation/pcsx2 compiler-clang/default-libc++
 games-emulation/retroarch compiler-clang/default-libc++
 games-emulation/vba-next-libretro compiler-clang/default-libc++
-games-emulation/yuzu compiler-clang/default-libc++
 games-engines/openmw compiler-clang/default-libc++
 games-fps/gzdoom compiler-clang/default-libc++
 games-util/xone compiler-clang/default-libc++
