@@ -15,11 +15,11 @@ zcat /proc/config.gz > /usr/src/linux/.config
 ## .config and set the new options to their recommended (i.e. default)
 echo "make olddefconfig"
 sleep 1
-make olddefconfig
+make CC=clang LD=ld.lld NM=llvm-nm AR=llvm-ar LLVM_IAS=1 olddefconfig
 echo "make && install kernel"
 sleep 1
-make -j14 &&
-make -j14 modules_install &&
+make CC=clang LD=ld.lld NM=llvm-nm AR=llvm-ar LLVM_IAS=1 -j14 &&
+make CC=clang LD=ld.lld NM=llvm-nm AR=llvm-ar LLVM_IAS=1 -j14 modules_install &&
 make install
 echo "remove all old built kernels, files & build directories. Keep 5"
 sleep 1

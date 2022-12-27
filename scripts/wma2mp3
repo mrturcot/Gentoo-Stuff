@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## Run this in the directory where the .wma files are that you want to convert
+
 # Is ffmpeg even installed?
 if ! command -v ffmpeg > /dev/null; then
   echo "ffmpeg is not installed. Please install it and try again."
@@ -11,7 +13,7 @@ echo "Okay lets convert"
 echo -en '\n'
 sleep 1
 
-# Set the input directory
+# Set the input directory (current dir)
 input_dir="./"
 
 # Set the output directory
