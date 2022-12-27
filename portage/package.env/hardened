@@ -5,6 +5,7 @@
 # compiler-clang/hardened: build with a hardened Clang environment
 dev-lang/spidermonkey compiler-clang/hardened
 net-p2p/qbittorrent compiler-clang/hardened
+net-libs/libtorrent-rasterbar compiler-clang/hardened
 www-client/firefox compiler-clang/hardened
 www-client/librewolf compiler-clang/hardened
 www-client/ungoogled-chromium compiler-clang/hardened
