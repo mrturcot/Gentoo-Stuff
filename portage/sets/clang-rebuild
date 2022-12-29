@@ -47,7 +47,6 @@ games-engines/openmw
 games-fps/gzdoom
 games-util/xone
 media-libs/libplacebo
-media-libs/mesa
 media-video/ffmpeg
 media-video/mpv
 media-video/pipewire

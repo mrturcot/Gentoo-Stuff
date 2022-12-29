@@ -130,3 +130,9 @@
 # required by net-misc/megasync-4.8.1.0::4nykey
 # required by net-misc/megasync (argument)
 >=dev-util/breakpad-2022.06.04 ~amd64
+# required by games-util/esteam (argument)
+>=games-util/esteam-0.20221017 ~amd64
+# required by games-util/steam-games-meta (argument)
+>=games-util/steam-games-meta-0-r20211230 ~amd64
+# required by games-util/steam-client-meta (argument)
+>=games-util/steam-client-meta-0-r20221017 ~amd64

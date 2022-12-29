@@ -43,7 +43,6 @@ games-engines/openmw compiler-clang/lto
 games-fps/gzdoom compiler-clang/lto
 games-util/xone compiler-clang/lto
 media-libs/libplacebo compiler-clang/lto
-media-libs/mesa compiler-clang/lto
 media-video/ffmpeg compiler-clang/lto
 media-video/mpv compiler-clang/lto
 media-video/pipewire compiler-clang/lto
@@ -58,3 +57,4 @@ www-client/librewolf compiler-clang/lto
 www-client/ungoogled-chromium compiler-clang/lto
 x11-terms/kitty compiler-clang/lto
 x11-wm/mutter compiler-clang/lto
+#media-libs/mesa compiler-clang/lto

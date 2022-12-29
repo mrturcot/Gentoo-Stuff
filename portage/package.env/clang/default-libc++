@@ -3,27 +3,14 @@
 
 ## Clang: Basic Setup (https://wiki.gentoo.org/wiki/Clang#Basic_setup)
 # compiler-clang/default-libc++: build with a general Clang environment
-# -------------------------------------------------------------------
-### llvm/clang toolchain
-# -------------------------------------------------------------------
-sys-devel/clang compiler-clang/default-libc++
-sys-devel/lld compiler-clang/default-libc++
-sys-devel/llvm compiler-clang/default-libc++
-sys-libs/compiler-rt compiler-clang/default-libc++
-sys-libs/compiler-rt-sanitizers compiler-clang/default-libc++
-sys-libs/libcxx compiler-clang/default-libc++
-sys-libs/libcxxabi compiler-clang/default-libc++
-sys-libs/llvm-libunwind compiler-clang/default-libc++
+
 # -------------------------------------------------------------------
 ### Using llvm/clang build environment
 # -------------------------------------------------------------------
-#app-admin/keepassxc compiler-clang/default-libc++
 app-editors/vim compiler-clang/default-libc++
 app-editors/vim-core compiler-clang/default-libc++
 app-shells/starship compiler-clang/default-libc++
 dev-games/openscenegraph-openmw compiler-clang/default-libc++
-dev-lang/spidermonkey compiler-clang/default-libc++
-dev-lang/rust compiler-clang/default-libc++
 games-emulation/bsnes-mercury-performance-libretro compiler-clang/default-libc++
 games-emulation/dolphin compiler-clang/default-libc++
 games-emulation/fbneo-libretro compiler-clang/default-libc++
@@ -38,7 +25,6 @@ games-engines/openmw compiler-clang/default-libc++
 games-fps/gzdoom compiler-clang/default-libc++
 games-util/xone compiler-clang/default-libc++
 media-libs/libplacebo compiler-clang/default-libc++
-media-libs/mesa compiler-clang/default-libc++
 media-video/ffmpeg compiler-clang/default-libc++
 media-video/mpv compiler-clang/default-libc++
 media-video/pipewire compiler-clang/default-libc++

@@ -952,3 +952,73 @@
 # required by app-benchmarks/phoronix-test-suite-9999::guru
 # required by app-benchmarks/phoronix-test-suite (argument)
 >=dev-lang/php-8.1.12 sockets truetype pcntl zip gd curl
+# required by x11-libs/gtk+-3.24.35::gentoo
+# required by x11-libs/gtk+ (argument)
+>=app-accessibility/at-spi2-core-2.46.0 abi_x86_32
+# required by x11-libs/gtk+-3.24.35::gentoo
+# required by x11-libs/gtk+ (argument)
+>=media-libs/libepoxy-1.5.10-r1 abi_x86_32
+# required by gnome-base/librsvg-2.55.1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo
+# required by x11-libs/gtk+ (argument)
+>=x11-libs/gdk-pixbuf-2.42.10-r1 abi_x86_32
+# required by x11-libs/gtk+-3.24.35::gentoo[colord]
+# required by x11-libs/gtk+ (argument)
+>=x11-misc/colord-1.4.6-r1 abi_x86_32
+# required by x11-libs/gtk+-3.24.35::gentoo[sysprof]
+# required by x11-libs/gtk+ (argument)
+>=dev-util/sysprof-capture-3.36.0-r1:3 abi_x86_32
+# required by x11-libs/gtk+-3.24.35::gentoo[X]
+# required by x11-libs/gtk+ (argument)
+>=x11-libs/libXdamage-1.1.5 abi_x86_32
+# required by x11-libs/gtk+-3.24.35::gentoo
+# required by x11-libs/gtk+ (argument)
+>=gnome-base/librsvg-2.55.1 abi_x86_32
+# required by x11-misc/colord-1.4.6-r1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo[colord]
+# required by x11-libs/gtk+ (argument)
+>=media-libs/lcms-2.13.1-r3 abi_x86_32
+# required by x11-misc/colord-1.4.6-r1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo[colord]
+# required by x11-libs/gtk+ (argument)
+>=dev-db/sqlite-3.39.4 abi_x86_32
+# required by x11-misc/colord-1.4.6-r1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo[colord]
+# required by x11-libs/gtk+ (argument)
+>=dev-libs/libgusb-0.4.2 abi_x86_32
+# required by x11-misc/colord-1.4.6-r1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo[colord]
+# required by x11-libs/gtk+ (argument)
+>=dev-libs/libgudev-237-r1 abi_x86_32
+# required by dev-libs/libgusb-0.4.2::gentoo
+# required by x11-misc/colord-1.4.6-r1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo[colord]
+# required by x11-libs/gtk+ (argument)
+>=dev-libs/json-glib-1.6.6-r1 abi_x86_32
+# required by dev-db/sqlite-3.39.4::gentoo[readline]
+# required by x11-misc/colord-1.4.6-r1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo[colord]
+# required by x11-libs/gtk+ (argument)
+>=sys-libs/readline-8.1_p2-r1 abi_x86_32
+# required by media-libs/lcms-2.13.1-r3::gentoo[tiff]
+# required by x11-misc/colord-1.4.6-r1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo[colord]
+# required by x11-libs/gtk+ (argument)
+>=media-libs/tiff-4.4.0-r2 abi_x86_32
+# required by dev-libs/libgusb-0.4.2::gentoo
+# required by x11-misc/colord-1.4.6-r1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo[colord]
+# required by x11-libs/gtk+ (argument)
+>=virtual/libusb-1-r2 abi_x86_32
+# required by gnome-base/librsvg-2.55.1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo
+# required by x11-libs/gtk+ (argument)
+>=virtual/rust-1.65.0-r1 abi_x86_32
+# required by virtual/rust-1.65.0-r1::gentoo
+# required by gnome-base/librsvg-2.55.1::gentoo
+# required by x11-libs/gtk+-3.24.35::gentoo
+# required by x11-libs/gtk+ (argument)
+>=dev-lang/rust-1.65.0 abi_x86_32
+# required by x11-libs/gtk+-2.24.33-r2::gentoo
+# required by x11-libs/gtk+:2 (argument)
+>=dev-libs/atk-2.46.0 abi_x86_32

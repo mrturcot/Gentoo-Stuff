@@ -1,0 +1,5 @@
+x11-libs/libXtst abi_x86_32
+x11-libs/libvdpau abi_x86_32
+net-libs/nghttp2 abi_x86_32
+net-dns/c-ares abi_x86_32
+media-libs/openal abi_x86_32

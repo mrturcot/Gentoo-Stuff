@@ -1,7 +1,21 @@
 ## Packags fail with clang using Libc++, default to GCC's Libstdc++
 #
+# -------------------------------------------------------------------
+### llvm/clang toolchain
+# -------------------------------------------------------------------
+sys-devel/clang compiler-clang/default-libstdc++
+sys-devel/lld compiler-clang/default-libstdc++
+sys-devel/llvm compiler-clang/default-libstdc++
+sys-libs/compiler-rt compiler-clang/default-libstdc++
+sys-libs/compiler-rt-sanitizers compiler-clang/default-libstdc++
+sys-libs/libcxx compiler-clang/default-libstdc++
+sys-libs/libcxxabi compiler-clang/default-libstdc++
+sys-libs/llvm-libunwind compiler-clang/default-libstdc++
+# -------------------------------------------------------------------
 app-admin/keepassxc compiler-clang/default-libstdc++
 dev-games/openscenegraph-openmw compiler-clang/default-libstdc++
+dev-lang/spidermonkey compiler-clang/default-libstdc++
+dev-lang/rust compiler-clang/default-libstdc++
 games-emulation/desmume-libretro compiler-clang/default-libstdc++
 games-emulation/dolphin compiler-clang/default-libstdc++
 games-emulation/fbneo-libretro compiler-clang/default-libstdc++
@@ -16,3 +30,4 @@ games-emulation/yuzu compiler-clang/default-libstdc++
 games-engines/openmw compiler-clang/default-libstdc++
 net-libs/libtorrent-rasterbar compiler-clang/default-libstdc++
 net-p2p/qbittorrent compiler-clang/default-libstdc++
+media-libs/mesa compiler-clang/default-libstdc++

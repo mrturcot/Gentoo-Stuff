@@ -35,3 +35,9 @@ dev-qt/qtwebsockets:6
 ## so as to not restrict to installed package version only.
 # -------------------------------------------------------------------
 
+# required by games-util/steam-games-meta (argument)
+# /var/db/repos/steam-overlay/profiles/package.mask:
+# James Le Cuirot <chewi@gentoo.org>
+# Only supports a small handful of games, is not scalable, and is unmaintained.
+# Use games-util/esteam instead. Removal in 60 days.
+>=games-util/steam-games-meta-0-r20211230

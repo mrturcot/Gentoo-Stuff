@@ -1,0 +1,5 @@
+net-misc/curl abi_x86_32
+
+# required by games-emulation/duckstation-9999::guru[retroachievements]
+# required by duckstation::guru (argument)
+>=net-misc/curl-7.86.0-r3 curl_ssl_gnutls -curl_ssl_openssl
