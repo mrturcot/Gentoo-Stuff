@@ -11,10 +11,16 @@ kernel/fs/fuse/fuse.ko.zst:
 kernel/fs/udf/udf.ko.zst: kernel/lib/crc-itu-t.ko.zst
 kernel/fs/efivarfs/efivarfs.ko.zst:
 kernel/fs/vboxsf/vboxsf.ko.zst: kernel/drivers/virt/vboxguest/vboxguest.ko.zst
+kernel/crypto/sm2_generic.ko.zst: kernel/crypto/sm3.ko.zst
+kernel/crypto/ecdsa_generic.ko.zst:
 kernel/crypto/sm3.ko.zst:
+kernel/crypto/streebog_generic.ko.zst:
 kernel/crypto/pcrypt.ko.zst:
 kernel/crypto/cryptd.ko.zst:
+kernel/crypto/curve25519-generic.ko.zst: kernel/lib/crypto/libcurve25519-generic.ko.zst
+kernel/crypto/ecrdsa_generic.ko.zst:
 kernel/crypto/crypto_simd.ko.zst: kernel/crypto/cryptd.ko.zst
+kernel/lib/crypto/libcurve25519-generic.ko.zst:
 kernel/lib/crc-itu-t.ko.zst:
 kernel/drivers/acpi/video.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
 kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst:
@@ -63,6 +69,11 @@ kernel/drivers/platform/x86/wmi.ko.zst:
 kernel/drivers/platform/x86/gigabyte-wmi.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
 kernel/drivers/virt/vboxguest/vboxguest.ko.zst:
 kernel/drivers/pps/pps_core.ko.zst:
+kernel/sound/core/seq/snd-seq-midi.ko.zst: kernel/sound/core/seq/snd-seq-midi-event.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
+kernel/sound/core/seq/snd-seq-midi-event.ko.zst:
+kernel/sound/core/snd-rawmidi.ko.zst:
+kernel/sound/usb/snd-usb-audio.ko.zst: kernel/sound/usb/snd-usbmidi-lib.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
+kernel/sound/usb/snd-usbmidi-lib.ko.zst: kernel/sound/core/snd-rawmidi.ko.zst
 kernel/net/netfilter/nf_conntrack_ftp.ko.zst:
 kernel/net/netfilter/nf_log_syslog.ko.zst:
 kernel/net/netfilter/nf_nat_ftp.ko.zst: kernel/net/netfilter/nf_conntrack_ftp.ko.zst
