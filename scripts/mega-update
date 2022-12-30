@@ -4,6 +4,11 @@
 ## update & build upstream git (9999**) packages  
 ## & finally clean dependencies 
 
+# Deps
+# app-portage/eix
+# app-portage/smart-live-rebuild
+# app-admin/eclean-kernel
+
 # get colors
 source $HOME/scripts/colors
 
@@ -44,6 +49,8 @@ case $yn in
 	sleep 1
 	emerge --ask --verbose --update --newuse --deep --usepkg=n --with-bdeps=y @world &&
 	echo -en '\n'
+	revdep-rebuild -ip
+	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
 	[nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"
@@ -63,7 +70,7 @@ read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Roll it up bro${BB} ......${NC}"
 	sleep 1
-	auto-kernel &&
+	auto-clang-kernel &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
