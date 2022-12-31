@@ -1,0 +1,103 @@
+kernel/arch/x86/kvm/kvm-amd.ko.zst: kernel/drivers/crypto/ccp/ccp.ko.zst
+kernel/arch/x86/crypto/aesni-intel.ko.zst: kernel/crypto/crypto_simd.ko.zst kernel/crypto/cryptd.ko.zst
+kernel/arch/x86/crypto/sha1-ssse3.ko.zst:
+kernel/arch/x86/crypto/sha256-ssse3.ko.zst:
+kernel/arch/x86/crypto/sha512-ssse3.ko.zst:
+kernel/arch/x86/crypto/crc32c-intel.ko.zst:
+kernel/arch/x86/crypto/sm3-avx-x86_64.ko.zst: kernel/crypto/sm3.ko.zst
+kernel/fs/exfat/exfat.ko.zst:
+kernel/fs/isofs/isofs.ko.zst:
+kernel/fs/fuse/fuse.ko.zst:
+kernel/fs/udf/udf.ko.zst: kernel/lib/crc-itu-t.ko.zst
+kernel/fs/efivarfs/efivarfs.ko.zst:
+kernel/fs/vboxsf/vboxsf.ko.zst: kernel/drivers/virt/vboxguest/vboxguest.ko.zst
+kernel/crypto/sm2_generic.ko.zst: kernel/crypto/sm3.ko.zst
+kernel/crypto/ecdsa_generic.ko.zst:
+kernel/crypto/sm3.ko.zst:
+kernel/crypto/streebog_generic.ko.zst:
+kernel/crypto/pcrypt.ko.zst:
+kernel/crypto/cryptd.ko.zst:
+kernel/crypto/curve25519-generic.ko.zst: kernel/lib/crypto/libcurve25519-generic.ko.zst
+kernel/crypto/ecrdsa_generic.ko.zst:
+kernel/crypto/crypto_simd.ko.zst: kernel/crypto/cryptd.ko.zst
+kernel/lib/crypto/libarc4.ko.zst:
+kernel/lib/crypto/libcurve25519-generic.ko.zst:
+kernel/lib/crc-itu-t.ko.zst:
+kernel/drivers/acpi/video.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
+kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst:
+kernel/drivers/gpu/drm/drm_buddy.ko.zst:
+kernel/drivers/gpu/drm/drm_vram_helper.ko.zst: kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst kernel/drivers/gpu/drm/ttm/ttm.ko.zst
+kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst: kernel/drivers/gpu/drm/ttm/ttm.ko.zst
+kernel/drivers/gpu/drm/ttm/ttm.ko.zst:
+kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst:
+kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko.zst: kernel/drivers/mfd/mfd-core.ko.zst kernel/drivers/gpu/drm/drm_buddy.ko.zst kernel/drivers/acpi/video.ko.zst kernel/drivers/platform/x86/wmi.ko.zst kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst kernel/drivers/gpu/drm/ttm/ttm.ko.zst kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst
+kernel/drivers/gpu/drm/vgem/vgem.ko.zst:
+kernel/drivers/gpu/drm/vkms/vkms.ko.zst:
+kernel/drivers/gpu/drm/vboxvideo/vboxvideo.ko.zst: kernel/drivers/gpu/drm/drm_vram_helper.ko.zst kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst kernel/drivers/gpu/drm/ttm/ttm.ko.zst
+kernel/drivers/mfd/mfd-core.ko.zst:
+kernel/drivers/nvme/host/nvme-fabrics.ko.zst:
+kernel/drivers/nvme/host/nvme-fc.ko.zst: kernel/drivers/nvme/host/nvme-fabrics.ko.zst
+kernel/drivers/nvme/host/nvme-tcp.ko.zst: kernel/drivers/nvme/host/nvme-fabrics.ko.zst
+kernel/drivers/net/ethernet/intel/e100.ko.zst: kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/ethernet/intel/e1000/e1000.ko.zst:
+kernel/drivers/net/ethernet/intel/e1000e/e1000e.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
+kernel/drivers/net/ethernet/intel/igb/igb.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
+kernel/drivers/net/ethernet/intel/igbvf/igbvf.ko.zst:
+kernel/drivers/net/ethernet/intel/ixgb/ixgb.ko.zst:
+kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko.zst: kernel/net/wireless/cfg80211.ko.zst
+kernel/drivers/net/wireless/intel/iwlwifi/dvm/iwldvm.ko.zst: kernel/net/mac80211/mac80211.ko.zst kernel/lib/crypto/libarc4.ko.zst kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko.zst kernel/net/wireless/cfg80211.ko.zst
+kernel/drivers/net/wireless/intel/iwlwifi/mvm/iwlmvm.ko.zst: kernel/net/mac80211/mac80211.ko.zst kernel/lib/crypto/libarc4.ko.zst kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko.zst kernel/net/wireless/cfg80211.ko.zst
+kernel/drivers/net/mii.ko.zst:
+kernel/drivers/usb/typec/tcpm/tcpm.ko.zst: kernel/drivers/usb/roles/roles.ko.zst
+kernel/drivers/usb/roles/roles.ko.zst:
+kernel/drivers/input/misc/uinput.ko.zst:
+kernel/drivers/input/joydev.ko.zst:
+kernel/drivers/ptp/ptp.ko.zst: kernel/drivers/pps/pps_core.ko.zst
+kernel/drivers/ptp/ptp_kvm.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
+kernel/drivers/bluetooth/hci_uart.ko.zst:
+kernel/drivers/bluetooth/btusb.ko.zst: kernel/drivers/bluetooth/btrtl.ko.zst kernel/drivers/bluetooth/btintel.ko.zst kernel/drivers/bluetooth/btbcm.ko.zst
+kernel/drivers/bluetooth/btintel.ko.zst:
+kernel/drivers/bluetooth/btbcm.ko.zst:
+kernel/drivers/bluetooth/btrtl.ko.zst:
+kernel/drivers/cpufreq/acpi-cpufreq.ko.zst:
+kernel/drivers/cpufreq/amd_freq_sensitivity.ko.zst:
+kernel/drivers/crypto/ccp/ccp.ko.zst:
+kernel/drivers/crypto/ccp/ccp-crypto.ko.zst: kernel/drivers/crypto/ccp/ccp.ko.zst
+kernel/drivers/hid/hid-logitech-dj.ko.zst:
+kernel/drivers/hid/hid-logitech-hidpp.ko.zst:
+kernel/drivers/hid/hid-steam.ko.zst:
+kernel/drivers/platform/x86/wmi.ko.zst:
+kernel/drivers/platform/x86/gigabyte-wmi.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
+kernel/drivers/virt/vboxguest/vboxguest.ko.zst:
+kernel/drivers/pps/pps_core.ko.zst:
+kernel/sound/core/seq/snd-seq-midi.ko.zst: kernel/sound/core/seq/snd-seq-midi-event.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
+kernel/sound/core/seq/snd-seq-midi-event.ko.zst:
+kernel/sound/core/snd-rawmidi.ko.zst:
+kernel/sound/usb/snd-usb-audio.ko.zst: kernel/sound/usb/snd-usbmidi-lib.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
+kernel/sound/usb/snd-usbmidi-lib.ko.zst: kernel/sound/core/snd-rawmidi.ko.zst
+kernel/net/netfilter/nf_conntrack_ftp.ko.zst:
+kernel/net/netfilter/nf_log_syslog.ko.zst:
+kernel/net/netfilter/nf_nat_ftp.ko.zst: kernel/net/netfilter/nf_conntrack_ftp.ko.zst
+kernel/net/netfilter/xt_mark.ko.zst:
+kernel/net/netfilter/xt_nat.ko.zst:
+kernel/net/netfilter/xt_LOG.ko.zst:
+kernel/net/netfilter/xt_MASQUERADE.ko.zst:
+kernel/net/netfilter/xt_addrtype.ko.zst:
+kernel/net/netfilter/xt_comment.ko.zst:
+kernel/net/netfilter/xt_hl.ko.zst:
+kernel/net/netfilter/xt_limit.ko.zst:
+kernel/net/netfilter/xt_multiport.ko.zst:
+kernel/net/netfilter/xt_recent.ko.zst:
+kernel/net/netfilter/ipset/ip_set.ko.zst:
+kernel/net/netfilter/ipvs/ip_vs.ko.zst:
+kernel/net/ipv4/netfilter/iptable_nat.ko.zst:
+kernel/net/ipv4/ah4.ko.zst:
+kernel/net/ipv4/esp4.ko.zst:
+kernel/net/ipv4/ipcomp.ko.zst: kernel/net/xfrm/xfrm_ipcomp.ko.zst
+kernel/net/ipv4/xfrm4_tunnel.ko.zst:
+kernel/net/ipv4/udp_diag.ko.zst:
+kernel/net/xfrm/xfrm_ipcomp.ko.zst:
+kernel/net/bridge/netfilter/nf_conntrack_bridge.ko.zst:
+kernel/net/bluetooth/bnep/bnep.ko.zst:
+kernel/net/wireless/cfg80211.ko.zst:
+kernel/net/mac80211/mac80211.ko.zst: kernel/lib/crypto/libarc4.ko.zst kernel/net/wireless/cfg80211.ko.zst
