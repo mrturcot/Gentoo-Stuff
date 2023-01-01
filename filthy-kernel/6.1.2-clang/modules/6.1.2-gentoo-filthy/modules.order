@@ -1,3 +1,6 @@
+kernel/arch/x86/events/amd/power.ko
+kernel/arch/x86/events/amd/amd-uncore.ko
+kernel/arch/x86/events/rapl.ko
 kernel/arch/x86/kvm/kvm-amd.ko
 kernel/arch/x86/crypto/aesni-intel.ko
 kernel/arch/x86/crypto/sha1-ssse3.ko
@@ -51,7 +54,6 @@ kernel/drivers/net/mii.ko
 kernel/drivers/usb/typec/tcpm/tcpm.ko
 kernel/drivers/usb/roles/roles.ko
 kernel/drivers/input/misc/uinput.ko
-kernel/drivers/input/joydev.ko
 kernel/drivers/ptp/ptp.ko
 kernel/drivers/ptp/ptp_kvm.ko
 kernel/drivers/bluetooth/hci_uart.ko
@@ -63,8 +65,8 @@ kernel/drivers/cpufreq/acpi-cpufreq.ko
 kernel/drivers/cpufreq/amd_freq_sensitivity.ko
 kernel/drivers/crypto/ccp/ccp.ko
 kernel/drivers/crypto/ccp/ccp-crypto.ko
-kernel/drivers/hid/hid-logitech-dj.ko
-kernel/drivers/hid/hid-logitech-hidpp.ko
+kernel/drivers/hid/hid-nintendo.ko
+kernel/drivers/hid/hid-sony.ko
 kernel/drivers/hid/hid-steam.ko
 kernel/drivers/platform/x86/wmi.ko
 kernel/drivers/platform/x86/gigabyte-wmi.ko

@@ -1,3 +1,6 @@
+kernel/arch/x86/events/amd/power.ko.zst:
+kernel/arch/x86/events/amd/amd-uncore.ko.zst:
+kernel/arch/x86/events/rapl.ko.zst:
 kernel/arch/x86/kvm/kvm-amd.ko.zst: kernel/drivers/crypto/ccp/ccp.ko.zst
 kernel/arch/x86/crypto/aesni-intel.ko.zst: kernel/crypto/crypto_simd.ko.zst kernel/crypto/cryptd.ko.zst
 kernel/arch/x86/crypto/sha1-ssse3.ko.zst:
@@ -51,7 +54,6 @@ kernel/drivers/net/mii.ko.zst:
 kernel/drivers/usb/typec/tcpm/tcpm.ko.zst: kernel/drivers/usb/roles/roles.ko.zst
 kernel/drivers/usb/roles/roles.ko.zst:
 kernel/drivers/input/misc/uinput.ko.zst:
-kernel/drivers/input/joydev.ko.zst:
 kernel/drivers/ptp/ptp.ko.zst: kernel/drivers/pps/pps_core.ko.zst
 kernel/drivers/ptp/ptp_kvm.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
 kernel/drivers/bluetooth/hci_uart.ko.zst:
@@ -63,8 +65,8 @@ kernel/drivers/cpufreq/acpi-cpufreq.ko.zst:
 kernel/drivers/cpufreq/amd_freq_sensitivity.ko.zst:
 kernel/drivers/crypto/ccp/ccp.ko.zst:
 kernel/drivers/crypto/ccp/ccp-crypto.ko.zst: kernel/drivers/crypto/ccp/ccp.ko.zst
-kernel/drivers/hid/hid-logitech-dj.ko.zst:
-kernel/drivers/hid/hid-logitech-hidpp.ko.zst:
+kernel/drivers/hid/hid-nintendo.ko.zst:
+kernel/drivers/hid/hid-sony.ko.zst:
 kernel/drivers/hid/hid-steam.ko.zst:
 kernel/drivers/platform/x86/wmi.ko.zst:
 kernel/drivers/platform/x86/gigabyte-wmi.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
@@ -101,3 +103,10 @@ kernel/net/bridge/netfilter/nf_conntrack_bridge.ko.zst:
 kernel/net/bluetooth/bnep/bnep.ko.zst:
 kernel/net/wireless/cfg80211.ko.zst:
 kernel/net/mac80211/mac80211.ko.zst: kernel/lib/crypto/libarc4.ko.zst kernel/net/wireless/cfg80211.ko.zst
+kernel/drivers/input/joystick/xone-gip-gamepad.ko.zst: kernel/drivers/input/joystick/xone-gip.ko.zst
+kernel/drivers/input/joystick/xone-gip-chatpad.ko.zst: kernel/drivers/input/joystick/xone-gip.ko.zst
+kernel/drivers/input/joystick/xone-gip-headset.ko.zst: kernel/drivers/input/joystick/xone-gip.ko.zst
+kernel/drivers/input/joystick/xone-gip.ko.zst:
+kernel/drivers/input/joystick/xone-gip-guitar.ko.zst: kernel/drivers/input/joystick/xone-gip.ko.zst
+kernel/drivers/input/joystick/xone-dongle.ko.zst: kernel/drivers/input/joystick/xone-gip.ko.zst kernel/net/wireless/cfg80211.ko.zst
+kernel/drivers/input/joystick/xone-wired.ko.zst: kernel/drivers/input/joystick/xone-gip.ko.zst

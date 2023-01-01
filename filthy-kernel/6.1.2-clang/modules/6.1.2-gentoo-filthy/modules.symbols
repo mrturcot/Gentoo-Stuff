@@ -30,6 +30,7 @@ alias symbol:ttm_eu_reserve_buffers ttm
 alias symbol:wiphy_rfkill_start_polling cfg80211
 alias symbol:drm_hdmi_avi_infoframe_content_type drm_display_helper
 alias symbol:cfg80211_chandef_usable cfg80211
+alias symbol:gip_set_led_mode xone_gip
 alias symbol:iwl_init_notification_wait iwlwifi
 alias symbol:cfg80211_get_ies_channel_number cfg80211
 alias symbol:wmi_remove_notify_handler wmi
@@ -82,6 +83,7 @@ alias symbol:cfg80211_chandef_dfs_required cfg80211
 alias symbol:drm_dp_pcon_dsc_max_slices drm_display_helper
 alias symbol:drm_sched_resume_timeout gpu_sched
 alias symbol:iwl_sar_get_ewrd_table iwlwifi
+alias symbol:gip_complete_authentication xone_gip
 alias symbol:drm_dp_mst_atomic_enable_dsc drm_display_helper
 alias symbol:ttm_bo_unmap_virtual ttm
 alias symbol:drm_sched_increase_karma_ext gpu_sched
@@ -91,6 +93,7 @@ alias symbol:snd_rawmidi_info_select snd_rawmidi
 alias symbol:__traceiter_iwlwifi_dev_ucode_event iwlwifi
 alias symbol:simd_skcipher_create_compat crypto_simd
 alias symbol:drm_dp_lttpr_pre_emphasis_level_3_supported drm_display_helper
+alias symbol:gip_send_audio_samples xone_gip
 alias symbol:ieee80211_gtk_rekey_notify mac80211
 alias symbol:ieee80211_calc_tx_airtime mac80211
 alias symbol:nvme_fc_io_getuuid nvme_fc
@@ -191,6 +194,7 @@ alias symbol:drm_gem_vram_plane_helper_prepare_fb drm_vram_helper
 alias symbol:cryptd_alloc_ahash cryptd
 alias symbol:ttm_bo_vmap ttm
 alias symbol:fuse_do_open fuse
+alias symbol:__gip_register_driver xone_gip
 alias symbol:fuse_simple_background fuse
 alias symbol:iwl_fw_runtime_resume iwlwifi
 alias symbol:ip_set_free ip_set
@@ -198,6 +202,7 @@ alias symbol:snd_rawmidi_output_params snd_rawmidi
 alias symbol:iwl_init_paging iwlwifi
 alias symbol:drm_dp_phy_name drm_display_helper
 alias symbol:esp_output_tail esp4
+alias symbol:gip_report_battery xone_gip
 alias symbol:simd_register_skciphers_compat crypto_simd
 alias symbol:iwl_fw_rate_idx_to_plcp iwlwifi
 alias symbol:ieee80211_find_sta mac80211
@@ -216,6 +221,7 @@ alias symbol:nvme_fc_rcv_ls_req nvme_fc
 alias symbol:ieee80211_get_buffered_bc mac80211
 alias symbol:vbg_put_gdev vboxguest
 alias symbol:iwl_free_fw_paging iwlwifi
+alias symbol:gip_create_adapter xone_gip
 alias symbol:cryptd_free_ahash cryptd
 alias symbol:drm_dp_downstream_420_passthrough drm_display_helper
 alias symbol:sev_guest_deactivate ccp
@@ -297,6 +303,7 @@ alias symbol:ieee80211_get_unsol_bcast_probe_resp_tmpl mac80211
 alias symbol:drm_sched_reset_karma gpu_sched
 alias symbol:ip_vs_conn_new ip_vs
 alias symbol:iwl_set_soc_latency iwlwifi
+alias symbol:gip_init_audio_in xone_gip
 alias symbol:ieee80211_disable_rssi_reports mac80211
 alias symbol:esp_input_done2 esp4
 alias symbol:ieee80211_tx_rate_update mac80211
@@ -323,6 +330,7 @@ alias symbol:ieee80211_iter_chan_contexts_atomic mac80211
 alias symbol:ieee80211_operating_class_to_band cfg80211
 alias symbol:ttm_global_swapout ttm
 alias symbol:ieee80211_tx_status_irqsafe mac80211
+alias symbol:gip_init_battery xone_gip
 alias symbol:ieee80211_calc_rx_airtime mac80211
 alias symbol:btintel_configure_setup btintel
 alias symbol:drm_dp_mst_connector_early_unregister drm_display_helper
@@ -357,7 +365,9 @@ alias symbol:btrtl_set_quirks btrtl
 alias symbol:ieee80211_disconnect mac80211
 alias symbol:drm_atomic_get_new_mst_topology_state drm_display_helper
 alias symbol:drm_sched_entity_set_priority gpu_sched
+alias symbol:gip_send_rumble xone_gip
 alias symbol:iwl_configure_rxq iwlwifi
+alias symbol:gip_destroy_adapter xone_gip
 alias symbol:ieee80211_ctstoself_get mac80211
 alias symbol:cfg80211_bss_iter cfg80211
 alias symbol:drm_dp_get_phy_test_pattern drm_display_helper
@@ -447,6 +457,7 @@ alias symbol:drm_dp_pcon_hdmi_frl_link_error_count drm_display_helper
 alias symbol:ip_vs_proto_data_get ip_vs
 alias symbol:nvmf_should_reconnect nvme_fabrics
 alias symbol:btintel_read_boot_params btintel
+alias symbol:gip_process_buffer xone_gip
 alias symbol:snd_usbmidi_resume snd_usbmidi_lib
 alias symbol:ieee80211_s1g_channel_width cfg80211
 alias symbol:ieee80211_register_hw mac80211
@@ -573,6 +584,7 @@ alias symbol:drm_dp_set_phy_test_pattern drm_display_helper
 alias symbol:fuse_dev_fiq_ops fuse
 alias symbol:iwl_parse_eeprom_data iwlwifi
 alias symbol:btintel_load_ddc_config btintel
+alias symbol:gip_init_input xone_gip
 alias symbol:ttm_bo_mmap_obj ttm
 alias symbol:ieee80211_report_wowlan_wakeup mac80211
 alias symbol:ieee80211_mandatory_rates cfg80211
@@ -586,6 +598,7 @@ alias symbol:ttm_kmap_iter_iomap_init ttm
 alias symbol:drm_sched_resubmit_jobs_ext gpu_sched
 alias symbol:ip_vs_conn_put ip_vs
 alias symbol:cfg80211_crit_proto_stopped cfg80211
+alias symbol:gip_set_power_mode xone_gip
 alias symbol:__SCK__tp_func_iwlwifi_dev_ucode_cont_event iwlwifi
 alias symbol:cryptd_ahash_child cryptd
 alias symbol:drm_dp_dsc_sink_line_buf_depth drm_display_helper
@@ -637,6 +650,7 @@ alias symbol:curve25519_base_point libcurve25519_generic
 alias symbol:snd_rawmidi_kernel_write snd_rawmidi
 alias symbol:cfg80211_update_owe_info_event cfg80211
 alias symbol:iwl_clear_bits_prph iwlwifi
+alias symbol:gip_power_off_adapter xone_gip
 alias symbol:ieee80211_nan_func_match mac80211
 alias symbol:drm_dp_remove_payload drm_display_helper
 alias symbol:iwl_finish_nic_init iwlwifi
@@ -681,10 +695,13 @@ alias symbol:drm_dp_mst_topology_mgr_init drm_display_helper
 alias symbol:wiphy_free cfg80211
 alias symbol:cfg80211_rx_mlme_mgmt cfg80211
 alias symbol:drm_dp_pcon_enc_is_dsc_1_2 drm_display_helper
+alias symbol:gip_init_led xone_gip
 alias symbol:tcpm_cc_change tcpm
 alias symbol:iwl_rate_mcs iwlwifi
 alias symbol:iwl_rfi_guid iwlwifi
 alias symbol:btintel_check_bdaddr btintel
+alias symbol:gip_suggest_audio_format xone_gip
+alias symbol:gip_unregister_driver xone_gip
 alias symbol:psp_tee_process_cmd ccp
 alias symbol:drm_dp_pcon_pps_override_buf drm_display_helper
 alias symbol:ieee80211_get_bssid mac80211
@@ -782,6 +799,7 @@ alias symbol:tcpm_tcpc_reset tcpm
 alias symbol:__cfg80211_alloc_event_skb cfg80211
 alias symbol:iwl_acpi_get_pwr_limit iwlwifi
 alias symbol:iwl_sar_geo_init iwlwifi
+alias symbol:gip_init_audio_out xone_gip
 alias symbol:ieee80211_freq_khz_to_channel cfg80211
 alias symbol:drm_sched_start gpu_sched
 alias symbol:snd_rawmidi_receive snd_rawmidi
@@ -812,6 +830,7 @@ alias symbol:nvmf_reg_read64 nvme_fabrics
 alias symbol:simd_aead_create_compat crypto_simd
 alias symbol:btrtl_setup_realtek btrtl
 alias symbol:cfg80211_disconnected cfg80211
+alias symbol:gip_fix_audio_volume xone_gip
 alias symbol:ttm_resource_manager_create_debugfs ttm
 alias symbol:iwl_cmd_groups_verify_sorted iwlwifi
 alias symbol:iwl_phy_db_set_section iwlwifi
@@ -834,6 +853,7 @@ alias symbol:drm_scdc_write drm_display_helper
 alias symbol:ip_set_type_register ip_set
 alias symbol:ptp_cancel_worker_sync ptp
 alias symbol:ip_set_range_to_cidr ip_set
+alias symbol:gip_enable_audio xone_gip
 alias symbol:ttm_kmap_iter_tt_init ttm
 alias symbol:ttm_lru_bulk_move_tail ttm
 alias symbol:wmi_has_guid wmi
@@ -895,6 +915,7 @@ alias symbol:mfd_add_devices mfd_core
 alias symbol:iwl_acpi_get_wifi_pkg_range iwlwifi
 alias symbol:iwl_fw_lookup_assert_desc iwlwifi
 alias symbol:drm_sched_entity_fini gpu_sched
+alias symbol:gip_disable_audio xone_gip
 alias symbol:cfg80211_find_elem_match cfg80211
 alias symbol:fuse_dev_release fuse
 alias symbol:mfd_cell_disable mfd_core
