@@ -1,0 +1,3 @@
+# https://wiki.gentoo.org/wiki/Gzip#Parallelization
+# Make /bin/gzip be a symlink to pigz for a speedup in compression
+app-alternatives/gzip -reference pigz

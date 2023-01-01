@@ -60,3 +60,5 @@
 =net-misc/megasync-4.8.1.0 EULA
 # required by geekbench (argument)
 >=app-benchmarks/geekbench-5.4.6 geekbench
+# required by media-fonts/steamfonts (argument)
+>=media-fonts/steamfonts-1 MSttfEULA

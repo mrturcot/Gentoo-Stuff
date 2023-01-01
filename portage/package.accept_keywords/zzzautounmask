@@ -136,3 +136,5 @@
 >=games-util/steam-games-meta-0-r20211230 ~amd64
 # required by games-util/steam-client-meta (argument)
 >=games-util/steam-client-meta-0-r20221017 ~amd64
+# required by media-fonts/steamfonts (argument)
+>=media-fonts/steamfonts-1 ~amd64

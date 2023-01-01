@@ -1022,3 +1022,18 @@
 # required by x11-libs/gtk+-2.24.33-r2::gentoo
 # required by x11-libs/gtk+:2 (argument)
 >=dev-libs/atk-2.46.0 abi_x86_32
+# required by app-emulation/wine-proton-7.0.5::gentoo
+# required by app-emulation/wine-proton (argument)
+>=dev-libs/libgcrypt-1.10.1-r2 abi_x86_32
+# required by dev-libs/libgcrypt-1.10.1-r2::gentoo
+# required by app-emulation/wine-proton-7.0.5::gentoo
+# required by app-emulation/wine-proton (argument)
+>=dev-libs/libgpg-error-1.46-r1 abi_x86_32
+# required by kde-apps/kdenlive-22.12.0::gentoo
+# required by kdenlive (argument)
+>=media-libs/mlt-7.12.0 frei0r ffmpeg
+# required by media-plugins/frei0r-plugins-1.7.0-r2::gentoo[facedetect]
+# required by media-libs/mlt-7.12.0::gentoo[frei0r]
+# required by kde-apps/kdenlive-22.12.0::gentoo
+# required by kdenlive (argument)
+>=media-libs/opencv-4.6.0-r4 contribdnn

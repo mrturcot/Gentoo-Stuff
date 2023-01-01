@@ -17,6 +17,7 @@
 >=games-emulation/yuzu-0_p20220725 ~amd64
 >=games-fps/gzdoom-4.8.2 ~amd64
 >=games-util/steam-meta-0-r20220320 ~amd64
+>=kde-apps/kdenlive-22.12.0 ~amd64
 >=kde-frameworks/extra-cmake-modules-5.101.0 ~amd64
 >=media-libs/mesa-22.2.3 ~amd64
 >=media-video/pipewire-0.3.61 ~amd64
