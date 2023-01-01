@@ -1,17 +1,24 @@
-## Enabling Portage completions and Gentoo prompt for zsh
-autoload -U compinit promptinit
+# Completion
+autoload -U compinit
 compinit
-promptinit; prompt gentoo
+
+# Correction
+setopt correctall
 
 ## Enabling cache for the completions for zsh
 zstyle ':completion::complete:*' use-cache 1
 
+# completion style
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b' 
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/bin:$HOME/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/opt/bin:/usr/local/sbin:/usr/local/bin:/home/mrturcot/.local/bin:/home/mrturcot/bin:/home/mrturcot/scripts:/usr/lib/llvm/15/bin:/etc/eselect/wine/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
 # source oh-my-zsh.sh
 source $ZSH/oh-my-zsh.sh
 
@@ -97,22 +104,14 @@ source $ZSH/oh-my-zsh.sh
 
 # Enviroment variables
 export SHELL="/bin/zsh"
-export EDITOR="/usr/bin/vim"
 export USB_DEVFS_PATH="/dev/bus/usb"
 export VDPAU_DRIVER=radeonsi
-export ANDROID_HOME="/home/mrturcot/Android/Sdk"
 export TERM=xterm-256color
 export KITTY_SHELL_INTEGRATION="enabled no-cursor"
-export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-$(date +%s)}"
-export BUILD_DATE="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y-%m-%d-%H-%S)"
-#export CMAKE_MODULE_PATH="/usr/share/cmake/Modules/;/usr/share/ECM"
-#export CMAKE_PREFIX_PATH="/usr/lib/cmake;/usr/lib64/cmake;/usr/include/yaml-cpp"
-#export LD_LIBRARY_PATH="/usr/local/lib;/usr/local/lib64"
-#export GDK_SCALE=2
-#export GDK_DPI_SCALE=0.5
-#export XDG_DATA_HOME=${XDG_DATA_HOME:-"${HOME}/.local/share"}
-#export MANPATH="/usr/local/man:$MANPATH"
-#export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
+
+# WINE
+export WINEFSYNC=1
+export WINE_LARGE_ADDRESS_AWARE=1
 
 # Environment variables accepted:
 # QTCHOOSER_RUNTOOL  name of the tool to be run (same as the -run-tool argument)
@@ -153,8 +152,11 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-colorscript -r
+## Misc
 setopt NO_EQUALS
+
+# https://gitlab.com/dwt1/shell-color-scripts
+colorscript -r
 
 # Starship Prompt
 eval "$(starship init zsh)"
