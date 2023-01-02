@@ -5,4 +5,4 @@
 EXTRA_GN="use_lld=true is_clang=true clang_use_chrome_plugins=false thin_lto_enable_optimizations=true use_thin_lto=true is_cfi=true"
 #
 # Needed with GCC 11
-CHROMIUM_FORCE_LIBCXX=yes
+#CHROMIUM_FORCE_LIBCXX=yes
