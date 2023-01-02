@@ -1,11 +1,12 @@
 ## Using compiler-$(environment) for app-foo/bar
-# app-foo/bar compiler-clang/hardened compiler-clang-lto clang-chromium
+# app-foo/bar compiler-clang/hardened
 
 ## Clang: Advanced Setup (https://wiki.gentoo.org/wiki/Clang#Advanced_examples)
 # compiler-clang/hardened: build with a hardened Clang environment
+# compiler-clang/chromium-hardened: tweaked hardening env for chromium
 dev-lang/spidermonkey compiler-clang/hardened
 net-p2p/qbittorrent compiler-clang/hardened
 net-libs/libtorrent-rasterbar compiler-clang/hardened
 www-client/firefox compiler-clang/hardened
 www-client/librewolf compiler-clang/hardened
-www-client/ungoogled-chromium compiler-clang/hardened
+www-client/ungoogled-chromium compiler-clang/chromium-hardened
