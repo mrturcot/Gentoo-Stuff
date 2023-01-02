@@ -1,0 +1,2 @@
+sys-devel/gcc default-stack-clash-protection default-znow hardened zstd
+cross-aarch64-unknown-linux-gnu/gcc default-stack-clash-protection default-znow hardened zstd
