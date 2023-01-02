@@ -30,7 +30,7 @@ alias make-clang-mods="make CC=clang LD=ld.lld NM=llvm-nm AR=llvm-ar LLVM_IAS=1 
 # The Rest
 alias grub-install="grub-install --target=x86_64-efi --efi-directory=/boot"
 alias grub-update="grub-mkconfig -o /boot/grub/grub.cfg"
-alias l="exa -l -a -bh --color=always --color-scale --group-directories-first --time-style=long-iso --git --extended"
+alias l="exa -l -a -bhg --color=always --color-scale --group-directories-first --time-style=long-iso --git --extended"
 alias b="bat -p"
 alias c="clear"
 alias e="exit"
