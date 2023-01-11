@@ -25,7 +25,6 @@ games-engines/openmw compiler-clang/default-libc++
 games-fps/gzdoom compiler-clang/default-libc++
 games-util/xone compiler-clang/default-libc++
 media-libs/libplacebo compiler-clang/default-libc++
-media-video/ffmpeg compiler-clang/default-libc++
 media-video/mpv compiler-clang/default-libc++
 media-video/pipewire compiler-clang/default-libc++
 net-wireless/bluez compiler-clang/default-libc++

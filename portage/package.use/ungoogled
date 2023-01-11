@@ -1,8 +1,8 @@
 ## Add USE
-www-client/ungoogled-chromium thinlto optimize-thinlto optimize-webui hevc system-ffmpeg system-openjpeg
+www-client/ungoogled-chromium js-type-check kerberos hevc thinlto optimize-thinlto optimize-webui pic system-ffmpeg system-openjpeg
 
 ## Remove USE
-www-client/ungoogled-chromium -vdpau -qt5
+www-client/ungoogled-chromium -qt5
 
 # -------------------------------------------------------------------
 ### Automatically added by portage using...

@@ -2,6 +2,7 @@
 ### Manually unmasked license changes
 # -------------------------------------------------------------------
 >=app-arch/unrar-6.1.7 unRAR
+>=net-analyzer/nmap-7.92-r2 NPSL-0.94
 >=net-misc/megasync-9999::4nykey EULA
 
 # -------------------------------------------------------------------
