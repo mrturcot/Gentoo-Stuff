@@ -8,16 +8,16 @@
      -odNMMMMMMMMNNmhy+-`             ------------------ 
    -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
  `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: Gigabyte Technology Co., Ltd. X470 AORUS GAMING 7 WIFI-CF 
- omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.1.1-gentoo-filthy 
-.ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 3 hours, 16 mins 
- oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1166 (emerge) 
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.1.6-gentoo-filthy 
+.ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hour, 20 mins 
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1280 (emerge) 
   :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
     .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Resolution: 3840x2160 
        /mMMMMMMNNNmmmdddhhhhhmMNhs:   DE: GNOME 43.2 
     `oNMMMMMMMNNNmmmddddhhdmMNhs+`    WM: Mutter 
   `sNMMMMMMMMNNNmmmdddddmNMmhs/.      WM Theme: Orchis-Dark 
  /NMMMMMMMMNNNNmmmdddmNMNdso:`        Theme: Orchis-Dark [GTK2/3] 
-+MMMMMMMNNNNNmmmmdmNMNdso/-           Icons: Papirus [GTK2/3] 
++MMMMMMMNNNNNmmmmdmNMNdso/-           Icons: Papirus-Dark [GTK2/3] 
 yMMNNNNNNNmmmmmNNMmhs+/-`             Terminal: kitty 
 /hMMNNNNNNNNMNdhs++/-`                Terminal Font: source code pro 14.0 
 `/ohdmmddhys+++/:.`                   CPU: AMD Ryzen 7 2700 (16) @ 3.800GHz 
@@ -58,8 +58,8 @@ Every package currently set in portage/package.env is confirmed working with the
 
 Clang Kernel
 ```
-➜ cat /proc/version
-Linux version 6.1.1-gentoo-filthy (root@GentooRig) (clang version 15.0.6, LLD 15.0.6) #5 SMP PREEMPT_DYNAMIC Fri Dec 23 03:48:45 PST 2022
+➜ cat /proc/version  
+Linux version 6.1.6-gentoo-filthy (root@GentooRig) (clang version 15.0.6, LLD 15.0.6) #1 SMP PREEMPT_DYNAMIC Sat Jan 14 09:55:31 PST 2023
 ```   
 
  - **Use Case**
