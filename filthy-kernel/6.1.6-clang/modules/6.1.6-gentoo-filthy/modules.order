@@ -26,12 +26,14 @@ kernel/crypto/cryptd.ko
 kernel/crypto/curve25519-generic.ko
 kernel/crypto/ecrdsa_generic.ko
 kernel/crypto/crypto_simd.ko
+kernel/block/bfq.ko
 kernel/lib/crypto/libarc4.ko
 kernel/lib/crypto/libcurve25519-generic.ko
 kernel/lib/crc-itu-t.ko
 kernel/drivers/acpi/video.ko
 kernel/drivers/virtio/virtio.ko
 kernel/drivers/virtio/virtio_ring.ko
+kernel/drivers/iommu/virtio-iommu.ko
 kernel/drivers/gpu/drm/display/drm_display_helper.ko
 kernel/drivers/gpu/drm/drm_buddy.ko
 kernel/drivers/gpu/drm/drm_vram_helper.ko

@@ -210,8 +210,6 @@ kernel/drivers/i2c/i2c-core.ko
 kernel/drivers/i2c/i2c-mux.ko
 kernel/drivers/i2c/algos/i2c-algo-bit.ko
 kernel/drivers/i2c/busses/i2c-amd756.ko
-kernel/drivers/media/cec/core/cec.ko
-kernel/drivers/media/cec/platform/cec-gpio/cec-gpio.ko
 kernel/drivers/power/supply/power_supply.ko
 kernel/drivers/hwmon/hwmon.ko
 kernel/drivers/hwmon/drivetemp.ko
