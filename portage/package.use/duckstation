@@ -1,1 +1,1 @@
-games-emulation/duckstation -nogui gbm
+games-emulation/duckstation -nogui gbm egl evdev kms

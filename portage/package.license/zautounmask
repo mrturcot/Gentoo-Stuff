@@ -1,11 +1,4 @@
 # -------------------------------------------------------------------
-### Manually unmasked license changes
-# -------------------------------------------------------------------
->=app-arch/unrar-6.1.7 unRAR
->=net-analyzer/nmap-7.92-r2 NPSL-0.94
->=net-misc/megasync-9999::4nykey EULA
-
-# -------------------------------------------------------------------
 ### Automatically added by portage using...
 ## emerge --autounmask=y --autounmask-unrestricted-atoms=y --autounmask-license=y
 ## so as to not restrict to installed package version only.
@@ -32,7 +25,8 @@
 # required by games-util/steam-launcher (argument)
 >=games-util/steam-launcher-1.0.0.74-r1 ValveSteamLicense
 # required by net-im/discord-bin (argument)
->=net-im/discord-bin-0.0.21-r1 all-rights-reserved
+# move net-im/discord-bin net-im/discord
+>=net-im/discord-0.0.21-r1 all-rights-reserved
 # required by games-action/minecraft-launcher (argument)
 >=games-action/minecraft-launcher-1.0.1221 Mojang
 # required by games-emulation/libretro-snes9x (argument)

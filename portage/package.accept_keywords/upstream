@@ -5,7 +5,7 @@
 >=app-misc/radeontop-9999 **
 >=games-emulation/bsnes-mercury-performance-libretro-9999 **
 >=games-emulation/desmume-libretro-9999 **
->=games-emulation/duckstation-9999 **
+#>=games-emulation/duckstation-9999 **
 >=games-emulation/fbneo-libretro-9999 **
 >=games-emulation/flycast-9999 **
 >=games-emulation/flycast-libretro-9999 **
@@ -22,6 +22,7 @@
 >=games-emulation/parallel_n64-libretro-9999 **
 >=games-emulation/pcsx2-9999 **
 >=games-emulation/vba-next-libretro-9999 **
+>=games-emulation/yuzu-9999 **
 >=games-engines/openmw-9999 **
 >=media-libs/libplacebo-9999 **
 >=media-sound/cmus-9999 **

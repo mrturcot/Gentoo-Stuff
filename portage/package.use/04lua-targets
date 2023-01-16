@@ -3,7 +3,6 @@
 */* LUA_SINGLE_TARGET: -* luajit
 
 ## Per-Package
-#dev-cpp/sol2 LUA_TARGETS: -* lua5-4 luajit
 dev-games/openscenegraph-openmw LUA_SINGLE_TARGET: -* lua5-1
 games-emulation/flycast LUA_SINGLE_TARGET: -* lua5-4
 media-video/wireplumber LUA_SINGLE_TARGET: -* lua5-4

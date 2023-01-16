@@ -1,5 +1,5 @@
 ## Add USE
-www-client/ungoogled-chromium js-type-check kerberos hevc thinlto optimize-thinlto optimize-webui pic system-ffmpeg system-openjpeg
+www-client/ungoogled-chromium js-type-check kerberos hevc thinlto optimize-thinlto optimize-webui pic system-ffmpeg system-openjpeg vdpau
 
 ## Remove USE
 www-client/ungoogled-chromium -qt5

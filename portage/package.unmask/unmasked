@@ -2,6 +2,9 @@
 ### Manually unmasked
 # -------------------------------------------------------------------
 games-emulation/pcsx2
+dev-util/breakpad
+dev-libs/linux-syscall-support
+games-emulation/duckstation
 
 ## QT6
 # Jimi Huotari <chiitoo@gentoo.org> (2022-08-02)
@@ -28,16 +31,3 @@ dev-qt/qtwayland:6
 dev-qt/qtwebchannel:6
 dev-qt/qtwebengine:6
 dev-qt/qtwebsockets:6
-
-# -------------------------------------------------------------------
-### Automatically unmasked by portage using...
-## emerge --autounmask=y --autounmask-unrestricted-atoms=y
-## so as to not restrict to installed package version only.
-# -------------------------------------------------------------------
-
-# required by games-util/steam-games-meta (argument)
-# /var/db/repos/steam-overlay/profiles/package.mask:
-# James Le Cuirot <chewi@gentoo.org>
-# Only supports a small handful of games, is not scalable, and is unmaintained.
-# Use games-util/esteam instead. Removal in 60 days.
->=games-util/steam-games-meta-0-r20211230
