@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 ## The script uses the os library to iterate through all files in the current directory.
 ## For each file, it checks if the file is a JPG image by checking if the file name ends with ".jpg". 
 ## If it is a JPG image, it uses the PIL library to open the image, convert it to PNG, 
