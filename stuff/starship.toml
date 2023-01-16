@@ -1,5 +1,4 @@
-# Timeout for commands executed by starship (in milliseconds)
-command_timeout = 2000
+command_timeout = 10000 #Timeout for commands executed by starship (in milliseconds)
 
 # Inserts a blank line between shell prompts
 #add_newline = true
@@ -81,7 +80,7 @@ format = "on [$symbol$branch]($style) "
 
 [memory_usage]
 disabled = false
-format = "via $symbol [${ram}( | ${ram_pct})]($style)"
+format = "[${ram}( | ${ram_pct})]($style)"
 symbol = " "
 style = "bold dimmed green"
 
