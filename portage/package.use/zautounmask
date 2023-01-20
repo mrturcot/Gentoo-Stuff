@@ -1037,3 +1037,6 @@
 # required by kde-apps/kdenlive-22.12.0::gentoo
 # required by kdenlive (argument)
 >=media-libs/opencv-4.6.0-r4 contribdnn
+# required by app-emulation/libvirt-8.9.0::gentoo[virt-network]
+# required by app-emulation/libvirt (argument)
+>=net-dns/dnsmasq-2.86-r1 script

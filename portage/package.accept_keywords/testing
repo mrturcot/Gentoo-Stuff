@@ -24,6 +24,8 @@
 >=media-video/obs-studio-28.0.1 ~amd64
 >=media-video/pipewire-0.3.61 ~amd64
 >=net-libs/libtorrent-rasterbar-2.0.8 ~amd64
+>=net-misc/meganz-sdk-4.7.1 ~amd64
+>=net-misc/megasync-4.8.1.0 ~amd64
 >=net-wireless/bluez-tools-0_p20201025 ~amd64
 >=net-wireless/gnome-bluetooth-42.5 ~amd64
 >=sys-apps/bat-0.21.0 ~amd64
