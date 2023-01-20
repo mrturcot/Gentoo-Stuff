@@ -1,7 +1,7 @@
 _HARDENING_FLAGS="-fstack-protector-all -fstack-clash-protection -D_FORTIFY_SOURCE=3"
-_HARDENING_FLAGS_EXTRA="-fno-plt -fexceptions -fcf-protection=full -Wp,-D_GLIBCXX_ASSERTIONS"
+_HARDENING_FLAGS_EXTRA="-fno-plt -fexceptions -Wp,-D_GLIBCXX_ASSERTIONS"
 _WARNINGS="-Wformat -Wformat-security -Werror=format-security"
 CFLAGS="${CFLAGS} ${_HARDENING_FLAGS} ${_HARDENING_FLAGS_EXTRA} ${_WARNINGS}"
 CXXFLAGS="${CXXFLAGS} ${_HARDENING_FLAGS} ${_HARDENING_FLAGS_EXTRA} ${_WARNINGS}"
-LDFLAGS="${LDFLAGS} -Wl,-z,now,-z,relro,-z,force-ibt,-z,shstk"
+LDFLAGS="${LDFLAGS} -Wl,-z,now,-z,relro"
 

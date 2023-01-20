@@ -36,3 +36,4 @@ www-client/librewolf compiler-clang/default-libc++
 www-client/ungoogled-chromium compiler-clang/default-libc++
 x11-terms/kitty compiler-clang/default-libc++
 x11-wm/mutter compiler-clang/default-libc++
+
