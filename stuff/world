@@ -1,4 +1,5 @@
 app-admin/eclean-kernel
+app-admin/logrotate
 app-admin/sudo
 app-admin/sysstat
 app-arch/unrar
@@ -48,7 +49,6 @@ dev-perl/XML-Dumper
 dev-python/pip
 dev-python/pyelftools
 dev-qt/qtchooser
-dev-qt/qttranslations
 dev-util/android-tools
 dev-util/bindgen
 dev-util/debugedit
@@ -74,6 +74,8 @@ games-emulation/mgba-libretro
 games-emulation/mupen64next-libretro
 games-emulation/parallel_n64-libretro
 games-emulation/pcsx2
+games-emulation/retroarch-joypad-autoconfig
+games-emulation/rpcs3
 games-emulation/vba-next-libretro
 games-engines/openmw
 games-fps/gzdoom
@@ -86,7 +88,6 @@ gnome-extra/gnome-shell-extension-bluetooth-quick-connect
 gnome-extra/gnome-shell-extensions
 gnome-extra/gnome-tweaks
 kde-apps/kdenlive
-kde-frameworks/extra-cmake-modules
 mail-client/mailspring-bin
 media-fonts/corefonts
 media-fonts/fonts-meta
@@ -112,11 +113,12 @@ media-sound/whipper
 media-video/libva-utils
 media-video/mplayer
 media-video/mpv::vapoursynth
+media-video/obs-studio
 net-analyzer/nmap
 net-dns/bind-tools
 net-dns/https_dns_proxy
 net-ftp/vsftpd
-net-im/discord-bin
+net-im/discord
 net-misc/chrony
 net-misc/megasync::4nykey
 net-p2p/qbittorrent
@@ -139,6 +141,8 @@ sys-fs/dosfstools
 sys-fs/exfatprogs
 sys-fs/ntfs3g
 sys-kernel/linux-firmware
+sys-kernel/xanmod-sources
+sys-power/cpupower
 sys-process/bashtop
 sys-process/glances
 sys-process/htop
@@ -148,5 +152,10 @@ www-client/ungoogled-chromium
 x11-apps/xdpyinfo
 x11-libs/gtksourceview
 x11-libs/libXxf86dga
+x11-misc/pcmanfm
+x11-misc/qt5ct
 x11-terms/kitty
+x11-themes/kvantum
+x11-themes/orchis-theme
 x11-themes/papirus-icon-theme
+x11-themes/vimix-xcursors
