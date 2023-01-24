@@ -3,11 +3,10 @@
 ## git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
 
 cd $HOME/github/ffmpeg
-#make clean &&
+make clean &&
 ./configure \
-	--prefix=/home/mrturcot/github/builds \
-	--cc=/usr/lib/llvm/15/bin/clang \
-	--cxx=/usr/lib/llvm/15/bin/clang++ \
+	--cc=clang \
+	--cxx=clang++ \
 	--pkg-config-flags="--static" \
 	--extra-libs="-lpthread -lm" \
 	--enable-openssl \

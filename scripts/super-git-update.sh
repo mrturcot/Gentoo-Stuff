@@ -22,7 +22,7 @@ case $yn in
 	echo -en '\n'
 	sleep 1
 	git pull &&
-	build-ares &&
+	build-ares.sh &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB}] ######${NC}"
 		break;;
@@ -52,7 +52,7 @@ case $yn in
 	echo -en '\n'
 	sleep 1
 	git pull &&
-	build-dhewm3 &&
+	build-dhewm3.sh &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;

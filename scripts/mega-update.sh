@@ -70,7 +70,7 @@ read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
 case $yn in
 	[yY] ) echo -e " ${BY}* ${BIG}OK${NC} Roll it up bro${BB} ......${NC}"
 	sleep 1
-	auto-clang-kernel &&
+	auto-clang-kernel.sh &&
 	echo -en '\n'
 	echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
 		break;;
@@ -87,11 +87,10 @@ while true; do
    echo -en '\n'
    echo -e "${BB}###### [ ${BIP}Smart Live Rebuild ???${NC}${BB} ] ######${NC}"
 read -p "$(echo -e "Yes or No [${BG}y${NC}/${BR}n${NC}]") " yn
-   echo -en '\n'
 case $yn in
    [yY] ) echo -e " ${BY}* ${BIG}OK${NC} Updating gits${BB} ......${NC}"
    sleep 1
-   emerge --ask --verbose @smart-live-rebuild &&
+   emerge --ask --verbose --keep-going @smart-live-rebuild &&
    echo -e "${BB}###### [ ${BIP}!! Done !!${NC}${BB} ] ######${NC}"
       break;;
    [nN] ) echo -e " ${BY}*${NC} Skipping${BB} ......${NC}"

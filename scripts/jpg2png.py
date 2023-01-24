@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 ## Python script uses the os library to iterate through all files in the current directory.
 ## For each file, it checks if the file is a JPG image by checking if the file name ends with ".jpg". 
