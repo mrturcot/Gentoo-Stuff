@@ -51,6 +51,7 @@ net-libs/libtorrent-rasterbar compiler-clang/lto
 net-p2p/qbittorrent compiler-clang/lto
 net-wireless/bluez compiler-clang/lto
 sys-apps/preload compiler-clang/lto
+sys-kernel/linux-headers compiler-clang/lto
 sys-kernel/zenpower compiler-clang/lto
 sys-process/htop compiler-clang/lto
 www-client/firefox compiler-clang/lto

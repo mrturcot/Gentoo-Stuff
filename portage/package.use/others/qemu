@@ -1,1 +1,1 @@
-app-emulation/qemu static-user static-libs -gtk -alsa -fuse -opengl -pulseaudio -sdl
+app-emulation/qemu fuse io-uring lzo ssh static-user opengl plugins spice usbredir virgl zstd -static-user

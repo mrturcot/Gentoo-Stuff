@@ -1040,3 +1040,6 @@
 # required by app-emulation/libvirt-8.9.0::gentoo[virt-network]
 # required by app-emulation/libvirt (argument)
 >=net-dns/dnsmasq-2.86-r1 script
+# required by app-emulation/virt-manager-4.0.0::gentoo[-test,gtk]
+# required by app-emulation/virt-manager (argument)
+>=net-misc/spice-gtk-0.41-r1 usbredir
