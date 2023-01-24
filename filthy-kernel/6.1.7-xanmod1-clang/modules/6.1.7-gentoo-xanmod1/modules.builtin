@@ -159,7 +159,6 @@ kernel/drivers/tty/serial/8250/8250_pericom.ko
 kernel/drivers/tty/serial/serial_mctrl_gpio.ko
 kernel/drivers/char/nvram.ko
 kernel/drivers/char/hw_random/rng-core.ko
-kernel/drivers/char/hw_random/amd-rng.ko
 kernel/drivers/iommu/amd/iommu_v2.ko
 kernel/drivers/iommu/iova.ko
 kernel/drivers/connector/cn.ko
@@ -207,7 +206,6 @@ kernel/drivers/input/mousedev.ko
 kernel/drivers/input/evdev.ko
 kernel/drivers/rtc/rtc-cmos.ko
 kernel/drivers/i2c/i2c-core.ko
-kernel/drivers/i2c/i2c-mux.ko
 kernel/drivers/i2c/algos/i2c-algo-bit.ko
 kernel/drivers/i2c/busses/i2c-amd756.ko
 kernel/drivers/power/supply/power_supply.ko

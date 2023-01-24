@@ -17,6 +17,7 @@ kernel/fs/fuse/virtiofs.ko
 kernel/fs/udf/udf.ko
 kernel/fs/efivarfs/efivarfs.ko
 kernel/fs/vboxsf/vboxsf.ko
+kernel/crypto/crypto_engine.ko
 kernel/crypto/sm2_generic.ko
 kernel/crypto/ecdsa_generic.ko
 kernel/crypto/sm3.ko
@@ -40,6 +41,9 @@ kernel/drivers/virtio/virtio_balloon.ko
 kernel/drivers/virtio/virtio_input.ko
 kernel/drivers/virtio/virtio_mem.ko
 kernel/drivers/virtio/virtio_dma_buf.ko
+kernel/drivers/char/hw_random/amd-rng.ko
+kernel/drivers/char/hw_random/virtio-rng.ko
+kernel/drivers/char/virtio_console.ko
 kernel/drivers/iommu/virtio-iommu.ko
 kernel/drivers/block/virtio_blk.ko
 kernel/drivers/mfd/mfd-core.ko
@@ -66,6 +70,8 @@ kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko
 kernel/drivers/net/wireless/intel/iwlwifi/dvm/iwldvm.ko
 kernel/drivers/net/wireless/intel/iwlwifi/mvm/iwlmvm.ko
 kernel/drivers/net/mii.ko
+kernel/drivers/net/virtio_net.ko
+kernel/drivers/net/net_failover.ko
 kernel/drivers/usb/typec/tcpm/tcpm.ko
 kernel/drivers/usb/roles/roles.ko
 kernel/drivers/input/misc/uinput.ko
@@ -80,12 +86,19 @@ kernel/drivers/cpufreq/acpi-cpufreq.ko
 kernel/drivers/cpufreq/amd_freq_sensitivity.ko
 kernel/drivers/crypto/ccp/ccp.ko
 kernel/drivers/crypto/ccp/ccp-crypto.ko
+kernel/drivers/crypto/virtio/virtio_crypto.ko
 kernel/drivers/hid/hid-nintendo.ko
 kernel/drivers/hid/hid-sony.ko
 kernel/drivers/hid/hid-steam.ko
 kernel/drivers/platform/x86/wmi.ko
 kernel/drivers/platform/x86/gigabyte-wmi.ko
 kernel/drivers/virt/vboxguest/vboxguest.ko
+kernel/drivers/vfio/vfio.ko
+kernel/drivers/vfio/vfio_virqfd.ko
+kernel/drivers/vfio/vfio_iommu_type1.ko
+kernel/drivers/vfio/pci/vfio-pci-core.ko
+kernel/drivers/vfio/pci/vfio-pci.ko
+kernel/drivers/vfio/mdev/mdev.ko
 kernel/drivers/pps/pps_core.ko
 kernel/sound/core/seq/snd-seq-midi.ko
 kernel/sound/core/seq/snd-seq-midi-event.ko
@@ -95,6 +108,7 @@ kernel/sound/drivers/snd-virmidi.ko
 kernel/sound/usb/snd-usb-audio.ko
 kernel/sound/usb/snd-usbmidi-lib.ko
 kernel/sound/virtio/virtio_snd.ko
+kernel/net/core/failover.ko
 kernel/net/netfilter/nf_conntrack_ftp.ko
 kernel/net/netfilter/nf_log_syslog.ko
 kernel/net/netfilter/nf_nat_ftp.ko

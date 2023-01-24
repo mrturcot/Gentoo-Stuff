@@ -142,6 +142,10 @@ alias pci:v00001AF4d*sv*sd*bc*sc*i* virtio_pci
 alias virtio:d00000005v* virtio_balloon
 alias virtio:d00000012v* virtio_input
 alias virtio:d00000018v* virtio_mem
+alias pci:v00001022d00007443sv*sd*bc*sc*i* amd_rng
+alias pci:v00001022d0000746Bsv*sd*bc*sc*i* amd_rng
+alias virtio:d00000004v* virtio_rng
+alias virtio:d00000003v* virtio_console
 alias virtio:d00000017v* virtio_iommu
 alias virtio:d00000002v* virtio_blk
 alias virtio:d00000008v* virtio_scsi
@@ -1010,6 +1014,7 @@ alias pci:v00008086d00007E40sv*sd*bc*sc*i* iwlwifi
 alias pci:v00008086d00002727sv*sd*bc*sc*i* iwlwifi
 alias pci:v00008086d0000A840sv*sd*bc*sc*i* iwlwifi
 alias pci:v00008086d00007740sv*sd*bc*sc*i* iwlwifi
+alias virtio:d00000001v* virtio_net
 alias char-major-10-223 uinput
 alias devname:uinput uinput
 alias tty-ldisc-15 hci_uart
@@ -1065,6 +1070,7 @@ alias pci:v00001022d000015DFsv*sd*bc*sc*i* ccp
 alias pci:v00001022d00001649sv*sd*bc*sc*i* ccp
 alias pci:v00001022d000014CAsv*sd*bc*sc*i* ccp
 alias pci:v00001022d000015C7sv*sd*bc*sc*i* ccp
+alias virtio:d00000014v* virtio_crypto
 alias hid:b0003g*v0000057Ep00002009 hid_nintendo
 alias hid:b0005g*v0000057Ep00002009 hid_nintendo
 alias hid:b0003g*v0000057Ep0000200E hid_nintendo
@@ -1101,6 +1107,9 @@ alias acpi*:PNP0C14:* wmi
 alias acpi*:pnp0c14:* wmi
 alias wmi:DEADBEEF-2001-0000-00A0-C90629100000 gigabyte_wmi
 alias pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i* vboxguest
+alias char-major-10-196 vfio
+alias devname:vfio/vfio vfio
+alias vfio_pci:v*d*sv*sd*bc*sc*i* vfio_pci
 alias usb:v0403pB8D8d*dc*dsc*dp*ic*isc*ip*in* snd_usb_audio
 alias usb:v041Ep0005d*dc*dsc*dp*ic*isc*ip*in* snd_usb_audio
 alias usb:v041Ep3F02d*dc*dsc*dp*icFFisc*ip*in* snd_usb_audio

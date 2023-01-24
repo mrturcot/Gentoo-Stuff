@@ -17,6 +17,7 @@ kernel/fs/fuse/virtiofs.ko.zst: kernel/fs/fuse/fuse.ko.zst kernel/drivers/virtio
 kernel/fs/udf/udf.ko.zst: kernel/lib/crc-itu-t.ko.zst
 kernel/fs/efivarfs/efivarfs.ko.zst:
 kernel/fs/vboxsf/vboxsf.ko.zst: kernel/drivers/virt/vboxguest/vboxguest.ko.zst
+kernel/crypto/crypto_engine.ko.zst:
 kernel/crypto/sm2_generic.ko.zst: kernel/crypto/sm3.ko.zst
 kernel/crypto/ecdsa_generic.ko.zst:
 kernel/crypto/sm3.ko.zst:
@@ -40,6 +41,9 @@ kernel/drivers/virtio/virtio_balloon.ko.zst: kernel/drivers/virtio/virtio_ring.k
 kernel/drivers/virtio/virtio_input.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/virtio/virtio_mem.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/virtio/virtio_dma_buf.ko.zst:
+kernel/drivers/char/hw_random/amd-rng.ko.zst:
+kernel/drivers/char/hw_random/virtio-rng.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
+kernel/drivers/char/virtio_console.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/iommu/virtio-iommu.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/block/virtio_blk.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/mfd/mfd-core.ko.zst:
@@ -66,6 +70,8 @@ kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko.zst: kernel/net/wireless/cf
 kernel/drivers/net/wireless/intel/iwlwifi/dvm/iwldvm.ko.zst: kernel/net/mac80211/mac80211.ko.zst kernel/lib/crypto/libarc4.ko.zst kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko.zst kernel/net/wireless/cfg80211.ko.zst
 kernel/drivers/net/wireless/intel/iwlwifi/mvm/iwlmvm.ko.zst: kernel/net/mac80211/mac80211.ko.zst kernel/lib/crypto/libarc4.ko.zst kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko.zst kernel/net/wireless/cfg80211.ko.zst
 kernel/drivers/net/mii.ko.zst:
+kernel/drivers/net/virtio_net.ko.zst: kernel/drivers/net/net_failover.ko.zst kernel/net/core/failover.ko.zst kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
+kernel/drivers/net/net_failover.ko.zst: kernel/net/core/failover.ko.zst
 kernel/drivers/usb/typec/tcpm/tcpm.ko.zst: kernel/drivers/usb/roles/roles.ko.zst
 kernel/drivers/usb/roles/roles.ko.zst:
 kernel/drivers/input/misc/uinput.ko.zst:
@@ -80,12 +86,19 @@ kernel/drivers/cpufreq/acpi-cpufreq.ko.zst:
 kernel/drivers/cpufreq/amd_freq_sensitivity.ko.zst:
 kernel/drivers/crypto/ccp/ccp.ko.zst:
 kernel/drivers/crypto/ccp/ccp-crypto.ko.zst: kernel/drivers/crypto/ccp/ccp.ko.zst
+kernel/drivers/crypto/virtio/virtio_crypto.ko.zst: kernel/crypto/crypto_engine.ko.zst kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/hid/hid-nintendo.ko.zst:
 kernel/drivers/hid/hid-sony.ko.zst:
 kernel/drivers/hid/hid-steam.ko.zst:
 kernel/drivers/platform/x86/wmi.ko.zst:
 kernel/drivers/platform/x86/gigabyte-wmi.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
 kernel/drivers/virt/vboxguest/vboxguest.ko.zst:
+kernel/drivers/vfio/vfio.ko.zst:
+kernel/drivers/vfio/vfio_virqfd.ko.zst:
+kernel/drivers/vfio/vfio_iommu_type1.ko.zst: kernel/drivers/vfio/vfio.ko.zst
+kernel/drivers/vfio/pci/vfio-pci-core.ko.zst: kernel/drivers/vfio/vfio_virqfd.ko.zst kernel/drivers/vfio/vfio.ko.zst
+kernel/drivers/vfio/pci/vfio-pci.ko.zst: kernel/drivers/vfio/pci/vfio-pci-core.ko.zst kernel/drivers/vfio/vfio_virqfd.ko.zst kernel/drivers/vfio/vfio.ko.zst
+kernel/drivers/vfio/mdev/mdev.ko.zst:
 kernel/drivers/pps/pps_core.ko.zst:
 kernel/sound/core/seq/snd-seq-midi.ko.zst: kernel/sound/core/seq/snd-seq-midi-event.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
 kernel/sound/core/seq/snd-seq-midi-event.ko.zst:
@@ -95,6 +108,7 @@ kernel/sound/drivers/snd-virmidi.ko.zst: kernel/sound/core/seq/snd-seq-virmidi.k
 kernel/sound/usb/snd-usb-audio.ko.zst: kernel/sound/usb/snd-usbmidi-lib.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
 kernel/sound/usb/snd-usbmidi-lib.ko.zst: kernel/sound/core/snd-rawmidi.ko.zst
 kernel/sound/virtio/virtio_snd.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
+kernel/net/core/failover.ko.zst:
 kernel/net/netfilter/nf_conntrack_ftp.ko.zst:
 kernel/net/netfilter/nf_log_syslog.ko.zst:
 kernel/net/netfilter/nf_nat_ftp.ko.zst: kernel/net/netfilter/nf_conntrack_ftp.ko.zst
