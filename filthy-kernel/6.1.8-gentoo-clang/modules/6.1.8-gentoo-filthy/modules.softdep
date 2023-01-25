@@ -1,0 +1,3 @@
+# Soft dependencies extracted from modules themselves.
+softdep vfio post: vfio_iommu_type1 vfio_iommu_spapr_tce
+softdep xt_LOG pre: nf_log_syslog
