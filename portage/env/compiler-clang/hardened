@@ -3,4 +3,4 @@ _HARDENING_FLAGS_EXTRA="-fno-plt -fexceptions -fcf-protection=full -D_FORTIFY_SO
 _WARNINGS="-Wformat -Wformat-security -Werror=format-security"
 CFLAGS="${CFLAGS} ${_HARDENING_FLAGS} ${_HARDENING_FLAGS_EXTRA} ${_WARNINGS}"
 CXXFLAGS="${CXXFLAGS} ${_HARDENING_FLAGS} ${_HARDENING_FLAGS_EXTRA} ${_WARNINGS}"
-LDFLAGS="${LDFLAGS} -Wl,-z,now,-z,relro,-z,force-ibt,-z,shstk"
+LDFLAGS="${LDFLAGS} -pie -Wl,-z,now,-z,relro,-z,force-ibt,-z,shstk"
