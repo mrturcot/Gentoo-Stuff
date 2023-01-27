@@ -8,7 +8,7 @@
      -odNMMMMMMMMNNmhy+-`             ------------------ 
    -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
  `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: Gigabyte Technology Co., Ltd. X470 AORUS GAMING 7 WIFI-CF 
- omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.1.7-gentoo-filthy 
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.1.8-gentoo-xanmod 
 .ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hours, 20 mins 
  oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1310 (emerge) 
   :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
