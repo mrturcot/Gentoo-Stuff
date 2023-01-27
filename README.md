@@ -10,7 +10,7 @@
  `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: Gigabyte Technology Co., Ltd. X470 AORUS GAMING 7 WIFI-CF 
  omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.1.7-gentoo-filthy 
 .ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hours, 20 mins 
- oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1289 (emerge) 
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1310 (emerge) 
   :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
     .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Resolution: 3840x2160 
        /mMMMMMMNNNmmmdddhhhhhmMNhs:   DE: GNOME 43.2 
