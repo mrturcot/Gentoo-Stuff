@@ -1,0 +1,5 @@
+### System
+*/* RUBY_TARGETS: -* ruby30
+*/* RUBY_SINGLE_TARGET: -* ruby30
+
+## Per-Package

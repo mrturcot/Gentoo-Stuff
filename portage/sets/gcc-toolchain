@@ -1,0 +1,10 @@
+# toolchain
+sys-devel/gcc
+sys-libs/glibc
+sys-devel/binutils
+sys-kernel/linux-headers
+
+# others
+sys-apps/coreutils
+sys-devel/make
+dev-util/cmake
