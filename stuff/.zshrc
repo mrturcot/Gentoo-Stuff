@@ -108,6 +108,7 @@ export USB_DEVFS_PATH="/dev/bus/usb"
 export VDPAU_DRIVER=radeonsi
 export TERM=xterm-256color
 export KITTY_SHELL_INTEGRATION="enabled no-cursor"
+export QT_STYLE_OVERRIDE=kvantum-dark
 
 # WINE
 export WINEFSYNC=1
