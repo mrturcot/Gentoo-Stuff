@@ -1,0 +1,3 @@
+# Device nodes to trigger on-demand module loading.
+uinput uinput c10:223
+vfio vfio/vfio c10:196
