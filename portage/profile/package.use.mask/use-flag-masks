@@ -4,7 +4,7 @@
 ### Manually unmasked
 # -------------------------------------------------------------------
 # unmask foo-bar/package USE=-flag "foo-bar/package -flag"
-dev-lang/rust -system-llvm -llvm-libunwind -parallel-compiler
+dev-lang/rust -system-llvm -llvm-libunwind -parallel-compiler -nightly
 games-emulation/pcsx2 -qt6
 www-client/firefox -system-python-libs
 games-emulation/yuzu -system-vulkan
