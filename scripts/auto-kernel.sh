@@ -11,16 +11,16 @@ cd /usr/src/linux
 echo "copying currently in-use kernel .config to new sources"
 sleep 1
 zcat /proc/config.gz > /usr/src/linux/.config
-## Running make olddefconfig will keep all of the options from the old 
-## .config and set the new options to their recommended (i.e. default)
-echo "make olddefconfig"
+## Update current config utilising a provided .config as base
+echo "make oldconfig"
 sleep 1
-make olddefconfig
+make -j14 oldconfig
+make -j14 modules_prepare
 echo "make && install kernel"
 sleep 1
-make -j14 &&
-make -j14 modules_install &&
-make install
+make -j14
+make -j14 install
+make -j14 modules_install
 echo "remove all old built kernels, files & build directories. Keep 5"
 sleep 1
 if [[ $(eclean-kernel -n5 | grep 'outdated') ]]; then
@@ -30,4 +30,4 @@ else
 fi
 echo "rebuild kernel modules"
 sleep 1
-emerge @module-rebuild
+emerge --ask --verbose @module-rebuild
