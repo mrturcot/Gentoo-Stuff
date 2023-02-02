@@ -1,4 +1,10 @@
 # Device nodes to trigger on-demand module loading.
 fuse fuse c10:229
+nvram nvram c10:144
+winesync winesync c10:243
 uinput uinput c10:223
+uhid uhid c10:239
 vfio vfio/vfio c10:196
+hci_vhci vhci c10:137
+vhost_net vhost-net c10:238
+rfkill rfkill c10:242
