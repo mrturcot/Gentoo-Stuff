@@ -8,9 +8,9 @@
      -odNMMMMMMMMNNmhy+-`             ------------------ 
    -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
  `omMMMMMMMMMMMMNmdmmmmddhhy/`        Host: Gigabyte Technology Co., Ltd. X470 AORUS GAMING 7 WIFI-CF 
- omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.1.8-gentoo-xanmod 
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Kernel: 6.1.8-gentoo-xanmod1 
 .ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Uptime: 4 hours, 20 mins 
- oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1310 (emerge) 
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Packages: 1319 (emerge) 
   :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Shell: zsh 5.9 
     .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Resolution: 3840x2160 
        /mMMMMMMNNNmmmdddhhhhhmMNhs:   DE: GNOME 43.2 
@@ -56,10 +56,10 @@ Every package currently set in portage/package.env is confirmed working with the
  and more... see portage/make.conf "USE=$(Flags)"  
 ```  
 
-Clang Kernel
+Clang Kernels (gentoo-sources & xanmod-sources w/ gentoo patchset)
 ```
-➜ cat /proc/version  
-Linux version 6.1.7-gentoo-filthy (root@GentooRig) (clang version 15.0.6, LLD 15.0.6) #1 SMP PREEMPT Sat Jan 23 69:04:20 PST 2023
+➜ cat /proc/version                
+Linux version 6.1.8-gentoo-xanmod1 (root@GentooRig) (clang version 15.0.7, LLD 15.0.7) #1 SMP PREEMPT Wed Feb  1 22:37:22 PST 2023
 ```   
 
  - **Use Case**
