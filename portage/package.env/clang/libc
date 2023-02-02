@@ -1,0 +1,41 @@
+### Force using LLVM “libc++” C++ Standard Library
+
+## Using $(environment) for app-foo/bar
+# app-foo/bar clang/libc
+## Clang: Basic Setup (https://wiki.gentoo.org/wiki/Clang#Basic_setup)
+# clang/libc: build with a general Clang environment
+
+# -------------------------------------------------------------------
+### Using llvm/clang build environment
+# -------------------------------------------------------------------
+app-editors/vim clang/libc
+app-editors/vim-core clang/libc
+app-shells/starship clang/libc
+dev-games/openscenegraph-openmw clang/libc
+games-emulation/bsnes-mercury-performance-libretro clang/libc
+games-emulation/dolphin clang/libc
+games-emulation/fbneo-libretro clang/libc
+games-emulation/flycast-libretro clang/libc
+games-emulation/gambatte-libretro clang/libc
+games-emulation/genesis_plus_gx-libretro clang/libc
+games-emulation/higan clang/libc
+games-emulation/libretro-fceumm clang/libc
+games-emulation/retroarch clang/libc
+games-emulation/vba-next-libretro clang/libc
+games-engines/openmw clang/libc
+games-fps/gzdoom clang/libc
+games-util/xone clang/libc
+media-libs/libplacebo clang/libc
+media-video/mpv clang/libc
+media-video/pipewire clang/libc
+net-wireless/bluez clang/libc
+sys-apps/preload clang/libc
+#sys-kernel/zenpower clang/libc
+#sys-kernel/zenpower3 clang/libc
+sys-process/htop clang/libc
+www-client/firefox clang/libc
+www-client/librewolf clang/libc
+www-client/ungoogled-chromium clang/libc
+x11-terms/kitty clang/libc
+x11-wm/mutter clang/libc
+

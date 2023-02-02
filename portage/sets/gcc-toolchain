@@ -1,10 +1,11 @@
-# toolchain
+# Toolchain
 sys-devel/gcc
 sys-libs/glibc
 sys-devel/binutils
 sys-kernel/linux-headers
 
-# others
+# Others
+dev-libs/libffi
+dev-util/cmake
 sys-apps/coreutils
 sys-devel/make
-dev-util/cmake

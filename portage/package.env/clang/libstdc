@@ -1,0 +1,35 @@
+### Packags fail using libc++, use GNU C++ Library (libstdc++)
+##
+# -------------------------------------------------------------------
+### llvm/clang toolchain
+# -------------------------------------------------------------------
+sys-devel/clang clang/libstdc
+sys-devel/lld clang/libstdc
+sys-devel/llvm clang/libstdc
+sys-libs/rt clang/libstdc
+sys-libs/rt-sanitizers clang/libstdc
+sys-libs/libcxx clang/libstdc
+sys-libs/libcxxabi clang/libstdc
+sys-libs/llvm-libunwind clang/libstdc
+# -------------------------------------------------------------------
+app-admin/keepassxc clang/libstdc
+dev-games/openscenegraph-openmw clang/libstdc
+dev-lang/spidermonkey clang/libstdc
+dev-lang/rust clang/libstdc
+games-emulation/desmume-libretro clang/libstdc
+games-emulation/dolphin clang/libstdc
+games-emulation/duckstation clang/libstdc
+games-emulation/fbneo-libretro clang/libstdc
+games-emulation/libretro-nestopia clang/libstdc
+games-emulation/libretro-snes9x clang/libstdc
+games-emulation/melonds-libretro clang/libstdc
+games-emulation/mesen-libretro clang/libstdc
+games-emulation/mupen64next-libretro clang/libstdc
+games-emulation/pcsx2 clang/libstdc
+games-emulation/retroarch clang/libstdc
+games-emulation/yuzu clang/libstdc
+games-engines/openmw clang/libstdc
+net-libs/libtorrent-rasterbar clang/libstdc
+net-p2p/qbittorrent clang/libstdc
+media-libs/mesa clang/libstdc
+media-video/ffmpeg clang/libstdc

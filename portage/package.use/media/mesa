@@ -1,3 +1,1 @@
-media-libs/mesa vulkan-overlay vdpau
-
-#media-libs/libsdl2 -gles2
+media-libs/mesa d3d9 vdpau vulkan-overlay

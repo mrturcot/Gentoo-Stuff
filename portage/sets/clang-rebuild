@@ -18,21 +18,49 @@ sys-libs/llvm-libunwind
 # -------------------------------------------------------------------
 ### Using llvm/clang build environment
 # -------------------------------------------------------------------
-app-admin/keepassxc
+## LLVM “libc++” C++ Standard Library
+# -------------------------------------------------------------------
 app-editors/vim
 app-editors/vim-core
 app-shells/starship
 dev-games/openscenegraph-openmw
-dev-lang/spidermonkey
-dev-lang/rust
 games-emulation/bsnes-mercury-performance-libretro
-games-emulation/desmume-libretro
 games-emulation/dolphin
 games-emulation/fbneo-libretro
 games-emulation/flycast-libretro
 games-emulation/gambatte-libretro
 games-emulation/genesis_plus_gx-libretro
+games-emulation/higan
 games-emulation/libretro-fceumm
+games-emulation/retroarch
+games-emulation/vba-next-libretro
+games-engines/openmw
+games-fps/gzdoom
+games-util/xone
+media-libs/libplacebo
+media-video/mpv
+media-video/pipewire
+net-wireless/bluez
+sys-apps/preload
+#sys-kernel/zenpower
+#sys-kernel/zenpower3
+sys-process/htop
+www-client/firefox
+www-client/librewolf
+www-client/ungoogled-chromium
+x11-terms/kitty
+x11-wm/mutter
+# -------------------------------------------------------------------
+## GNU C++ Library (libstdc++)
+# -------------------------------------------------------------------
+app-admin/keepassxc
+dev-games/openscenegraph-openmw
+dev-lang/spidermonkey
+dev-lang/rust
+games-emulation/desmume-libretro
+games-emulation/dolphin
+#games-emulation/duckstation
+games-emulation/fbneo-libretro
 games-emulation/libretro-nestopia
 games-emulation/libretro-snes9x
 games-emulation/melonds-libretro
@@ -40,23 +68,9 @@ games-emulation/mesen-libretro
 games-emulation/mupen64next-libretro
 games-emulation/pcsx2
 games-emulation/retroarch
-games-emulation/vba-next-libretro
 games-emulation/yuzu
 games-engines/openmw
-games-fps/gzdoom
-games-util/xone
-media-libs/libplacebo
-media-video/ffmpeg
-media-video/mpv
-media-video/pipewire
 net-libs/libtorrent-rasterbar
 net-p2p/qbittorrent
-net-wireless/bluez
-sys-apps/preload
-#sys-kernel/zenpower
-sys-process/htop
-www-client/firefox
-www-client/librewolf
-www-client/ungoogled-chromium
-x11-terms/kitty
-x11-wm/mutter
+media-libs/mesa
+media-video/ffmpeg

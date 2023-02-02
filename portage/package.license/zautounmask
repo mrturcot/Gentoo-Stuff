@@ -56,4 +56,5 @@
 # required by geekbench (argument)
 >=app-benchmarks/geekbench-5.4.6 geekbench
 # required by media-fonts/steamfonts (argument)
->=media-fonts/steamfonts-1 MSttfEULA
+>=media-fonts/steamfonts-1 MSttfEULA# required by net-misc/megasync (argument)
+=net-misc/megasync-4.8.6.0 EULA
