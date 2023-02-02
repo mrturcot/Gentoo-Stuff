@@ -1,22 +1,26 @@
 kernel/arch/x86/events/amd/power.ko.zst:
 kernel/arch/x86/events/amd/amd-uncore.ko.zst:
 kernel/arch/x86/events/rapl.ko.zst:
-kernel/arch/x86/kvm/kvm-amd.ko.zst:
-kernel/arch/x86/crypto/aegis128-aesni.ko.zst:
+kernel/arch/x86/crypto/aegis128-aesni.ko.zst: kernel/crypto/crypto_simd.ko.zst kernel/crypto/cryptd.ko.zst
+kernel/arch/x86/crypto/aesni-intel.ko.zst: kernel/crypto/crypto_simd.ko.zst kernel/crypto/cryptd.ko.zst
 kernel/arch/x86/crypto/sha1-ssse3.ko.zst:
 kernel/arch/x86/crypto/sha256-ssse3.ko.zst:
 kernel/arch/x86/crypto/sha512-ssse3.ko.zst:
+kernel/arch/x86/crypto/ghash-clmulni-intel.ko.zst: kernel/crypto/cryptd.ko.zst
 kernel/arch/x86/crypto/polyval-clmulni.ko.zst: kernel/crypto/polyval-generic.ko.zst
 kernel/arch/x86/crypto/crc32c-intel.ko.zst:
 kernel/arch/x86/crypto/poly1305-x86_64.ko.zst:
 kernel/arch/x86/crypto/nhpoly1305-sse2.ko.zst: kernel/crypto/nhpoly1305.ko.zst kernel/lib/crypto/libpoly1305.ko.zst
 kernel/arch/x86/crypto/nhpoly1305-avx2.ko.zst: kernel/crypto/nhpoly1305.ko.zst kernel/lib/crypto/libpoly1305.ko.zst
 kernel/arch/x86/crypto/sm3-avx-x86_64.ko.zst: kernel/crypto/sm3.ko.zst
-kernel/fs/fuse/virtiofs.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
+kernel/arch/x86/kvm/kvm.ko.zst: kernel/virt/lib/irqbypass.ko.zst
+kernel/arch/x86/kvm/kvm-amd.ko.zst: kernel/drivers/crypto/ccp/ccp.ko.zst kernel/arch/x86/kvm/kvm.ko.zst kernel/virt/lib/irqbypass.ko.zst
 kernel/fs/netfs/netfs.ko.zst:
 kernel/fs/fscache/fscache.ko.zst:
 kernel/fs/exfat/exfat.ko.zst:
 kernel/fs/isofs/isofs.ko.zst:
+kernel/fs/fuse/fuse.ko.zst:
+kernel/fs/fuse/virtiofs.ko.zst: kernel/fs/fuse/fuse.ko.zst kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/fs/udf/udf.ko.zst: kernel/lib/crc-itu-t.ko.zst
 kernel/fs/efivarfs/efivarfs.ko.zst:
 kernel/fs/vboxsf/vboxsf.ko.zst: kernel/drivers/virt/vboxguest/vboxguest.ko.zst
@@ -27,14 +31,17 @@ kernel/crypto/sm3.ko.zst:
 kernel/crypto/streebog_generic.ko.zst:
 kernel/crypto/nhpoly1305.ko.zst: kernel/lib/crypto/libpoly1305.ko.zst
 kernel/crypto/pcrypt.ko.zst:
+kernel/crypto/cryptd.ko.zst:
 kernel/crypto/polyval-generic.ko.zst:
 kernel/crypto/curve25519-generic.ko.zst: kernel/lib/crypto/libcurve25519-generic.ko.zst
 kernel/crypto/ecrdsa_generic.ko.zst:
+kernel/crypto/crypto_simd.ko.zst: kernel/crypto/cryptd.ko.zst
+kernel/block/bfq.ko.zst:
 kernel/lib/crypto/libarc4.ko.zst:
 kernel/lib/crypto/libcurve25519-generic.ko.zst:
 kernel/lib/crypto/libpoly1305.ko.zst:
 kernel/lib/crc-itu-t.ko.zst:
-kernel/drivers/acpi/video.ko.zst:
+kernel/drivers/acpi/video.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
 kernel/drivers/virtio/virtio.ko.zst:
 kernel/drivers/virtio/virtio_ring.ko.zst:
 kernel/drivers/virtio/virtio_pci_modern_dev.ko.zst:
@@ -49,6 +56,7 @@ kernel/drivers/char/hw_random/virtio-rng.ko.zst: kernel/drivers/virtio/virtio_ri
 kernel/drivers/char/virtio_console.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/iommu/virtio-iommu.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/block/virtio_blk.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
+kernel/drivers/mfd/mfd-core.ko.zst:
 kernel/drivers/scsi/virtio_scsi.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/nvme/host/nvme-fabrics.ko.zst:
 kernel/drivers/nvme/host/nvme-fc.ko.zst: kernel/drivers/nvme/host/nvme-fabrics.ko.zst
@@ -58,14 +66,15 @@ kernel/drivers/gpu/drm/drm_buddy.ko.zst:
 kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst: kernel/drivers/gpu/drm/ttm/ttm.ko.zst
 kernel/drivers/gpu/drm/ttm/ttm.ko.zst:
 kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst:
-kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko.zst: kernel/drivers/gpu/drm/drm_buddy.ko.zst kernel/drivers/acpi/video.ko.zst kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst kernel/drivers/gpu/drm/ttm/ttm.ko.zst kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst
+kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko.zst: kernel/drivers/mfd/mfd-core.ko.zst kernel/drivers/gpu/drm/drm_buddy.ko.zst kernel/drivers/acpi/video.ko.zst kernel/drivers/platform/x86/wmi.ko.zst kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst kernel/drivers/gpu/drm/ttm/ttm.ko.zst kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst
 kernel/drivers/gpu/drm/vgem/vgem.ko.zst:
 kernel/drivers/gpu/drm/vkms/vkms.ko.zst:
+kernel/drivers/gpu/drm/qxl/qxl.ko.zst: kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst kernel/drivers/gpu/drm/ttm/ttm.ko.zst
 kernel/drivers/gpu/drm/virtio/virtio-gpu.ko.zst: kernel/drivers/virtio/virtio_dma_buf.ko.zst kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/net/ethernet/intel/e100.ko.zst: kernel/drivers/net/mii.ko.zst
 kernel/drivers/net/ethernet/intel/e1000/e1000.ko.zst:
-kernel/drivers/net/ethernet/intel/e1000e/e1000e.ko.zst: kernel/drivers/ptp/ptp.ko.zst
-kernel/drivers/net/ethernet/intel/igb/igb.ko.zst: kernel/drivers/ptp/ptp.ko.zst
+kernel/drivers/net/ethernet/intel/e1000e/e1000e.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
+kernel/drivers/net/ethernet/intel/igb/igb.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
 kernel/drivers/net/ethernet/intel/igbvf/igbvf.ko.zst:
 kernel/drivers/net/ethernet/intel/ixgb/ixgb.ko.zst:
 kernel/drivers/net/wireless/intel/iwlwifi/iwlwifi.ko.zst: kernel/net/wireless/cfg80211.ko.zst
@@ -77,27 +86,42 @@ kernel/drivers/net/net_failover.ko.zst: kernel/net/core/failover.ko.zst
 kernel/drivers/usb/typec/tcpm/tcpm.ko.zst: kernel/drivers/usb/roles/roles.ko.zst
 kernel/drivers/usb/roles/roles.ko.zst:
 kernel/drivers/input/misc/uinput.ko.zst:
-kernel/drivers/ptp/ptp.ko.zst:
-kernel/drivers/ptp/ptp_kvm.ko.zst: kernel/drivers/ptp/ptp.ko.zst
-kernel/drivers/bluetooth/btusb.ko.zst: kernel/drivers/bluetooth/btrtl.ko.zst kernel/drivers/bluetooth/btbcm.ko.zst
+kernel/drivers/ptp/ptp.ko.zst: kernel/drivers/pps/pps_core.ko.zst
+kernel/drivers/ptp/ptp_kvm.ko.zst: kernel/drivers/ptp/ptp.ko.zst kernel/drivers/pps/pps_core.ko.zst
+kernel/drivers/hwmon/drivetemp.ko.zst:
+kernel/drivers/watchdog/sp5100_tco.ko.zst:
+kernel/drivers/watchdog/it8712f_wdt.ko.zst:
+kernel/drivers/watchdog/it87_wdt.ko.zst:
+kernel/drivers/bluetooth/hci_uart.ko.zst: kernel/drivers/bluetooth/btintel.ko.zst
+kernel/drivers/bluetooth/btusb.ko.zst: kernel/drivers/bluetooth/btrtl.ko.zst kernel/drivers/bluetooth/btbcm.ko.zst kernel/drivers/bluetooth/btintel.ko.zst
+kernel/drivers/bluetooth/btintel.ko.zst:
 kernel/drivers/bluetooth/btbcm.ko.zst:
 kernel/drivers/bluetooth/btrtl.ko.zst:
 kernel/drivers/cpufreq/acpi-cpufreq.ko.zst:
 kernel/drivers/cpufreq/amd_freq_sensitivity.ko.zst:
+kernel/drivers/crypto/ccp/ccp.ko.zst:
+kernel/drivers/crypto/ccp/ccp-crypto.ko.zst: kernel/drivers/crypto/ccp/ccp.ko.zst
 kernel/drivers/crypto/virtio/virtio_crypto.ko.zst: kernel/crypto/crypto_engine.ko.zst kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/hid/hid-nintendo.ko.zst:
 kernel/drivers/hid/hid-sony.ko.zst:
 kernel/drivers/hid/hid-steam.ko.zst:
-kernel/drivers/platform/x86/gigabyte-wmi.ko.zst:
+kernel/drivers/platform/x86/wmi.ko.zst:
+kernel/drivers/platform/x86/gigabyte-wmi.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
 kernel/drivers/virt/vboxguest/vboxguest.ko.zst:
 kernel/drivers/vfio/vfio.ko.zst:
 kernel/drivers/vfio/vfio_virqfd.ko.zst:
 kernel/drivers/vfio/vfio_iommu_type1.ko.zst: kernel/drivers/vfio/vfio.ko.zst
-kernel/drivers/vfio/pci/vfio-pci-core.ko.zst: kernel/drivers/vfio/vfio_virqfd.ko.zst kernel/drivers/vfio/vfio.ko.zst
-kernel/drivers/vfio/pci/vfio-pci.ko.zst: kernel/drivers/vfio/pci/vfio-pci-core.ko.zst kernel/drivers/vfio/vfio_virqfd.ko.zst kernel/drivers/vfio/vfio.ko.zst
+kernel/drivers/vfio/pci/vfio-pci-core.ko.zst: kernel/drivers/vfio/vfio_virqfd.ko.zst kernel/drivers/vfio/vfio.ko.zst kernel/virt/lib/irqbypass.ko.zst
+kernel/drivers/vfio/pci/vfio-pci.ko.zst: kernel/drivers/vfio/pci/vfio-pci-core.ko.zst kernel/drivers/vfio/vfio_virqfd.ko.zst kernel/drivers/vfio/vfio.ko.zst kernel/virt/lib/irqbypass.ko.zst
 kernel/drivers/vfio/mdev/mdev.ko.zst:
-kernel/sound/core/seq/snd-seq-virmidi.ko.zst:
-kernel/sound/drivers/snd-virmidi.ko.zst: kernel/sound/core/seq/snd-seq-virmidi.ko.zst
+kernel/drivers/pps/pps_core.ko.zst:
+kernel/sound/core/seq/snd-seq-midi.ko.zst: kernel/sound/core/seq/snd-seq-midi-event.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
+kernel/sound/core/seq/snd-seq-midi-event.ko.zst:
+kernel/sound/core/seq/snd-seq-virmidi.ko.zst: kernel/sound/core/seq/snd-seq-midi-event.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
+kernel/sound/core/snd-rawmidi.ko.zst:
+kernel/sound/drivers/snd-virmidi.ko.zst: kernel/sound/core/seq/snd-seq-virmidi.ko.zst kernel/sound/core/seq/snd-seq-midi-event.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
+kernel/sound/usb/snd-usb-audio.ko.zst: kernel/sound/usb/snd-usbmidi-lib.ko.zst kernel/sound/core/snd-rawmidi.ko.zst
+kernel/sound/usb/snd-usbmidi-lib.ko.zst: kernel/sound/core/snd-rawmidi.ko.zst
 kernel/sound/virtio/virtio_snd.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/net/core/failover.ko.zst:
 kernel/net/netfilter/nf_conntrack_ftp.ko.zst:
@@ -114,6 +138,16 @@ kernel/net/netfilter/xt_recent.ko.zst:
 kernel/net/netfilter/ipset/ip_set.ko.zst:
 kernel/net/netfilter/ipvs/ip_vs.ko.zst:
 kernel/net/ipv4/netfilter/iptable_nat.ko.zst:
+kernel/net/ipv4/ah4.ko.zst:
+kernel/net/ipv4/esp4.ko.zst:
+kernel/net/ipv4/ipcomp.ko.zst: kernel/net/xfrm/xfrm_ipcomp.ko.zst
+kernel/net/ipv4/xfrm4_tunnel.ko.zst:
+kernel/net/ipv4/udp_diag.ko.zst:
+kernel/net/xfrm/xfrm_ipcomp.ko.zst:
 kernel/net/bridge/netfilter/nf_conntrack_bridge.ko.zst:
+kernel/net/bluetooth/bnep/bnep.ko.zst:
+kernel/net/bluetooth/hidp/hidp.ko.zst:
 kernel/net/wireless/cfg80211.ko.zst:
 kernel/net/mac80211/mac80211.ko.zst: kernel/lib/crypto/libarc4.ko.zst kernel/net/wireless/cfg80211.ko.zst
+kernel/virt/lib/irqbypass.ko.zst:
+kernel/drivers/hwmon/it87.ko:
