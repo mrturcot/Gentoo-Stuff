@@ -222,3 +222,4 @@ kernel/net/sunrpc/auth_gss/auth_rpcgss.ko.zst: kernel/net/sunrpc/sunrpc.ko.zst
 kernel/net/mac80211/mac80211.ko.zst: kernel/lib/crypto/libarc4.ko.zst kernel/net/wireless/cfg80211.ko.zst kernel/net/rfkill/rfkill.ko.zst
 kernel/net/rfkill/rfkill.ko.zst:
 kernel/virt/lib/irqbypass.ko.zst:
+kernel/drivers/hwmon/it87.ko:

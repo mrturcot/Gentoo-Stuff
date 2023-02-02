@@ -138,11 +138,6 @@ kernel/drivers/tty/serial/8250/8250_base.ko
 kernel/drivers/tty/serial/serial_mctrl_gpio.ko
 kernel/drivers/char/hw_random/rng-core.ko
 kernel/drivers/char/hw_random/amd-rng.ko
-kernel/drivers/char/tpm/tpm.ko
-kernel/drivers/char/tpm/tpm_tis_core.ko
-kernel/drivers/char/tpm/tpm_tis.ko
-kernel/drivers/char/tpm/tpm_tis_i2c.ko
-kernel/drivers/char/tpm/tpm_crb.ko
 kernel/drivers/iommu/amd/iommu_v2.ko
 kernel/drivers/iommu/iova.ko
 kernel/drivers/gpu/drm/drm.ko
