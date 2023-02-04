@@ -3,7 +3,7 @@ autoload -U compinit
 compinit
 
 # Correction
-setopt correctall
+# setopt correctall
 
 ## Enabling cache for the completions for zsh
 zstyle ':completion::complete:*' use-cache 1
@@ -18,9 +18,6 @@ export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/opt/bin:/usr/local/sbin:/usr/local/bi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
-# source oh-my-zsh.sh
-source $ZSH/oh-my-zsh.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -43,11 +40,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
+zstyle ':omz:update' frequency 1
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -65,7 +62,7 @@ source $ZSH/oh-my-zsh.sh
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -103,12 +100,14 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Enviroment variables
+export EDITOR="vim"
 export SHELL="/bin/zsh"
 export USB_DEVFS_PATH="/dev/bus/usb"
-export VDPAU_DRIVER=radeonsi
-export TERM=xterm-256color
+export VDPAU_DRIVER="radeonsi"
+#export LIBVA_DRIVER_NAME=""
+export TERM="rxvt-256color"
 export KITTY_SHELL_INTEGRATION="enabled no-cursor"
-export QT_STYLE_OVERRIDE=kvantum-dark
+export QT_STYLE_OVERRIDE="kvantum-dark"
 
 # WINE
 export WINEFSYNC=1
@@ -135,11 +134,11 @@ unset XCURSOR_SIZE
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-	export EDITOR='vim'
-else
-	export EDITOR='vi'
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+# 	export EDITOR='vim'
+# else
+# 	export EDITOR='vi'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
