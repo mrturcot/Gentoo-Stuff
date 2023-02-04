@@ -15,7 +15,8 @@ alias l="exa -l -a -bh --color=always --color-scale --group-directories-first --
 alias b="bat -p"
 alias c="clear"
 alias e="exit"
-alias watch-sensors="watch -n 1 sensors"
+alias watch-sensors="watch -n 1 sensors nvme-pci-0100 amdgpu-pci-0a00 zenpower-pci-00c3 it8686-isa-0a40"
 alias watch-genlop="watch -cn 1 genlop -ci"
 alias htop-su="sudo -s htop"
 alias wav2flac="for file in *.wav; do ffmpeg -i "$file" -c:a flac "${file%.*}.flac"; done"
+alias make-clang=make LLVM=1 LLVM_IAS=1 -j14
