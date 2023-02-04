@@ -1,0 +1,20 @@
+# installed-with-vulkan-use
+app-emulation/wine-vanilla
+dev-qt/qtbase
+dev-qt/qtdeclarative
+dev-qt/qtgui
+games-emulation/dolphin
+games-emulation/flycast
+games-emulation/flycast-libretro
+games-emulation/mednafen-psx-hw-libretro
+games-emulation/parallel_n64-libretro
+games-emulation/pcsx2
+games-emulation/retroarch
+games-emulation/rpcs3
+games-fps/gzdoom
+media-libs/libplacebo
+media-libs/libsdl2
+media-libs/mesa
+media-video/ffmpeg
+media-video/mpv
+games-emulation/yuzu
