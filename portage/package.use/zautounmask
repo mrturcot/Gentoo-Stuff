@@ -1043,3 +1043,10 @@
 # required by app-emulation/virt-manager-4.0.0::gentoo[-test,gtk]
 # required by app-emulation/virt-manager (argument)
 >=net-misc/spice-gtk-0.41-r1 usbredir
+# required by dev-libs/libxml2-2.10.3-r1::gentoo[lzma]
+# required by app-arch/libarchive-3.6.1-r1::gentoo[-expat]
+# required by dev-libs/appstream-glib-0.8.2::gentoo
+# required by media-gfx/gimp-2.10.32-r4::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-arch/xz-utils-5.4.1 abi_x86_32

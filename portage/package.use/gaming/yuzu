@@ -1,1 +1,1 @@
-games-emulation/yuzu -webservice -system-vulkan
+games-emulation/yuzu -webservice system-vulkan

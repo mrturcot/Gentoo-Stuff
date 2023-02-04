@@ -23,7 +23,6 @@
 >=games-emulation/pcsx2-9999 **
 >=games-emulation/rpcs3-9999 **
 >=games-emulation/vba-next-libretro-9999 **
->=games-emulation/yuzu-9999 **
 >=games-engines/openmw-9999 **
 >=media-libs/libplacebo-9999 **
 >=media-sound/cmus-9999 **

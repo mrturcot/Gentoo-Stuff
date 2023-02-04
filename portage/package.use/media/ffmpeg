@@ -1,1 +1,1 @@
-media-video/ffmpeg -chromaprint libplacebo libass vaapi x265 fdk bluray libdrm cpudetection openh264 chromium gme libaom lzma openssl ssh vpx webp
+media-video/ffmpeg -chromaprint libplacebo libass vaapi x265 fdk bluray libdrm cpudetection openh264 chromium gme libaom openssl ssh vpx webp
