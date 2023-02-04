@@ -1,9 +1,11 @@
 app-admin/eclean-kernel
 app-admin/hardinfo
 app-admin/logrotate
+app-admin/s-tui
 app-admin/sudo
 app-admin/sysstat
 app-arch/unrar
+app-benchmarks/geekbench
 app-editors/nano
 app-editors/sublime-text
 app-emulation/dxvk
@@ -111,6 +113,7 @@ media-plugins/gst-plugins-ldac
 media-plugins/gst-plugins-libav
 media-plugins/gst-plugins-openaptx
 media-plugins/gst-plugins-x265
+media-sound/alsa-utils
 media-sound/audacious
 media-sound/cmus
 media-sound/whipper
@@ -125,6 +128,7 @@ net-ftp/vsftpd
 net-im/discord
 net-misc/chrony
 net-misc/megasync
+net-misc/whois
 net-p2p/qbittorrent
 net-wireless/bluez-tools
 sys-apps/bat
@@ -140,6 +144,7 @@ sys-block/gparted
 sys-boot/grub
 sys-devel/clang:15
 sys-devel/crossdev
+sys-devel/distcc
 sys-devel/gdb
 sys-fs/dosfstools
 sys-fs/exfatprogs
@@ -159,6 +164,7 @@ x11-libs/gtksourceview
 x11-libs/libXxf86dga
 x11-misc/pcmanfm
 x11-misc/qt5ct
+x11-misc/vdpauinfo
 x11-terms/kitty
 x11-themes/kvantum
 x11-themes/orchis-theme
