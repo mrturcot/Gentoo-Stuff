@@ -19,4 +19,4 @@ alias watch-sensors="watch -n 1 sensors nvme-pci-0100 amdgpu-pci-0a00 zenpower-p
 alias watch-genlop="watch -cn 1 genlop -ci"
 alias htop-su="sudo -s htop"
 alias wav2flac="for file in *.wav; do ffmpeg -i "$file" -c:a flac "${file%.*}.flac"; done"
-alias make-clang=make LLVM=1 LLVM_IAS=1 -j14
+alias make-clang="make LLVM=1 LLVM_IAS=1 -j14"
