@@ -1,0 +1,13 @@
+# Soft dependencies extracted from modules themselves.
+softdep cifs ecb
+softdep cifs hmac
+softdep cifs md5
+softdep cifs nls
+softdep cifs aes
+softdep cifs cmac
+softdep cifs sha256
+softdep cifs sha512
+softdep cifs aead2
+softdep cifs ccm
+softdep cifs gcm
+softdep r8169 pre: realtek
