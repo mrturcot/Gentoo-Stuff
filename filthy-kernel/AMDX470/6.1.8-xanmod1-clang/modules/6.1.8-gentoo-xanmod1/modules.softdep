@@ -10,5 +10,6 @@ softdep cifs sha512
 softdep cifs aead2
 softdep cifs ccm
 softdep cifs gcm
+softdep f2fs pre: crc32
 softdep vfio post: vfio_iommu_type1 vfio_iommu_spapr_tce
 softdep xt_LOG pre: nf_log_syslog

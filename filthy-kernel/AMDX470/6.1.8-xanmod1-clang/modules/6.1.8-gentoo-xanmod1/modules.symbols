@@ -14,7 +14,6 @@ alias symbol:kvm_apic_set_eoi_accelerated kvm
 alias symbol:nvdimm_namespace_disk_name libnvdimm
 alias symbol:i8042_lock_chip i8042
 alias symbol:bc_svc_process sunrpc
-alias symbol:fwnode_usb_role_switch_get roles
 alias symbol:kvm_lapic_find_highest_irr kvm
 alias symbol:acpi_video_register_backlight video
 alias symbol:poly1305_update_generic libpoly1305
@@ -113,6 +112,7 @@ alias symbol:__tracepoint_kvm_invlpga kvm
 alias symbol:rpc_put_task_async sunrpc
 alias symbol:vp_modern_set_queue_size virtio_pci_modern_dev
 alias symbol:ttm_pool_debugfs ttm
+alias symbol:usb_stor_clear_halt usb_storage
 alias symbol:simd_skcipher_create crypto_simd
 alias symbol:nd_integrity_init libnvdimm
 alias symbol:ttm_bo_vm_open ttm
@@ -200,6 +200,7 @@ alias symbol:nfs_alloc_inode nfs
 alias symbol:rate_control_set_rates mac80211
 alias symbol:__SCK__tp_func_kvm_avic_incomplete_ipi kvm
 alias symbol:nfs_callback_nr_threads nfs
+alias symbol:ulpi_unregister_interface ulpi
 alias symbol:drm_dp_dpcd_read_link_status drm_display_helper
 alias symbol:badrange_add libnvdimm
 alias symbol:bt_procfs_cleanup bluetooth
@@ -236,6 +237,7 @@ alias symbol:kvm_vcpu_halt kvm
 alias symbol:iwl_dbg_tlv_del_timers iwlwifi
 alias symbol:rpc_call_sync sunrpc
 alias symbol:cfg80211_chandef_dfs_required cfg80211
+alias symbol:ucsi_connector_change typec_ucsi
 alias symbol:v4l2_format_info videodev
 alias symbol:virtqueue_poll virtio_ring
 alias symbol:__tracepoint_kvm_apicv_accept_irq kvm
@@ -277,6 +279,7 @@ alias symbol:ieee80211_gtk_rekey_notify mac80211
 alias symbol:nvdimm_namespace_detach_btt nd_btt
 alias symbol:__traceiter_pnfs_mds_fallback_read_done nfsv4
 alias symbol:kvm_task_switch kvm
+alias symbol:ucsi_destroy typec_ucsi
 alias symbol:ieee80211_calc_tx_airtime mac80211
 alias symbol:__SCT__tp_func_kvm_nested_vmenter kvm
 alias symbol:nvme_fc_io_getuuid nvme_fc
@@ -287,6 +290,7 @@ alias symbol:cfg80211_vendor_cmd_get_sender cfg80211
 alias symbol:nlmsvc_unlock_all_by_ip lockd
 alias symbol:xprt_disconnect_done sunrpc
 alias symbol:drm_sched_job_init gpu_sched
+alias symbol:ucsi_set_drvdata typec_ucsi
 alias symbol:ttm_bo_move_memcpy ttm
 alias symbol:nfs_rename nfs
 alias symbol:nfs_check_cache_invalid nfs
@@ -323,10 +327,8 @@ alias symbol:__hci_cmd_sync_sk bluetooth
 alias symbol:__xdr_commit_encode sunrpc
 alias symbol:drm_dp_get_vc_payload_bw drm_display_helper
 alias symbol:kvm_inject_pending_timer_irqs kvm
-alias symbol:tcpm_unregister_port tcpm
 alias symbol:__tracepoint_kvm_avic_incomplete_ipi kvm
 alias symbol:nvme_fc_unregister_localport nvme_fc
-alias symbol:usb_role_switch_set_drvdata roles
 alias symbol:media_create_pad_links mc
 alias symbol:ieee80211_send_eosp_nullfunc mac80211
 alias symbol:btintel_set_quality_report btintel
@@ -343,6 +345,7 @@ alias symbol:v4l2_i2c_subdev_set_name videodev
 alias symbol:fuse_dequeue_forget fuse
 alias symbol:kvm_init_shadow_ept_mmu kvm
 alias symbol:nfs_reconfigure nfs
+alias symbol:usb_stor_disconnect usb_storage
 alias symbol:ieee80211_beacon_loss mac80211
 alias symbol:v4l2_ctrl_cluster videodev
 alias symbol:cache_purge sunrpc
@@ -403,7 +406,6 @@ alias symbol:nvdimm_in_overwrite libnvdimm
 alias symbol:serio_close serio
 alias symbol:kvm_read_guest kvm
 alias symbol:nvdimm_to_bus libnvdimm
-alias symbol:usb_role_switch_get roles
 alias symbol:vhost_dev_ioctl vhost
 alias symbol:cryptd_shash_desc cryptd
 alias symbol:drm_dp_downstream_debug drm_display_helper
@@ -451,7 +453,6 @@ alias symbol:__traceiter_pnfs_mds_fallback_pg_init_write nfsv4
 alias symbol:reg_query_regdb_wmm cfg80211
 alias symbol:nfs4_find_or_create_ds_client nfsv4
 alias symbol:video_device_alloc videodev
-alias symbol:usb_role_switch_unregister roles
 alias symbol:__SCT__tp_func_iwlwifi_dev_ucode_event iwlwifi
 alias symbol:rpc_clnt_iterate_for_each_xprt sunrpc
 alias symbol:v4l2_ctrl_log_status videodev
@@ -703,6 +704,7 @@ alias symbol:v4l2_fh_del videodev
 alias symbol:kvm_emulate_as_nop kvm
 alias symbol:virtqueue_add_inbuf_ctx virtio_ring
 alias symbol:pnfs_read_done_resend_to_mds nfsv4
+alias symbol:usb_stor_bulk_transfer_buf usb_storage
 alias symbol:v4l2_ctrl_activate videodev
 alias symbol:vhost_enqueue_msg vhost
 alias symbol:ptp_find_pin ptp
@@ -778,6 +780,7 @@ alias symbol:rpc_prepare_reply_pages sunrpc
 alias symbol:crypto_engine_exit crypto_engine
 alias symbol:kvm_set_pfn_dirty kvm
 alias symbol:svc_max_payload sunrpc
+alias symbol:usb_stor_probe2 usb_storage
 alias symbol:drm_dp_pcon_pps_override_param drm_display_helper
 alias symbol:register_ip_vs_app_inc ip_vs
 alias symbol:__SCT__kvm_x86_get_cs_db_l_bits kvm
@@ -797,8 +800,8 @@ alias symbol:drm_dp_subconnector_type drm_display_helper
 alias symbol:ieee80211_proberesp_get mac80211
 alias symbol:reprogram_counter kvm
 alias symbol:rpcb_getport_async sunrpc
-alias symbol:__regmap_init_i2c regmap_i2c
 alias symbol:__virtqueue_unbreak virtio_ring
+alias symbol:usb_stor_transparent_scsi_command usb_storage
 alias symbol:reg_initiator_name cfg80211
 alias symbol:__SCK__tp_func_kvm_fast_mmio kvm
 alias symbol:media_device_cleanup mc
@@ -834,12 +837,13 @@ alias symbol:__SCT__tp_func_kvm_vmgexit_exit kvm
 alias symbol:cn_add_callback cn
 alias symbol:fscache_get_cookie fscache
 alias symbol:ieee80211_tx_rate_update mac80211
+alias symbol:ucsi_resume typec_ucsi
 alias symbol:xprt_reserve_xprt_cong sunrpc
+alias symbol:usb_stor_probe1 usb_storage
 alias symbol:ip_vs_conn_in_get ip_vs
 alias symbol:nfs_mknod nfs
 alias symbol:rpc_get_sb_net sunrpc
 alias symbol:ttm_bo_vm_close ttm
-alias symbol:tcpm_pd_transmit_complete tcpm
 alias symbol:fuse_abort_conn fuse
 alias symbol:serio_unregister_port serio
 alias symbol:ptp_clock_register ptp
@@ -858,7 +862,7 @@ alias symbol:cec_allocate_adapter cec
 alias symbol:crypto_finalize_kpp_request crypto_engine
 alias symbol:kvm_cpu_has_injectable_intr kvm
 alias symbol:crypto_finalize_akcipher_request crypto_engine
-alias symbol:tcpm_pd_receive tcpm
+alias symbol:usb_stor_access_xfer_buf usb_storage
 alias symbol:rpc_switch_client_transport sunrpc
 alias symbol:rpc_wake_up_status sunrpc
 alias symbol:vring_del_virtqueue virtio_ring
@@ -888,6 +892,7 @@ alias symbol:ttm_global_swapout ttm
 alias symbol:gss_mech_unregister auth_rpcgss
 alias symbol:__tracepoint_vb2_v4l2_buf_queue videodev
 alias symbol:cdrom_get_media_event cdrom
+alias symbol:usb_stor_ctrl_transfer usb_storage
 alias symbol:ieee80211_tx_status_irqsafe mac80211
 alias symbol:l2cap_chan_send bluetooth
 alias symbol:svc_set_client sunrpc
@@ -904,6 +909,7 @@ alias symbol:__tracepoint_fscache_access fscache
 alias symbol:btintel_configure_setup btintel
 alias symbol:vp_modern_generation virtio_pci_modern_dev
 alias symbol:xprt_pin_rqst sunrpc
+alias symbol:usb_stor_resume usb_storage
 alias symbol:v4l2_field_names videodev
 alias symbol:drm_dp_mst_connector_early_unregister drm_display_helper
 alias symbol:svc_print_addr sunrpc
@@ -937,7 +943,6 @@ alias symbol:v4l2_ctrl_request_hdl_ctrl_find videodev
 alias symbol:__traceiter_kvm_avic_kick_vcpu_slowpath kvm
 alias symbol:acpi_video_handles_brightness_key_presses video
 alias symbol:rfkill_alloc rfkill
-alias symbol:usb_role_string roles
 alias symbol:vhost_dev_has_owner vhost
 alias symbol:crypto_nhpoly1305_final nhpoly1305
 alias symbol:__nd_driver_register libnvdimm
@@ -990,7 +995,6 @@ alias symbol:drm_dp_pcon_hdmi_link_mode drm_display_helper
 alias symbol:virtqueue_add_sgs virtio_ring
 alias symbol:nfs4_pnfs_ds_connect nfsv4
 alias symbol:register_ip_vs_pe ip_vs
-alias symbol:tcpm_sourcing_vbus tcpm
 alias symbol:kvm_caps kvm
 alias symbol:nd_dev_to_uuid libnvdimm
 alias symbol:svc_wake_up sunrpc
@@ -998,6 +1002,7 @@ alias symbol:__SCK__tp_func_kvm_msr kvm
 alias symbol:__SCT__kvm_x86_cache_reg kvm
 alias symbol:__traceiter_kvm_nested_vmexit kvm
 alias symbol:kvm_fixup_and_inject_pf_error kvm
+alias symbol:usb_stor_reset_resume usb_storage
 alias symbol:__fscache_relinquish_cookie fscache
 alias symbol:btrtl_set_quirks btrtl
 alias symbol:ieee80211_disconnect mac80211
@@ -1053,6 +1058,7 @@ alias symbol:dax_flush dax
 alias symbol:drm_dp_get_adjust_request_voltage drm_display_helper
 alias symbol:v4l2_fh_exit videodev
 alias symbol:netfs_write_begin netfs
+alias symbol:__ulpi_register_driver ulpi
 alias symbol:iova_bitmap_set vfio
 alias symbol:vbg_status_code_to_errno vboxguest
 alias symbol:fuse_mount_remove fuse
@@ -1223,7 +1229,6 @@ alias symbol:kvm_arch_unregister_noncoherent_dma kvm
 alias symbol:ieee80211_get_tkip_p1k_iv mac80211
 alias symbol:nfs_file_llseek nfs
 alias symbol:rfkill_register rfkill
-alias symbol:tcpm_register_port tcpm
 alias symbol:svc_age_temp_xprts_now sunrpc
 alias symbol:__traceiter_fscache_access_cache fscache
 alias symbol:iwl_acpi_get_dsm_u32 iwlwifi
@@ -1252,7 +1257,6 @@ alias symbol:iwl_acpi_get_tas iwlwifi
 alias symbol:vp_modern_get_features virtio_pci_modern_dev
 alias symbol:svc_xprt_copy_addrs sunrpc
 alias symbol:nd_region_to_nstype libnvdimm
-alias symbol:tcpm_pd_hard_reset tcpm
 alias symbol:ieee80211_get_tkip_rx_p1k mac80211
 alias symbol:sev_issue_cmd_external_user ccp
 alias symbol:iwl_fw_dbg_stop_restart_recording iwlwifi
@@ -1363,7 +1367,6 @@ alias symbol:__traceiter_kvm_vmgexit_msr_protocol_exit kvm
 alias symbol:kvm_vcpu_reset kvm
 alias symbol:nfs_client_for_each_server nfs
 alias symbol:regulatory_set_wiphy_regd_sync cfg80211
-alias symbol:usb_role_switch_register roles
 alias symbol:kvm_cpuid kvm
 alias symbol:media_pipeline_start mc
 alias symbol:vp_modern_get_queue_reset virtio_pci_modern_dev
@@ -1451,6 +1454,7 @@ alias symbol:ieee80211_rts_duration mac80211
 alias symbol:__tracepoint_fscache_access_cache fscache
 alias symbol:pnfs_generic_pg_init_write nfsv4
 alias symbol:ttm_pool_free ttm
+alias symbol:usb_stor_Bulk_transport usb_storage
 alias symbol:xdr_decode_array2 sunrpc
 alias symbol:xprt_setup_backchannel sunrpc
 alias symbol:__cfg80211_radar_event cfg80211
@@ -1495,6 +1499,7 @@ alias symbol:kvm_apic_update_irr kvm
 alias symbol:nfs_dreq_bytes_left nfs
 alias symbol:drm_dp_aux_register drm_display_helper
 alias symbol:btintel_download_firmware btintel
+alias symbol:ulpi_write ulpi
 alias symbol:__SCK__tp_func_vb2_v4l2_buf_done videodev
 alias symbol:cfg80211_rx_assoc_resp cfg80211
 alias symbol:ieee80211_parse_p2p_noa mac80211
@@ -1524,7 +1529,6 @@ alias symbol:v4l2_ctrl_g_ctrl_int64 videodev
 alias symbol:v4l2_ctrl_subscribe_event videodev
 alias symbol:vhost_chr_write_iter vhost
 alias symbol:drm_dp_lttpr_voltage_swing_level_3_supported drm_display_helper
-alias symbol:__devm_regmap_init_i2c regmap_i2c
 alias symbol:cfg80211_roamed cfg80211
 alias symbol:__SCK__tp_func_nfs_fsync_exit nfs
 alias symbol:iwl_fw_dbg_collect iwlwifi
@@ -1591,7 +1595,6 @@ alias symbol:rpc_destroy_wait_queue sunrpc
 alias symbol:nfs_fs_type nfs
 alias symbol:rpc_d_lookup_sb sunrpc
 alias symbol:nd_btt_version libnvdimm
-alias symbol:tcpm_vbus_change tcpm
 alias symbol:ttm_resource_manager_debug ttm
 alias symbol:cfg80211_tx_mlme_mgmt cfg80211
 alias symbol:vcpu_load kvm
@@ -1712,6 +1715,7 @@ alias symbol:iwl_sar_get_wrds_table iwlwifi
 alias symbol:ip_vs_conn_out_get_proto ip_vs
 alias symbol:__SCT__tp_func_kvm_vmgexit_msr_protocol_exit kvm
 alias symbol:__ieee80211_get_rx_led_name mac80211
+alias symbol:ulpi_read ulpi
 alias symbol:vhost_work_queue vhost
 alias symbol:pnfs_set_lo_fail nfsv4
 alias symbol:wmidev_evaluate_method wmi
@@ -1734,7 +1738,6 @@ alias symbol:layoutstats_timer nfsv4
 alias symbol:wiphy_to_ieee80211_hw mac80211
 alias symbol:__SCK__tp_func_pnfs_mds_fallback_write_pagelist nfsv4
 alias symbol:acpi_nfit_desc_init nfit
-alias symbol:usb_role_switch_find_by_fwnode roles
 alias symbol:__traceiter_nfs_xdr_bad_filehandle nfs
 alias symbol:iwl_set_bits_prph iwlwifi
 alias symbol:rpc_killall_tasks sunrpc
@@ -1751,7 +1754,6 @@ alias symbol:rpcauth_unregister sunrpc
 alias symbol:__hci_cmd_sync_status_sk bluetooth
 alias symbol:__traceiter_fscache_access fscache
 alias symbol:ieee80211_update_p2p_noa mac80211
-alias symbol:usb_role_switch_put roles
 alias symbol:cfg80211_ibss_joined cfg80211
 alias symbol:kvm_load_host_xsave_state kvm
 alias symbol:__nvdimm_create libnvdimm
@@ -1831,6 +1833,7 @@ alias symbol:__SCK__tp_func_kvm_cr kvm
 alias symbol:__v4l2_ctrl_s_ctrl_compound videodev
 alias symbol:hci_get_route bluetooth
 alias symbol:ieee80211_iterate_active_interfaces_atomic mac80211
+alias symbol:usb_stor_set_xfer_buf usb_storage
 alias symbol:pnfs_register_layoutdriver nfsv4
 alias symbol:nfs_pgio_header_free nfs
 alias symbol:xprt_wait_for_reply_request_rtt sunrpc
@@ -1886,6 +1889,7 @@ alias symbol:v4l2_ctrl_find videodev
 alias symbol:xprt_force_disconnect sunrpc
 alias symbol:iwl_fw_lookup_notif_ver iwlwifi
 alias symbol:svc_find_xprt sunrpc
+alias symbol:usb_stor_pre_reset usb_storage
 alias symbol:rpc_clnt_disconnect sunrpc
 alias symbol:xprt_lock_connect sunrpc
 alias symbol:iwl_acpi_get_lari_config_bitmap iwlwifi
@@ -1944,9 +1948,9 @@ alias symbol:vhost_poll_queue vhost
 alias symbol:vhost_disable_notify vhost
 alias symbol:cfg80211_put_bss cfg80211
 alias symbol:svc_create sunrpc
-alias symbol:usb_role_switch_set_role roles
 alias symbol:pnfs_destroy_layout nfsv4
 alias symbol:ptp_find_pin_unlocked ptp
+alias symbol:usb_stor_bulk_srb usb_storage
 alias symbol:g_make_token_header auth_rpcgss
 alias symbol:drm_dp_mst_topology_mgr_init drm_display_helper
 alias symbol:nlmsvc_ops lockd
@@ -1960,18 +1964,19 @@ alias symbol:cfg80211_rx_mlme_mgmt cfg80211
 alias symbol:drm_dp_pcon_enc_is_dsc_1_2 drm_display_helper
 alias symbol:__traceiter_nfs4_pnfs_commit_ds nfsv4
 alias symbol:opens_in_grace grace
-alias symbol:tcpm_cc_change tcpm
 alias symbol:iwl_rate_mcs iwlwifi
 alias symbol:iwl_rfi_guid iwlwifi
 alias symbol:__x86_set_memory_region kvm
 alias symbol:btintel_check_bdaddr btintel
 alias symbol:kvm_emulate_ap_reset_hold kvm
 alias symbol:kvm_vcpu_write_guest kvm
+alias symbol:ucsi_register typec_ucsi
 alias symbol:vp_modern_probe virtio_pci_modern_dev
 alias symbol:nfs_commitdata_alloc nfs
 alias symbol:vfio_pci_core_ioctl vfio_pci_core
 alias symbol:hci_cmd_sync_cancel bluetooth
 alias symbol:psp_tee_process_cmd ccp
+alias symbol:usb_stor_sense_invalidCDB usb_storage
 alias symbol:nfs_sops nfs
 alias symbol:rpc_pipefs_notifier_register sunrpc
 alias symbol:xprt_request_get_cong sunrpc
@@ -2100,6 +2105,7 @@ alias symbol:fscache_wait_for_operation fscache
 alias symbol:irq_bypass_register_producer irqbypass
 alias symbol:nfs4_schedule_lease_recovery nfsv4
 alias symbol:btrtl_initialize btrtl
+alias symbol:usb_stor_control_msg usb_storage
 alias symbol:__traceiter_kvm_nested_vmenter kvm
 alias symbol:ieee80211_iterate_stations_atomic mac80211
 alias symbol:pnfs_generic_pg_check_range nfsv4
@@ -2128,8 +2134,10 @@ alias symbol:set_dax_nomc dax
 alias symbol:iwl_set_bits_mask_prph iwlwifi
 alias symbol:__SCT__tp_func_kvm_apicv_accept_irq kvm
 alias symbol:__v4l2_ctrl_grab videodev
+alias symbol:ucsi_create typec_ucsi
 alias symbol:rpc_cancel_tasks sunrpc
 alias symbol:pmem_should_map_pages libnvdimm
+alias symbol:usb_stor_CB_reset usb_storage
 alias symbol:drm_dp_downstream_max_tmds_clock drm_display_helper
 alias symbol:cn_netlink_send cn
 alias symbol:rpc_remove_pipe_dir_object sunrpc
@@ -2137,6 +2145,7 @@ alias symbol:dax_holder dax
 alias symbol:snd_rawmidi_transmit snd_rawmidi
 alias symbol:v4l2_ctrl_request_hdl_find videodev
 alias symbol:virtio_device_restore virtio
+alias symbol:fill_inquiry_response usb_storage
 alias symbol:ieee80211_amsdu_to_8023s cfg80211
 alias symbol:xdr_process_buf sunrpc
 alias symbol:cdrom_open cdrom
@@ -2144,7 +2153,6 @@ alias symbol:nd_pfn_probe libnvdimm
 alias symbol:ip_set_netmask_map ip_set
 alias symbol:rpcauth_get_pseudoflavor sunrpc
 alias symbol:vp_modern_queue_vector virtio_pci_modern_dev
-alias symbol:usb_role_switch_get_role roles
 alias symbol:drm_dp_downstream_min_tmds_clock drm_display_helper
 alias symbol:svc_alien_sock sunrpc
 alias symbol:iwl_acpi_is_ppag_approved iwlwifi
@@ -2245,9 +2253,9 @@ alias symbol:ip_set_put_flags ip_set
 alias symbol:xprt_update_rtt sunrpc
 alias symbol:cfg80211_sinfo_alloc_tid_stats cfg80211
 alias symbol:__SCT__tp_func_kvm_avic_doorbell kvm
-alias symbol:tcpm_tcpc_reset tcpm
 alias symbol:kvm_apic_send_ipi kvm
 alias symbol:kvm_mmu_gva_to_gpa_read kvm
+alias symbol:usb_stor_Bulk_reset usb_storage
 alias symbol:xprt_complete_rqst sunrpc
 alias symbol:gss_mech_register auth_rpcgss
 alias symbol:__SCT__tp_func_kvm_nested_intercepts kvm
@@ -2276,6 +2284,7 @@ alias symbol:drm_sched_start gpu_sched
 alias symbol:kvm_hv_assist_page_enabled kvm
 alias symbol:snd_rawmidi_receive snd_rawmidi
 alias symbol:kvm_spurious_fault kvm
+alias symbol:usb_stor_CB_transport usb_storage
 alias symbol:vhost_vring_ioctl vhost
 alias symbol:cache_seq_stop_rcu sunrpc
 alias symbol:__SCK__tp_func_ff_layout_read_error nfsv4
@@ -2334,6 +2343,7 @@ alias symbol:drm_dp_mst_topology_mgr_set_mst drm_display_helper
 alias symbol:pnfs_ld_write_done nfsv4
 alias symbol:ttm_bo_vm_fault_reserved ttm
 alias symbol:ttm_move_memcpy ttm
+alias symbol:usb_stor_bulk_transfer_sg usb_storage
 alias symbol:unregister_ip_vs_pe ip_vs
 alias symbol:rpc_clnt_xprt_switch_remove_xprt sunrpc
 alias symbol:nvmf_reg_read64 nvme_fabrics
@@ -2367,6 +2377,7 @@ alias symbol:drm_dp_pcon_frl_prepare drm_display_helper
 alias symbol:kvm_fast_pio kvm
 alias symbol:__traceiter_kvm_avic_ga_log kvm
 alias symbol:rpc_clnt_swap_activate sunrpc
+alias symbol:usb_stor_adjust_quirks usb_storage
 alias symbol:__SCT__tp_func_kvm_inj_virq kvm
 alias symbol:snd_rawmidi_input_params snd_rawmidi
 alias symbol:fuse_dev_alloc fuse
@@ -2459,7 +2470,6 @@ alias symbol:__SCK__tp_func_iwlwifi_dev_ucode_wrap_event iwlwifi
 alias symbol:cfg80211_external_auth_request cfg80211
 alias symbol:handle_fastpath_set_msr_irqoff kvm
 alias symbol:iwl_acpi_get_dsm_u8 iwlwifi
-alias symbol:usb_role_switch_get_drvdata roles
 alias symbol:to_nfit_uuid nfit
 alias symbol:rpc_wake_up_next sunrpc
 alias symbol:media_entity_remove_links mc
@@ -2479,6 +2489,7 @@ alias symbol:v4l2_s_parm_cap videodev
 alias symbol:irq_bypass_register_consumer irqbypass
 alias symbol:kvm_vcpu_gfn_to_pfn kvm
 alias symbol:nvdimm_security_setup_events libnvdimm
+alias symbol:ulpi_register_interface ulpi
 alias symbol:nfs_scan_commit_list nfs
 alias symbol:kvm_gpc_init kvm
 alias symbol:vp_modern_set_queue_reset virtio_pci_modern_dev
@@ -2510,6 +2521,7 @@ alias symbol:cryptd_aead_child cryptd
 alias symbol:hci_alloc_dev_priv bluetooth
 alias symbol:nvdimm_namespace_attach_btt nd_btt
 alias symbol:ip_vs_scheduler_err ip_vs
+alias symbol:usb_stor_host_template_init usb_storage
 alias symbol:vhost_iotlb_reset vhost_iotlb
 alias symbol:__SCT__tp_func_kvm_entry kvm
 alias symbol:sev_guest_activate ccp
@@ -2579,7 +2591,7 @@ alias symbol:nvdimm_kobj libnvdimm
 alias symbol:drm_dp_downstream_is_type drm_display_helper
 alias symbol:hci_suspend_dev bluetooth
 alias symbol:poly1305_init_generic libpoly1305
-alias symbol:tcpm_sink_frs tcpm
+alias symbol:usb_stor_post_reset usb_storage
 alias symbol:sev_guest_decommission ccp
 alias symbol:drm_dp_dsc_sink_supported_input_bpcs drm_display_helper
 alias symbol:hci_conn_security bluetooth
@@ -2607,6 +2619,7 @@ alias symbol:mark_page_dirty_in_slot kvm
 alias symbol:drm_dp_send_real_edid_checksum drm_display_helper
 alias symbol:fscache_relinquish_cache fscache
 alias symbol:nfs_commit_free nfs
+alias symbol:ucsi_send_command typec_ucsi
 alias symbol:ieee80211_queue_work mac80211
 alias symbol:ip_set_name_byindex ip_set
 alias symbol:cec_s_phys_addr_from_edid cec
@@ -2615,6 +2628,7 @@ alias symbol:kvm_spec_ctrl_test_value kvm
 alias symbol:nfs_post_op_update_inode nfs
 alias symbol:pnfs_alloc_commit_array nfsv4
 alias symbol:ttm_resource_manager_init ttm
+alias symbol:ucsi_get_drvdata typec_ucsi
 alias symbol:__tracepoint_vb2_v4l2_dqbuf videodev
 alias symbol:ip_set_get_extensions ip_set
 alias symbol:is_nd_btt libnvdimm
@@ -2625,6 +2639,7 @@ alias symbol:acpi_video_report_nolcd video
 alias symbol:drm_edp_backlight_enable drm_display_helper
 alias symbol:__media_entity_remove_links mc
 alias symbol:wiphy_rfkill_set_hw_state_reason cfg80211
+alias symbol:ucsi_unregister typec_ucsi
 alias symbol:drm_hdmi_infoframe_set_hdr_metadata drm_display_helper
 alias symbol:fuse_init_fs_context_submount fuse
 alias symbol:__video_device_pipeline_start videodev
@@ -2635,6 +2650,7 @@ alias symbol:kvm_vcpu_is_reset_bsp kvm
 alias symbol:mii_ethtool_get_link_ksettings mii
 alias symbol:cfg80211_ref_bss cfg80211
 alias symbol:media_create_ancillary_link mc
+alias symbol:ulpi_unregister_driver ulpi
 alias symbol:__SCT__tp_func_kvm_avic_kick_vcpu_slowpath kvm
 alias symbol:wmi_get_event_data wmi
 alias symbol:serio_rescan serio
@@ -2652,6 +2668,7 @@ alias symbol:nfs_pageio_init_write nfs
 alias symbol:nvdimm_bus_register libnvdimm
 alias symbol:wdev_to_ieee80211_vif mac80211
 alias symbol:cfg80211_rx_control_port cfg80211
+alias symbol:usb_stor_suspend usb_storage
 alias symbol:irq_bypass_unregister_producer irqbypass
 alias symbol:kvm_init kvm
 alias symbol:hci_reset_dev bluetooth

@@ -34,11 +34,13 @@ kernel/fs/lockd/lockd.ko.zst: kernel/fs/nfs_common/grace.ko.zst kernel/net/sunrp
 kernel/fs/smbfs_common/cifs_arc4.ko.zst:
 kernel/fs/smbfs_common/cifs_md4.ko.zst:
 kernel/fs/cifs/cifs.ko.zst: kernel/fs/smbfs_common/cifs_arc4.ko.zst kernel/fs/smbfs_common/cifs_md4.ko.zst
+kernel/fs/ntfs/ntfs.ko.zst:
 kernel/fs/ntfs3/ntfs3.ko.zst:
+kernel/fs/romfs/romfs.ko.zst:
 kernel/fs/fuse/fuse.ko.zst:
 kernel/fs/fuse/virtiofs.ko.zst: kernel/fs/fuse/fuse.ko.zst kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/fs/udf/udf.ko.zst: kernel/lib/crc-itu-t.ko.zst kernel/drivers/cdrom/cdrom.ko.zst
-kernel/fs/efivarfs/efivarfs.ko.zst:
+kernel/fs/f2fs/f2fs.ko.zst:
 kernel/fs/vboxsf/vboxsf.ko.zst: kernel/drivers/virt/vboxguest/vboxguest.ko.zst
 kernel/crypto/crypto_engine.ko.zst:
 kernel/crypto/sm2_generic.ko.zst: kernel/crypto/sm3.ko.zst
@@ -48,6 +50,7 @@ kernel/crypto/streebog_generic.ko.zst:
 kernel/crypto/nhpoly1305.ko.zst: kernel/lib/crypto/libpoly1305.ko.zst
 kernel/crypto/pcrypt.ko.zst:
 kernel/crypto/cryptd.ko.zst:
+kernel/crypto/crc32_generic.ko.zst:
 kernel/crypto/polyval-generic.ko.zst:
 kernel/crypto/curve25519-generic.ko.zst: kernel/lib/crypto/libcurve25519-generic.ko.zst
 kernel/crypto/ecrdsa_generic.ko.zst:
@@ -80,7 +83,6 @@ kernel/drivers/char/hw_random/virtio-rng.ko.zst: kernel/drivers/virtio/virtio_ri
 kernel/drivers/char/virtio_console.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/char/nvram.ko.zst:
 kernel/drivers/iommu/virtio-iommu.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
-kernel/drivers/base/regmap/regmap-i2c.ko.zst:
 kernel/drivers/block/virtio_blk.ko.zst: kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/misc/winesync.ko.zst:
 kernel/drivers/mfd/mfd-core.ko.zst:
@@ -114,9 +116,16 @@ kernel/drivers/net/mii.ko.zst:
 kernel/drivers/net/virtio_net.ko.zst: kernel/drivers/net/net_failover.ko.zst kernel/net/core/failover.ko.zst kernel/drivers/virtio/virtio_ring.ko.zst kernel/drivers/virtio/virtio.ko.zst
 kernel/drivers/net/net_failover.ko.zst: kernel/net/core/failover.ko.zst
 kernel/drivers/cdrom/cdrom.ko.zst:
-kernel/drivers/usb/typec/tcpm/tcpm.ko.zst: kernel/drivers/usb/roles/roles.ko.zst
+kernel/drivers/usb/common/ulpi.ko.zst:
+kernel/drivers/usb/host/ehci-platform.ko.zst:
+kernel/drivers/usb/host/xhci-plat-hcd.ko.zst:
+kernel/drivers/usb/storage/uas.ko.zst: kernel/drivers/usb/storage/usb-storage.ko.zst
+kernel/drivers/usb/storage/usb-storage.ko.zst:
+kernel/drivers/usb/misc/apple-mfi-fastcharge.ko.zst:
+kernel/drivers/usb/typec/ucsi/typec_ucsi.ko.zst:
+kernel/drivers/usb/typec/ucsi/ucsi_acpi.ko.zst: kernel/drivers/usb/typec/ucsi/typec_ucsi.ko.zst
+kernel/drivers/usb/mon/usbmon.ko.zst:
 kernel/drivers/usb/class/cdc-acm.ko.zst:
-kernel/drivers/usb/roles/roles.ko.zst:
 kernel/drivers/input/misc/uinput.ko.zst:
 kernel/drivers/input/sparse-keymap.ko.zst:
 kernel/drivers/input/input-leds.ko.zst:
@@ -126,7 +135,7 @@ kernel/drivers/media/mc/mc.ko.zst:
 kernel/drivers/media/v4l2-core/v4l2-dv-timings.ko.zst:
 kernel/drivers/media/v4l2-core/videodev.ko.zst: kernel/drivers/media/mc/mc.ko.zst
 kernel/drivers/media/cec/core/cec.ko.zst:
-kernel/drivers/media/cec/i2c/ch7322.ko.zst: kernel/drivers/base/regmap/regmap-i2c.ko.zst kernel/drivers/media/cec/core/cec.ko.zst
+kernel/drivers/media/cec/i2c/ch7322.ko.zst: kernel/drivers/media/cec/core/cec.ko.zst
 kernel/drivers/media/cec/platform/cec-gpio/cec-gpio.ko.zst: kernel/drivers/media/cec/core/cec.ko.zst
 kernel/drivers/media/cec/platform/seco/seco-cec.ko.zst: kernel/drivers/media/cec/core/cec.ko.zst
 kernel/drivers/media/cec/usb/pulse8/pulse8-cec.ko.zst: kernel/drivers/input/serio/serio.ko.zst kernel/drivers/media/cec/core/cec.ko.zst
@@ -222,4 +231,4 @@ kernel/net/sunrpc/auth_gss/auth_rpcgss.ko.zst: kernel/net/sunrpc/sunrpc.ko.zst
 kernel/net/mac80211/mac80211.ko.zst: kernel/lib/crypto/libarc4.ko.zst kernel/net/wireless/cfg80211.ko.zst kernel/net/rfkill/rfkill.ko.zst
 kernel/net/rfkill/rfkill.ko.zst:
 kernel/virt/lib/irqbypass.ko.zst:
-kernel/drivers/hwmon/it87.ko:
+kernel/drivers/hwmon/zenpower.ko:
